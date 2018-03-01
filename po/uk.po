@@ -1,0 +1,4165 @@
+# Ukrainian translation of XFce.
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Yuriy Syrota <rasta@renome.rovno.ua>, 2001.
+#
+#: xfsamba/xfsamba_gui.c:1326 xfsamba/xfsamba_gui.c:1331
+#: xfsamba/xfsamba_gui.c:1337 xfsamba/xfsamba_gui.c:1342
+#: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+#: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+#: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-09-01 01:01+0200\n"
+"PO-Revision-Date: 2001-11-17 11:06PDT\n"
+"Last-Translator: Andriy Rysin <arysin@yahoo.com>\n"
+"Language-Team: Ukrainian <linux@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=KOI8-U\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+#: xfdiff/xfdiff_colorsel.c:85
+msgid "Select Color"
+msgstr "Вибрати кол╕р"
+
+#: libs/fileselect.c:79
+msgid "Select File"
+msgstr "Вибрати файл"
+
+#: libs/fontselection.c:80
+msgid "Font Selection"
+msgstr "Виб╕р шрифта"
+
+#. this is an invisible button
+#: libs/xfce-common.c:268 xfdiff/xfdiff_gui.c:1401 xfdiff/xfdiff_misc.c:130
+#: xfdiff/xfdiff_misc.c:136 xftree/xtree_toolbar.c:343
+msgid "OK"
+msgstr "Гаразд"
+
+#: libs/xfce-common.c:278
+msgid "Message"
+msgstr "Пов╕домлення"
+
+#: libs/xfce-common.c:391 xfdiff/xfdiff_misc.c:133 xfumed/xfumed_gui_cb.c:75
+#: xfumed/xfumed_gui_cb.c:126
+msgid "Yes"
+msgstr "Так"
+
+#: libs/xfce-common.c:392 xfdiff/xfdiff_misc.c:133 xfumed/xfumed_gui_cb.c:76
+#: xfumed/xfumed_gui_cb.c:127
+msgid "No"
+msgstr "Н╕"
+
+#: libs/xfce-common.c:397 xfdiff/xfdiff_misc.c:133
+msgid "Question"
+msgstr "Запитання"
+
+#: libs/xfce-common.c:632
+msgid "Terminated: "
+msgstr "Зак╕нчено: "
+
+#: libs/xpmext.c:377 libs/xpmext.c:404
+#, c-format
+msgid "*** WARNING ***: Cannot load image file %s\n"
+msgstr "*** УВАГА ***: Неможливо завантажити файл образу %s\n"
+
+#: libs/xpmext.c:425
+#, c-format
+msgid "*** WARNING ***: Cannot load pixmap file %s\n"
+msgstr "*** УВАГА ***: Неможливо завантажити файл зображення %s\n"
+
+#: xfce/action.c:64
+msgid "Define action ..."
+msgstr "Визначити д╕ю..."
+
+#: xfce/action.c:109 xfce/modify.c:160
+msgid "Command Line :"
+msgstr "Командний рядок :"
+
+#: xfce/action.c:118
+msgid "Icon Style :"
+msgstr "Стиль п╕ктограми :"
+
+#: xfbd/xfbd.c:532 xfce/action.c:141 xfce/action.c:150 xfce/modify.c:232
+#: xfce/modify.c:240 xfsound/xfsound.c:509
+msgid "Browse ..."
+msgstr "Переглянути..."
+
+#. ok and cancel buttons
+#: xfbd/xfbd.c:518 xfce/action.c:173 xfce/modify.c:276 xfce/screen.c:134
+#: xfce/setup.c:1175 xfmouse/xfmouse.c:287 xfrun/xfrun.c:207
+#: xfsamba/xfsamba.c:272 xfsamba/xfsamba_gui.c:596
+#: xfsamba/xfsamba_masterresolve.c:130 xfsamba/xfsamba_tar.c:422
+#: xfsound/xfsound.c:606 xftree/gtk_exec.c:188 xftree/gtk_prop.c:214
+#: xfumed/xfumed_gui.c:352
+msgid "Ok"
+msgstr "Гаразд"
+
+#: xfbd/xfbd.c:559 xfce/action.c:182 xfce/modify.c:293 xfce/screen.c:144
+#: xfce/setup.c:1192 xfmouse/xfmouse.c:308 xfrun/xfrun.c:208
+#: xfsound/xfsound.c:627 xftree/gtk_exec.c:189 xftree/gtk_prop.c:215
+#: xftree/xtree_cpy.c:860 xftree/xtree_cpy.c:1324 xfumed/xfumed_gui.c:359
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: xfce/action_cb.c:77
+msgid "You must provide the command to execute !"
+msgstr "Ви повинн╕ надати команду для виконання!"
+
+#: xfce/configfile.c:69
+#, c-format
+msgid ""
+"XFce : Syntax error in configuration file\n"
+"(%s)\n"
+msgstr ""
+"XFce : Синтаксична помилка у файл╕ конф╕гурац╕╖\n"
+"(%s)\n"
+
+#: xfce/configfile.c:70 xfclock/xfclock_config.c:54
+msgid ""
+"Syntax error in configuration file\n"
+"Aborting"
+msgstr ""
+"Синтаксична помилка в конф╕гурац╕йному файл╕\n"
+"Перервано"
+
+#: xfce/configfile.c:77
+#, c-format
+msgid ""
+"XFce : Data mismatch error in config file\n"
+"(%s)\n"
+msgstr ""
+"XFce : Нев╕дпов╕дн╕сть даних в конф╕гурац╕йному файл╕\n"
+"(%s)\n"
+
+#: xfce/configfile.c:78 xfclock/xfclock_config.c:62
+msgid ""
+"Data mismatch error in configuration file\n"
+"Aborting"
+msgstr ""
+"Помилков╕ дан╕ у файл╕ конф╕гурац╕╖\n"
+"Перервано"
+
+#: xfce/configfile.c:237 xfclock/xfclock_config.c:130
+msgid "Cannot create file"
+msgstr "Неможливо створити файл"
+
+#: xfce/configfile.c:393
+msgid "Cannot reset configuration file"
+msgstr "Неможливо переписати конф╕гурац╕йний файл типовим"
+
+#: xfce/configfile.c:396
+msgid "Creating new config file...\n"
+msgstr "Створюю новий файл конф╕гурац╕╖...\n"
+
+#: xfce/configfile.c:497 xfce/configfile.c:507
+msgid "Cannot open configuration file"
+msgstr "Не можу в╕дкрити конф╕гурац╕йний файл"
+
+#: xfce/configfile.c:513
+msgid "Does not looks like an XFce 3 configuration file !"
+msgstr "Не схоже на файл конф╕гурац╕╖ XFce 3!"
+
+#: xfce/configfile.c:514
+msgid ""
+"Do you want to reset the configuration file ?\n"
+" \t(The previous file will be saved with a \".orig\" extension)"
+msgstr ""
+"Ви хочете повернути конф╕гурац╕йний файл до типового?\n"
+" \t(Попередн╕й файл буде записано з розширенням \".orig\")"
+
+#: xfce/configfile.c:525
+msgid "Cannot open new config, Giving up..."
+msgstr "Не можу в╕дкрити нову конф╕гурац╕ю. Здаюся..."
+
+#: xfce/configfile.c:526
+msgid "Cannot load configuration file"
+msgstr "Не можу завантажити файл конф╕гурац╕╖"
+
+#: xfce/configfile.c:532
+msgid "Cannot use old version of XFce configuration files"
+msgstr "Не можу використовувати конф╕гурац╕йн╕ файли старих верс╕й XFce"
+
+#: xfce/diagnostic.c:88 xfce/diagnostic.c:124
+msgid "Subprocess diagnostic"
+msgstr "Д╕агностика п╕дпроцесу"
+
+#: xfbd/xfbd.c:550 xfce/diagnostic.c:110 xfdiff/xfdiff_diag.c:181
+#: xfdiff/xfdiff_gui.c:1593 xfglob/xfglob.c:659 xftree/xtree_mess.c:927
+msgid "Clear"
+msgstr "Очистити"
+
+#: xfce/diagnostic.c:115 xfdiff/xfdiff_diag.c:186 xfglob/xfglob.c:670
+#: xftree/xtree_mess.c:932
+msgid "Dismiss"
+msgstr "Закрити"
+
+#: xfce/info.c:76
+msgid "Info ..."
+msgstr "╤нформац╕я..."
+
+#: xfbd/xfbd.c:436 xfce/info.c:107 xfce/modify.c:132 xfce/popup.c:116
+#: xfce/popup.c:222 xfce/startup.c:91 xfce/xfce.c:202 xfce/xfce.c:242
+#: xfce/xfce.c:521 xfce/xfce.c:552 xfce/xfce.c:649 xfce/xfce.c:670
+#: xfce/xfce.c:703 xfce/xfce.c:718 xfce/xfce.c:776 xfce/xfce.c:797
+#: xfglob/xfglob.c:559 xfmouse/xfmouse.c:200 xfsamba/xfsamba_gui.c:1247
+msgid "Couldn't create pixmap"
+msgstr "Не можу в╕дкрити зображення"
+
+#: xfce/info.c:121
+msgid "By Olivier Fourdan (c) 1997-2002"
+msgstr "Автор: Olivier Fourdan (c) 1997-2002"
+
+#: xfce/info.c:184
+msgid "Accept"
+msgstr "Прийняти"
+
+#: xfce/modify.c:74 xfce/modify.c:352
+msgid "Modify Item ..."
+msgstr "Зм╕нити елемент..."
+
+#: xfce/modify.c:138
+msgid "Preview Icon"
+msgstr "Вигляд п╕ктограми"
+
+#: xfce/modify.c:169
+msgid "Icon File :"
+msgstr "П╕ктограма файла:"
+
+#: xfce/modify.c:178
+msgid "Label :"
+msgstr "Надпис:"
+
+#: xfce/modify.c:187
+#, fuzzy
+msgid "Position :"
+msgstr "Адреса: "
+
+#: xfbd/xfbdmgr.c:179 xfce/modify.c:285 xfumed/xfumed_gui.c:136
+msgid "Remove"
+msgstr "Видалити"
+
+#: xfbd/xfbdmgr.c:173 xfce/modify.c:335
+msgid "Add Item ..."
+msgstr "Додати елемент..."
+
+#: xfce/modify_cb.c:115
+msgid "Are you sure you want to remove this entry ?"
+msgstr "Ви впевнен╕, що хочете видалити цей елемент?"
+
+#: xfce/modify_cb.c:156 xfce/modify_cb.c:185
+msgid ""
+"You must provide the command\n"
+"and the label, at least !"
+msgstr ""
+"Ви повинн╕ вказати, принаймн╕,\n"
+"команду та надпис!"
+
+#: xfce/popup.c:199
+msgid "Add a new entry..."
+msgstr "Додати новий елемент..."
+
+#: xfce/popup.c:228
+msgid "Add icon..."
+msgstr "Додати п╕ктограму..."
+
+#: xfce/popup.c:254
+msgid "Click to tear off popup menu"
+msgstr "Клацн╕ть, щоб в╕д╕рвати спливне меню"
+
+#: xfce/popup_cb.c:192
+msgid "Cannot find the file you dropped !"
+msgstr "Неможливо знайти загублений Вами файл!"
+
+#: xfce/screen.c:60
+msgid "Screen label ..."
+msgstr "Надпис для екрана..."
+
+#: xfce/screen.c:105
+msgid "Define screen label :"
+msgstr "Визначити надпис для екрану:"
+
+#: xfce/selects.c:58
+msgid "Files related"
+msgstr "Файлов╕ залежност╕"
+
+#: xfce/selects.c:59
+msgid "Terminals/Connections"
+msgstr "Терм╕нали/з'╓днання"
+
+#: xfce/selects.c:60
+msgid "Mail tools/browsers"
+msgstr "Переглядач╕/пошта"
+
+#: xfce/selects.c:61
+msgid "Print manager"
+msgstr "Менеджер друку"
+
+#: xfce/selects.c:62
+msgid "Configuration"
+msgstr "Конф╕гурац╕я"
+
+#: xfce/selects.c:63
+msgid "Misc. tools/Utilities"
+msgstr "Р╕зн╕ ╕нструменти/утил╕ти"
+
+#: xfce/selects.c:64
+msgid "Manual/Help browser"
+msgstr "Кер╕вництво/дов╕дка"
+
+#: xfce/selects.c:65
+msgid "Writing/Text tools"
+msgstr "Засоби набору текст╕в"
+
+#: xfce/selects.c:66
+msgid "Schedule/Appointments"
+msgstr "Розклад/зустр╕ч╕"
+
+#: xfce/selects.c:67
+msgid "Multimedia"
+msgstr "Мультимед╕я"
+
+#: xfce/selects.c:68
+msgid "Games"
+msgstr "╤гри"
+
+#: xfce/selects.c:69
+msgid "Network"
+msgstr "Мережа"
+
+#: xfce/selects.c:70
+msgid "Sound"
+msgstr "Звук"
+
+#: xfce/selects.c:71
+msgid "External..."
+msgstr "Зовн╕шн╕й..."
+
+#: xfce/setup.c:283
+msgid "Setup"
+msgstr "Налаштування"
+
+#: xfce/setup.c:362
+msgid "GTK theme engine : "
+msgstr "Машина тем GTK: "
+
+#: xfce/setup.c:384
+msgid "Apply colors to all applications"
+msgstr "Застосовувати кольори до вс╕х завдань"
+
+#: xfbd/xfbdmgr.c:167 xfce/setup.c:404
+msgid "Load ..."
+msgstr "Завантажити..."
+
+#: xfbd/xfbdmgr.c:161 xfce/setup.c:412
+msgid "Save ..."
+msgstr "Зберегти..."
+
+#: xfce/setup.c:420
+msgid "Default"
+msgstr "Типов╕"
+
+#: xfce/setup.c:442
+msgid "Repaint root window of workspace"
+msgstr "Перемалювати головне в╕кно"
+
+#: xfce/setup.c:449
+msgid "Use gradient color as wallpaper"
+msgstr "Шпалери з град╕╓нтом кольору"
+
+#: xfce/setup.c:456
+msgid "Use tear-off menus"
+msgstr "Вживати в╕дривн╕ меню"
+
+#: xfce/setup.c:463
+msgid "Show subprocess diagnostic dialog"
+msgstr "Показувати в╕кно д╕агностики п╕дзадач╕"
+
+#: xfce/setup.c:470
+msgid "Panel layer"
+msgstr "Розташування шару панел╕"
+
+#: xfce/setup.c:484
+msgid "Bottom"
+msgstr "Знизу"
+
+#: xfce/setup.c:502 xfce/setup.c:911
+msgid "Top"
+msgstr "Зверху"
+
+#: xfce/setup.c:509
+msgid "Clock"
+msgstr "Годинник"
+
+#: xfce/setup.c:523
+msgid "Use digital clock on panel"
+msgstr "Цифровий годинник на панел╕"
+
+#: xfce/setup.c:530
+msgid "Use military time (24 hours)"
+msgstr "24-годинний час"
+
+#: xfce/setup.c:537
+msgid "Tooltips"
+msgstr "П╕дказки"
+
+#: xfce/setup.c:551
+msgid "Tooltips delay (ms.) : "
+msgstr "Затримка п╕дказок (мс): "
+
+#: xfce/setup.c:566
+msgid "Virtual Screens"
+msgstr "В╕ртуальн╕ екрани"
+
+#: xfce/setup.c:587
+msgid "Number of virtual desktops : "
+msgstr "К╕льк╕сть в╕ртуальних ст╕льниць:"
+
+#: xfce/setup.c:608
+msgid "switch desktop at screen border, fixed factor 4: "
+msgstr ""
+
+#: xfce/setup.c:626
+msgid "Popups & Icons"
+msgstr "Спливн╕ меню та п╕ктограми"
+
+#: xfce/setup.c:640
+msgid "Number of popup menus : "
+msgstr "К╕льк╕сть спливних меню: "
+
+#: xfce/setup.c:654
+msgid "Size of icons on panel"
+msgstr "Розм╕р п╕ктограм на панел╕"
+
+#: xfce/setup.c:668 xfce/setup.c:703
+msgid "Large"
+msgstr "Велик╕"
+
+#: xfce/setup.c:675 xfce/setup.c:710
+msgid "Medium"
+msgstr "Середн╕"
+
+#: xfce/setup.c:682 xfce/setup.c:717
+msgid "Small"
+msgstr "Мал╕"
+
+#: xfce/setup.c:689
+msgid "Size of icons on pop-up menus"
+msgstr "Розм╕р п╕ктограм на спливних меню"
+
+#: xfce/setup.c:724
+msgid "Font style"
+msgstr "Стиль шрифту"
+
+#: xfce/setup.c:745 xfce/setup.c:1038 xfce/setup.c:1045 xfce/setup.c:1052
+msgid "Browse..."
+msgstr "Переглянути..."
+
+#: xfce/setup.c:769
+msgid "Click to focus windows"
+msgstr "Клацнути, щоб отримати фокус"
+
+#: xfce/setup.c:776
+msgid "Automatically focus on new window"
+msgstr "Надавати фокус новому в╕кну"
+
+#: xfce/setup.c:783
+msgid "Auto raise windows"
+msgstr "Автоматично п╕дн╕мати в╕кна"
+
+#: xfce/setup.c:790
+msgid "Show contents of window while moving"
+msgstr "Показувати вм╕ст в╕кна при перем╕щенн╕"
+
+#: xfce/setup.c:797
+msgid "Show contents of window while resizing"
+msgstr "Показувати вм╕ст в╕кна при зм╕н╕ розм╕ру"
+
+#: xfce/setup.c:804
+msgid "Use gradient color for the active window"
+msgstr "Град╕╓нт кольору для активного в╕кна"
+
+#: xfce/setup.c:811
+msgid "Use gradient color for inactive windows"
+msgstr "Град╕╓тний кол╕р для неактивних в╕кон"
+
+#: xfce/setup.c:834
+msgid "Window border style : "
+msgstr "Стиль меж╕ в╕кон: "
+
+#: xfce/setup.c:872
+msgid "Window snapping size (0 disable) : "
+msgstr "Крок пересування в╕кон (0 - плавно): "
+
+#: xfce/setup.c:899
+msgid "Icon position"
+msgstr "Позиц╕я п╕ктограми"
+
+#: xfce/setup.c:918 xfmouse/xfmouse.c:206
+msgid "Left"
+msgstr "Л╕воруч"
+
+#: xfce/setup.c:925
+msgid "bottom"
+msgstr "Знизу"
+
+#: xfce/setup.c:932 xfmouse/xfmouse.c:216
+msgid "Right"
+msgstr "Праворуч"
+
+#: xfce/setup.c:1011
+msgid "Title font :"
+msgstr "Шрифт заголовка:"
+
+#: xfce/setup.c:1020
+msgid "Icon font :"
+msgstr "Шрифт п╕ктограм:"
+
+#: xfce/setup.c:1029
+msgid "Menu font :"
+msgstr "Шрифт меню:"
+
+#: xfce/setup.c:1076
+msgid "Sound module (xfsound)"
+msgstr "Модуль звуку (xfsound)"
+
+#: xfce/setup.c:1083
+msgid "Mouse settings (xfmouse)"
+msgstr "Установки мишки (fxmouse)"
+
+#: xfce/setup.c:1090
+msgid "Backdrop settings (xfbd)"
+msgstr "Установки шпалер (xfbd)"
+
+#: xfce/setup.c:1097
+msgid "Pager (xfpager)"
+msgstr "Перемикач стор╕нок (xfpager)"
+
+#: xfce/setup.c:1104
+msgid "GNOME (xfgnome)"
+msgstr "GNOME (xfgnome)"
+
+#: xfce/setup.c:1111
+msgid "GNOME menu (xfmenu)"
+msgstr "Меню GNOME (xfmenu)"
+
+#: xfce/setup.c:1118
+msgid "KDE menu (xfmenu)"
+msgstr "Меню KDE (xfmenu)"
+
+#: xfce/setup.c:1126
+#, fuzzy
+msgid "Debian menu (xfmenu)"
+msgstr "Меню KDE (xfmenu)"
+
+#: xfce/setup.c:1138
+msgid "Palette"
+msgstr "Пал╕тра"
+
+#: xfce/setup.c:1144
+msgid "XFce"
+msgstr "XFce"
+
+#: xfce/setup.c:1150
+msgid "Windows"
+msgstr "В╕кна"
+
+#: xfce/setup.c:1156 xfce/startup.c:60 xfsound/xfsound.c:88
+msgid "Startup"
+msgstr "Запуск"
+
+#: xfbd/xfbd.c:541 xfce/setup.c:1184 xfmouse/xfmouse.c:299
+#: xfsound/xfsound.c:619
+msgid "Apply"
+msgstr "Застосувати"
+
+#: xfce/startup.c:97
+msgid "Please wait, XFce is loading..."
+msgstr "Зачекайте хвилю, XFce старту╓..."
+
+#: xfce/xfce.c:67
+msgid "One"
+msgstr "Один"
+
+#: xfce/xfce.c:67
+msgid "Two"
+msgstr "Два"
+
+#: xfce/xfce.c:67
+msgid "Three"
+msgstr "Три"
+
+#: xfce/xfce.c:67
+msgid "Four"
+msgstr "Чотири"
+
+#: xfce/xfce.c:67
+msgid "Five"
+msgstr "П'ять"
+
+#: xfce/xfce.c:68
+msgid "Six"
+msgstr "Ш╕сть"
+
+#: xfce/xfce.c:68
+msgid "Seven"
+msgstr "С╕м"
+
+#: xfce/xfce.c:68
+msgid "Eight"
+msgstr "В╕с╕м"
+
+#: xfce/xfce.c:68
+msgid "Nine"
+msgstr "Дев'ять"
+
+#: xfce/xfce.c:68
+msgid "Ten"
+msgstr "Десять"
+
+#: xfce/xfce.c:69
+msgid "Eleven"
+msgstr "Одинадцять"
+
+#: xfce/xfce.c:69
+msgid "Twelve"
+msgstr "Дванадцять"
+
+#: xfce/xfce.c:69
+msgid "Thirteen"
+msgstr "Тринадцять"
+
+#: xfce/xfce.c:69
+msgid "Fourteen"
+msgstr "Чотирнадцять"
+
+#: xfce/xfce.c:69
+msgid "Fifteen"
+msgstr "П'ятнадцять"
+
+#: xfce/xfce.c:70
+msgid "Sixteen"
+msgstr "Ш╕стнадцять"
+
+#: xfce/xfce.c:70
+msgid "Seventeen"
+msgstr "С╕мнадцять"
+
+#: xfce/xfce.c:70
+msgid "Eighteen"
+msgstr "В╕с╕мнадцять"
+
+#: xfce/xfce.c:70
+msgid "Nineteen"
+msgstr "Дев'ятнадцять"
+
+#: xfce/xfce.c:70
+msgid "Twenty"
+msgstr "Двадцять"
+
+#: xfce/xfce.c:107 xfclock/xfclock_menus.c:112
+msgid "Digital mode"
+msgstr "Цифровий режим"
+
+#: xfce/xfce.c:115
+msgid "24 hours mode"
+msgstr "24-годинний режим"
+
+#: xfce/xfce.c:665 xfclock/xfclock_menus.c:241
+msgid "About..."
+msgstr "Про..."
+
+#: xfce/xfce.c:698
+msgid "Setup..."
+msgstr "Установки..."
+
+#: xfbd/xfbdmgr.c:185 xfce/xfce.c:725 xfclock/xfclock_menus.c:65
+#: xfclock/xfclock_menus.c:91 xfglob/xfglob.c:1953 xfumed/xfumed_gui.c:171
+msgid "Quit"
+msgstr "Вийти"
+
+#. kind of semphor
+#: xfce/xfce_cb.c:66
+msgid "Sunday"
+msgstr "Нед╕ля"
+
+#: xfce/xfce_cb.c:67
+msgid "Monday"
+msgstr "Понед╕лок"
+
+#: xfce/xfce_cb.c:68
+msgid "Tuesday"
+msgstr "В╕второк"
+
+#: xfce/xfce_cb.c:69
+msgid "Wednesday"
+msgstr "Середа"
+
+#: xfce/xfce_cb.c:70
+msgid "Thursday"
+msgstr "Четвер"
+
+#: xfce/xfce_cb.c:71
+msgid "Friday"
+msgstr "П'ятниця"
+
+#: xfce/xfce_cb.c:72
+msgid "Saturday"
+msgstr "Субота"
+
+#: xfce/xfce_cb.c:75
+msgid "January"
+msgstr "С╕чень"
+
+#: xfce/xfce_cb.c:76
+msgid "February"
+msgstr "Лютий"
+
+#: xfce/xfce_cb.c:77
+msgid "March"
+msgstr "Березень"
+
+#: xfce/xfce_cb.c:78
+msgid "April"
+msgstr "Кв╕тень"
+
+#: xfce/xfce_cb.c:79
+msgid "May"
+msgstr "Травень"
+
+#: xfce/xfce_cb.c:80
+msgid "June"
+msgstr "Червень"
+
+#: xfce/xfce_cb.c:81
+msgid "July"
+msgstr "Липень"
+
+#: xfce/xfce_cb.c:82
+msgid "August"
+msgstr "Серпень"
+
+#: xfce/xfce_cb.c:83
+msgid "September"
+msgstr "Вересень"
+
+#: xfce/xfce_cb.c:84
+msgid "October"
+msgstr "Жовтень"
+
+#: xfce/xfce_cb.c:85
+msgid "November"
+msgstr "Листопад"
+
+#: xfce/xfce_cb.c:86
+msgid "December"
+msgstr "Грудень"
+
+#: xfce/xfce_cb.c:101
+msgid ""
+"Are you sure you want to Quit ?\n"
+"This might log you off !"
+msgstr ""
+"Ви впевнен╕ що хочете вийти?\n"
+"Це може завершити Ваш сеанс роботи!"
+
+#: xfce/xfce_cb.c:169
+msgid ""
+"You've selected a desktop which is not currently\n"
+"visible in XFce panel."
+msgstr ""
+"Ви можете вибрати робочий ст╕л який зараз\n"
+"в╕дсутн╕й на панел╕ XFce"
+
+#: xfce/xfwm.c:94
+msgid "XFCE: Communication pipe closed. Exiting...\n"
+msgstr "XFCE: Комун╕кац╕йний канал зачинено. Виходжу...\n"
+
+#: xfce/xfwm.c:471 xfwm/xfwm.c:865 xfwm/xfwm.c:866 xfwm/xfwm.c:867
+#: xfwm/xfwm.c:868 xfwm/xfwm.c:869 xfwm/xfwm.c:870 xfwm/xfwm.c:871
+#: xfwm/xfwm.c:872 xfwm/xfwm.c:873 xfwm/xfwm.c:874
+msgid "Workspace"
+msgstr "Ст╕льниця"
+
+#. SJB ok = gtk_button_new_with_label (_("Ok"));
+#: xftree/gtk_dlg.c:318
+#, fuzzy
+msgid "_Ok"
+msgstr "Гаразд"
+
+#. SJB ok = gtk_button_new_with_label (_("Yes"));
+#: xftree/gtk_dlg.c:323
+#, fuzzy
+msgid "_Yes"
+msgstr "Так"
+
+#. SJB ok = gtk_button_new_with_label (_("Continue"));
+#: xftree/gtk_dlg.c:328
+#, fuzzy
+msgid "_Continue"
+msgstr "Продовжити"
+
+#. SJB cancel = gtk_button_new_with_label (_("Cancel"));
+#: xftree/gtk_dlg.c:351
+#, fuzzy
+msgid "_Cancel"
+msgstr "Скасувати"
+
+#. SJB cancel = gtk_button_new_with_label (_("No"));
+#: xftree/gtk_dlg.c:356
+#, fuzzy
+msgid "_No"
+msgstr "Н╕"
+
+#: xftree/gtk_dlg.c:366 xftree/gtk_prop.c:229
+msgid "Skip"
+msgstr "Пропустити"
+
+#. SJB all = gtk_button_new_with_label (_("All"));
+#: xftree/gtk_dlg.c:376
+#, fuzzy
+msgid "_All"
+msgstr "Вс╕"
+
+#. SJB close = gtk_button_new_with_label (_("Close"));
+#: xftree/gtk_dlg.c:386
+#, fuzzy
+msgid "_Close"
+msgstr "Закрити"
+
+#: xftree/gtk_exec.c:166 xftree/xtree_gui.c:200 xftree/xtree_gui.c:203
+msgid "Open with ..."
+msgstr "В╕дкрити з...."
+
+#: xfrun/xfrun.c:203 xftree/gtk_exec.c:170 xftree/xtree_gui.c:219
+#: xfwm/xfwm.c:900
+msgid "Run program ..."
+msgstr "Запустити програму..."
+
+#: xfrun/xfrun.c:237 xftree/gtk_exec.c:220
+msgid "Open in terminal"
+msgstr "В╕дкрити в терм╕нал╕"
+
+#: xftree/gtk_exec.c:225
+msgid "Remember application"
+msgstr ""
+
+#. this should never happen
+#.
+#: xftree/gtk_exec.c:249
+#, c-format
+msgid "Fatal error in %s at %d\n"
+msgstr "Фатальна помилка в %s на %d\n"
+
+#: xftree/gtk_exec.c:256 xftree/reg.c:667
+msgid "Can't find in PATH"
+msgstr ""
+
+#: xftree/gtk_get.c:96
+#, fuzzy
+msgid " bytes received"
+msgstr "Отримано 0 байт"
+
+#: xftree/gtk_prop.c:205 xftree/xtree_toolbar.c:111
+msgid "Properties"
+msgstr "Властивост╕"
+
+#: xftree/gtk_prop.c:230
+msgid "All"
+msgstr "Вс╕"
+
+#. date and size page
+#: xftree/gtk_prop.c:241
+msgid "Info"
+msgstr "╤нформац╕я"
+
+#: xftree/gtk_prop.c:246
+msgid "Name :"
+msgstr "Назва: "
+
+#: xftree/gtk_prop.c:265
+msgid "Type :"
+msgstr "Тип: "
+
+#: xftree/gtk_prop.c:285
+msgid "Size :"
+msgstr "Розм╕р:"
+
+#: xftree/gtk_prop.c:293
+msgid "Creation Time :"
+msgstr "Час створення:"
+
+#: xftree/gtk_prop.c:301
+msgid "Modification Time :"
+msgstr "Час модиф╕кац╕╖:"
+
+#: xftree/gtk_prop.c:309
+msgid "Access Time :"
+msgstr "Час доступу:"
+
+#: xftree/gtk_prop.c:317
+msgid "Permissions"
+msgstr "Права"
+
+#: xfglob/xfglob.c:1616 xftree/gtk_prop.c:321 xftree/gtk_prop.c:418
+msgid "Owner :"
+msgstr "Власник:"
+
+#: xfglob/xfglob.c:1617 xfglob/xfglob.c:1641 xfglob/xfglob.c:1664
+#: xftree/gtk_prop.c:322 xftree/gtk_prop.c:346 xftree/gtk_prop.c:369
+msgid "Read"
+msgstr "Зчитування"
+
+#: xfglob/xfglob.c:1621 xfglob/xfglob.c:1645 xfglob/xfglob.c:1668
+#: xftree/gtk_prop.c:326 xftree/gtk_prop.c:350 xftree/gtk_prop.c:373
+msgid "Write"
+msgstr "Запис"
+
+#: xfglob/xfglob.c:1625 xfglob/xfglob.c:1649 xfglob/xfglob.c:1672
+#: xftree/gtk_prop.c:330 xftree/gtk_prop.c:354 xftree/gtk_prop.c:377
+msgid "Execute"
+msgstr "Виконання"
+
+#: xfglob/xfglob.c:1629 xftree/gtk_prop.c:334
+msgid "Set UID"
+msgstr "Встановити UID"
+
+#: xfglob/xfglob.c:1640 xftree/gtk_prop.c:345 xftree/gtk_prop.c:429
+msgid "Group :"
+msgstr "Група:"
+
+#: xfglob/xfglob.c:1653 xftree/gtk_prop.c:358
+msgid "Set GID"
+msgstr "Встановити GID"
+
+#: xfglob/xfglob.c:1663 xftree/gtk_prop.c:368
+msgid "Other :"
+msgstr "╤нш╕:"
+
+#: xfglob/xfglob.c:1676 xftree/gtk_prop.c:381
+msgid "Sticky"
+msgstr "Ст╕йкий"
+
+#: xftree/gtk_prop.c:407 xftree/xtree_gui.c:1132
+msgid "Owner"
+msgstr "Власник"
+
+#: xftree/gtk_prop.c:412 xftree/gtk_prop.c:423 xftree/xtree_functions.c:407
+#: xftree/xtree_functions.c:409 xftree/xtree_functions.c:455
+#: xftree/xtree_functions.c:457 xftree/xtree_go.c:188 xftree/xtree_go.c:189
+#: xftree/xtree_gui.c:1474 xftree/xtree_gui.c:1476
+msgid "unknown"
+msgstr "нев╕домий"
+
+#: xftree/gtk_prop.c:450
+msgid "RPM info"
+msgstr ""
+
+#: xftree/reg.c:610 xftree/xtree_cb.c:705 xftree/xtree_cb.c:822
+#: xftree/xtree_cpy.c:1375
+msgid "This function is not available for the contents of tar files"
+msgstr ""
+
+#: xftree/reg.c:618
+#, fuzzy, c-format
+msgid "Register program for directory \"%s\""
+msgstr "Ре╓стр програм для файла \"%s\""
+
+#: xftree/reg.c:625
+msgid "Can't find suffix in filename, using complete filename"
+msgstr "Не можу знайти суф╕кс в ╕мен╕ файла, використовуйте повне ╕м'я"
+
+#: xftree/reg.c:632
+#, c-format
+msgid "Register program for file \"%s\""
+msgstr "Ре╓стр програм для файла \"%s\""
+
+#: xftree/reg.c:636
+#, c-format
+msgid "Register program for suffix \"%s\""
+msgstr "Ре╓стр програм для суф╕кса \"%s\""
+
+#: xftree/xtree.c:236
+#, c-format
+msgid "XFTree, based on XTree Version %s\n"
+msgstr "XFTree, що ╜рунту╓ться на XTree верс╕╖ %s\n"
+
+#: xftree/xtree.c:237
+#, c-format
+msgid "directory: %s\n"
+msgstr "каталог: %s\n"
+
+#: xftree/xtree.c:244 xftree/xtree.c:283
+#, c-format
+msgid "creating directory: %s\n"
+msgstr "створення каталогу: %s\n"
+
+#: xftree/xtree.c:300
+#, c-format
+msgid "geometry: %dx%d+%d+%d\n"
+msgstr "геометр╕я: %dx%d+%d+%d\n"
+
+#: xftree/xtree_cb.c:327
+#, fuzzy
+msgid "error deleting file"
+msgstr "Вибрати файл праворуч"
+
+#. nothing to delete
+#: xftree/xtree_cb.c:414 xftree/xtree_cb.c:780 xftree/xtree_tar.c:775
+msgid "No files marked !"
+msgstr "Файли не позначено!"
+
+#: xftree/xtree_cb.c:475 xftree/xtree_cb.c:477
+msgid "Delete item ?"
+msgstr "Стерти елемент?"
+
+#: xftree/xtree_cb.c:487 xftree/xtree_cb.c:491
+msgid "Can't move file to trash, hard delete ?"
+msgstr "Не можу викинути на см╕тник, знищити реально?"
+
+#: xftree/xtree_cb.c:573
+#, fuzzy
+msgid "This is XFTree "
+msgstr "Це - XFDiff "
+
+#: xftree/xtree_cb.c:573
+msgid ""
+" (C) under GNU GPL\n"
+"with code contributed by:\n"
+"Rasca, Berlin\n"
+"Olivier Fourdan\n"
+"Edscott Wilson Garcia\n"
+msgstr ""
+
+#: xftree/xtree_cb.c:591 xftree/xtree_cb.c:602
+msgid "New_Folder"
+msgstr "Нова тека"
+
+#: xftree/xtree_cb.c:642 xftree/xtree_cb.c:650
+#, fuzzy
+msgid "New_File"
+msgstr "Нова тека"
+
+#: xftree/xtree_cb.c:670 xftree/xtree_cb.c:746 xftree/xtree_cpy.c:1486
+#, fuzzy
+msgid "File exists !"
+msgstr "Файл вже ╓! Переписати?"
+
+#: xftree/xtree_cb.c:699
+msgid "No item marked !"
+msgstr "Жодного елемента не позначено!"
+
+#: xftree/xtree_cb.c:715
+msgid "Rename to : "
+msgstr "Перейменувати на: "
+
+#: xftree/xtree_cb.c:723 xftree/xtree_cpy.c:1464
+msgid "Character not allowed in filename"
+msgstr "Неприпустимий символ в ╕мен╕ файла"
+
+#: xftree/xtree_cb.c:807
+#, fuzzy
+msgid "Nothing selected !"
+msgstr "Файл латки не вибрано."
+
+#: xftree/xtree_cb.c:1069
+#, fuzzy
+msgid "command finished\n"
+msgstr "Командний рядок :"
+
+#: xftree/xtree_cb.c:1294
+#, fuzzy
+msgid "Override?"
+msgstr "Переписати?"
+
+#: xftree/xtree_cpy.c:228
+msgid "Insufficient system memory"
+msgstr ""
+
+#: xftree/xtree_cpy.c:249
+#, fuzzy
+msgid "Too few bytes transferred ! Device full ?"
+msgstr "Передано замало байт! Пристр╕й повний?"
+
+#: xftree/xtree_cpy.c:253
+msgid "Too many bytes transferred !?"
+msgstr "Передано забагато байт !?"
+
+#: xftree/xtree_cpy.c:257 xftree/xtree_cpy.c:261
+msgid "Can't stat() file"
+msgstr "Неможливо виконати stat() для файла"
+
+#: xftree/xtree_cpy.c:265 xftree/xtree_cpy.c:269
+#, fuzzy
+msgid "Error closing file"
+msgstr ""
+"Помилка\n"
+"Неможливо в╕дкрити файл"
+
+#: xftree/xtree_cpy.c:273
+msgid "Error deleting"
+msgstr ""
+
+#: xfsamba/xfsamba_dnd.c:96 xftree/xtree_cpy.c:277 xftree/xtree_cpy.c:509
+msgid "Can't copy FIFO"
+msgstr "Неможливо скоп╕ювати FIFO"
+
+#: xfsamba/xfsamba_dnd.c:99 xftree/xtree_cpy.c:281 xftree/xtree_cpy.c:512
+msgid "Can't copy device file"
+msgstr "Неможливо скоп╕ювати файл пристрою"
+
+#: xfsamba/xfsamba_dnd.c:102 xftree/xtree_cpy.c:285 xftree/xtree_cpy.c:515
+msgid "Can't copy socket"
+msgstr "Неможливо скоп╕ювати сокет"
+
+#: xftree/xtree_cpy.c:854
+#, fuzzy
+msgid "Counting files"
+msgstr "Пересування файла...\n"
+
+#: xftree/xtree_cpy.c:1226
+#, c-format
+msgid "%d / %d"
+msgstr ""
+
+#: xftree/xtree_cpy.c:1302
+msgid "Source: "
+msgstr "Джерело: "
+
+#: xftree/xtree_cpy.c:1309
+msgid "Target: "
+msgstr "Призначення: "
+
+#: xftree/xtree_cpy.c:1316
+msgid "beginning copy operation"
+msgstr ""
+
+#: xftree/xtree_cpy.c:1331
+msgid "XFTree: Copy"
+msgstr "XFTree: Скоп╕ювати"
+
+#: xftree/xtree_cpy.c:1332
+msgid "XFTree: Move"
+msgstr "XFTree: Пересунути"
+
+#: xftree/xtree_cpy.c:1333
+msgid "XFTree: Link"
+msgstr "XFTree: Посилання"
+
+#: xftree/xtree_cpy.c:1437 xftree/xtree_cpy.c:1525
+#, fuzzy
+msgid "No file or directory selected!"
+msgstr "Каталог не вибрано!"
+
+#: xftree/xtree_cpy.c:1440
+#, fuzzy
+msgid "Only one file or directory can be selected!"
+msgstr "Необх╕дно вибрати каталог!"
+
+#: xftree/xtree_cpy.c:1446
+msgid "This function is not available for the contents of tar/rpm files"
+msgstr ""
+
+#: xftree/xtree_cpy.c:1456
+#, fuzzy
+msgid "Symlink name : "
+msgstr "Символьне посилання"
+
+#: xftree/xtree_dnd.c:169
+msgid "Unknown action !"
+msgstr "Нев╕дома д╕я!"
+
+#: xftree/xtree_du.c:82
+msgid "Disk usage:"
+msgstr ""
+
+#: xftree/xtree_du.c:148
+#, fuzzy
+msgid "No directory selected !"
+msgstr "Каталог не вибрано!"
+
+#: xftree/xtree_functions.c:518 xftree/xtree_gui.c:1224
+#, fuzzy
+msgid "files"
+msgstr "Файл"
+
+#: xftree/xtree_functions.c:581
+msgid "internal malloc error:"
+msgstr ""
+
+#: xftree/xtree_go.c:171
+#, fuzzy
+msgid "Cannot find path"
+msgstr "Не можу знайти рядок з даними\n"
+
+#. entry_return = (char *)xf_dlg_combo (win->top,_("Go to"), "/", list);
+#: xftree/xtree_go.c:294 xftree/xtree_gui.c:810
+msgid "Go to"
+msgstr "Перейти до"
+
+#: xftree/xtree_gui.c:119 xftree/xtree_gui.c:121 xftree/xtree_gui.c:122
+#: xftree/xtree_gui.c:123
+msgid "Extract files from"
+msgstr ""
+
+#: xftree/xtree_gui.c:119 xftree/xtree_gui.c:121 xftree/xtree_gui.c:122
+#: xftree/xtree_gui.c:123
+#, fuzzy
+msgid "Extract into"
+msgstr "д╕стати"
+
+#: xftree/xtree_gui.c:120 xftree/xtree_gui.c:124 xftree/xtree_gui.c:125
+#: xftree/xtree_gui.c:126 xftree/xtree_gui.c:127
+msgid "Uncompress"
+msgstr ""
+
+#: xftree/xtree_gui.c:128 xftree/xtree_gui.c:129
+msgid "Install/update"
+msgstr ""
+
+#: xftree/xtree_gui.c:152 xftree/xtree_gui.c:564 xftree/xtree_gui.c:566
+#, fuzzy
+msgid "Open icon view"
+msgstr "В╕дкрити в новому"
+
+#: xftree/xtree_gui.c:155
+#, fuzzy
+msgid "Open tree view"
+msgstr "В╕дкрити в новому"
+
+#: xftree/xtree_gui.c:156
+#, fuzzy
+msgid "Open terminal view"
+msgstr "В╕дкрити в терм╕нал╕"
+
+#: xfsamba/xfsamba_mkdir.c:202 xftree/xtree_gui.c:158
+#: xftree/xtree_toolbar.c:109
+msgid "New Folder"
+msgstr "Нова тека"
+
+#: xftree/xtree_gui.c:159
+#, fuzzy
+msgid "New file"
+msgstr "Наступн╕й файл"
+
+#: xftree/xtree_gui.c:163
+#, fuzzy
+msgid "Touch ..."
+msgstr "Вгору..."
+
+#: xftree/xtree_gui.c:164
+#, fuzzy
+msgid "Symlink ..."
+msgstr "Символьне посилання"
+
+#: xfsamba/xfsamba_gui.c:1336 xftree/xtree_gui.c:165
+#: xftree/xtree_toolbar.c:103
+msgid "Delete ..."
+msgstr "Стерти..."
+
+#: xftree/xtree_gui.c:168
+#, fuzzy
+msgid "Paste"
+msgstr "Зберегти..."
+
+#: xftree/xtree_gui.c:171 xftree/xtree_gui.c:220 xftree/xtree_toolbar.c:105
+msgid "Find ..."
+msgstr "Знайти..."
+
+#: xftree/xtree_gui.c:172 xftree/xtree_gui.c:224
+msgid "Show disk usage ..."
+msgstr ""
+
+#: xftree/xtree_gui.c:175
+#, fuzzy
+msgid "Cut"
+msgstr "Про..."
+
+#: xftree/xtree_gui.c:176
+#, fuzzy
+msgid "Copy"
+msgstr "скоп╕ювати"
+
+#: xftree/xtree_gui.c:179
+msgid "List pasteboard contents"
+msgstr ""
+
+#: xftree/xtree_gui.c:180
+msgid "Clear pasteboard"
+msgstr ""
+
+#: xftree/xtree_gui.c:182
+msgid "Select all"
+msgstr "Вибрати все"
+
+#: xftree/xtree_gui.c:183
+msgid "Unselect"
+msgstr "Невибраний"
+
+#: xftree/xtree_gui.c:184 xftree/xtree_toolbar.c:115
+msgid "Toggle Dotfiles"
+msgstr "Показати/сховати прихован╕ файли"
+
+#: xftree/xtree_gui.c:186 xftree/xtree_toolbar.c:113
+msgid "Open Trash"
+msgstr "В╕дкрити см╕тник"
+
+#: xftree/xtree_gui.c:187 xftree/xtree_toolbar.c:114
+msgid "Empty Trash"
+msgstr "Спорожнити см╕тник"
+
+#: xftree/xtree_gui.c:191
+msgid "Duplicate"
+msgstr "Дублювати"
+
+#: xftree/xtree_gui.c:192
+msgid "Rename ..."
+msgstr "Перейменувати..."
+
+#: xftree/xtree_gui.c:193
+msgid "Properties ..."
+msgstr "Властивост╕..."
+
+#: xftree/xtree_gui.c:197 xftree/xtree_gui.c:209 xftree/xtree_toolbar.c:96
+msgid "Go to ..."
+msgstr "Перейти до..."
+
+#: xftree/xtree_gui.c:206
+msgid "Register ..."
+msgstr "Ре╓струвати..."
+
+#: xftree/xtree_gui.c:212 xftree/xtree_toolbar.c:98
+msgid "Go home"
+msgstr "Додому"
+
+#: xftree/xtree_gui.c:213
+#, fuzzy
+msgid "Go back"
+msgstr "Йду назад..."
+
+#: xftree/xtree_gui.c:214 xftree/xtree_toolbar.c:97
+msgid "Go up"
+msgstr "Вгору"
+
+#: xftree/xtree_gui.c:215
+msgid "Update"
+msgstr "Поновити"
+
+#: xftree/xtree_gui.c:221 xftree/xtree_toolbar.c:106
+msgid "Differences ..."
+msgstr "В╕дм╕нност╕..."
+
+#: xftree/xtree_gui.c:222
+msgid "Patch viewer ..."
+msgstr "Переглядач латок..."
+
+#: xftree/xtree_gui.c:223 xftree/xtree_toolbar.c:107
+#, fuzzy
+msgid "Browse SMB network ..."
+msgstr "Переглянути..."
+
+#: xftree/xtree_gui.c:227 xftree/xtree_toolbar.c:91
+msgid "Close window"
+msgstr "Закрити в╕кно"
+
+#: xftree/xtree_gui.c:228
+#, fuzzy
+msgid "Quit ..."
+msgstr "Про..."
+
+#. quit only on main menu now, so that default geometry is saved correctly with cb_quit.
+#: xftree/xtree_gui.c:233
+msgid "Subsort by file type"
+msgstr ""
+
+#: xftree/xtree_gui.c:234
+#, fuzzy
+msgid "Enable filter"
+msgstr "Файловий ф╕льтр: "
+
+#: xftree/xtree_gui.c:235
+#, fuzzy
+msgid "Abbreviate paths"
+msgstr "Створити файл латки"
+
+#: xftree/xtree_gui.c:237
+msgid "Status box"
+msgstr ""
+
+#: xftree/xtree_gui.c:238
+msgid "Status titles"
+msgstr ""
+
+#: xftree/xtree_gui.c:239
+msgid "Short titles"
+msgstr ""
+
+#: xftree/xtree_gui.c:241 xftree/xtree_toolbar.c:436
+#, fuzzy
+msgid "Hide toolbar"
+msgstr "Сховати панель меню"
+
+#: xftree/xtree_gui.c:242
+msgid "Hide titles"
+msgstr ""
+
+#: xftree/xtree_gui.c:243
+#, fuzzy
+msgid "Hide sizes"
+msgstr "Сховати д╕агностику"
+
+#: xftree/xtree_gui.c:244
+#, fuzzy
+msgid "Hide dates"
+msgstr "Сховати д╕агностику"
+
+#: xftree/xtree_gui.c:245
+#, fuzzy
+msgid "Hide owner"
+msgstr "Сховати зв'язки переглядача"
+
+#: xftree/xtree_gui.c:246
+msgid "Hide group"
+msgstr ""
+
+#: xftree/xtree_gui.c:247
+#, fuzzy
+msgid "Hide mode"
+msgstr "Сховати панель меню"
+
+#: xftree/xtree_gui.c:248
+msgid "Hide ../ "
+msgstr ""
+
+#: xftree/xtree_gui.c:251
+msgid "Sort by file name"
+msgstr ""
+
+#: xftree/xtree_gui.c:252
+msgid "Sort by file size"
+msgstr ""
+
+#: xftree/xtree_gui.c:253
+msgid "Sort by file date"
+msgstr ""
+
+#: xftree/xtree_gui.c:577 xftree/xtree_gui.c:579
+#, fuzzy
+msgid "Create"
+msgstr "створити"
+
+#. Create "File" menu
+#: xfclock/xfclock_menus.c:85 xfdiff/xfdiff_gui.c:1168
+#: xfsamba/xfsamba_gui.c:1266 xftree/xtree_gui.c:750
+msgid "File"
+msgstr "Файл"
+
+#. Create "Edit" menu
+#: xfsamba/xfsamba_gui.c:1277 xftree/xtree_gui.c:781 xfumed/xfumed_gui.c:129
+#, fuzzy
+msgid "Edit"
+msgstr "Вийти"
+
+#. Create "Tools" menu
+#: xfsamba/xfsamba_gui.c:1289 xftree/xtree_gui.c:835
+#, fuzzy
+msgid "Tools"
+msgstr "П╕дказки"
+
+#. Create "View" menu
+#: xfsamba/xfsamba_gui.c:1293 xftree/xtree_gui.c:859
+msgid "View"
+msgstr "Вигляд"
+
+#. Create "Preferences" menu
+#: xfsamba/xfsamba_gui.c:1304 xftree/xtree_gui.c:889
+msgid "Preferences"
+msgstr "Установки"
+
+#: xftree/xtree_gui.c:895
+#, fuzzy
+msgid "Hide main menu"
+msgstr "Сховати панель меню"
+
+#: xftree/xtree_gui.c:903 xftree/xtree_gui.c:933
+msgid "Save geometry on exit"
+msgstr ""
+
+#: xftree/xtree_gui.c:910 xftree/xtree_gui.c:935
+msgid "Double click does GOTO"
+msgstr ""
+
+#: xftree/xtree_gui.c:918 xftree/xtree_gui.c:937
+msgid "Drag does copy"
+msgstr ""
+
+#: xftree/xtree_gui.c:925
+msgid "Use rsync instead of scp"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1305 xftree/xtree_gui.c:941
+#, fuzzy
+msgid "Set background color"
+msgstr "Кол╕р тла вид╕лення"
+
+#: xfsamba/xfsamba_gui.c:1306 xftree/xtree_gui.c:946
+#, fuzzy
+msgid "Set font"
+msgstr "Шрифт меню:"
+
+#: xftree/xtree_gui.c:952 xftree/xtree_toolbar.c:354
+#, fuzzy
+msgid "Configure toolbar"
+msgstr "Налаштувати в╕кно"
+
+#: xftree/xtree_gui.c:957
+msgid "Redefine home directory"
+msgstr ""
+
+#. Create "Help" menu
+#: xfclock/xfclock_menus.c:234 xfdiff/xfdiff_gui.c:1270
+#: xfsamba/xfsamba_gui.c:1311 xftree/xtree_gui.c:963
+msgid "Help"
+msgstr "Дов╕дка"
+
+#: xftree/xtree_gui.c:970
+#, fuzzy
+msgid "Icon view"
+msgstr "П╕ктограма файла:"
+
+#: xfsamba/xfsamba_gui.c:1312 xftree/xtree_gui.c:975
+msgid "Drag and drop"
+msgstr ""
+
+#: xftree/xtree_gui.c:980
+msgid "Rsync and scp"
+msgstr ""
+
+#: xftree/xtree_gui.c:987
+msgid "Unlisted shortcut keys"
+msgstr ""
+
+#: xftree/xtree_gui.c:992
+msgid "Custom shortcut keys"
+msgstr ""
+
+#: xftree/xtree_gui.c:997
+msgid "Registered applications"
+msgstr ""
+
+#: xftree/xtree_gui.c:1003
+msgid "About ..."
+msgstr "Про..."
+
+#: xfglob/xfglob.c:606 xfsamba/xfsamba_gui.c:1486 xftree/xtree_gui.c:1127
+msgid "Name"
+msgstr "Назва"
+
+#. titles[COL_SIZE] = (preferences & SIZE_IN_KB)?_("Size (Kb)"):_("Size (bytes)");
+#: xfglob/xfglob.c:608 xftree/xtree_gui.c:1129
+msgid "Size (bytes)"
+msgstr "Розм╕р (в байтах)"
+
+#: xfglob/xfglob.c:609 xftree/xtree_gui.c:1130
+msgid "Last changed"
+msgstr "Останн╓ поновлення"
+
+#: xfglob/xfglob.c:610 xftree/xtree_gui.c:1131
+msgid "Mode"
+msgstr "Режим"
+
+#: xftree/xtree_gui.c:1133
+#, fuzzy
+msgid "Group"
+msgstr "Група:"
+
+#: xftree/xtree_gui.c:1207
+#, fuzzy
+msgid "Filter:"
+msgstr "Файл"
+
+#: xftree/xtree_gui.c:1218
+msgid "dirs"
+msgstr ""
+
+#: xftree/xtree_gui.c:1331
+#, fuzzy
+msgid "Show main menu"
+msgstr "Показати номери рядк╕в"
+
+#. some fonts are buggy on startup with iso-8859-1 systems (like mine)
+#: xfdiff/xfdiff_gui.c:526 xfdiff/xfdiff_misc.c:801 xfsamba/xfsamba_gui.c:84
+#: xftree/xtree_mess.c:109
+msgid "Could not load specified font\n"
+msgstr "Не можу завантажити вказаний шрифт\n"
+
+#: xftree/xtree_mess.c:453
+msgid "Override ?"
+msgstr "Переписати?"
+
+#: xftree/xtree_mess.c:454
+msgid "with"
+msgstr ""
+
+#: xftree/xtree_mess.c:533 xftree/xtree_mess.c:534 xftree/xtree_mess.c:550
+#: xftree/xtree_mess.c:551
+#, fuzzy
+msgid "Default xftreerc file cannot be created\n"
+msgstr "Неможливо створити типовий .xfdiffrc файл\n"
+
+#: xftree/xtree_mess.c:588
+#, fuzzy
+msgid "Default xftreerc file cannot be read\n"
+msgstr "Неможливо створити типовий .xfdiffrc файл\n"
+
+#: xftree/xtree_mess.c:800
+msgid ""
+"Xftree handles keyboard shortcuts dynamically.\n"
+"This means that you can open a menu,highlight an entry\n"
+"and press a keyboard key to create the shortcut."
+msgstr ""
+
+#: xftree/xtree_mess.c:809
+msgid ""
+"The Xftree icon view is the ROX-filer. At the moment this has to be "
+"installed\n"
+"separately from XFCE. A ROX-filer specific for XFCE will soon be available."
+msgstr ""
+
+#: xftree/xtree_mess.c:818
+msgid ""
+"Xftree allows you to drag and drop to/from\n"
+"xftree windows running on different hosts.\n"
+"You may use either scp or rsync for the copying.\n"
+"User authentication is done by ssh.\n"
+"See \"man ssh\" if you desire host based\n"
+"instead of password based authentication.\n"
+"\n"
+"Xftree will also accept drops from other\n"
+"filemanagers running on different hosts.\n"
+msgstr ""
+
+#: xftree/xtree_mess.c:834
+msgid ""
+"Xftree can register applications by filename or filetype\n"
+"by selecting \"Register\" from one of the menus or by selecting\n"
+"\"Register application\" on mouse double-click.\n"
+"If you wish to edit the applications that are already registered,\n"
+" please look at ~/.xfce/xtree.reg."
+msgstr ""
+
+#: xftree/xtree_mess.c:843
+msgid ""
+"Xftree handles drag and drop the following way:\n"
+"SHIFT drag+drop --> move\n"
+"CTRL drag+drop --> copy\n"
+"SHIFT-CTRL drag+drop --> link\n"
+"The default drag+drop action is move,\n"
+"but can be changed in the preferences menu.\n"
+"To drag multiple files, use the middle button.\n"
+"Also:\n"
+"Multiple selection by button 1 click-and-drag\n"
+"is available on the first click after a GOTO or REGEN.\n"
+msgstr ""
+
+#: xftree/xtree_mess.c:861
+msgid "Keyboard shortcuts are a fast way to access menu functions."
+msgstr ""
+
+#: xftree/xtree_mess.c:905
+msgid "Xftree results"
+msgstr ""
+
+#: xftree/xtree_mess.c:1158
+#, fuzzy
+msgid "Home directory : "
+msgstr "каталог: %s\n"
+
+#: xfsamba/xfsamba_dnd.c:528 xftree/xtree_pasteboard.c:166
+msgid "The pasteboard is currently empty."
+msgstr ""
+
+#: xfsamba/xfsamba_dnd.c:535 xftree/xtree_pasteboard.c:173
+msgid "Not a valid file transfer pasteboard."
+msgstr ""
+
+#: xftree/xtree_pasteboard.c:244
+msgid "The pasteboard is currently empty.\n"
+msgstr ""
+
+#: xftree/xtree_pasteboard.c:246
+msgid "No pasteboard available."
+msgstr ""
+
+#: xftree/xtree_tar.c:417
+msgid "tar: execution error"
+msgstr ""
+
+#. only 32 elements allowed in TOOLBARICONS
+#: xftree/xtree_toolbar.c:88
+#, fuzzy
+msgid "New icon view"
+msgstr "Нове в╕кно"
+
+#: xftree/xtree_toolbar.c:89
+msgid "New tree view"
+msgstr ""
+
+#: xftree/xtree_toolbar.c:90
+#, fuzzy
+msgid "New terminal"
+msgstr "В╕дкрити в терм╕нал╕"
+
+#: xftree/xtree_toolbar.c:92
+#, fuzzy
+msgid "Run ..."
+msgstr "Перейменувати..."
+
+#: xftree/xtree_toolbar.c:94
+#, fuzzy
+msgid "Update ..."
+msgstr "Поновити"
+
+#: xftree/xtree_toolbar.c:95
+#, fuzzy
+msgid "Go back ..."
+msgstr "Йду назад..."
+
+#: xfsamba/xfsamba_gui.c:1332 xftree/xtree_toolbar.c:100
+#, fuzzy
+msgid "Cut ..."
+msgstr "Про..."
+
+#: xfsamba/xfsamba_gui.c:1333 xftree/xtree_toolbar.c:101
+#, fuzzy
+msgid "Copy ..."
+msgstr "Зупинити..."
+
+#: xfsamba/xfsamba_gui.c:1334 xftree/xtree_toolbar.c:102
+#, fuzzy
+msgid "Paste ..."
+msgstr "Зберегти..."
+
+#: xftree/xtree_toolbar.c:110
+msgid "New file ..."
+msgstr "Новий файл..."
+
+#: xftree/xtree_toolbar.c:337
+#, fuzzy
+msgid "Action"
+msgstr "Д╕╖"
+
+#: xftree/xtree_toolbar.c:338
+msgid "Small icons. "
+msgstr ""
+
+#: xftree/xtree_toolbar.c:339
+#, fuzzy
+msgid "Large icons. "
+msgstr "&Впорядкувати п╕ктограми"
+
+#: xftree/xtree_toolbar.c:342
+#, fuzzy
+msgid "Regen"
+msgstr "Скинути"
+
+#: xftree/xtree_toolbar.c:443
+msgid "Large buttons"
+msgstr ""
+
+#. printf("dbg:%s\n",_("File download failed."));
+#: xftree/xtree_smb.c:175
+#, fuzzy
+msgid "File download failed."
+msgstr "Звантаження файла перервано."
+
+#: xftree/xtree_smb.c:199
+#, fuzzy
+msgid "Downloading files from "
+msgstr "Звантаження файла..."
+
+#: xftree/xtree_smb.c:232
+msgid ""
+"SMB downloads disabled.\n"
+"Command not found"
+msgstr ""
+
+#: xftree/xtree_smb.c:238
+#, fuzzy
+msgid "Cannot open"
+msgstr "Неможливо в╕дкрити tar-файл"
+
+#: xftree/xtree_smb.c:263
+#, fuzzy
+msgid "DnD error"
+msgstr "фатальна помилка"
+
+#: xftree/xtree_smb.c:263
+msgid "Incorrect DnD specification"
+msgstr ""
+
+#: xftree/xtree_smb.c:307
+msgid "Only drops from a single share are allowed"
+msgstr ""
+
+#. convenience location of duplicate dialog texts
+#. non-static
+#: xfdiff/xfdiff.c:116
+msgid "Strip level now set to "
+msgstr "Р╕вень ус╕кання тепер встановлено в "
+
+#: xfdiff/xfdiff.c:117
+msgid "No patch file has been selected."
+msgstr "Файл латки не вибрано."
+
+#: xfdiff/xfdiff.c:118
+msgid "No directory to apply patch has been selected."
+msgstr "Каталог, до якого треба прикласти латку, не вибрано."
+
+#: xfdiff/xfdiff.c:119
+msgid "No left path has been selected."
+msgstr "Не вибрано шлях л╕воруч."
+
+#: xfdiff/xfdiff.c:120
+msgid "No right path has been selected."
+msgstr "Не вибрано шлях праворуч."
+
+#. static
+#: xfdiff/xfdiff.c:122
+msgid "Patch file can not be opened for read!"
+msgstr "Неможливо в╕крити файл латки для читання!"
+
+#: xfdiff/xfdiff.c:123
+msgid ""
+"Files are identical\n"
+"(or binary files that may or may not differ)"
+msgstr ""
+"Файли однаков╕\n"
+"(для дв╕йкових файл╕в це не завжди так)"
+
+#: xfdiff/xfdiff.c:124
+msgid "Patch file is not in unified format"
+msgstr "Файл латки не в ун╕ф╕кованому формат╕"
+
+#: xfdiff/xfdiff.c:125
+msgid "****Empty file****\n"
+msgstr "****Порожн╕й файл****\n"
+
+#. missing color attribute
+#: xfdiff/xfdiff.c:314 xfdiff/xfdiff.c:320
+msgid "****Binary data****\n"
+msgstr "****Дв╕йков╕ дан╕****\n"
+
+#: xfdiff/xfdiff.c:404
+msgid ""
+"You have selected a directory.\n"
+"Should subdirectories be included?"
+msgstr ""
+"Ви вибрали каталог.\n"
+"Включати п╕дкаталоги?"
+
+#: xfdiff/xfdiff.c:469
+msgid " versus "
+msgstr " проти "
+
+#. 10 is size of MAXINT of 32 bits:
+#: xfdiff/xfdiff.c:489 xfdiff/xfdiff.c:493
+msgid "different sections found"
+msgstr "знайдено р╕зн╕ розд╕ли"
+
+#: xfdiff/xfdiff.c:577
+msgid "Include binary files?"
+msgstr "Включати дв╕йков╕ файли?"
+
+#: xfdiff/xfdiff.c:579
+msgid "Include subdirectories?"
+msgstr "Включати п╕дкаталоги?"
+
+#: xfdiff/xfdiff.c:583
+msgid "Working diff...\n"
+msgstr "Шукаю в╕дм╕нност╕...\n"
+
+#: xfdiff/xfdiff.c:948
+msgid ""
+"Patch file has been modified by another process\n"
+"Please reload\n"
+msgstr ""
+"Латку було зм╕нено ╕ншим процесом\n"
+"Перезавантажте, будь ласка\n"
+
+#: xfdiff/xfdiff.c:1158
+msgid "Reversed patch detected. Should I try reversing it?"
+msgstr "Знайдено зворотню латку. Спробувати прикласти зворотню?"
+
+#: xfdiff/xfdiff.c:1167
+msgid "Now forking diff. Please be patient.\n"
+msgstr "Зараз розр╕зняю в╕дм╕нност╕. Будьте терпляч╕.\n"
+
+#: xfdiff/xfdiff.c:1169
+msgid "Finished forking.\n"
+msgstr "Розгалуження завершено.\n"
+
+#: xfdiff/xfdiff.c:1388
+msgid "Running patch...\n"
+msgstr "Латаю...\n"
+
+#: xfdiff/xfdiff.c:1456
+msgid "xfdiff version"
+msgstr "Верс╕я xfdiff"
+
+#: xfdiff/xfdiff.c:1457
+msgid "use xfdiff [ -h | --help | -p] [leftfile] [rightfile]\n"
+msgstr "Використання: xfdiff [ -h | --help | -p] [л╕вий_файл] [правий_файл]\n"
+
+#: xfdiff/xfdiff.c:1458
+msgid "-p : leftfile and rightfile are a patchdir and a patchfile\n"
+msgstr "-p : л╕вий_файл та правий_файл ╓ каталогом латання та файлом латки\n"
+
+#: xfdiff/xfdiff.c:1459
+msgid "-PN: N is strip level (0-9) for patch (quick toggle)\n"
+msgstr "-PN: N р╕вень ус╕кання (0-9) для латки (швидкий перемикач)\n"
+
+#: xfdiff/xfdiff.c:1460
+msgid "-R: patch file is reversed (quick toggle)\n"
+msgstr "-R: файл латки ╓ зворотн╕м (швидкий перемикач)\n"
+
+#: xfdiff/xfdiff.c:1461
+msgid "-N: patch file is not reversed (quick toggle)\n"
+msgstr "-N: файл латки не ╓ зворотн╕м (швидкий перемикач)\n"
+
+#: xfdiff/xfdiff.c:1462
+msgid ""
+"-h, --help : print this message\n"
+"\n"
+msgstr ""
+"-h, --help : друкувати це пов╕домлення\n"
+"\n"
+
+#: xfdiff/xfdiff.c:1463
+msgid "xfdiff (c) Edscott Wilson Garcia 2001, under GNU-GPL\n"
+msgstr "xfdiff (c) Edscott Wilson Garcia 2001, л╕ценз╕я: GNU-GPL\n"
+
+#: xfdiff/xfdiff.c:1464
+msgid ""
+"XFCE modules copyright Olivier Fourdan 1999-2001, under GNU-GPL\n"
+"\n"
+msgstr ""
+"Модул╕ XFCE, авторськ╕ права: Olivier Fourdan 1999-2001, л╕ценз╕я: GNU-GPL\n"
+"\n"
+
+#: xfdiff/xfdiff_diag.c:135
+msgid "Xfdiff diagnostic"
+msgstr "Д╕агностика Xfdiff"
+
+#: xfdiff/xfdiff_gui.c:175
+msgid "A patch file and directory must be selected first!"
+msgstr "Спочатку вибер╕ть каталог ╕ файл латки!"
+
+#: xfdiff/xfdiff_gui.c:187
+msgid "Patch has been undone."
+msgstr "Латку було знято."
+
+#: xfdiff/xfdiff_gui.c:187
+msgid "Patch has been applied."
+msgstr "Латку було застосовано."
+
+#: xfdiff/xfdiff_gui.c:202
+msgid "Please select a name for the patch file in the next dialog."
+msgstr "Будь ласка вибер╕ть назву латки в наступному д╕алоз╕."
+
+#: xfdiff/xfdiff_gui.c:221
+msgid ""
+"XFdiff will now start diff.\n"
+"Please be patient (xfdiff might seem to hang).\n"
+"Diff will be working"
+msgstr ""
+"XFdiff зараз запустить diff.\n"
+"Будьте терпляч╕ (може здатися, що xfdiff п╕двис).\n"
+"Але diff буде працювати"
+
+#: xfdiff/xfdiff_gui.c:228
+msgid "Patch file could not be created"
+msgstr "Не можу створити файл латки"
+
+#: xfdiff/xfdiff_gui.c:233 xfdiff/xfdiff_gui.c:238
+msgid "Strip level for created patch file="
+msgstr "Р╕вень для створеного файла латки="
+
+#: xfdiff/xfdiff_gui.c:240
+msgid " has been created\n"
+msgstr " було створено\n"
+
+#: xfdiff/xfdiff_gui.c:254
+msgid "Patch file creation cancelled"
+msgstr "Скасовано створення файла латки"
+
+#: xfdiff/xfdiff_gui.c:404
+msgid "Line synchronization enabled.\n"
+msgstr "Вв╕мкнено синхрон╕зац╕ю рядк╕в.\n"
+
+#: xfdiff/xfdiff_gui.c:406
+msgid "Line synchronization disabled.\n"
+msgstr "Вимкнено синхрон╕зац╕ю рядк╕в.\n"
+
+#: xfdiff/xfdiff_gui.c:443
+msgid "Patch verbose diagnostics enabled.\n"
+msgstr "Вв╕мкнено детальну д╕агностику латання.\n"
+
+#: xfdiff/xfdiff_gui.c:445
+msgid "Patch verbose diagnostics disabled.\n"
+msgstr "Вимкнено детальну д╕агностику.\n"
+
+#: xfdiff/xfdiff_gui.c:464
+msgid "Line numbers enabled.\n"
+msgstr "Вв╕мкнено нумерац╕ю рядк╕в.\n"
+
+#: xfdiff/xfdiff_gui.c:466
+msgid "Line numbers disabled.\n"
+msgstr "Вимкнено л╕н╕йну нумерац╕ю.\n"
+
+#: xfdiff/xfdiff_gui.c:478
+msgid "Polygons will now be filled.\n"
+msgstr "Багатокутники заповнено не буде.\n"
+
+#: xfdiff/xfdiff_gui.c:480
+msgid "Polygons will now *not* be filled.\n"
+msgstr "Багатокутники тепер *не* буде заповнено.\n"
+
+#: xfdiff/xfdiff_gui.c:494
+msgid "Patch will now be assumed reversed.\n"
+msgstr "Припуска╓мо, що латка ╓ зворотньою.\n"
+
+#: xfdiff/xfdiff_gui.c:496
+msgid "Patch will now be assumed *not* reversed.\n"
+msgstr "Припуска╓мо, що латка *не* ╓ зворотньою.\n"
+
+#.
+#: xfdiff/xfdiff_gui.c:517
+msgid "Font selection"
+msgstr "Виб╕р шрифт╕в"
+
+#: xfdiff/xfdiff_gui.c:585
+msgid "Select highlight background color"
+msgstr "Вибрати кол╕р тла вид╕лення"
+
+#: xfdiff/xfdiff_gui.c:588
+msgid "Select highlight text color"
+msgstr "Вибрати кол╕р тексту вид╕лення"
+
+#: xfdiff/xfdiff_gui.c:686 xfdiff/xfdiff_gui.c:687
+msgid "Warning: cannot read from "
+msgstr "Увага: неможливо прочитати з "
+
+#: xfdiff/xfdiff_gui.c:691 xfdiff/xfdiff_gui.c:692
+msgid "is not in patch file."
+msgstr "не ╓ файлом латки."
+
+#: xfdiff/xfdiff_gui.c:798
+msgid "Default .xfdiffrc file cannot be created\n"
+msgstr "Неможливо створити типовий .xfdiffrc файл\n"
+
+#: xfdiff/xfdiff_gui.c:818
+msgid "Default configuration has been saved\n"
+msgstr "Перв╕сна конф╕гурац╕я записана\n"
+
+#: xfdiff/xfdiff_gui.c:826
+msgid "This is XFDiff "
+msgstr "Це - XFDiff "
+
+#: xfdiff/xfdiff_gui.c:826
+msgid ""
+"\n"
+"(c) by Edscott Wilson Garcia under GNU GPL\n"
+"XFCE modules (c) Olivier Fourdan http://www.xfce.org/"
+msgstr ""
+
+#: xfdiff/xfdiff_gui.c:845
+msgid "There is no next difference"
+msgstr "Б╕льше в╕дм╕нностей нема╓"
+
+#: xfdiff/xfdiff_gui.c:854
+msgid "There is no previous difference"
+msgstr "Перед цим в╕дм╕нностей нема╓"
+
+#: xfdiff/xfdiff_gui.c:876
+msgid "There is no such file"
+msgstr "Такий файл в╕дсутн╕й"
+
+#: xfdiff/xfdiff_gui.c:886
+msgid "There is no next file"
+msgstr "Наступного файла нема╓"
+
+#: xfdiff/xfdiff_gui.c:897
+msgid "There is no previous file"
+msgstr "Попереднього файла нема╓"
+
+#. only spot where directories for input is not OK:
+#: xfdiff/xfdiff_gui.c:984
+msgid "That is a directory (or symlink)"
+msgstr "Це - каталог (або символ╕чне посилання)"
+
+#: xfdiff/xfdiff_gui.c:1169
+msgid "Select left file"
+msgstr "Вибрати файл л╕воруч"
+
+#: xfdiff/xfdiff_gui.c:1170
+msgid "Select right file"
+msgstr "Вибрати файл праворуч"
+
+#: xfdiff/xfdiff_gui.c:1171
+msgid "Select patch file"
+msgstr "Вибрати файл латки"
+
+#: xfdiff/xfdiff_gui.c:1172
+msgid "Select directory where to apply patch"
+msgstr "Вибрати каталог де буде застосована латка"
+
+#: xfdiff/xfdiff_gui.c:1175
+msgid "Switch to patch mode"
+msgstr "Перемикнути в режим латання"
+
+#: xfdiff/xfdiff_gui.c:1178
+msgid "Switch to diff mode"
+msgstr "Перемикнути в режим пошуку розб╕жностей"
+
+#: xfdiff/xfdiff_gui.c:1183 xfdiff/xfdiff_gui.c:1610
+#: xfsamba/xfsamba_gui.c:1274
+msgid "Exit"
+msgstr "Вийти"
+
+#. Create "Settings" menu
+#: xfdiff/xfdiff_gui.c:1186
+msgid "Diff Settings"
+msgstr "Установки diff"
+
+#. shortcut_menu(TOGGLENOT,menu,_("Show diagnostics"),
+#. (gpointer)cb_toggle_diagnostics, (gpointer) silent);
+#: xfdiff/xfdiff_gui.c:1189
+msgid "Font"
+msgstr "Шрифт"
+
+#: xfdiff/xfdiff_gui.c:1190
+msgid "Highlight text color"
+msgstr "Кол╕р тексту вид╕лення"
+
+#: xfdiff/xfdiff_gui.c:1191
+msgid "Highlight background color"
+msgstr "Кол╕р тла вид╕лення"
+
+#: xfdiff/xfdiff_gui.c:1192
+msgid "Fill polygons"
+msgstr "Заповняти багатокутники"
+
+#: xfdiff/xfdiff_gui.c:1193
+msgid "Show line numbers"
+msgstr "Показати номери рядк╕в"
+
+#: xfdiff/xfdiff_gui.c:1195
+msgid "Use line synchronization voids"
+msgstr "Скасування синхрон╕зац╕╖ рядк╕в"
+
+#: xfdiff/xfdiff_gui.c:1201
+msgid "Save settings as default"
+msgstr "Записати установки як типов╕"
+
+#: xfdiff/xfdiff_gui.c:1203
+msgid "Patch Settings"
+msgstr "Установки для латок"
+
+#: xfdiff/xfdiff_gui.c:1205
+msgid "Verbose patch diagnostics"
+msgstr "Розширена д╕агностика латок"
+
+#: xfdiff/xfdiff_gui.c:1207
+msgid "Patch options only active in patch-mode"
+msgstr "Установки латок активн╕ лише в режим╕ латання"
+
+#. watchout, REVERSE_TOGGLE is #define patchM[whatever] at xfdiff.h
+#: xfdiff/xfdiff_gui.c:1212
+msgid "Assume patch is reversed"
+msgstr "Вважати, що латка ╓ зворотньою"
+
+#: xfdiff/xfdiff_gui.c:1214
+msgid "Auto strip level"
+msgstr "Р╕вень автоус╕кання"
+
+#. Create "Actions" menu
+#: xfdiff/xfdiff_gui.c:1243 xfumed/xfumed_gui.c:92
+msgid "Actions"
+msgstr "Д╕╖"
+
+#: xfdiff/xfdiff_gui.c:1244
+msgid "View differences"
+msgstr "Перегляд в╕дм╕нностей"
+
+#: xfdiff/xfdiff_gui.c:1245
+msgid "View differences in new"
+msgstr "Перегляд в╕дм╕нностей наново"
+
+#: xfdiff/xfdiff_gui.c:1247
+msgid "View patch created differences"
+msgstr "Перегляд латки створених в╕дм╕нностей"
+
+#: xfdiff/xfdiff_gui.c:1250
+msgid "View patch created differences in new"
+msgstr "Перегляд латки створених в╕дм╕нностей наново"
+
+#: xfdiff/xfdiff_gui.c:1255
+msgid "Create patch file"
+msgstr "Створити файл латки"
+
+#: xfdiff/xfdiff_gui.c:1262
+msgid "Apply patch to Hard Drive"
+msgstr "Застосувати латку до жорсткого диска"
+
+#: xfdiff/xfdiff_gui.c:1265
+msgid "Undo patch to Hard Drive"
+msgstr "Зняти латку з жорсткого диску"
+
+#: xfdiff/xfdiff_gui.c:1271 xfglob/xfglob.c:1922
+msgid "About"
+msgstr "Про"
+
+#. gtk_button_new_with_label (_("Clear"));
+#. gtk_box_pack_end (GTK_BOX (bbox),button,TRUE,TRUE , 0);
+#. GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
+#. gtk_widget_show (button);
+#. gtk_signal_connect (GTK_OBJECT (button), "clicked",
+#. GTK_SIGNAL_FUNC (on_clear_show_diag),
+#. (gpointer) text);
+#: xfdiff/xfdiff_gui.c:1603
+msgid "Next difference"
+msgstr "Наступна в╕дм╕нн╕сть"
+
+#: xfdiff/xfdiff_gui.c:1606
+msgid "Prev difference"
+msgstr "Попередня в╕дм╕нн╕сть"
+
+#: xfdiff/xfdiff_gui.c:1607
+msgid "Next file"
+msgstr "Наступн╕й файл"
+
+#: xfdiff/xfdiff_gui.c:1608
+msgid "Previous file"
+msgstr "Попередн╕й файл"
+
+#: xfdiff/xfdiff_misc.c:91
+msgid "Could not set selected font"
+msgstr "Неможливо встановити вибраний шрифт"
+
+#: xfdiff/xfdiff_misc.c:130
+msgid "Confirm"
+msgstr "П╕дтвердити"
+
+#: xfdiff/xfdiff_misc.c:130
+msgid "Abort"
+msgstr "Перервати"
+
+#: xfdiff/xfdiff_misc.c:136
+msgid "Alert"
+msgstr "Тривога"
+
+#: xfdiff/xfdiff_misc.c:361
+msgid ""
+"A bug?\n"
+"Please send full traceback to xfce-dev@moongroup.com"
+msgstr ""
+"Помилка?\n"
+"Будь ласка, над╕шл╕ть зв╕т про помилку до xfce-dev@moongroup.com"
+
+#: xfdiff/xfdiff_misc.c:366
+msgid "Low memory (malloc) error: xfdiff_aborting run"
+msgstr "Помилка: Мало пам'ят╕ (malloc), викону╓ться - xfdiff_aborting"
+
+#: xfdiff/xfdiff_misc.c:369
+msgid "file open error: xfdiff_aborting run"
+msgstr "Помилка: неможливо в╕дкрити файл, викону╓ться - xfdiff_aborting"
+
+#: xfdiff/xfdiff_misc.c:372
+msgid "unspecified error: xfdiff_aborting run"
+msgstr "нев╕дома помилка: викону╓ться - xfdiff_aborting"
+
+#: xfdiff/xfdiff_misc.c:604
+msgid ""
+"No file was found for patching\n"
+"Either the directory to apply patch is not correctly selected\n"
+"or an incorrect strip level was used.\n"
+msgstr ""
+"Не знайдено файл для латання\n"
+"Не в╕рно вказано каталог\n"
+"або використано не той р╕вень.\n"
+
+#: xfdiff/xfdiff_misc.c:621
+msgid ""
+"Patch command has produced reject output.\n"
+"See diagnostics window."
+msgstr ""
+"Команда латання створила в╕дкинут╕ частки.\n"
+"Див╕ться в╕кно д╕агностики."
+
+#: xfdiff/xfdiff_misc.c:648
+msgid "No directory was selected!"
+msgstr "Каталог не вибрано!"
+
+#.
+#: xfdiff/xfdiff_misc.c:662
+msgid "Directory or file selection"
+msgstr "Виб╕р каталог або файл"
+
+#: xfdiff/xfdiff_misc.c:697 xfdiff/xfdiff_misc.c:700
+msgid "Please select it in the next dialog."
+msgstr "Будь ласка, вибер╕ть це в наступному д╕алоз╕."
+
+#: xfdiff/xfdiff_misc.c:738
+msgid "File exists, overwrite?"
+msgstr "Файл вже ╕сну╓, переписати?"
+
+#: xfdiff/xfdiff_misc.c:742
+msgid "Cannot open file for write\n"
+msgstr "Неможливо в╕дкрити файл для запису\n"
+
+#: xfdiff/xfdiff_misc.c:924 xfdiff/xfdiff_misc.c:929
+msgid "couldn't allocate color"
+msgstr "неможливо розпод╕лити кол╕р"
+
+#. font color!
+#: xfdiff/xfdiff_misc.c:963 xfdiff/xfdiff_misc.c:987
+msgid "Patch: "
+msgstr "Латка: "
+
+#: xfdiff/xfdiff_misc.c:966 xfdiff/xfdiff_misc.c:992
+msgid " applied at: "
+msgstr " застосувати як: "
+
+#: xfdiff/xfdiff_misc.c:1012
+msgid "Press OK to see patch diffs"
+msgstr "Натисн╕ть ОК для перегляду в╕дм╕нностей латки"
+
+#: xfglob/xfglob.c:460 xfglob/xfglob.c:461
+msgid "Results limit reached"
+msgstr "Досягнуто л╕м╕т результат╕в"
+
+#: xfglob/xfglob.c:469
+msgid "Cancelled"
+msgstr "Скасовано"
+
+#: xfglob/xfglob.c:470
+msgid "Search canceled!\n"
+msgstr "Пошук скасовано!\n"
+
+#: xfglob/xfglob.c:495 xfglob/xfglob.c:525
+msgid "Glob run must finish or be cancelled first."
+msgstr "Процес Glob повинен завершитися або його ма╓ бути скасовано."
+
+#: xfglob/xfglob.c:508
+msgid "Find results.\n"
+msgstr "Пошук результат╕в.\n"
+
+#: xfglob/xfglob.c:588 xfglob/xfglob.c:680
+msgid "Find results..."
+msgstr "Пошук результат╕в..."
+
+#: xfglob/xfglob.c:607 xfglob/xfglob.c:1362
+msgid "Directory"
+msgstr "Каталог"
+
+#: xfglob/xfglob.c:1032
+msgid "Incoherent size considerations!"
+msgstr "Неадекватна р╕зниця розм╕р╕в!"
+
+#. for (j=0;j<i;j++) printf ("%s ",argument[j]);printf ("\n");
+#: xfglob/xfglob.c:1202
+msgid "Result of "
+msgstr "Результат "
+
+#: xfglob/xfglob.c:1213 xfglob/xfglob.c:1556
+msgid "File type :"
+msgstr "Тип файла:"
+
+#: xfglob/xfglob.c:1285
+msgid "Anyone"
+msgstr "Будь-хто"
+
+#. translation of filetypes
+#: xfglob/xfglob.c:1362
+msgid "Any kind"
+msgstr "Будь-який"
+
+#: xfglob/xfglob.c:1362
+msgid "Regular"
+msgstr "Звичайний"
+
+#: xfglob/xfglob.c:1362
+msgid "Symlink"
+msgstr "Символьне посилання"
+
+#: xfglob/xfglob.c:1362
+msgid "Socket"
+msgstr "Сокет"
+
+#: xfglob/xfglob.c:1362
+msgid "Block device"
+msgstr "Блоковий пристр╕й"
+
+#: xfglob/xfglob.c:1362
+msgid "Character device"
+msgstr "Символьний пристр╕й"
+
+#: xfglob/xfglob.c:1362
+msgid "FIFO"
+msgstr "FIFO"
+
+#: xfglob/xfglob.c:1372
+msgid "Xfglob"
+msgstr "Xfglob"
+
+#. *******************************
+#. show the notebook pages:
+#. fourth circle : notebook tabs stuff
+#: xfglob/xfglob.c:1423 xfglob/xfglob.c:1913 xfglob/xfglob.c:1941
+msgid "Find"
+msgstr "Знайти"
+
+#: xfglob/xfglob.c:1435
+msgid "Path : "
+msgstr "Шлях: "
+
+#: xfglob/xfglob.c:1444
+msgid "Browse"
+msgstr "Перегляд"
+
+#: xfglob/xfglob.c:1453
+msgid "File filter : "
+msgstr "Файловий ф╕льтр: "
+
+#: xfglob/xfglob.c:1461
+msgid "What's a file filter?"
+msgstr "Який файловий ф╕льтр?"
+
+#: xfglob/xfglob.c:1468
+msgid ""
+"Basic rules:\n"
+"\n"
+"*  Will match any character zero or more times.\n"
+"?  Will match any character exactly one time\n"
+msgstr ""
+"Базов╕ правила:\n"
+"\n"
+"*  в╕дпов╕да╓ будь-як╕й к╕лькост╕ символ╕в або порожньому м╕сцю.\n"
+"?  в╕дпов╕да╓ будь-якому одному символу\n"
+
+#: xfglob/xfglob.c:1474
+msgid "Search subdirectories too"
+msgstr "Шукати також в п╕дкаталогах"
+
+#: xfglob/xfglob.c:1476
+msgid "Limit results to first : "
+msgstr "Обмежити результати першими:"
+
+#: xfglob/xfglob.c:1489
+msgid "Content search"
+msgstr "Пошук вм╕сту"
+
+#: xfglob/xfglob.c:1501
+msgid "Containing : "
+msgstr "М╕стить: "
+
+#: xfglob/xfglob.c:1512
+msgid "Case sensitive search"
+msgstr "З урахуванням рег╕стру"
+
+#: xfglob/xfglob.c:1513
+msgid "Extended regexp"
+msgstr "Розширений регулярний вираз"
+
+#: xfglob/xfglob.c:1516
+msgid "What's a regexp?"
+msgstr "Що таке регулярний вираз?"
+
+#: xfglob/xfglob.c:1522
+msgid ""
+"Reserved characters for extended regexp are\n"
+". ^ $ [ ] ? * + { } | \\ ( ) : \n"
+"In  basic regular expressions the metacharacters\n"
+"?, +, {, |, (, and ) lose their special meaning.\n"
+"\n"
+"The  period  .   matches  any  single  character.\n"
+"The caret ^ matches at the start of line.\n"
+"The dollar $ matches at the end of line.\n"
+"\n"
+"Characters within [ ] matches any single \n"
+"       character in the list.\n"
+"Characters within [^ ] matches any single\n"
+"       character *not* in the list.\n"
+"Characters inside [ - ] matches a range of\n"
+"       characters (ie [0-9] or [a-z]).\n"
+"\n"
+"A regular expression may be followed by one\n"
+"       of several repetition operators:\n"
+"?      The preceding item is optional and matched\n"
+"       at most once.\n"
+"*      The preceding item will be matched zero\n"
+"       or more times.\n"
+"+      The preceding item will be matched one or\n"
+"       more times.\n"
+"{n}    The preceding item is matched exactly n times.\n"
+"{n,}   The preceding item is matched n or more times.\n"
+"{n,m}  The preceding item is matched at least n times,\n"
+"       but not more than m times.\n"
+"\n"
+"To match any reserved character, precede it with \\. \n"
+"\n"
+"Two regular expressions may be joined by the logical or\n"
+"       operator |.\n"
+"Two regular expressions may be concatenated.\n"
+"\n"
+"More information is available by typing \"man grep\"\n"
+"       at the command prompt.\n"
+msgstr ""
+"Зарезервован╕ символи для розширених вираз╕в:\n"
+". ^ $ [ ] ? * + { } | \\ ( ) : \n"
+"В загальних регулярний. виразах метасимволи\n"
+"?, +, {, |, (, and ) втрачають ╖х особливе значення.\n"
+"\n"
+"Крапка . в╕дпов╕да╓ будь-якому ╓диному символу.\n"
+"Шапка ^ в╕дпов╕да╓ початку рядка.\n"
+"Долар $ в╕дпов╕да╓ к╕нцю рядка.\n"
+"\n"
+"Символи всередин╕ [ ] в╕дпов╕дають будь-яким\n"
+"       символам з╕ списку.\n"
+"Символи всередин╕ [^ ] в╕дпов╕дають будь-яким\n"
+"       символам, в╕дсутн╕м у списку.\n"
+"Символи всередин╕ [ - ] в╕дпов╕дають\n"
+"       д╕апазону символ╕в (напр., [0-9] або [a-z]).\n"
+"\n"
+"За регулярним виразом може йти один\n"
+"       з дек╕лькох оператор╕в повтору:\n"
+"?      попередн╕й елемент ╓\n"
+"       необов'язковим.\n"
+"*      попередн╕й елемент в╕дпов╕да╓\n"
+"       жодному або будь-як╕й к╕лькост╕ його повторень.\n"
+"+      попередн╕й елемент в╕дпов╕да╓\n"
+"       одному або б╕льш╕й к╕лькост╕ повторень.\n"
+"{n}    попередн╕ елемент в╕дпов╕да╓ його n повторенням.\n"
+"{n,}   попередн╕ елемент в╕дпов╕да╓ його n або б╕льше повторенням.\n"
+"{n,m}  попередн╕ елемент в╕дпов╕да╓ його n або б╕льше повторенням,\n"
+"       але менше н╕ж m.\n"
+"\n"
+"Щоб в╕добразити зарезервований символ набер╕ть \\. \n"
+"\n"
+"Два регулярних вирази можна лог╕чно об'╓днати за\n"
+"       допомогою оператора |.\n"
+"Два регулярних вирази можуть бути об'╓днан╕ посл╕довно.\n"
+"\n"
+"Щоб отримати додаткову ╕нформац╕ю, набер╕ть \"man grep\"\n"
+"       у командному рядку.\n"
+
+#: xfglob/xfglob.c:1543
+msgid "File considerations"
+msgstr "Умови щодо файл╕в"
+
+#: xfglob/xfglob.c:1567
+msgid "Stay on single filesystem"
+msgstr "Обмежити одн╕╓ю файловою системою"
+
+#: xfglob/xfglob.c:1568
+msgid "What's a single filesystem?"
+msgstr "Що таке одна файлова система?"
+
+#: xfglob/xfglob.c:1572
+msgid ""
+"Staying on a single filesystem will hinder\n"
+"searching on different physical disk partitions.\n"
+"This is especially useful if you do not want\n"
+"to search into nfs or smb mounts.\n"
+msgstr ""
+"Обмеження одн╕╓ю файловою системою обмежу╓\n"
+"пошук т╕льки ц╕╓ю файловою системою .\n"
+"Це дуже корисно, якщо Ви не хочете\n"
+"робити пошук на змонтованих системах nfs або smb.\n"
+
+#: xfglob/xfglob.c:1594
+msgid "Permission considerations"
+msgstr "Умови щодо дозвол╕в"
+
+#: xfglob/xfglob.c:1598
+msgid "How does permission filtering work?"
+msgstr "Як працю╓ ф╕льтрац╕я дозвол╕в?"
+
+#: xfglob/xfglob.c:1602
+msgid ""
+"When permission filtering is active:\n"
+"-If a file has one of the chosen permission bits,\n"
+"  it will match.\n"
+"-If no permission bit is chosen, files with \n"
+"  no set permission bits will match.\n"
+msgstr ""
+"Коли ф╕льтр по дозволам вв╕мкнено:\n"
+"- якщо файл ма╓ один з вибраних б╕т╕в дозволу,\n"
+"  його буде зараховано\n"
+"- якщо жоден б╕т дозволу не вибрано,\n"
+"  буде зараховано файли без встановлених б╕т╕в.\n"
+
+#: xfglob/xfglob.c:1698
+msgid "User/group considerations"
+msgstr "Умови щодо користувач╕в/груп"
+
+#: xfglob/xfglob.c:1702
+msgid "How does user/group filtering work?"
+msgstr "Як працю╓ ф╕льтрац╕я користувач╕в/груп?"
+
+#: xfglob/xfglob.c:1706
+msgid ""
+"If user and group are both set to any \n"
+"value other than anyone:\n"
+"-files must meet both criteria in order\n"
+"  to match\n"
+msgstr ""
+"Якщо користувача та групу встановлено в будь-яке\n"
+"значення, окр╕м 'будь-який':\n"
+"- т╕льки файли, як╕ в╕дпов╕дають обом умовам\n"
+"  будуть зарахован╕\n"
+
+#: xfglob/xfglob.c:1717
+msgid "User ID: "
+msgstr "╤д. користувача: "
+
+#: xfglob/xfglob.c:1728
+msgid "Group ID: "
+msgstr "╤д. групи: "
+
+#: xfglob/xfglob.c:1743
+msgid "Size considerations"
+msgstr "Умови щодо розм╕ру"
+
+#: xfglob/xfglob.c:1747
+msgid "How does size filtering work?"
+msgstr "Як працю╓ ф╕льтрац╕я по розм╕ру?"
+
+#: xfglob/xfglob.c:1751
+msgid ""
+"-If a size of 0 (zero) is specified for \n"
+" size-less-than, this will be ignored.\n"
+"-If both size-greater-than and size-less-than\n"
+" are specified, both criteria must be met\n"
+" in order for a file to match.\n"
+msgstr ""
+"- Якщо вказано розм╕р 0 (нуль) для умови\n"
+" розм╕р-менше-н╕ж, цю умову буде ╕гноровано.\n"
+"- Якщо вказано обидв╕ умови, розм╕р-б╕льше-н╕ж та\n"
+" розм╕р-менше-н╕ж, виконуватись повинн╕\n"
+"обидв╕.\n"
+
+#: xfglob/xfglob.c:1763
+msgid "Size greater than (KB): "
+msgstr "Розм╕р, б╕льший н╕ж (КБ): "
+
+#: xfglob/xfglob.c:1778
+msgid "Size less than (KB): "
+msgstr "Розм╕р, менший н╕ж (КБ): "
+
+#: xfglob/xfglob.c:1798
+msgid "Time considerations"
+msgstr "Умови щодо часу"
+
+#: xfglob/xfglob.c:1802
+msgid "How does time filtering work?"
+msgstr "Як працю╓ ф╕льтрац╕я по часу?"
+
+#: xfglob/xfglob.c:1806
+msgid ""
+"Three different time modes may be selected:\n"
+"*modified:\n"
+"  This changes when the file is modified, e.g.\n"
+"  by mknod(2), truncate(2), utime(2) and write(2)\n"
+" (of  more than  zero  bytes). Moreover, modification\n"
+"  time of a directory is changed by the creation or \n"
+"  deletion of  files  in  that directory. Modification\n"
+"  time is not changed for changes in owner, group,\n"
+"  hard link count, or mode.\n"
+"\n"
+"*changed:\n"
+"  This field is changed by writing or setting inode\n"
+"  information (i.e., owner, group, link count, mode).\n"
+"\n"
+"*accessed:\n"
+"  This field is changed by file accesses, e.g. by\n"
+"  exec(2), mknod(2), pipe(2), utime(2) and read(2)\n"
+"  (of more than zero bytes). Other routines, like\n"
+"  mmap(2), may or may not update access time.\n"
+"\n"
+"Please note: after filtering a file through glob, it\n"
+"will have its access time altered, so two consecutive\n"
+"runs will not produce identical results.\n"
+msgstr ""
+"Може бути вибрано три режими:\n"
+"*редаговано:\n"
+"  Це поле зм╕ню╓ться при редагуванн╕ файла, напр.,\n"
+"  з mknod(2), truncate(2), utime(2) та write(2)\n"
+" (при ненульов╕й к╕лькост╕ байт). Окр╕м того, зм╕на\n"
+"  час редагування каталогу зм╕ню╓ться при створенн╕ або\n"
+"  вилученн╕ файл╕в в цьому каталоз╕. На це поле\n"
+"  не вплива╓ зм╕на власника, групи,\n"
+"  к╕лькост╕ жорстких посилань та режиму.\n"
+"\n"
+"*зм╕нено:\n"
+"  Це поле зм╕ню╓ться при запис╕ або установленн╕\n"
+"  ╕нформац╕╖ inode (напр., власник, група, к╕лькисть посилань, режим).\n"
+"\n"
+"*доступ:\n"
+"  Це поле зм╕ню╓ться при доступ╕ до файла, напр., з\n"
+"  exec(2), mknod(2), pipe(2), utime(2) та read(2)\n"
+"  (при ненульов╕й к╕лькост╕ байт). ╤нш╕ процедури, як\n"
+"  mmap(2), можуть як зм╕нювати так ╕ не зм╕нювати час доступу.\n"
+"\n"
+"Зауваження: п╕сля ф╕льтрац╕╖ файла через glob, в╕н буде\n"
+"мати зм╕нений час доступу, тобто два посл╕довних\n"
+"запуска можуть не дати один результат.\n"
+
+#: xfglob/xfglob.c:1818
+msgid "Modified"
+msgstr "Зм╕нений"
+
+#: xfglob/xfglob.c:1819
+msgid "Changed"
+msgstr "Зм╕нений"
+
+#: xfglob/xfglob.c:1820
+msgid "Accessed"
+msgstr "Досягнуто"
+
+#: xfglob/xfglob.c:1826
+msgid "In the previous : "
+msgstr "В попередьньому: "
+
+#: xfglob/xfglob.c:1836
+msgid "Minutes"
+msgstr "Хвилин"
+
+#: xfglob/xfglob.c:1837
+msgid "Hours"
+msgstr "Годин"
+
+#: xfglob/xfglob.c:1838
+msgid "Days"
+msgstr "Дн╕в"
+
+#: xfglob/xfglob.c:1839
+msgid "Months"
+msgstr "М╕сяц╕в"
+
+#: xfglob/xfglob.c:1870
+msgid "General considerations"
+msgstr "Загальн╕ умови"
+
+#: xfglob/xfglob.c:1880
+msgid "Do not look into binary files"
+msgstr "Не заглядати в дв╕йков╕ файли"
+
+#: xfglob/xfglob.c:1882
+msgid "Output count of matching lines"
+msgstr "Виводити к╕льк╕сть в╕дпов╕дних рядк╕в"
+
+#: xfglob/xfglob.c:1884
+msgid "Match anywhere"
+msgstr "Сп╕впад╕ння будь-де"
+
+#: xfglob/xfglob.c:1885
+msgid "Match whole words only"
+msgstr "Сп╕впадання лише у ц╕лих словах"
+
+#: xfglob/xfglob.c:1886
+msgid "Match whole lines only"
+msgstr "Сп╕впадання лише у повних рядках"
+
+#: xfglob/xfglob.c:1887
+msgid "Output files where no match is found"
+msgstr "Виводити файли де нема╓ сп╕впадань"
+
+#: xfglob/xfglob.c:1916
+msgid "Filter options"
+msgstr "Опц╕╖ ф╕льтру"
+
+#: xfglob/xfglob.c:1919
+msgid "Content options"
+msgstr "Опц╕╖ зм╕сту"
+
+#: xfglob/xfglob.c:1947
+msgid "Results"
+msgstr "Результати"
+
+#: xfglob/xfglob.c:1962
+msgid "working..."
+msgstr "працюю..."
+
+#: xfglob/xfglob.c:1965
+msgid "Cancel Search"
+msgstr "В╕дм╕нити пошук"
+
+#: xfglob/xfglob.c:2014
+msgid "Nothing found...\n"
+msgstr "Н╕чого не знайдено...\n"
+
+#: xfglob/xfglob.c:2022
+msgid "Files found="
+msgstr "Файл╕в знайдено="
+
+#: xfglob/xfglob.c:2025
+msgid "(interrupted because limit exceded)"
+msgstr "(перервано тому, що перевищено обмеження)"
+
+#: xfglob/xfglob.c:2079
+msgid "lines"
+msgstr "рядки"
+
+#: xfglob/xfglob.c:2145
+msgid "unable to stat:"
+msgstr "неможливо зробити stat:"
+
+#: xfclock/xfclock.c:118
+msgid "XFClock - XFce Clock & Calendar"
+msgstr "XFClock - Годинник-календар XFce"
+
+#: xfclock/xfclock_cb.c:217
+msgid ""
+"XFClock\n"
+"(c) 1997-2002 Olivier Fourdan"
+msgstr ""
+"XFClock\n"
+"(c) 1997-2002 Olivier Fourdan"
+
+#: xfclock/xfclock_config.c:53
+#, c-format
+msgid ""
+"XFclock : Syntax error in configuration file\n"
+"(%s)\n"
+msgstr ""
+"XFclock : Синтаксична помилка в файл╕ налаштувань\n"
+"(%s)\n"
+
+#: xfclock/xfclock_config.c:61
+#, c-format
+msgid ""
+"XFclock : Data mismatch error in config file\n"
+"(%s)\n"
+msgstr ""
+"XFclock : Нев╕рн╕ дан╕ в файл╕ налаштувань\n"
+"(%s)\n"
+
+#: xfclock/xfclock_menus.c:48
+msgid "Hide/show menubar"
+msgstr "Сховати/показати панель меню"
+
+#: xfclock/xfclock_menus.c:54 xfclock/xfclock_menus.c:103
+msgid "Hide/show calendar"
+msgstr "Сховати/показати календар"
+
+#. Create "Settings" menu
+#: xfclock/xfclock_menus.c:96 xfwm/xfwm.c:892
+msgid "Settings"
+msgstr "Параметри"
+
+#: xfclock/xfclock_menus.c:119
+msgid "24 hour mode"
+msgstr "24-годинний режим"
+
+#: xfclock/xfclock_menus.c:126
+msgid "Display AM/PM"
+msgstr "Показувати AM/PM"
+
+#: xfclock/xfclock_menus.c:133
+msgid "Display seconds"
+msgstr "Показувати секунди"
+
+#: xfclock/xfclock_menus.c:144
+msgid "Background color..."
+msgstr "Кол╕р тла..."
+
+#: xfclock/xfclock_menus.c:149
+msgid "Foreground color..."
+msgstr "Кол╕р переднього плану..."
+
+#: xfclock/xfclock_menus.c:154
+msgid "Font..."
+msgstr "Шрифт..."
+
+#: xfclock/xfclock_menus.c:163
+msgid "Hide menubar"
+msgstr "Сховати панель меню"
+
+#. Create "Calendar options" menu
+#: xfclock/xfclock_menus.c:169
+msgid "Calendar Options"
+msgstr "Параметри календаря"
+
+#: xfclock/xfclock_menus.c:176
+msgid "Mark Fridays"
+msgstr "Вид╕ляти п'ятниц╕"
+
+#: xfclock/xfclock_menus.c:183
+msgid "Mark Saturdays"
+msgstr "Вид╕ляти суботи"
+
+#: xfclock/xfclock_menus.c:190
+msgid "Mark Sundays"
+msgstr "Вид╕ляти нед╕л╕"
+
+#: xfclock/xfclock_menus.c:201
+msgid "Show week numbers"
+msgstr "Показувати номери тижн╕в"
+
+#: xfclock/xfclock_menus.c:208
+msgid "Show day names"
+msgstr "Показувати назви дн╕в"
+
+#: xfclock/xfclock_menus.c:215
+msgid "Show heading"
+msgstr "Показувати заголовок"
+
+#: xfclock/xfclock_menus.c:226
+msgid "Week starts on Monday"
+msgstr "Тиждень розпочина╓ться в понед╕лок"
+
+#: xfmouse/xfmouse.c:66
+msgid "xfmouse: Error, cannot open display.\n"
+msgstr "Помилка виконання xfmouse, неможливо в╕дкрити в╕кно.\n"
+
+#: xfmouse/xfmouse.c:67
+msgid "Is X running and $DISPLAY correctly set ?\n"
+msgstr "Перев╕рте, чи завантажено X та в╕рно встановлено $DISPLAY.\n"
+
+#: xfmouse/xfmouse.c:144
+msgid "XFMouse - XFce Mouse Configuration"
+msgstr "XFMouse - налаштування мишки XFce"
+
+#: xfmouse/xfmouse.c:177
+msgid "Button Settings"
+msgstr "Установки кнопок"
+
+#: xfmouse/xfmouse.c:225
+msgid "Motion Settings"
+msgstr "Установки руху"
+
+#: xfmouse/xfmouse.c:252
+msgid "Threshold : "
+msgstr "Пор╕г: "
+
+#: xfmouse/xfmouse.c:261
+msgid "Acceleration : "
+msgstr "Прискорення: "
+
+#: xfbd/xfbd.c:695 xfmouse/xfmouse.c:441
+#, c-format
+msgid "Usage : %s [OPTIONS]\n"
+msgstr "Вживання: %s [ОПЦ╤╥]\n"
+
+#: xfbd/xfbd.c:696 xfmouse/xfmouse.c:442
+msgid "   Where OPTIONS are :\n"
+msgstr "   Де ОПЦ╤╥ означають :\n"
+
+#: xfmouse/xfmouse.c:443
+msgid "   -i : interactive\n"
+msgstr " -i : ╕нтерактивно\n"
+
+#: xfmouse/xfmouse.c:444
+msgid ""
+"   -d : apply configuration and exit (default)\n"
+"\n"
+msgstr ""
+" -d : застосувати налаштування ╕ вийти (типовий)\n"
+"\n"
+
+#: xfbd/xfbd.c:699 xfmouse/xfmouse.c:445
+#, c-format
+msgid ""
+"%s is part of the XFce distribution, written by Olivier Fourdan\n"
+"\n"
+msgstr "%s ╓ частиною дистрибутиву XFce, автор: Olivier Fourdan\n"
+
+#: xfsound/xfsound.c:75
+msgid "New Desk"
+msgstr "Нова ст╕льниця"
+
+#: xfsound/xfsound.c:76
+msgid "Add Window"
+msgstr "Додати в╕кно"
+
+#: xfsound/xfsound.c:77
+msgid "Raise Window"
+msgstr "П╕дняти в╕кно"
+
+#: xfsound/xfsound.c:78
+msgid "Lower Window"
+msgstr "Опустити в╕кно"
+
+#: xfsound/xfsound.c:79
+msgid "Configure Window"
+msgstr "Налаштувати в╕кно"
+
+#: xfsound/xfsound.c:80
+msgid "Focus Change"
+msgstr "Зм╕на фокуса"
+
+#: xfsound/xfsound.c:81
+msgid "Destroy Window"
+msgstr "Знищити в╕кно"
+
+#: xfsound/xfsound.c:82
+msgid "Iconify"
+msgstr "М╕н╕м╕зувати"
+
+#: xfsound/xfsound.c:83
+msgid "De-iconify"
+msgstr "Дем╕н╕м╕зувати"
+
+#: xfsound/xfsound.c:84
+msgid "Shade"
+msgstr "Згорнути"
+
+#: xfsound/xfsound.c:85
+msgid "Un-Shade"
+msgstr "Розгорнути"
+
+#: xfsound/xfsound.c:86
+msgid "Maximize"
+msgstr "Максим╕зувати"
+
+#: xfsound/xfsound.c:87
+msgid "De-maximize"
+msgstr "Демаксим╕зувати"
+
+#: xfsound/xfsound.c:89
+msgid "Shutdown"
+msgstr "Вимкнути"
+
+#: xfsound/xfsound.c:90
+msgid "Unknown"
+msgstr "Нев╕домий"
+
+#: xfsound/xfsound.c:442
+msgid "XFSound - XFce Sound Manager"
+msgstr "XFSound - Менеджер звуку XFce"
+
+#: xfsound/xfsound.c:489
+msgid "Event : "
+msgstr "Под╕я: "
+
+#: xfsound/xfsound.c:496
+msgid "Sound file : "
+msgstr "Звуковий файл: "
+
+#: xfsound/xfsound.c:503
+msgid "Test"
+msgstr "Тест"
+
+#: xfsound/xfsound.c:543
+msgid "Play Sound"
+msgstr "Програвати звук"
+
+#: xfsound/xfsound.c:551
+msgid "Command : "
+msgstr "Команда: "
+
+#: xfsound/xfsound.c:575
+msgid "Internal"
+msgstr "Внутр╕шня"
+
+#: xfsound/xfsound.c:581
+msgid "External"
+msgstr "Зовн╕шня"
+
+#: xfbd/xfbd.c:280
+msgid ""
+"Error\n"
+"Cannot open file"
+msgstr ""
+"Помилка\n"
+"Неможливо в╕дкрити файл"
+
+#: xfbd/xfbd.c:282
+msgid ""
+"Error\n"
+"Cannot allocate colors"
+msgstr ""
+"Помилка\n"
+"Неможливо вид╕лити кольори"
+
+#: xfbd/xfbd.c:284
+msgid ""
+"Error\n"
+"File format invalid"
+msgstr ""
+"Помилка\n"
+"Нев╕рний формат файла"
+
+#: xfbd/xfbd.c:286
+msgid ""
+"Error\n"
+"Color definition invalid"
+msgstr ""
+"Помилка\n"
+"Нев╕рне визначення кольору"
+
+#: xfbd/xfbd.c:288
+msgid ""
+"Error\n"
+"Not enough Memory"
+msgstr ""
+"Помилка\n"
+"Недостатньо пам'ят╕"
+
+#: xfbd/xfbd.c:405
+msgid "XFbd - XFce Backdrop Manager"
+msgstr "XFbd - Менеджер шпалер XFce"
+
+#: xfbd/xfbd.c:448 xfbd/xfbdmgr.c:148
+msgid "Filename : "
+msgstr "Назва файла: "
+
+#: xfbd/xfbd.c:470
+msgid "Display image : "
+msgstr "Показувати зображення: "
+
+#: xfbd/xfbd.c:477
+msgid "Tiled"
+msgstr "Кахелем"
+
+#: xfbd/xfbd.c:485
+msgid "Stretched"
+msgstr "Розтягнути"
+
+#: xfbd/xfbd.c:493
+msgid "Auto"
+msgstr "Автоматично"
+
+#: xfbd/xfbd.c:697
+msgid "   -i : interactive, prompts for backdrop to display\n"
+msgstr "  -i : ╕нтерактивно\n"
+
+#: xfbd/xfbd.c:698
+msgid ""
+"   -d : display, reads configuration and exit (default)\n"
+"\n"
+msgstr ""
+" -d : показати, прочитати налаштування ╕ вийти (звичайно)\n"
+"\n"
+
+#: xfbd/xfbdmgr.c:89
+msgid "xfbdmgr - XFCE List Manager"
+msgstr "xfbdmgr - Менеджер списк╕в XFCE"
+
+#: xfbd/xfbdmgr.c:257
+msgid "File not found.\n"
+msgstr "Файл не знайдено.\n"
+
+#: xfwm/xfwm.c:862
+msgid "&Restart"
+msgstr "&Перезапустити"
+
+#: xfwm/xfwm.c:863
+msgid "&Quit"
+msgstr "&Вийти"
+
+#: xfwm/xfwm.c:876
+msgid "&Move"
+msgstr "&Пересунути"
+
+#: xfwm/xfwm.c:877
+msgid "&Resize"
+msgstr "&Зм╕нити розм╕р"
+
+#: xfwm/xfwm.c:878
+msgid "(De)&Iconify"
+msgstr "(Де)&м╕н╕м╕зувати"
+
+#: xfwm/xfwm.c:879
+msgid "(Un)&Stick"
+msgstr "(В╕д)&прил╕пити"
+
+#: xfwm/xfwm.c:880
+msgid "(Un)S&hade"
+msgstr "(Роз)з&горнути"
+
+#: xfwm/xfwm.c:881
+msgid "(Un)Ma&ximize"
+msgstr "(Де)максим╕&зувати"
+
+#: xfwm/xfwm.c:883
+msgid "Se&nd to..."
+msgstr "В╕д╕с&лати..."
+
+#: xfwm/xfwm.c:884
+msgid "S&witch to..."
+msgstr "Пере&микнути до..."
+
+#: xfwm/xfwm.c:886
+msgid "&Close"
+msgstr "&Закрити"
+
+#: xfwm/xfwm.c:888
+msgid "User Menu"
+msgstr "Меню користувача"
+
+#: xfwm/xfwm.c:889
+msgid "Edit menu..."
+msgstr "Виправити меню..."
+
+#: xfwm/xfwm.c:893
+msgid "&Mouse..."
+msgstr "&Миша..."
+
+#: xfwm/xfwm.c:894
+msgid "&Backdrop..."
+msgstr "&Шпалери..."
+
+#: xfwm/xfwm.c:895
+msgid "&Sound..."
+msgstr "&Звук..."
+
+#: xfwm/xfwm.c:897
+msgid "&New window"
+msgstr "&Нове в╕кно"
+
+#: xfwm/xfwm.c:898
+msgid "&User Menu"
+msgstr "Меню &користувача"
+
+#: xfwm/xfwm.c:902
+msgid "&Arrange icons"
+msgstr "&Впорядкувати п╕ктограми"
+
+#: xfwm/xfwm.c:903
+msgid "&Iconify all"
+msgstr "&М╕н╕м╕зувати все"
+
+#: xfwm/xfwm.c:904
+msgid "&Refresh"
+msgstr "&Поновити"
+
+#: xfwm/xfwm.c:905
+msgid "Shuffle &Up"
+msgstr "&Перем╕стити вгору"
+
+#: xfwm/xfwm.c:906
+msgid "Shuffle &Down"
+msgstr "Перем╕стити &вниз"
+
+#: xfwm/xfwm.c:908
+msgid "&Settings"
+msgstr "&Установки"
+
+#: xfwm/xfwm.c:910
+msgid "&Quit XFwm"
+msgstr "&Вийти з XFwm"
+
+#: xfwm/xfwm.c:912
+msgid "&Full Screen"
+msgstr "Повний &екран"
+
+#: xfwm/xfwm.c:913
+msgid "&Vertical"
+msgstr "&Вертикально"
+
+#: xfwm/xfwm.c:914
+msgid "&Horizontal"
+msgstr "&Горизонтально"
+
+#: xfwm/xfwm.c:1244
+msgid "xfwm terminated: "
+msgstr "xfwm завершено: "
+
+#: xfsamba/xfsamba.c:260
+msgid "Samba failure! Xfsamba could not find file:"
+msgstr "Помилка Samba! XFsamba не вдалося знайти файл:"
+
+#: xfsamba/xfsamba.c:268
+msgid "(please install Samba or else correct the PATH environment variable)"
+msgstr "(будь ласка, встанов╕ть Samba або виправте зм╕нну середовища PATH)"
+
+#: xfsamba/xfsamba_download.c:86
+msgid "File download failed. See diagnostics for reason."
+msgstr "Зб╕й звантаження файла. Причину можна побачити у д╕агностиц╕."
+
+#. upload was successful:
+#: xfsamba/xfsamba_download.c:90
+msgid "Download done."
+msgstr "Звантаження завершено."
+
+#: xfsamba/xfsamba_download.c:126
+msgid "Downloading file..."
+msgstr "Звантаження файла..."
+
+#: xfsamba/xfsamba_download.c:139
+msgid "File download cancelled."
+msgstr "Звантаження файла перервано."
+
+#: xfsamba/xfsamba_download.c:147
+msgid "Download failed."
+msgstr "Зб╕й звантаження."
+
+#: xfsamba/xfsamba_gui.c:319
+msgid ""
+"If you have win95 nodes on your network, xfsamba might not find\n"
+"a master browser. If you start smb services on your linux box,\n"
+"making it a samba-server, the problem will be fixed as long as\n"
+"the win95 box(es) are reset. You know the routine, reset wind*ws\n"
+"for changes to take effect. Otherwise,\n"
+"you must type in the node to be browsed and hit RETURN.\n"
+msgstr ""
+"Якщо у мереж╕ ╓ WIN95, можливо, xfsamba не може знайти\n"
+"головний сервер перегляду. Якщо Ви запустили службу smb на сервер╕ Linux,\n"
+"створюючи сервер SMB, ця проблема може бути подолана\n"
+"перезапуском ус╕х машин WIN95 в мереж╕. Процедура Вам знайома:\n"
+"просто перезавантажте win*dows. ╤накше,\n"
+"Введ╕ть вузол для перегляду ╕ натиснути Enter.\n"
+
+#: xfsamba/xfsamba_gui.c:324
+msgid ""
+"Full drag and drop capability is provided between xfsamba and\n"
+"the companion file browser \"xftree\". Drag and drop may or not\n"
+"work with other file browsers"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:331
+msgid ""
+"In order to mount SMB share, the following samba files must be suid-root:\n"
+"- smbmnt\n"
+"- smbumount\n"
+"these file are usually in /usr/bin, and root must perform:\n"
+"$ chmod u+s smbmount smbumount\n"
+"(This option is not available in FreeBSD4.4)"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:343
+msgid ""
+"To search for files on remote SMB shares\n"
+"first mount the share with the mount tool\n"
+"and then use the xftree search utility to do the search\n"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:350
+msgid ""
+"To view differences on a remote SMB share\n"
+"first mount the share with the mount tool\n"
+"and then use the xftree diff utility to display the differences.\n"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:358
+msgid "This is XFSamba "
+msgstr "Це - XFSamba "
+
+#: xfsamba/xfsamba_gui.c:358
+#, fuzzy
+msgid ""
+"\n"
+"(c) Edscott Wilson Garcia under GNU GPL"
+msgstr "xfdiff (c) Edscott Wilson Garcia 2001, л╕ценз╕я: GNU-GPL\n"
+
+#: xfsamba/xfsamba_gui.c:542
+msgid "Please provide information for server "
+msgstr "Будь ласка, вкаж╕ть ╕нформац╕ю для сервера "
+
+#: xfsamba/xfsamba_gui.c:544
+msgid "Please provide browsing preferences "
+msgstr "Будь ласка, вкаж╕ть установки перегляду "
+
+#: xfsamba/xfsamba_gui.c:561
+msgid "Username : "
+msgstr "Користувач: "
+
+#: xfsamba/xfsamba_gui.c:585
+msgid "Password  : "
+msgstr "Пароль: "
+
+#: xfsamba/xfsamba_gui.c:625 xfsamba/xfsamba_gui.c:631
+#, fuzzy
+msgid "A single file can be selected!"
+msgstr "Необх╕дно вибрати файл!"
+
+#: xfsamba/xfsamba_gui.c:644 xfsamba/xfsamba_gui.c:650
+#: xfsamba/xfsamba_gui.c:663 xfsamba/xfsamba_gui.c:669
+#: xfsamba/xfsamba_gui.c:719 xfsamba/xfsamba_gui.c:725
+#, fuzzy
+msgid "A single directory must be selected!"
+msgstr "Необх╕дно вибрати каталог!"
+
+#: xfsamba/xfsamba_gui.c:683 xfsamba/xfsamba_gui.c:706
+msgid "Something to be deleted must be selected!"
+msgstr "Якщо щось треба видалити, то його треба спочатку вибрати!"
+
+#: xfsamba/xfsamba_gui.c:694
+msgid "Only elements from a single share may be selected!"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1041
+msgid "Going to master browser..."
+msgstr "Прямую до головного сервера перегляду..."
+
+#: xfsamba/xfsamba_gui.c:1051
+msgid "Going back..."
+msgstr "Йду назад..."
+
+#: xfsamba/xfsamba_gui.c:1063
+msgid "Going forward..."
+msgstr "Йду вперед..."
+
+#: xfsamba/xfsamba_gui.c:1079
+msgid "Attempting to stop query..."
+msgstr "Намагаюся зупинити запит..."
+
+#: xfsamba/xfsamba_gui.c:1083
+msgid "Query stopped."
+msgstr "Запит зупинено."
+
+#. (s): multiple file upload/download enabled by DnD mostly
+#: xfsamba/xfsamba_gui.c:1268
+msgid "Download..."
+msgstr "Звантажити..."
+
+#: xfsamba/xfsamba_gui.c:1269
+msgid "Upload..."
+msgstr "В╕двантажити..."
+
+#: xfsamba/xfsamba_gui.c:1271
+msgid "New folder..."
+msgstr "Нова тека..."
+
+#: xfsamba/xfsamba_gui.c:1272
+msgid "Delete..."
+msgstr "Стерти..."
+
+#: xfsamba/xfsamba_gui.c:1273 xfsamba/xfsamba_tar.c:443
+msgid "Tar..."
+msgstr "Tar..."
+
+#: xfsamba/xfsamba_gui.c:1278
+#, fuzzy
+msgid "Paste..."
+msgstr "Зберегти..."
+
+#: xfsamba/xfsamba_gui.c:1279
+#, fuzzy
+msgid "Cut..."
+msgstr "Про..."
+
+#: xfsamba/xfsamba_gui.c:1280
+#, fuzzy
+msgid "Copy..."
+msgstr "Зупинити..."
+
+#. GOTO
+#: xfsamba/xfsamba_gui.c:1283
+msgid "Go"
+msgstr "Перейти"
+
+#: xfsamba/xfsamba_gui.c:1284
+msgid "Home..."
+msgstr "Дом╕вка..."
+
+#: xfsamba/xfsamba_gui.c:1285
+msgid "Reload..."
+msgstr "Перезавантажити..."
+
+#: xfsamba/xfsamba_gui.c:1286
+msgid "Forward..."
+msgstr "Вперед..."
+
+#: xfsamba/xfsamba_gui.c:1287
+msgid "Back..."
+msgstr "Назад..."
+
+#: xfsamba/xfsamba_gui.c:1290
+msgid "Local file browser"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1291
+msgid "Mount remote share"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1295
+msgid "Show diagnostics"
+msgstr "Показати д╕агностику"
+
+#: xfsamba/xfsamba_gui.c:1297
+msgid "Hide diagnostics"
+msgstr "Сховати д╕агностику"
+
+#: xfsamba/xfsamba_gui.c:1299
+msgid "Show browser links"
+msgstr "Показати зв'язки переглядача"
+
+#: xfsamba/xfsamba_gui.c:1301
+msgid "Hide browser links"
+msgstr "Сховати зв'язки переглядача"
+
+#: xfsamba/xfsamba_gui.c:1307
+msgid "Browse as..."
+msgstr "Зм╕нити користувача..."
+
+#: xfsamba/xfsamba_gui.c:1313
+#, fuzzy
+msgid "Mounting SMB shares"
+msgstr "Пересування файла...\n"
+
+#: xfsamba/xfsamba_gui.c:1314
+#, fuzzy
+msgid "Searching"
+msgstr "Попередження"
+
+#: xfsamba/xfsamba_gui.c:1315
+#, fuzzy
+msgid "Differences"
+msgstr "В╕дм╕нност╕..."
+
+#: xfsamba/xfsamba_gui.c:1316
+#, fuzzy
+msgid "Master browsers"
+msgstr "Про головний сервер перегляду..."
+
+#: xfsamba/xfsamba_gui.c:1317
+#, fuzzy
+msgid "About xfsamba"
+msgstr "Про xfsamba..."
+
+#: xfsamba/xfsamba_gui.c:1321
+msgid "Stop ..."
+msgstr "Зупинити..."
+
+#: xfsamba/xfsamba_gui.c:1325
+#, fuzzy
+msgid "Xftree ..."
+msgstr "В╕дм╕нност╕..."
+
+#: xfsamba/xfsamba_gui.c:1327
+msgid "Back ..."
+msgstr "Назад..."
+
+#: xfsamba/xfsamba_gui.c:1328
+msgid "Forward ..."
+msgstr "Вперед..."
+
+#: xfsamba/xfsamba_gui.c:1329
+msgid "Reload ..."
+msgstr "Перезавантажити..."
+
+#: xfsamba/xfsamba_gui.c:1330
+msgid "Home ..."
+msgstr "Дом╕вка..."
+
+#: xfsamba/xfsamba_gui.c:1335
+msgid "New folder ..."
+msgstr "Нова тека..."
+
+#: xfsamba/xfsamba_gui.c:1338
+#, fuzzy
+msgid "Mount ..."
+msgstr "Про..."
+
+#: xfsamba/xfsamba_gui.c:1339
+msgid "Download ..."
+msgstr "Звантажити..."
+
+#: xfsamba/xfsamba_gui.c:1340
+msgid "Upload ..."
+msgstr "В╕двантажити..."
+
+#: xfsamba/xfsamba_gui.c:1341
+msgid "Tar ..."
+msgstr "Tar ..."
+
+#: xfsamba/xfsamba_gui.c:1343
+msgid "Set View 1"
+msgstr "Вигляд 1"
+
+#: xfsamba/xfsamba_gui.c:1344
+msgid "Set View 2"
+msgstr "Вигляд 2"
+
+#: xfsamba/xfsamba_gui.c:1345
+msgid "Set View 3"
+msgstr "Вигляд 3"
+
+#: xfsamba/xfsamba_gui.c:1346
+#, fuzzy
+msgid "Set View 4"
+msgstr "Вигляд 3"
+
+#: xfsamba/xfsamba_gui.c:1348
+msgid "Help ..."
+msgstr "Дов╕дка..."
+
+#: xfsamba/xfsamba_gui.c:1432
+msgid "Location : "
+msgstr "Адреса: "
+
+#: xfsamba/xfsamba_gui.c:1446
+msgid "Show IP"
+msgstr "Показати IP"
+
+#. location shares
+#: xfsamba/xfsamba_gui.c:1472
+msgid "Location shares : "
+msgstr "Локальн╕ сп╕льн╕ ресурси: "
+
+#: xfsamba/xfsamba_gui.c:1487
+msgid "Size"
+msgstr "Розм╕р"
+
+#: xfsamba/xfsamba_gui.c:1488
+msgid "Date"
+msgstr "Дата"
+
+#: xfsamba/xfsamba_gui.c:1489
+msgid "Comment"
+msgstr "Коментар"
+
+#. location computer links
+#: xfsamba/xfsamba_gui.c:1538
+msgid "Location known servers : "
+msgstr "В╕дом╕ локальн╕ сервери: "
+
+#. location workgroup links
+#: xfsamba/xfsamba_gui.c:1566
+msgid "Location known workgroups : "
+msgstr "В╕дом╕ локальн╕ робоч╕ групи: "
+
+#: xfsamba/xfsamba_gui.c:1628
+msgid "Welcome to xfsamba."
+msgstr "Ласкаво просимо до xfsamba."
+
+#. no jalo para arreglar directorios:
+#. gtk_ctree_sort_node ((GtkCTree *)shares,(GtkCTreeNode *)selected.node);
+#.
+#: xfsamba/xfsamba_list.c:236
+msgid "Retrieve done."
+msgstr "Отримано."
+
+#: xfsamba/xfsamba_list.c:241 xfsamba/xfsamba_smblookup.c:175
+msgid "Query password has been requested."
+msgstr "Було виставлена вимога запиту пароля."
+
+#: xfsamba/xfsamba_list.c:284
+msgid "List failed."
+msgstr "Помилка наведення списку."
+
+#: xfsamba/xfsamba_list.c:303
+msgid "Retreiving..."
+msgstr "Отримую..."
+
+#: xfsamba/xfsamba_masterresolve.c:217 xfsamba/xfsamba_masterresolve.c:218
+#: xfsamba/xfsamba_nmblookup.c:51 xfsamba/xfsamba_nmblookup.c:52
+msgid "Resolved"
+msgstr "Розв'язано"
+
+#: xfsamba/xfsamba_nmblookup.c:105 xfsamba/xfsamba_nmblookup.c:106
+msgid "Resolving for"
+msgstr "Розв'язую"
+
+#: xfsamba/xfsamba_smblookup.c:86
+msgid "Shares"
+msgstr "Сп╕льн╕ ресурси"
+
+#: xfsamba/xfsamba_smblookup.c:88
+msgid "Links to other servers"
+msgstr "Зв'язки з ╕ншими серверами"
+
+#: xfsamba/xfsamba_smblookup.c:90
+msgid "Links to other workgroups"
+msgstr "Зв'язки з ╕ншими робочими групами"
+
+#: xfsamba/xfsamba_smblookup.c:154
+msgid "Query done."
+msgstr "Запит завершено."
+
+#: xfsamba/xfsamba_smblookup.c:160
+msgid "Query failed. Machine may be down."
+msgstr "Зб╕й запиту. Можливо машину вимкнено."
+
+#: xfsamba/xfsamba_smblookup.c:354
+msgid "Querying"
+msgstr "Трива╓ запит"
+
+#: xfsamba/xfsamba_masterlookup.c:77
+msgid "No master browser found. See diagnostics."
+msgstr "Не знайдено головний сервер перегляду. Читайте д╕агностику."
+
+#: xfsamba/xfsamba_masterlookup.c:78
+msgid ""
+"No master browser found.\n"
+"Please type a computer name at location and hit RETURN"
+msgstr ""
+"Не знайдено головний сервер перегляду.\n"
+"Будь ласка, набер╕ть ╕м'я комп'ютера в поле адреси ╕ натисн╕ть Enter"
+
+#: xfsamba/xfsamba_masterlookup.c:134
+msgid "Looking for master browsers..."
+msgstr "Пошук головного сервера перегляду..."
+
+#: xfsamba/xfsamba_masterresolve.c:110
+msgid "Please provide netbios name for master browser at "
+msgstr "Будь ласка, вкаж╕ть ╕м'я головного сервера перегляду netbios в "
+
+#: xfsamba/xfsamba_masterresolve.c:179
+msgid "Master browser netbios name must be provided."
+msgstr "╤м'я netbios головного сервера перегляду ма╓ бути вказано."
+
+#: xfsamba/xfsamba_masterresolve.c:227 xfsamba/xfsamba_masterresolve.c:228
+#: xfsamba/xfsamba_masterresolve.c:234
+msgid "No status response"
+msgstr "В╕дпов╕дь статусу в╕дсутня"
+
+#: xfsamba/xfsamba_masterresolve.c:246
+msgid "Master browser not resolved. Use location box to browse."
+msgstr "Головний сервер перегляду не знайдено. Використовуйте панель адреси."
+
+#: xfsamba/xfsamba_masterresolve.c:247
+msgid ""
+"No master browser resolved.\n"
+"Please type a computer name at location and hit RETURN"
+msgstr ""
+"Не знайдено головний сервер перегляду.\n"
+"Будь ласка, надрукуйте ╕м'я комп'ютера ╕ натисн╕ть Enter"
+
+#: xfsamba/xfsamba_masterresolve.c:301 xfsamba/xfsamba_masterresolve.c:302
+msgid "Resolving"
+msgstr "Розв'язую"
+
+#: xfsamba/xfsamba_mkdir.c:93
+msgid "Directory creation failed. See diagnostics for details."
+msgstr "Зб╕й створення каталогу. Причину можна побачити у д╕агностиц╕."
+
+#: xfsamba/xfsamba_mkdir.c:102
+msgid "Directory created."
+msgstr "Каталог створено."
+
+#: xfsamba/xfsamba_mkdir.c:151
+msgid "Create directory cancelled."
+msgstr "Створення каталогу скасовано."
+
+#: xfsamba/xfsamba_mkdir.c:162
+msgid "Create directory failed."
+msgstr "Зб╕й створення каталогу."
+
+#: xfsamba/xfsamba_mkdir.c:187
+msgid "Creating dir..."
+msgstr "Створюю каталог..."
+
+#. here, dialog to ask new dir name
+#: xfsamba/xfsamba_mkdir.c:202
+#, fuzzy
+msgid "New directory name:"
+msgstr "каталог: %s\n"
+
+#: xfsamba/xfsamba_rm.c:48
+msgid "Really delete remote items?"
+msgstr ""
+
+#: xfsamba/xfsamba_rm.c:51 xfsamba/xfsamba_rm.c:189
+msgid "Remove cancelled."
+msgstr "Видалення скасовано."
+
+#: xfsamba/xfsamba_rm.c:137
+msgid "Remove failed. See diagnostics for details."
+msgstr "Зб╕й видалення. Причину можна побачити у д╕агностиц╕."
+
+#: xfsamba/xfsamba_rm.c:152
+msgid "Remove complete."
+msgstr "Видалення виконано."
+
+#: xfsamba/xfsamba_rm.c:179
+msgid "Removing..."
+msgstr "Видалення..."
+
+#: xfsamba/xfsamba_rm.c:186
+msgid "Sorry, top level shares cannot be removed."
+msgstr "Перепрошую, сп╕льн╕ ресурси верхнього р╕вня не можуть бути вилучен╕."
+
+#: xfsamba/xfsamba_tar.c:123
+msgid "Tar failed. See diagnostics for details."
+msgstr "Зб╕й виконання команди tar. Причину можна побачити у д╕агностиц╕."
+
+#: xfsamba/xfsamba_tar.c:128
+msgid "Tar extraction has completed"
+msgstr "Д╕ставання з арх╕ву усп╕шно завершено."
+
+#: xfsamba/xfsamba_tar.c:133
+msgid "Tar command complete."
+msgstr "Команду tar усп╕шно виконано."
+
+#: xfsamba/xfsamba_tar.c:155
+msgid "Please select input tarfile next."
+msgstr "Будь ласка, вибер╕ть наступний tar-файл для виводу."
+
+#: xfsamba/xfsamba_tar.c:159
+msgid "Please select the output tarfile next."
+msgstr "Будь ласка, вибер╕ть наступний tar-файл для виводу."
+
+#: xfsamba/xfsamba_tar.c:193 xfsamba/xfsamba_tar.c:234
+msgid "Tar cancelled."
+msgstr "Арх╕вування скасовано."
+
+#: xfsamba/xfsamba_tar.c:205
+msgid "Cannot open tar file"
+msgstr "Неможливо в╕дкрити tar-файл"
+
+#: xfsamba/xfsamba_tar.c:216
+msgid "Cannot create tar file"
+msgstr "Неможливо створити tar-файл"
+
+#: xfsamba/xfsamba_tar.c:327
+msgid "create"
+msgstr "створити"
+
+#: xfsamba/xfsamba_tar.c:330
+msgid "extract"
+msgstr "д╕стати"
+
+#: xfsamba/xfsamba_tar.c:373
+msgid "full"
+msgstr "повний"
+
+#: xfsamba/xfsamba_tar.c:376
+msgid "incremental"
+msgstr "╕нкрементний"
+
+#: xfsamba/xfsamba_tar.c:399
+msgid "do not reset archive bit"
+msgstr "не скидати арх╕вний б╕т"
+
+#: xfsamba/xfsamba_tar.c:402
+msgid "reset archive bit"
+msgstr "скинути арх╕вний б╕т"
+
+#: xfsamba/xfsamba_tar.c:414
+msgid "Options"
+msgstr "Опц╕╖"
+
+#: xfsamba/xfsamba_upload.c:106
+msgid "Uploaded file."
+msgstr "В╕двантажений файл."
+
+#: xfsamba/xfsamba_upload.c:138
+msgid "File upload failed. See diagnostics for reason."
+msgstr "Зб╕й в╕двантаження файла. Причину можна побачити у д╕агностиц╕."
+
+#: xfsamba/xfsamba_upload.c:143 xfsamba/xfsamba_upload.c:284
+msgid "Upload done."
+msgstr "В╕двантаження завершено."
+
+#: xfsamba/xfsamba_upload.c:170
+msgid "Uploading file..."
+msgstr "В╕двантажую файл..."
+
+#: xfsamba/xfsamba_upload.c:176
+msgid "File upload cancelled."
+msgstr "В╕двантаження файла скасовано."
+
+#: xfsamba/xfsamba_upload.c:186
+msgid "Specified file does not exist"
+msgstr "Вказаний файл не ╕сну╓"
+
+#: xfsamba/xfsamba_upload.c:187 xfsamba/xfsamba_upload.c:201
+msgid "Upload failed."
+msgstr "Зб╕й в╕двантаження:"
+
+#: xfsamba/xfsamba_upload.c:254
+#, fuzzy
+msgid "Upload produced errors. See diagnostics for reason."
+msgstr "Зб╕й в╕двантаження файла. Причину можна побачити у д╕агностиц╕."
+
+#: xfsamba/xfsamba_upload.c:361
+#, fuzzy
+msgid "Uploading files..."
+msgstr "В╕двантажую файл..."
+
+#: xfsamba/xfsamba_dnd.c:502
+#, fuzzy
+msgid "No target selected!"
+msgstr "Каталог не вибрано!"
+
+#: xfsamba/xfsamba_dnd.c:507
+#, fuzzy
+msgid "More than one target selected!"
+msgstr "Файл латки не вибрано."
+
+#: xfsamba/xfsamba_dnd.c:545
+msgid "Files are on a remote host"
+msgstr ""
+
+#: xfumed/xfumed_gui.c:47
+#, fuzzy
+msgid "User Menu Editor"
+msgstr "Редактор меню користувача XFce"
+
+#: xfumed/xfumed_gui.c:80
+msgid "Caption"
+msgstr "Заголовок"
+
+#: xfumed/xfumed_gui.c:86
+msgid "Command"
+msgstr "Команда"
+
+#: xfumed/xfumed_gui.c:108
+#, fuzzy
+msgid "Move Up"
+msgstr "&Пересунути"
+
+#: xfumed/xfumed_gui.c:115
+msgid "Move Down"
+msgstr ""
+
+#: xfumed/xfumed_gui.c:122
+msgid "Add"
+msgstr "Додати"
+
+#: xfumed/xfumed_gui.c:157
+msgid "Save"
+msgstr "Зберегти"
+
+#: xfumed/xfumed_gui.c:164
+msgid "Reset"
+msgstr "Скинути"
+
+#: xfumed/xfumed_gui.c:252
+#, fuzzy
+msgid "Edit Entry"
+msgstr "Зм╕нити елемент"
+
+#: xfumed/xfumed_gui.c:254
+msgid "Add Entry"
+msgstr ""
+
+#: xfumed/xfumed_gui.c:275
+#, fuzzy
+msgid "Type: "
+msgstr "Тип: "
+
+#: xfumed/xfumed_gui.c:282
+#, fuzzy
+msgid "Caption: "
+msgstr "Заголовок: "
+
+#: xfumed/xfumed_gui.c:289
+#, fuzzy
+msgid "Command: "
+msgstr "Команда: "
+
+#: xfumed/xfumed_gui_cb.c:24
+msgid "Your changes will take effect on next startup"
+msgstr "Ваш╕ зм╕ни матимуть ефект п╕сля наступного запуску"
+
+#: xfumed/xfumed_gui_cb.c:70
+#, fuzzy
+msgid ""
+"There are unsaved changes to the menu.\n"
+"\n"
+"Do you want to save the changes ?"
+msgstr ""
+"В меню ╓ незбережен╕ зм╕ни.\n"
+"\n"
+"Вийти нехтуючи зм╕нами?"
+
+#: xfumed/xfumed_gui_cb.c:77
+msgid "Don't Quit"
+msgstr "Не виходити"
+
+#: xfumed/xfumed_gui_cb.c:122
+#, fuzzy
+msgid "Do you want to delete this entry ?"
+msgstr "Ви впевнен╕, що хочете видалити цей елемент?"
+
+#: xfumed/xfumed_gui_cb.c:124
+msgid ""
+"If you delete a submenu, all its entries and \n"
+"submenus will also be deleted.\n"
+"\n"
+"Do you want to delete this submenu ?"
+msgstr ""
+
+#: xfumed/xfumed.h:10
+msgid "Item"
+msgstr ""
+
+#: xfumed/xfumed.h:11
+#, fuzzy
+msgid "Submenu"
+msgstr "Перейти до п╕дменю"
+
+#: xfumed/xfumed.h:12
+msgid "Separator"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Cut to pasteboard"
+#~ msgstr "Неможливо створити tar-файл"
+
+#, fuzzy
+#~ msgid "Cannot create pasteboard\n"
+#~ msgstr "Неможливо створити tar-файл"
+
+#, fuzzy
+#~ msgid "Terminal"
+#~ msgstr "Зак╕нчено: "
+
+#~ msgid "Please provide a name for the new directory at"
+#~ msgstr "Будь ласка, вкаж╕ть назву для нового каталогу"
+
+#~ msgid "Confirm remove?"
+#~ msgstr "Справд╕ видалити?"
+
+#, fuzzy
+#~ msgid "child:bytes:%d bytes received (%d bps)"
+#~ msgstr "Отримано %d байт╕в (%d б/с)"
+
+#~ msgid "Information"
+#~ msgstr "╤нформац╕я"
+
+#~ msgid "Error"
+#~ msgstr "Помилка"
+
+#~ msgid "Dialog"
+#~ msgstr "Д╕алог"
+
+#~ msgid "Source : "
+#~ msgstr "Джерело: "
+
+#~ msgid "Target : "
+#~ msgstr "Призначення: "
+
+#~ msgid "XFTree: Download"
+#~ msgstr "XFTree: Звантаження"
+
+#~ msgid "%ld Bytes"
+#~ msgstr "%ld байт"
+
+#~ msgid "%d bytes"
+#~ msgstr "%d байт╕в"
+
+#, fuzzy
+#~ msgid "dbg:malloc error in %s at line %d\n"
+#~ msgstr "Помилка malloc в %s на рядку %d\n"
+
+#~ msgid "menu_detach()\n"
+#~ msgstr "menu_detach()\n"
+
+#~ msgid "Can't copy device, fifo and socket files as regular files!\n"
+#~ msgstr ""
+#~ "Неможливо скоп╕ювати файл пристрою, каналу або сокету як звичайний!\n"
+
+#~ msgid "move_dir() recursive failed\n"
+#~ msgstr "Помилка рекурсивного виклику move_dir()\n"
+
+#~ msgid "move_dir() move_file() failed\n"
+#~ msgstr "Помилка move_dir() move_file()\n"
+
+#~ msgid "Can't create : "
+#~ msgstr "Не можу створити: "
+
+#~ msgid "New Folder ..."
+#~ msgstr "Нова тека..."
+
+#~ msgid "transfer_view() %d\n"
+#~ msgstr "transfer_view() %d\n"
+
+#~ msgid "move"
+#~ msgstr "перенести"
+
+#~ msgid "link"
+#~ msgstr "посилання"
+
+#~ msgid "Do you want to %s the item(s) to"
+#~ msgstr "Ви д╕йсно хочете %s елемент(и) до"
+
+#~ msgid "readlink()"
+#~ msgstr "readlink()"
+
+#~ msgid "Source and Target directories are the same"
+#~ msgstr "Однаковий каталог для джерела та призначення"
+
+#~ msgid "exists and is not a directory"
+#~ msgstr "╕сну╓ ╕ не ╓ каталогом"
+
+#~ msgid "Unknown transfer mode: %d\n"
+#~ msgstr "Нев╕домий тип перенесення: %d\n"
+
+#~ msgid "transfer()"
+#~ msgstr "transfer()"
+
+#~ msgid "Error getting info from"
+#~ msgstr "Помилка при отриманн╕ ╕нформац╕╖ з"
+
+#~ msgid "Fatal Error"
+#~ msgstr "Фатальна помилка"
+
+#~ msgid "Can't transfer items to a file"
+#~ msgstr "Неможливо перенести елементи у файл"
+
+#~ msgid "0 bytes transferred"
+#~ msgstr "Перенесено 0 байт"
+
+#~ msgid "Can't transfer a directory to a file"
+#~ msgstr "Неможливо перенести каталог у файл"
+
+#~ msgid "move_file()"
+#~ msgstr "move_file()"
+
+#~ msgid "Move to trash failed"
+#~ msgstr "Помилка викидання на см╕тник"
+
+#~ msgid ""
+#~ "This is XFTree, based on 'XTree' \n"
+#~ "(c) by Rasca\n"
+#~ "published under GNU GPL\n"
+#~ "http://home.pages.de/~rasca/xap/"
+#~ msgstr ""
+#~ "XFTree, засновано на 'XTree' \n"
+#~ "(c) автор: Rasca\n"
+#~ "л╕ценз╕я: GNU GPL\n"
+#~ "http://home.pages.de/~rasca/xap/"
+
+#~ msgid "Target must be a directory !"
+#~ msgstr "Ц╕ль ма╓ бути каталогом!"
+
+#~ msgid "Type not supported.. (%d)\n"
+#~ msgstr "Тип не п╕дтриму╓ться.. (%d)\n"
+
+#~ msgid "XFce : %s File not found.\n"
+#~ msgstr "XFce: Файл %s не знайдено.\n"
+
+#~ msgid "Whoooops !"
+#~ msgstr "Опаньки!"
+
+#~ msgid "Override file?"
+#~ msgstr "Зам╕стити файл?"
+
+#~ msgid "Override file ?"
+#~ msgstr "Зам╕стити файл?"
+
+#~ msgid "Go to marked"
+#~ msgstr "Перейти до позначеного"
+
+#~ msgid "Unselect all"
+#~ msgstr "Зняти весь виб╕р"
+
+#~ msgid "New windows"
+#~ msgstr "Нов╕ в╕кна"
+
+#~ msgid "   Menu: %s   Parent: %s"
+#~ msgstr "   Меню: %s   Батьк╕вське: %s"
+
+#~ msgid "Toplevel"
+#~ msgstr "Верх╕вка"
+
+#~ msgid "None"
+#~ msgstr "В╕дсутн╓"
+
+#~ msgid "Go to parent menu"
+#~ msgstr "Перейти до батьк╕вського меню"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Quit, don't save"
+#~ msgstr "Вийти, без збереження"

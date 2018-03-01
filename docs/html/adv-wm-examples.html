@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Examples</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="Advanced XFwm configuration"
+HREF="advanced-wm.html"><LINK
+REL="PREVIOUS"
+TITLE="XFwm default configuration"
+HREF="adv-wm-defaults.html"><LINK
+REL="NEXT"
+TITLE="Removing existing keyboard shortcuts"
+HREF="wm-examples-2.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="adv-wm-defaults.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="wm-examples-2.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="ADV-WM-EXAMPLES"
+>Examples</A
+></H1
+><P
+>Two examples of xfwm configuration will be presented: The addition of a new
+menu to the default user menu and the removal of all default keyboard 
+shortcuts.</P
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="WM-EXAMPLES-1"
+>Adding items to the user menu</A
+></H1
+><P
+>If you wish to add new entries to the existing user menu, you can add 
+something like the following lines to your 
+<TT
+CLASS="FILENAME"
+>$HOME/.xfce/xfwmrc</TT
+> file.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+> # Adding a menu to the default user menu :
+ # (This is just a sample, modify it to fit your need)
+ #
+ AddToMenu "my_menu"
+ + "&#38;Gnome Terminal" Exec gnome-terminal
+ + "" Nop
+ + "&#38;The GIMP" Exec gimp
+ #
+ # Menu "user_menu" is the name of the default user menu
+ #
+ AddToMenu "user_menu"
+ + "&#38;My menu" popup "my_menu"</PRE
+></TD
+></TR
+></TABLE
+><P
+>Obviously, this is just an example. The preferred way to customize the user
+menu is by using a <TT
+CLASS="FILENAME"
+>$HOME/.xfce/xfwm.user_menu</TT
+> file. 
+This is always read by xfwm. The menu editor xfumed, which can be started 
+from the default "User Menu", edits this file. The main root menu is named
+"__builtin_root_menu__".</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="adv-wm-defaults.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="wm-examples-2.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>XFwm default configuration</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="advanced-wm.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Removing existing keyboard shortcuts</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

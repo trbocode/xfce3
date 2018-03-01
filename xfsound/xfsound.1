@@ -1,0 +1,59 @@
+.\" SCCS ID: xfsound.1 06/12/1999
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+xfsound \- xfce Sound
+.SH SYNOPSYS
+.B xfsound 
+[--display]
+.PP
+.TP 6
+.BI \--display " host:dpy"
+specifies the server to connect to.
+.PP
+.SH DESCRIPTION
+xfsound is both a user interface and a module that actually plays sound
+defined through the GUI.
+If xfsound is started from the command prompt, a window will come out
+and display a user interface, defining a way to play a sound whenever an 
+event from xfwm is detected.
+.PP
+If xfsound is started from xfwm's config or from xfce using the keyword "Module"
+then xfsound will be started as a background module that keeps on listenning
+to xfwm events and play a sound accordingly.
+.PP
+xfsound can play sounds internally, or use a user defined command that is
+supposed to play the sound. xfce provides the shell script xfplay to do that.
+.PP
+xfplay is a script that reads a .wav file and send it to /dev/dsp using sox
+.PP
+If you use xfce through a local network, you'd rather use rplay to play sound across
+the network.
+.PP
+.PP
+.SH FILES
+.PP
+.I ~/.xfsoundrc
+contains the user preferences for sound settings.
+.PP
+.SH SEE ALSO
+xfce, xftree, xfwm, xfpager, xfsound, xfmouse, xfbd, xfclock
+.PP
+rplay
+.PP
+rplay is available from :
+.TP
+.I ftp://ftp.sdsu.edu/pub/rplay/
+.TP
+.I ftp://ftp.x.org/contrib/audio/rplay/
+.PP
+.SH AUTHOR
+Olivier Fourdan (fourdan@xfce.org)
+.PP
+Internal player Copyright (c) 1998 Alex Fiori (pmci@uground.org)
+.P
+uground ind. - sbase division
+.I http://sbase.uground.org 
+.PP
+Copyright
+.Cr
+Olivier Fourdan (fourdan@xfce.org)

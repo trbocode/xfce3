@@ -1,0 +1,1033 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>XFwm commands</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="Advanced XFwm configuration"
+HREF="advanced-wm.html"><LINK
+REL="PREVIOUS"
+TITLE="Menus and functions"
+HREF="adv-wm-menus.html"><LINK
+REL="NEXT"
+TITLE="Keyboard shortcuts and mouse bindings"
+HREF="adv-wm-bindings.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="adv-wm-menus.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="adv-wm-bindings.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="ADV-WM-COMMANDS"
+>XFwm commands</A
+></H1
+><P
+>This large section describes all xfwm commands that may be used in menus 
+and function definitions. For menus generally only the "Exec", "PopUp" and
+"Nop" commands are used.</P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="WM-CONF-COMMANDS"
+>Table 13-1. XFwm commands</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Command</TH
+><TH
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Description</TH
+><TH
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Example</TH
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ArrangeIcons [&#60;desk1&#62; &#60;desk2&#62;]</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Arange icons on the current desk or on &#60;desk1&#62; to &#60;desk2&#62;
+  </TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ArrangeIcons 0 9</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Beep</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Produces a beep</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Beep</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Current [conditions] &#60;command&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>The Current, Next and Prev commands take a condition between 
+  square brackets as first argument and a command as second argument. 
+  The condition limits the action to certain window states. Possible 
+  conditions are described in the paragraph after this table.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Current [!Iconic] Focus</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Delete</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sends a message to a window asking that it removes itself</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Delete</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>Desk &#60;step&#62;</P
+><P
+>Desk 0 &#60;desk&#62;</P
+></TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Change to another desk/workspace. You can either specify a step
+  (1 means to next workspace, -1 means to previous workspace) or when the
+  first argument is 0, you can specify the number of the worlspace to go 
+  to (starting from 0).</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>Desk -1</P
+><P
+>Desk 0 3</P
+></TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Destroy</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Send destroy signal to a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Destroy</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Echo &#60;s&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Prints string to stderr</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Echo "Done"</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Exec &#60;c&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Executes a command</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Exec xedit</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>FlipFocus</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Toggle focus between last two active windows</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>FlipFocus</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Focus</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Gives focus to a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Focus</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Function &#60;fn&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Executes a function. Mostly used in mouse and key bindings.
+  </TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Mouse 1 T A Function Move-or-Raise</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Iconify</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>(De)Iconifies a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Iconify</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconifyAll</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Iconifies all windows in a workspace</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconifyAll</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>KillModule &#60;m&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Kills a module</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>KillModule xfpager</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Lower</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Lowers a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Lower</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Maximize [&#60;p1&#62; &#60;p2&#62;]</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Maximizes a window. You may specify a horizontal percentage p1
+  and a vertical percentage p2.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Maximize 0 100</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Menu &#60;m&#62; &#60;dbl-click-action&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Displays menu or triggers action if user performed a double click
+  </TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Menu "Utilities" Close</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Module &#60;m&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Executes a module</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Module xfce</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move [&#60;x&#62; &#60;y&#62;]</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Moves a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Next [conditions] &#60;command&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>The Current, Next and Prev commands take a condition between 
+  square brackets as first argument and a command as second argument. 
+  The condition limits the action to certain window states. Possible 
+  conditions are described in the paragraph after this table.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Next [!Iconic] Focus</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>None</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Does nothing</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>None</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nop</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>No operation. Creates a separator in a menu</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AddToMenu "user_menu" "" Nop</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>PopUp</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Pops up a menu</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AddToMenu "user_menu" "My Menu" PopUp "my_menu"</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Prev [conditions] &#60;command&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>The Current, Next and Prev commands take a condition between 
+  square brackets as first argument and a command as second argument. 
+  The condition limits the action to certain window states. Possible 
+  conditions are described in the paragraph after this table.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Prev [!Iconic] Focus</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Quit</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Quits xfwm and consequently exits the X session, closing all
+   running applications</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Quit</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Raise</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Raises a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Raise</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>RaiseLower</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Raises or Lowers a window dependng on current state</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>RaiseLower</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Read &#60;f&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Reads a configuration file</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Read ~/.xfce/myssettings</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Recapture</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Recapture all windows</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Recapture</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Refresh</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Refresh the screen</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Refresh</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>RefreshWindow</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Refresh current window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>RefreshWindow</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Resize [&#60;x &#60;y&#62;]</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Resizes a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Resize</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Restart</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Restart xfwm</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Restart</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Shade</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>(Un)Shades a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Shade</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ShowMeMouse</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Shows the mouse by animating a circle around the pointer</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ShowMeMouse</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Stick</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Make a window sticky</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Stick</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch focus to next window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Wait &#60;name&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Waits until window &#60;name&#62; appears</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Wait xterm</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WarpToWindow &#60;p1&#62; &#60;p2&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Warps mouse pointer to window. &#60;p1&#62; and &#60;p2&#62; are
+  horizontal and vertical percentage of the screen.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WarpToWindow 50 50</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WindowId &#60;n&#62; &#60;cmd&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Perform an action on window with ID &#60;n&#62; as shown in the 
+  windowlist. Used in WindowListFunc, which is executed when an 
+  entry in the windowlist is pressed.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WindowId $0 Focus</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WindowList</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Gives a list of all windows on the screen</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WindowList</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>WindowsDesk &#60;step&#62;</P
+><P
+>WindowsDesk 0 
+  &#60;desk&#62;</P
+></TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Send current window to another desk/workspace. You can either 
+  specify a step (1 means to next workspace, -1 means to previous 
+  workspace) or when the first argument is 0, you can specify the number
+  of the worlspace to go to (starting from 0).</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>WindowsDesk -1</P
+><P
+>WindowsDesk 0 3</P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>The window circulation functions Next, Prev and Current take an argument 
+between square brackets to customize the behaviour. Conditions may be 
+combined separated by spaces.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><B
+CLASS="COMMAND"
+> Next</B
+> [ !Iconic CurrentDesk] Iconify</PRE
+></TD
+></TR
+></TABLE
+><P
+>Recognized conditions are :</P
+><P
+></P
+><UL
+><LI
+><P
+>  ! : Negates the following option
+  </P
+></LI
+><LI
+><P
+>  Iconic
+  </P
+></LI
+><LI
+><P
+>  Visible
+  </P
+></LI
+><LI
+><P
+>  Sticky
+  </P
+></LI
+><LI
+><P
+>  Maximized
+  </P
+></LI
+><LI
+><P
+>  Transient
+  </P
+></LI
+><LI
+><P
+>  Raised
+  </P
+></LI
+><LI
+><P
+>  CurrentDesk
+  </P
+></LI
+><LI
+><P
+>  CurrentPage
+  </P
+></LI
+><LI
+><P
+>  CurrentPageAnyDesk
+  </P
+></LI
+><LI
+><P
+>  CurrentScreen
+  </P
+></LI
+><LI
+><P
+>  CirculateHit
+  </P
+></LI
+><LI
+><P
+>  CirculateHitIcon
+  </P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="adv-wm-menus.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="adv-wm-bindings.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Menus and functions</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="advanced-wm.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Keyboard shortcuts and mouse bindings</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

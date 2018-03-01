@@ -1,0 +1,67 @@
+0.34
+- introduced dnd, not activated. Bugs to remove before activation: 
+* intermintent Xlib crash on multiple upload, 
+* cannot drop into non expanded folders
+* cannot drop on non folders
+0.33.2
+- restructured program modules
+0.32
+- added application icon
+0.31 (5-jul-01)
+- buried a couple hidden bugs (xfsamba.c, xfsamba.h, xfsamba_gui.c)
+0.30
+- fixed a bug in FreeBSD and a minor bug in passwd dialog
+0.29
+- fixed sigsegv that occurred after interrupting master browser 
+  lookup or resolve
+- Added preferences menu item to set default user/passwd for browsing
+- Fixed small bug in ok_dialog()
+0.28
+-Added a query dialog for unresolved win95 MB saving values 
+to ~/.xfce/lmhosts.xfsamba, this file is used for future
+non resolved MB.
+-Reduced wait to start queries from 2.5 to 0.5 sec.
+0.27
+-Converted frames into resizeable panes.
+-Added help for when no master browser found.
+0.26
+-Added size, date columns. Enabled column sorting (not date column, though)
+0.25.1
+-fixed truncated comment on filesizes > 999999 bytes.
+0.25
+-added tar routine
+0.24
+-added delete and rmdir option
+-made the select share routine less confusing
+0.23 
+-fixed bug that came with spaces in file names and directories 
+ (ls, upload, mkdir, download).
+0.22.3
+-handles missing nmblookup and missing smbclient properly
+0.22.2
+-fixed bug reported by Olivier. (caused by change in 0.22 at
+                                 sprintf() and strcpy())
+-fixed a bug which made xfsamba useless is no master-browser resolved.
+0.22.1
+-added mkdir option (still lacks a proper refresh. Will do.)
+-mapped icon buttons which will soon be active
+0.22
+-added view icon buttons(active) and tar icon button(not active).
+-eliminated potential SIGSEGVs at several sprintf() and strcpy().
+-xfsamba.c split into smaller selfcontained units.
+0.21
+-Changes in C format and window attributes (O.F.).
+0.20
+-activated options via menu.
+-fixed race condition bug when child exits.
+-added icons for upload and download.
+-added upload option.
+-fixed small bugs.
+0.19
+-added view options in menu (hide/show diagnostics and links)
+0.18.
+-added more output to diagnostics.
+-fixed sigsegv when no master browser found.
+-fixed missing comma in comp1.xpm and comp2.xpm (caused no pixmap creation).
+0.17
+-initial CVS version.

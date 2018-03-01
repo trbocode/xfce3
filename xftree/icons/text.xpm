@@ -1,0 +1,23 @@
+/* XPM */
+static char * text_xpm[] = {
+"16 16 4 1",
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c #808080",
+"                ",
+"  ........      ",
+"  .XXXXX.o.     ",
+"  .X..XX.Xo.    ",
+"  .XXXXX.XXo.   ",
+"  .X..XX.....o  ",
+"  .XXXXXXXXX.o  ",
+"  .X.......X.o  ",
+"  .XXXXXXXXX.o  ",
+"  .X.......X.o  ",
+"  .XXXXXXXXX.o  ",
+"  .X.......X.o  ",
+"  .XXXXXXXXX.o  ",
+"  ...........o  ",
+"   ooooooooooo  ",
+"                "};

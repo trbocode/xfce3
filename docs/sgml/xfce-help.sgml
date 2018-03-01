@@ -1,0 +1,103 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V4.1//EN"[
+<!ENTITY preface SYSTEM "preface.sgml">
+<!ENTITY part1 SYSTEM "userman.sgml">
+<!ENTITY part2 SYSTEM "advanced-xfwm.sgml">
+<!ENTITY part3 SYSTEM "license.sgml">
+<!ENTITY ch-overview SYSTEM "ch-overview.sgml">
+<!ENTITY ch-panel SYSTEM "ch-panel.sgml">
+<!ENTITY ch-setup SYSTEM "ch-setup.sgml">
+<!ENTITY ch-wm SYSTEM "ch-wm.sgml">
+<!ENTITY ch-fileman SYSTEM "ch-fileman.sgml">
+<!ENTITY ch-utilities SYSTEM "ch-utilities.sgml">
+<!ENTITY ch-install SYSTEM "ch-install.sgml">
+<!ENTITY ch-resources SYSTEM "ch-resources.sgml">
+<!ENTITY ch-wm-general SYSTEM "ch-wm-general.sgml">
+<!ENTITY ch-wm-appearance SYSTEM "ch-wm-appearance.sgml">
+<!ENTITY ch-wm-management SYSTEM "ch-wm-management.sgml">
+<!ENTITY ch-wm-menus SYSTEM "ch-wm-menus.sgml">
+<!ENTITY ch-wm-commands SYSTEM "ch-wm-commands.sgml">
+<!ENTITY ch-wm-bindings SYSTEM "ch-wm-bindings.sgml">
+<!ENTITY ch-wm-style SYSTEM "ch-wm-style.sgml">
+<!ENTITY ch-wm-xresources SYSTEM "ch-wm-xresources.sgml">
+<!ENTITY ch-wm-defaults SYSTEM "ch-wm-defaults.sgml">
+<!ENTITY ch-wm-examples SYSTEM "ch-wm-examples.sgml">
+<!ENTITY copyright SYSTEM "copyright.sgml">
+<!ENTITY GPL SYSTEM "GPL.sgml">
+]>
+
+<!-- This document is partly based on the big-howto template -->
+<!-- obtained from the LDP website (http://www.linuxdoc.org) -->
+<!-- and the gnome app manual template made by the GDP       -->
+<!-- (http://developer.gnome.org/projects/gdp)               -->
+
+
+<book id="help">
+
+<!-- Header -->
+<bookinfo>
+
+<title>
+The XFce Desktop Environment
+</title>
+
+<subtitle>
+<inlinegraphic fileref="../images/xfce_slogan">
+</subtitle>
+
+<copyright>
+  <year>2001</year>
+  <holder>Olivier Fourdan</holder>
+</copyright>
+
+<legalnotice id="legalnotice">
+  <para>
+  Do we need a legal notice here? Maybe just a simple disclaimer?
+  </para>
+</legalnotice>
+
+<authorgroup>
+
+<author>
+  <firstname>Olivier</firstname>
+  <surname>Fourdan</surname>
+  <affiliation>
+    <address><email>fourdan@xfce.org</email></address>
+  </affiliation>
+</author>
+
+<author>
+  <firstname>Jasper</firstname>
+  <surname>Huijsmans</surname>
+ 
+  <affiliation>
+    <address><email>j.b.huijsmans@chem.rug.nl</email></address>
+  </affiliation>
+</author>
+  
+</authorgroup>
+
+<revhistory>
+  <revision>
+    <revnumber>0.1</revnumber>
+    <date>2001-07-06</date>
+    <authorinitials>jbh</authorinitials>
+  </revision>
+   <!-- Additional (*earlier*) revision histories go here -->
+</revhistory>
+
+</bookinfo>
+
+
+<!-- Preface -->
+&preface;
+
+<!-- Part I. User Manual -->
+&part1;
+
+<!-- Part II. Advanced XFwm Configuration -->
+&part2;
+
+<!-- Part III. License -->
+&part3;
+
+</book>

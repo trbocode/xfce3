@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Compiling and installing xfce</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="User Manual"
+HREF="user-manual.html"><LINK
+REL="PREVIOUS"
+TITLE="xfumed"
+HREF="utils-xfumed.html"><LINK
+REL="NEXT"
+TITLE="Other resources"
+HREF="resources.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="utils-xfumed.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="resources.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="INSTALL"
+>Compiling and installing xfce</A
+></H1
+><P
+>XFce uses GNU autoconf and GNU automake to generate the makefiles. As a 
+result, configuration can be performed as simply as typing 
+<B
+CLASS="COMMAND"
+>./configure</B
+> in the xfce source directory !</P
+><P
+>Typing <B
+CLASS="COMMAND"
+>./configure --help</B
+> will give a list of available 
+options.</P
+><P
+>Once the configuration is over, run <B
+CLASS="COMMAND"
+>make</B
+> and 
+<B
+CLASS="COMMAND"
+>make install</B
+>. On Linux systems, you might want to reduce
+the size of executables by doing a <B
+CLASS="COMMAND"
+>make install-strip</B
+>.
+This will discard all symbols from the program files (for example, xfce is
+10 times smaller without the symbols).</P
+><P
+></P
+><P
+>Three convenient scripts are provided for easy installation/configuration 
+of XFce.</P
+><P
+></P
+><DL
+><DT
+><I
+CLASS="EMPHASIS"
+>xfce_setup</I
+></DT
+><DD
+><P
+>    Run xfce_setup to set up replacement files in user's home
+    directory. These files will fire up xfwm and xfce every time the
+    user starts an X session (through startx or through xdm).</P
+><P
+>    The existing configurations files are saved in a hidden directory
+    (<TT
+CLASS="FILENAME"
+>$HOME/.xfce_bckp</TT
+>). 
+    </P
+></DD
+><DT
+><I
+CLASS="EMPHASIS"
+>xfce_remove</I
+></DT
+><DD
+><P
+>    Afterwards, one can use xfce_remove to restore the previous configuration 
+    files.
+    </P
+></DD
+><DT
+><I
+CLASS="EMPHASIS"
+>xfce_upgrade</I
+></DT
+><DD
+><P
+>    To upgrade from an existing xfce installation, type xfce_upgrade.
+    This will adjust the setup files to any changes that may have
+    occurred between the two releases.
+    </P
+></DD
+></DL
+><P
+></P
+><P
+>The directory specified at configuration time for the data can be overridden 
+afterwards by setting the environment variable <TT
+CLASS="ENVAR"
+>XFCE_DATA</TT
+> to 
+another directory.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><TT
+CLASS="PROMPT"
+> bash$ </TT
+><B
+CLASS="COMMAND"
+>export</B
+> <TT
+CLASS="ENVAR"
+>XFCE_DATA</TT
+>=<TT
+CLASS="REPLACEABLE"
+><I
+>/usr/local/share</I
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><TT
+CLASS="PROMPT"
+> csh$ </TT
+><B
+CLASS="COMMAND"
+>setenv</B
+> <TT
+CLASS="ENVAR"
+>XFCE_DATA</TT
+> <TT
+CLASS="REPLACEABLE"
+><I
+>/usr/local/share</I
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+><P
+>Since XFce supports Native Language Supports (NLS), make sure the environment 
+variable <TT
+CLASS="ENVAR"
+>LANG</TT
+> is correctly set for your country.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><TT
+CLASS="PROMPT"
+> bash$ </TT
+><B
+CLASS="COMMAND"
+>export</B
+> <TT
+CLASS="ENVAR"
+>LANG</TT
+>=<TT
+CLASS="REPLACEABLE"
+><I
+>"fr"</I
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><TT
+CLASS="PROMPT"
+> csh$ </TT
+><B
+CLASS="COMMAND"
+>setenv</B
+> <TT
+CLASS="ENVAR"
+>LANG</TT
+> <TT
+CLASS="REPLACEABLE"
+><I
+>"fr"</I
+></TT
+></PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="utils-xfumed.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="resources.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>xfumed</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="user-manual.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Other resources</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

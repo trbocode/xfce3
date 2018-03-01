@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Window management</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="Advanced XFwm configuration"
+HREF="advanced-wm.html"><LINK
+REL="PREVIOUS"
+TITLE="Appearance"
+HREF="adv-wm-appearance.html"><LINK
+REL="NEXT"
+TITLE="Menus and functions"
+HREF="adv-wm-menus.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="adv-wm-appearance.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="adv-wm-menus.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="ADV-WM-MANAGEMENT"
+>Window management</A
+></H1
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.gif"
+HSPACE="5"
+ALT="Note"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>Note:</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>(*) denotes parameters overridden by XFce at start-up.</P
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="WM-CONF-MANAGEMENT"
+>Table 11-1. Appearance of windows</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Command</TH
+><TH
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Description</TH
+><TH
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Example</TH
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AnimateWin {On | Off}</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Enable or disable a window animation</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AnimateWin On</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AutoRaise {Yes | No} (*)</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Enable or disable autoraise of windows (when
+  FocusMode is set to FollowsMouse)</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Autoraise No</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AutoRaiseDelay &#60;t&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Define time in milliseconds before automatically
+  raising a window</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AutoRaiseDelay 100</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ClickRaise {Yes | No} (*)</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Enables / Disables using mouseclick to raise
+  a window in focus follows mouse mode</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ClickRaise Yes</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ClickTime &#60;ct&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Specifies the maximum delay (in milliseconds) between a
+  button press and a button release</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ClickTime 150</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ColormapFocus {FollowsFocus | FollowsMouse}</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Colormap is assigned to the window that has the focus (default)
+  or the window where mouse pointer is over</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ColormapFocus FollowsMouse</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>FocusMode {Click | ClickToFocus | Mouse | FollowsMouse} (*)
+  </TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Defines focus mode (Click and ClickToFocus are the same, and so 
+  are Mouse and FollowsMouse)</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>FocusMode Mouse</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ForceFocus {Yes | No}</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>In focus follow mouse, may the focus be changed even if mouse 
+  pointer didn't move (You should keep this to Yes unless you're running 
+  Corel Word Perfect 2000)</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ForceFocus Yes</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconGrid &#60;n&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Define the grid used for icon placement</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconGrid 20</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Iconpos {Left | Right | Top | Bottom} (*)</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Defines the position of the icons</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconPos Bottom</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconSpacing &#60;n&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Spacing between the icons</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>IconSpacing 5</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>MapFocus {Yes | No}</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>In focus follow mouse mode, may newly mapped windows recieve the
+  focus</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>MapFocus Yes</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Margin {Left | Right | Top | Bottom} &#60;n&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Set margin on specified side of the screen that will be free from 
+  new windows or maximized windows. With this function you can make sure 
+  that a panel or icons will always be visible</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Margin Bottom 50</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>OpaqueMove {On | Off} (*)</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Enable or disable showing contents of a window while moving</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>OpaqueMove Off</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>OpaqueResize {On | Off} (*)</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Enable or disable showing contents of a window while resizing
+  </TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>OpaqueResize Off</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>SessionManagement {On | Off}</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Enable/Disable builtin session management</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>SessionManagement On</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>SnapSize &#60;n&#62; (*)</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sets the size (in pixels) for windows snapping. Setting a size
+  larger than five also enables dragging a window to another desktop 
+  accross the edge of the screen.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>SnapSize 5</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WaitSession &#60;t&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Set time to wait in seconds before starting session management 
+  (to speed up starting applications at start-up)</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Waitsession 5</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>XORValue &#60;n&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Changes the value with which bits are XOR'ed when doing 
+  rubber-band window resizing</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>XORValue 65535</TD
+></TR
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="adv-wm-appearance.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="adv-wm-menus.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Appearance</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="advanced-wm.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Menus and functions</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

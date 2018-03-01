@@ -1,0 +1,29 @@
+/* XPM */
+static char * tb_find_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"18 18 5 1",
+/* colors */
+" 	c none",
+".	c #000000",
+"X	c #FFFFFF",
+"O	c #bdbdbd",
+"+	c #5D6069",
+/* pixels */
+"                  ",
+" .........        ",
+" .XXXXXXX..       ",
+" .XXXXXXX.O.      ",
+" .XXXXXXX....     ",
+" .XXXXXXXXXX.     ",
+" .XXXXXXX....     ",
+" .XXXXXX.OOOO.    ",
+" .XXXXX.OXXOOO.   ",
+" .XXXXX.OXOOOO.   ",
+" .XXXXX.OOOOOO.   ",
+" .XXXXX.OOOXOO.   ",
+" .XXXXXX.OOOO.+   ",
+" .XXXXXXX....+..  ",
+" .XXXXXXXXXX.+... ",
+" ............+ .. ",
+"    ++++++++++    ",
+"                  "};

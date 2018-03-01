@@ -1,0 +1,31 @@
+/* XPM */
+static char *dir_open_hidden_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        8            1",
+/* colors */
+". c none",
+"# c #ffe79c",
+"a c #c6864a",
+"b c #ffc78c",
+"c c #000000",
+"d c #666666",
+"e c #888888",
+"f c #ffff00",
+/* pixels */
+"...###a. .......",
+"..#bbbba. ......",
+".#bbbbbb#######.",
+"#bbdaaaaaaaaaaac",
+"#bedeaaaaaaaaaac",
+"#ddfdd##########",
+"#bede#bbbbbbbbba",
+"#bad#bbbbbbbbbbc",
+"#baa#bbbbbbbbbbc",
+"#ba#bbbbbbbbbbac",
+"#ba#bbbbbbbbbaac",
+"##bbbbbbbbbbaacc",
+"##bbbbbbbbbbaccc",
+"#aaaaaaaaaaaacc.",
+".ccccccccccccc .",
+"               .",
+};

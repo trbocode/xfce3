@@ -1,0 +1,77 @@
+Last ChangeLog modification: 29-jun-01
+ewg: edscott@imp.mx
+
+-0.5.0
+- "full path" column changed to "directory"
+- help buttons for xdev, permissions, user/group, size
+- Size GT and size LT can now be used simultaneously
+- Permission conderations now more refined
+- time considerations can be ctime, mtime or atime  
+- raise buttons in xfglob+results windows
+- about tab
+- (glob.c,globber.c) moved to object oriented structure, optimized code
+- changed version numbers to 0.5.0 for glob, globber + xfglob
+
+- (0.3.5: glob.c) fixed a typo which made grep pipe fail in FreeBSD
+
+
+0.4.8
+- fixed a bug which caused sigsegv on startup on FreeBSD
+
+0.4.7
+- added "any file type" option and made it default
+
+0.4.6
+- minor output format changes.
+- sorting by date, size and count. (-26)
+- case sensitive set in combos (as it should be).
+
+0.4.5
+- added sorting by name,path,and mode (-25)
+- fixed typo which bugged -xdev option (-24)
+- offset gid+uid by one to find files by root
+- Changed user/group to menubuttons (avoid trouble) 
+- Added user/group filter(-22)
+- Added xdev option, but bugged in globber.c(-22)
+
+0.4.4 (-21)
+- Filter help. (-20)
+- Path browse button. (-19)
+- Drag+drop fully functional. (-18)
+- This was not included in 0.4.3 by mistake: Removed forking the 
+child process with parent pid (zombie control fixed). (-16)
+
+0.4.3
+- Extended and clarified the exclusiveness of time/size options
+- Added environment variable expansion in filter entry.
+- Improved cancelation routine and output flush in glob.c
+- Removed forking the child process with parent pid (zombie
+control fixed).
+- Added ctree widget.
+- Turned off "Dismiss" and "Clear" while glob running (caused segv).
+- If you gave an absolute path to a file in "path" entry, it 
+would not be found! Fixed (xfglob.c).
+- Regexp's were really extended regexps and not working. Fixed (glob.c). 
+- Fixed bug on counting non-matching lines (glob.c)
+- Fixed 3 checkbuttons that should have be radio buttons.
+- Added "Do not look into binary files" option. (glob.c+xfglob.c)
+- Changed notebook labels to less cryptic terms.
+- Added a way to limit glob results beforehand.
+
+0.4.2 (3.8.1 release)
+- Changes by Olivier for 64 bit systems.
+
+0.4.1
+- Added to _("internalizations") several previously omitted texts.
+- Find results window raised on glob run.
+- Xfglob_icon added.
+- Paths d+dropped from xftree can now land outside path entry combo.
+- Changed path, filter and containing entries to combos with maximum of 20.
+- Started the ChangeLog.
+- Activated the size and time consideration toggles.
+
+0.4.0 
+- Added regexp help.
+- Optimized size and time considerations selections.
+
+(Changes previous to xfce-3.8.0 were not logged.)

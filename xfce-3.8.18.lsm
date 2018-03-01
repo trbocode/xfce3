@@ -1,0 +1,29 @@
+Begin3
+Title		xfce
+Version:        3.8.18
+Entered-date:   11NOV02
+Description:    XFce is an easy-to-use and easy-to-configure environment 
+		using the popular GTK+ toolkit for X11, featuring drag'n drop,
+		pulldown menus and color icons, 3D widgets, etc. 
+		It features its own Window Manager (xfwm), a backdrop 
+		manager (xfbd), a file manager (xftree), a clock/calendar
+		(xfclock) and a system sound manager (xfsound) and
+		a user friendly interface for mouse configuration (xfmouse).
+		Visit HTTP://www.xfce.org/ to see what XFce looks like.
+Keywords:       desktop, utility, toolbar, icons, menu interface, 
+		window manager,	file manager, gtk+, X11, linux
+Author:         fourdan@xfce.org (Olivier Fourdan)
+Maintained-by:  fourdan@xfce.org (Olivier Fourdan)
+Primary-site:   HTTP://www.xfce.org/
+			 	 5060Kb xfce-3.8.18.tar.gz
+			 	    1Kb xfce-3.8.18.lsm
+Alternate-site:	HTTP://www.baysurf.net/linux/xfce/
+		HTTP://tsikora.tiac.net/xfce/
+Original-site:	HTTP://www.xfce.org/
+Platform:       Linux, Solaris, FreeBSD, HPUX, IRIX, AIX, etc. gcc, XFree86, 
+		Require GTK+ 1.2.6 or above and libXpm (v 4.7 or above) 
+		for pixmaps.
+		Can make use of Imlib  or gdk-pixbuf if available for image 
+                dithering and rendering. 
+Copying-policy: GPL
+End

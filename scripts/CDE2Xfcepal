@@ -1,0 +1,139 @@
+#!/bin/bash
+#
+#  Copyright (C) 2000 Victor Meghesan <meghesan@usa.net>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+PATH=/usr/local/bin:/usr/bin:/bin:$PATH
+
+# Source directory for the CDE palettes, typically /usr/dt/share/palettes
+CDEPALETTESPATH="/usr/dt/share/palettes";
+while [ ! -d "$CDEPALETTESPATH" ];
+ do
+  echo "CDE palettes source path:";
+  read CDEPALETTESPATH;
+ done;
+
+# Extension of the CDE palettes, typically dp
+CDEPALETTEEXT="dp";
+
+# Check the existence of CDE palettes
+FILES="$CDEPALETTESPATH/*.$CDEPALETTEEXT";
+if ! cat $FILES 1> /dev/null 2> /dev/null;
+ then
+  echo "Nothing to convert, no source files.";
+  exit 1;
+fi;
+
+# Destination directory for the XFCE palettes
+for DIR in \
+ /var/xfce/palettes /usr/local/share/xfce/palettes /usr/share/xfce/palettes;
+ do
+  test -d "$DIR" && XFCEPALETTESPATH="$DIR";
+ done;
+while [ ! -d "$XFCEPALETTESPATH" ];
+ do
+  echo "XFCE palettes destination path:";
+  read XFCEPALETTESPATH;
+ done;
+
+# Check if we can write in the XFCE destination directory
+TEMPFILE="$XFCEPALETTESPATH/tempfile-$$";
+if ! cp /dev/null "$TEMPFILE" 1> /dev/null 2> /dev/null;
+ then
+  echo "You don't have the rights for writing to $XFCEPALETTESPATH";
+  exit 1;
+fi;
+
+# Extension of the palettes with the same name
+ORIG="orig";
+
+for FILE in $FILES;
+do
+SAVEFILE="`basename $FILE .$CDEPALETTEEXT`";
+if [ -f "$XFCEPALETTESPATH/$SAVEFILE" ];
+ then
+  echo "Moving $SAVEFILE to $SAVEFILE.$ORIG";
+  mv "$XFCEPALETTESPATH/$SAVEFILE" "$XFCEPALETTESPATH/$SAVEFILE.$ORIG";
+fi;
+echo "ibase=16" > "$TEMPFILE";
+cat "$FILE" | \
+sed "s/^\#//" | sed "s/White/ffffffffffff/g" | sed "s/Black/000000000000/g" | \
+tr "[a-f]" "[A-F]" | \
+while read HEXACOLOR;
+ do
+  echo -e "${HEXACOLOR:0:4}""\n""${HEXACOLOR:4:4}""\n""${HEXACOLOR:8:4}" \
+   >> "$TEMPFILE";
+ done;
+echo "quit" >> "$TEMPFILE";
+echo "Now converting `basename $FILE` to $SAVEFILE";
+bc -q "$TEMPFILE" > "$TEMPFILE-$$";
+rm "$TEMPFILE";
+mv "$TEMPFILE-$$" "$TEMPFILE";
+#COLOR1="";
+#COLOR2="";
+#COLOR3="";
+#COLOR4="";
+#COLOR5="";
+#COLOR6="";
+#COLOR7="";
+#COLOR8="";
+#SRGB="0";
+COLOR_COUNT="1";
+COLOR="";
+RGB_COUNT="0";
+cat "$TEMPFILE" | while read DRGB;
+ do
+ RGB_COUNT="`expr $RGB_COUNT + 1`";
+ SRGB="`expr $DRGB \* 255 / 65535`";
+ COLOR="$COLOR""$SRGB";
+ if [ "$RGB_COUNT" -eq "3" ];
+  then
+   case "$COLOR_COUNT" in
+   1) COLOR1="$COLOR";
+    ;;
+   2) COLOR2="$COLOR";
+    ;;
+   3) COLOR3="$COLOR";
+    ;;
+   4) COLOR4="$COLOR";
+    ;;
+   5) COLOR5="$COLOR";
+    ;;
+   6) COLOR6="$COLOR";
+    ;;
+   7) COLOR7="$COLOR";
+    ;;
+   8) COLOR8="$COLOR";
+   echo -e "$COLOR7""\n""$COLOR3""\n""$COLOR4""\n""$COLOR8" \
+    > "$XFCEPALETTESPATH/$SAVEFILE";
+   echo -e "$COLOR5""\n""$COLOR6""\n""$COLOR1""\n""$COLOR2" \
+    >> "$XFCEPALETTESPATH/$SAVEFILE";
+   echo "-adobe-times-bold-r-normal-*-14-*-*-*-p-*-iso8859-1" \
+    >> "$XFCEPALETTESPATH/$SAVEFILE";
+    ;;
+   esac;
+   COLOR_COUNT="`expr $COLOR_COUNT + 1`";
+   COLOR="";
+   RGB_COUNT="0";
+  else
+   COLOR="$COLOR ";
+ fi;
+ done;
+rm "$TEMPFILE";
+done;
+exit 0;
+

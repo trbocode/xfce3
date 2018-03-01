@@ -1,0 +1,18 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="16" id="adv-wm-xresources">
+
+<title>X Resources</title>
+
+<para>
+It is possible to put X resources in xfwmrc. They are commands starting 
+with a "*". This can be especially usefull for customizing xfpager. For 
+example:
+</para>
+
+<programlisting>
+*xfpager.geometry -0+0
+*xfpager.smallfont 5x8
+</programlisting>
+
+</chapter>

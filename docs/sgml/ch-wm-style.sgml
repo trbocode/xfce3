@@ -1,0 +1,132 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="15" id="adv-wm-style">
+
+<title>Appearance of other application</title>
+
+<para>
+With the <command>Style</command> command it is possible to set some properties for 
+applications. The general form of the command is:
+</para>
+
+<programlisting>
+<command>Style</command> "Pattern" option1 [,option2 [,...]]
+</programlisting>
+   
+<para>
+"Pattern" is matched to the name of an application (the name that will be
+shown in the title bar). For example:
+</para>
+
+<programlisting>
+Style "xeyes" Sticky, NoBorder
+Style "Moz*" Icon "/usr/share/xfce/icons/NetscapeLogo.xpm"
+</programlisting>
+   
+<para>The available options for the Style command are :</para>
+
+<table frame="topbot" id="wm-conf-style">
+<title>Options for the style command</title>
+
+<tgroup cols=2 align="left">
+
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>Authorize_Translate</entry>
+  <entry>Some applications ask for a specific location.
+  This should be honored unless you're using Xinerama and the
+  application that asks for a positionning is not Xinerama aware and
+  asks for an arbitrary location. For this kind of application you can
+  use the flag "Authorize_Translate" that tells xfwm to translate the
+  coordinates to the current screen even if the application asked for a
+  specific location</entry>
+</row>
+<row>
+  <entry>BorderWidth &lt;n></entry>
+  <entry>Set borderwidth</entry>
+</row>
+<row>
+  <entry>CirculateSkipIcon</entry>
+  <entry>Skip iconified application when switching focus</entry>
+</row>
+<row>
+  <entry>CirculateSkip</entry>
+  <entry>Skip application when switching focus</entry>
+</row>
+<row>
+  <entry>CirculateHitIcon</entry>
+  <entry>Don't skip iconified application when switching focus</entry>
+</row>
+<row>
+  <entry>Icon &lt;f></entry>
+  <entry>Set the icon to use for an application</entry>
+</row>
+<row>
+  <entry>Layer &lt;n></entry>
+  <entry>Set layer to start application in. Layer can be between 0
+   and 12.</entry>
+</row>
+<row>
+  <entry>NoBorder</entry>
+  <entry>Don't show border</entry>
+</row>
+<row>
+  <entry>NoIcon</entry>
+  <entry>Don't show icon</entry>
+</row>
+<row>
+  <entry>NoTitle</entry>
+  <entry>Don't show title bar</entry>
+</row>
+<row>
+  <entry>StickyIcon</entry>
+  <entry>Show icon on all workspaces</entry>
+</row>
+<row>
+  <entry>StartIconic</entry>
+  <entry>Start application iconified</entry>
+</row>
+<row>
+  <entry>StaysOnBottom</entry>
+  <entry>Keep application below all other applications. This is
+   the same as setting the layer to 0.</entry>
+</row>
+<row>
+  <entry>StaysOnTop</entry>
+  <entry>Keep application above all other applications. This is the
+   same as setting the layer to 12.</entry>
+</row>
+<row>
+  <entry>Sticky</entry>
+  <entry>Show window on all workspaces</entry>
+</row>
+<row>
+  <entry>StartsOnDesk &lt;n></entry>
+  <entry>Starts application on specified desk</entry>
+</row>
+<row>
+  <entry>Title</entry>
+  <entry>Change the title of the application</entry>
+</row>
+<row>
+  <entry>WindowListSkip</entry>
+  <entry>Don't show application in window list</entry>
+</row>
+<row>
+  <entry>WindowListHit</entry>
+  <entry>Show application in window list</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</chapter>
+    
+   

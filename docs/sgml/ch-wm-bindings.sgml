@@ -1,0 +1,93 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="14" id="adv-wm-bindings">
+
+<title>Keyboard shortcuts and mouse bindings</title>
+
+<table frame="topbot" id="wm-conf-bindings">
+<title>Defining keybouard shortcuts and mouse bindings</title>
+
+<tgroup cols=3 align="left">
+
+<thead>
+<row>
+<entry>Command</entry>
+<entry>Description</entry>
+<entry>Example</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>Key &lt;key> &lt;context> &lt;modif> &lt;fn></entry>
+  <entry>Binds a key to a function</entry>
+  <entry>Key F11 A SCM WindowList</entry>
+</row>
+<row>
+  <entry>Mouse &lt;button> &lt;context> &lt;modif> &lt;fn></entry>
+  <entry>Binds a mouse button to a function</entry>
+  <entry> Mouse 1 R N Menu "Root" Nop</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para>
+Mouse and key bindings take a context and modifiers as arguments. Contexts
+can be combined (for example, IW is for Icon and Window) and so can 
+modifiers.
+</para>
+
+<para>Recognized contexts are :</para>
+
+<itemizedlist>
+  <listitem><para>
+  &lt;n> for a title bar button. Counting starts from the outside, 
+  alternating between left and right. So 1 is the first button on the 
+  left, 2 the first button on the right, 3 the second button on the 
+  left, etc.
+  </para></listitem>
+  <listitem><para>
+  R for the root window
+  </para></listitem>
+  <listitem><para>
+  W for an application window
+  </para></listitem>
+  <listitem><para>
+  T for a window title bar
+  </para></listitem>
+  <listitem><para>
+  S for a window side, top, or bottom bar
+  </para></listitem>
+  <listitem><para>
+  F for a window frame (the corners)
+  </para></listitem>
+  <listitem><para>
+  I for an Icon window
+  </para></listitem>
+  <listitem><para>
+  A is for any context except for title-bar buttons
+  </para></listitem>
+</itemizedlist>
+       
+<para>Recognized modifiers :</para>
+
+<itemizedlist>
+  <listitem><para>
+  S for Shift
+  </para></listitem>
+  <listitem><para>
+  M for Meta
+  </para></listitem>
+  <listitem><para>
+  C for Control
+  </para></listitem>
+  <listitem><para>
+  N for no modifier
+  </para></listitem>
+  <listitem><para>
+  A for any or no modifier
+  </para></listitem>
+</itemizedlist>
+
+</chapter>

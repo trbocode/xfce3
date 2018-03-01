@@ -1,0 +1,20 @@
+
+READ THIS: IMPORTANT NOTE
+=========================
+
+If you're not upgrading from a previous version of XFce, please disregard this
+note.
+
+To reflect changes in xfce color management, please run script "xfce_upgrade"
+after upgrading (this script is new in xfce-3.5.0).
+
+This will remove $HOME/Desktop/Autostart/xfdefs.py (obsolete in 3.5.0 and later)
+and move existing $HOME/.gtkrc to .xfce_bckp/ (required to force xfce to 
+update the .gtkrc)
+
+Note this has to be done for all users as these files are local to users'
+home directories.
+
+Sorry for any inconvenience that may cause (although the process is painless)
+
+Olivier.

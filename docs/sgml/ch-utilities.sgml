@@ -1,0 +1,299 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="6" id="utilities">
+
+<title>Utilities</title>
+
+<para>
+XFce comes with several utilities that can make your life easier. This
+section will present all of them and show screenshots where applicable.
+</para>
+
+<sect1 id="utils-xfbd">
+
+<title>XFbd</title>
+
+<figure>
+  <title>XFbd</title>
+  <screenshot>
+    <screeninfo>xfbd screenshot</screeninfo>
+    <graphic fileref="../images/xfbd">
+  </screenshot>
+</figure>
+
+<para>
+XFbd is a backdrop manager that displays image files on the root window,
+as a wallpaper. It can be activated in the setup dialog under the startup
+tabfolder.
+</para>
+
+<caution>
+  <title>Caution</title>
+  
+  <para>Please note that xfbd cannot be used in combination with the option
+  "Repaint root window of workspace" in XFce setup screen and vice versa
+  (both use the same root window...).</para>
+</caution>
+
+</sect1>
+
+<sect1 id="utils-xfbdmgr">
+
+<title>XFbdMgr</title>
+
+<figure>
+  <title>XFbdMgr</title>
+  <screenshot>
+    <screeninfo>xfbdmgr screenshot</screeninfo>
+    <graphic fileref="../images/xfbdmgr">
+  </screenshot>
+</figure>
+
+<para>
+XFbdMgr is a little program that can manage lists of backdrops, from which 
+xfbd can choose at startup (or when executed manually). Instead of a single 
+picture you have to choose a list. There are example lists in the standard 
+xfce backdrop directory.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfclock">
+
+<title>XFClock</title>
+
+<figure>
+  <title>XFClock</title>
+  <screenshot>
+    <screeninfo>xfclock screenshot</screeninfo>
+    <graphic fileref="../images/xfclock">
+  </screenshot>
+</figure>
+
+<para>
+XFclock is a small calendar application, with appointments.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfdiff">
+
+<title>XFDiff</title>
+
+<figure>
+  <title>XFDiff</title>
+  <screenshot>
+    <screeninfo>xfdiff screenshot</screeninfo>
+    <graphic fileref="../images/xfdiff">
+  </screenshot>
+</figure>
+
+<para>
+Very useful utility to view differences between files or directories. 
+XFDiff can also create or apply patch files.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfglob">
+
+<title>XFGlob</title>
+
+<figure>
+  <title>XFGlob</title>
+  <screenshot>
+    <screeninfo>xfglob screenshot</screeninfo>
+    <graphic fileref="../images/xfglob">
+  </screenshot>
+</figure>
+
+<para>
+XFGlob is a graphical search tool. It allows many filter options.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfgnome">
+
+<title>xfgnome</title>
+
+<para>
+xfgnome is a xfwm module used for GNOME compatibility. If started, xfwm
+acts like a "GNOME compliant Window manager" and allow the use of GNOME 
+applets such as GNOME pager. 
+</para>
+
+<para>
+This module can be activated from the Startup tabfolder in the setup 
+dialog.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfmenu">
+
+<title>xfmenu</title>
+
+<para>
+xfmenu is a module to read gnome and kde menus and add them to the xfwm menu.
+It is started from the Startup tabfolder in the setup dialog.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfmouse">
+
+<title>XFMouse</title>
+
+<figure>
+  <title>XFMouse</title>
+  <screenshot>
+    <screeninfo>xfmouse screenshot</screeninfo>
+    <graphic fileref="../images/xfmouse">
+  </screenshot>
+</figure>
+
+<para>
+XFMouse is the mouse configurator. Thanks to XFMouse, you can change the
+mouse button mapping and other parameters.
+</para>
+
+<itemizedlist>
+  <listitem><para>
+  Select Left or Right if you are left or right handed. If you
+  select "Left", logical button 1 will be mapped on physical button 3 and
+  logical button 3 will be mapped on physical button 1. Button 2 (middle) 
+  is kept unchanged. Note that this setting is global to the X server and 
+  will affect all applications running on the screen.
+  </para></listitem>
+  <listitem><para>
+  "Acceleration" determines how many pixels to move the cursor 
+  based on how much the physical pointer moved.
+  </para></listitem>
+  <listitem><para>
+  "Threshold" specifies how many pixels the physical pointer must
+  have to move for "acceleration" to take effect.
+  </para></listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="utils-xfpager">
+
+<title>XFPager</title>
+
+<figure>
+  <title>XFPager</title>
+  <screenshot>
+    <screeninfo>xfpager screenshot</screeninfo>
+    <graphic fileref="../images/xfpager">
+  </screenshot>
+</figure>
+
+<para>   
+XFPager is a small tool that provides a miniature view of all XFwm
+desktops. It is started from the startup dialog.
+</para>
+
+<para>
+XFPager is able to receive and send events to windows running on each 
+XFwm desktop. If you move a window on the screen, its image will be moved 
+in XFPager, and if you move a window in the pager, the windows will be 
+moved on the screen accordingly.
+</para>
+
+<para>
+By default, XFPager will manage the default 10 screens of XFce, but it can
+also manage up to 32 screens !
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfrun">
+
+<title>XFRun</title>
+
+<figure>
+  <title>XFRun</title>
+  <screenshot>
+    <screeninfo>xfrun screenshot</screeninfo>
+    <graphic fileref="../images/xfrun">
+  </screenshot>
+</figure>
+
+<para>
+Small program that let's you run any command (includes a command history).
+Started from the panel or by pressing [Alt+F12].
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfsamba">
+
+<title>XFSamba</title>
+
+<figure>
+  <title>XFSamba</title>
+  <screenshot>
+    <screeninfo>xfsamba screenshot</screeninfo>
+    <graphic fileref="../images/xfsamba">
+  </screenshot>
+</figure>
+
+<para>
+Samba network browser. Samba is the protocol used to communicate with 
+windows computers.
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfsound">
+
+<title>XFSound</title>
+
+<figure>
+  <title>XFSound</title>
+  <screenshot>
+    <screeninfo>xfsound screenshot</screeninfo>
+    <graphic fileref="../images/xfsound">
+  </screenshot>
+</figure>
+
+<para>
+XFSound is in charge of emitting a sound whenever an event occurs from the 
+window manager. It is started from the setup dialog.
+</para>
+
+<para>
+When XFSound is started as a module (i.e. from XFce or XFwm using the 
+keyword "Module") it just enters a loop that keeps on listening to the 
+events coming from the Window Manager (XFwm).
+</para>
+
+<para>
+The user can interact with XFSound using the graphical interface by 
+starting XFSound as a regular X application (i.e. not as a module).
+</para>
+
+</sect1>
+
+<sect1 id="utils-xfumed">
+
+<title>xfumed</title>
+
+<figure>
+  <title>xfumed</title>
+  <screenshot>
+    <screeninfo>xfumed screenshot</screeninfo>
+    <graphic fileref="../images/xfumed">
+  </screenshot>
+</figure>
+
+<para>
+xfumed is the user menu editor. Can be started from the "User Menu"
+submenu.
+</para>
+
+</sect1>
+
+</chapter>

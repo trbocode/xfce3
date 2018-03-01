@@ -1,0 +1,125 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="12" id="adv-wm-menus">
+
+<title>Menus and functions</title>
+
+<para>
+Menus and functions are quite similar from the viepoint of xfwm. A menu 
+item defines an xfwm commands to be executed when the entry is clicked. A
+function also consists of a number of xfwm commands that are either 
+executed directly or only on certain events. Functions can also be bound 
+to keys or mouse buttons.
+</para>
+
+<table frame="topbot" id="wm-conf-menus">
+<title>Menus and functions</title>
+
+<tgroup cols=3 align="left">
+<colspec colnum="1" colwidth='1*'>
+<colspec colnum="2" colwidth='2*'>
+<colspec colnum="3" colwidth='1*'>
+
+<thead>
+<row>
+<entry>Command</entry>
+<entry>Description</entry>
+<entry>Example</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>+</entry>
+  <entry>Adds an additional item to a menu or function</entry>
+  <entry>(See below)</entry>
+</row>
+<row>
+  <entry>AddToMenu &lt;mn> [&lt;entry> &lt;command>]</entry>
+  <entry>Starts the definition of a menu, or extends an existing one. An
+  &amp; in the entry name will create a keyboard accelerator for the next
+  character.</entry>
+  <entry><para>AddToMenu "user_menu"</para><para>+ "&amp;Xterm" Exec xterm -e 
+  tcsh</para></entry>
+</row>
+<row>
+  <entry>AddToFunction &lt;fn> [&lt;condition> &lt;command>]</entry>
+  <entry>Starts the definition of a function, or extends an existing one
+  </entry>
+  <entry><para>AddToFunc Move-or-Raise "I" Raise</para><para>+ "M" Move
+  </para><para>+ "D" Lower</para></entry>
+</row>
+<row>
+  <entry>DestroyFunc &lt;fn></entry>
+  <entry>Removes an unneeded function</entry>
+  <entry>DestroyFunc "Move-or-Raise"</entry>
+</row>
+<row>
+  <entry>DestroyMenu &lt;mn></entry>
+  <entry>Removes an unneeded menu</entry>
+  <entry>DestroyMenu "Utilities"</entry>
+</row>
+<row>
+  <entry>AddToMenu &lt;mn> &lt;title> Title</entry>
+  <entry>Additional directive to the "AddToMenu" command to specify a 
+  title. The <command>Title</command> command makes sure that there is 
+  a separator after the title.</entry>
+  <entry>AddToMenu "my_menu" "My Menu" Title</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para>
+A function item definition takes an event as first argument (see example 
+in the table). The event is either a mouse action or an option to 
+immediately execute the item. The mouse events are only meaningfull if a 
+function is bound to a mouse button.
+</para>
+
+<para>Recognized conditions in function definitions are:</para>
+
+<itemizedlist>
+  <listitem><para>
+  M : motion. Action takes effect on dragging the mouse.
+  </para></listitem>
+  <listitem><para>
+  I : immediate. Action takes effect immediately.
+  </para></listitem>
+  <listitem><para>
+  C : click. Action takes effect on a single mouse click.
+  </para></listitem>
+  <listitem><para>
+  D : doubleclick. Action takes effect on a doubleclick of the mouse.
+  </para></listitem>
+</itemizedlist>
+
+<para>
+There are some special functions available in xfce. These functions can be 
+customized in the same way as user defined menus.
+</para>
+
+<itemizedlist>
+  <listitem><para>
+  InitFunction : run at startup
+  </para></listitem>
+  <listitem><para>
+  RestartFunction : run when restarting
+  </para></listitem>
+  <listitem><para>
+  ExitFunction : run at exit
+  </para></listitem>
+  <listitem><para>
+  WindowListFunc : run when entry in windowlist is pressed
+  </para></listitem>
+</itemizedlist>
+       
+<para>
+By default a number of menus and functions are defined. They have no 
+special meaning; they are just always defined when (re)starting xfwm. 
+See <link linkend="wm-defaults">XFwm Defaults</link> for the default 
+commands.
+</para>
+
+</chapter>
+     

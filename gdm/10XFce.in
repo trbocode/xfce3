@@ -1,0 +1,6 @@
+NAME=XFce
+ICON=None
+DESC=XFce Desktop Environment
+EXEC=BIN_DIR/startxfce
+SCRIPT:
+exec BIN_DIR/startxfce

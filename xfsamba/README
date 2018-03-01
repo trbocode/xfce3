@@ -1,0 +1,89 @@
+/*
+
+xfsamba is a SMB navigator for the xfce environment.
+copyright 2001 Edscott Wilson Garcia under GNU/GPL.
+<edscott@imp.mx>
+
+
+contents:
+1-FAQs
+2-Wishlist
+
+
+1-FAQs:****************************************
+
+Known bugs?
+
+If the workgroup to be examined has a win95 as master browser, nmblookup will
+fail. This is a known bug in win95. To get by this, have smbd and nmbd 
+running on a linux box for that workgroup. The linux box will take over as
+master browser.
+
+How to install?
+
+Install along with the xfce environment. You require the samba suite
+programs smbclient and nmbclient for it to do anything useful, though.
+
+What is SMB? 
+
+That's the network protocol that computers with micros*ft 
+OS use.
+
+Why is xfsamba a navigator? 
+
+Because it works like a www navigator. This way 
+of cruising through a wind*ws network might be unfamiliar to the wind*ws user,
+but xfsamba is not for them. Xfsamba is for un*x/lin*x users. A browser like
+xfsamba is closer to the way SMB actually works.
+
+What are some advantages of xfsamba?
+
+It understands netbios machines with names that use latin-1 encodings 
+(not common in AngloAmerica, but very common in Europe+LatinAmerica). See
+the todo below.
+ 
+The machine on which xfsamba will run does have not to be configured to
+be part of any wind*ws workgroup or domain .
+
+t does not try to emulate the look and feel of the wind*ws 
+network-neighborhood.
+
+No setup necesary to get it up and running. SMB and NMB need not 
+even be running on the host computer (though a working smbclient 
+and nmblookup must be in $PATH).
+
+
+
+2-Wishlist:**********************************
+
+-1.5: mput and mget (must enable multiple selection) new routines,
+      thinking of future d+d
+-1.6: recursive put for uploading directories. (recurse set in command line,
+      single session, using mput routines).
+-1.65:same as above but for downloading.
+
+0:Modify xftree to accept file drops from xfsamba (xfsamba needs to be 
+  modified too).
+
+1:Complement the text-dos text-win relationship for other latin-1 languages
+  besides Spanish. (functions latin1-readable in xfsamba_mem.c).
+
+2:Put in a progress+cancel dialog for file downloading.
+
+3:Put in an option to pipe a download to an application instead of 
+  saving to disk. (problem: application must be stdin pipe enabled).
+
+4:Accept drag and drops from xftree to upload files.
+
+7:Put in a winpopup message sender function.
+
+10:Figure out if a switch from fork() to threads is possible or desireable.
+
+
+3-BUG checklist****************************************************
+
+Stuff that needs to be checked for bugs:
+ * What if the user writes IP in location and this responds with
+ * "no status"? 
+ 
+

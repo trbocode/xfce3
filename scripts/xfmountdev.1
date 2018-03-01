@@ -1,0 +1,30 @@
+.\" SCCS ID: xfmountdev.1 3.4.4 16/04/2000
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+xfmountdev \- mounts a device on the specified mount point and launches xftree. 
+Unmounts the device when xftree finishes.
+.SH SYNOPSYS
+.B xfmountdev
+.PP
+.SH DESCRIPTION
+xfmountdev is a minimalist script to be used with the XFce front panel. It 
+mounts a device on the specified mount point and launches xftree and unmount the 
+device when xftree finishes.
+.PP
+.PP
+The mount point must be present in the fstab for xfmountdev to be able to mount 
+the device.
+.SH ENVIRONMENT VARIABLE
+.PP
+.I MOUNTCMD
+gives the command used to mount a device (default mount)
+.PP
+.I UNMOUNTCMD
+gives the command used to unmount a device (default umount)
+.PP
+.SH SEE ALSO
+fstab(5), xfce, xftree, xfwm, xfpager, xfsound, xfmountdev, xfbd, xfclock
+.PP
+.SH AUTHOR
+Olivier Fourdan (fourdan@xfce.org)
+.PP

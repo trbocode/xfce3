@@ -1,0 +1,145 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="11" id="adv-wm-management">
+
+<title>Window management</title>
+
+<note>
+  <title>Note:</title>
+  <para>(*) denotes parameters overridden by XFce at start-up.</para>
+</note>
+     
+<table frame="topbot" id="wm-conf-management">
+<title>Appearance of windows</title>
+
+<tgroup cols=3 align="left">
+<colspec colnum="1" colwidth='1*'>
+<colspec colnum="2" colwidth='2*'>
+<colspec colnum="3" colwidth='1*'>
+
+<thead>
+<row>
+<entry>Command</entry>
+<entry>Description</entry>
+<entry>Example</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>AnimateWin {On | Off}</entry>
+  <entry>Enable or disable a window animation</entry>
+  <entry>AnimateWin On</entry>
+</row>
+<row>
+  <entry>AutoRaise {Yes | No} (*)</entry>
+  <entry>Enable or disable autoraise of windows (when
+  FocusMode is set to FollowsMouse)</entry>
+  <entry>Autoraise No</entry>
+</row>
+<row>
+  <entry>AutoRaiseDelay &lt;t></entry>
+  <entry>Define time in milliseconds before automatically
+  raising a window</entry>
+  <entry>AutoRaiseDelay 100</entry>
+</row>
+<row>
+  <entry>ClickRaise {Yes | No} (*)</entry>
+  <entry>Enables / Disables using mouseclick to raise
+  a window in focus follows mouse mode</entry>
+  <entry>ClickRaise Yes</entry>
+</row>
+<row>
+  <entry>ClickTime &lt;ct></entry>
+  <entry>Specifies the maximum delay (in milliseconds) between a
+  button press and a button release</entry>
+  <entry>ClickTime 150</entry>
+</row>
+<row>
+  <entry>ColormapFocus {FollowsFocus | FollowsMouse}</entry>
+  <entry>Colormap is assigned to the window that has the focus (default)
+  or the window where mouse pointer is over</entry>
+  <entry>ColormapFocus FollowsMouse</entry>
+</row>
+<row>
+  <entry>FocusMode {Click | ClickToFocus | Mouse | FollowsMouse} (*)
+  </entry>
+  <entry>Defines focus mode (Click and ClickToFocus are the same, and so 
+  are Mouse and FollowsMouse)</entry>
+  <entry>FocusMode Mouse</entry>
+</row>
+<row>
+  <entry>ForceFocus {Yes | No}</entry>
+  <entry>In focus follow mouse, may the focus be changed even if mouse 
+  pointer didn't move (You should keep this to Yes unless you're running 
+  Corel Word Perfect 2000)</entry>
+  <entry>ForceFocus Yes</entry>
+</row>
+<row>
+  <entry>IconGrid &lt;n></entry>
+  <entry>Define the grid used for icon placement</entry>
+  <entry>IconGrid 20</entry>
+</row>
+<row>
+  <entry>Iconpos {Left | Right | Top | Bottom} (*)</entry>
+  <entry>Defines the position of the icons</entry>
+  <entry>IconPos Bottom</entry>
+</row>
+<row>
+  <entry>IconSpacing &lt;n></entry>
+  <entry>Spacing between the icons</entry>
+  <entry>IconSpacing 5</entry>
+</row>
+<row>
+  <entry>MapFocus {Yes | No}</entry>
+  <entry>In focus follow mouse mode, may newly mapped windows recieve the
+  focus</entry>
+  <entry>MapFocus Yes</entry>
+</row>
+<row>
+  <entry>Margin {Left | Right | Top | Bottom} &lt;n></entry>
+  <entry>Set margin on specified side of the screen that will be free from 
+  new windows or maximized windows. With this function you can make sure 
+  that a panel or icons will always be visible</entry>
+  <entry>Margin Bottom 50</entry>
+</row>
+<row>
+  <entry>OpaqueMove {On | Off} (*)</entry>
+  <entry>Enable or disable showing contents of a window while moving</entry>
+  <entry>OpaqueMove Off</entry>
+</row>
+<row>
+  <entry>OpaqueResize {On | Off} (*)</entry>
+  <entry>Enable or disable showing contents of a window while resizing
+  </entry>
+  <entry>OpaqueResize Off</entry>
+</row>
+<row>
+  <entry>SessionManagement {On | Off}</entry>
+  <entry>Enable/Disable builtin session management</entry>
+  <entry>SessionManagement On</entry>
+</row>
+<row>
+  <entry>SnapSize &lt;n> (*)</entry>
+  <entry>Sets the size (in pixels) for windows snapping. Setting a size
+  larger than five also enables dragging a window to another desktop 
+  accross the edge of the screen.</entry>
+  <entry>SnapSize 5</entry>
+</row>
+<row>
+  <entry>WaitSession &lt;t></entry>
+  <entry>Set time to wait in seconds before starting session management 
+  (to speed up starting applications at start-up)</entry>
+  <entry>Waitsession 5</entry>
+</row>
+<row>
+  <entry>XORValue &lt;n></entry>
+  <entry>Changes the value with which bits are XOR'ed when doing 
+  rubber-band window resizing</entry>
+  <entry>XORValue 65535</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</chapter>

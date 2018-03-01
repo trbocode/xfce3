@@ -1,0 +1,304 @@
+.TH xfskin 1
+
+.SH NAME
+.P
+xfskin, version 0.2.x
+
+.SH SYNOPSYS
+.P
+.B xfskin
+
+.SH DESCRIPTION
+.P
+xfskin is a TCL script to manage skins (or "themes") for xfce.
+
+.SH WORKING
+.P
+It applies changes read from a skin file directly into the xfce configuration 
+files, than restarts xfwm to commit the changes.
+
+.SH INSTALLING
+.P
+After starting xfskin for the first time, a directory ~/xfskins is created, where the skins will be stored.
+To add a downloaded (.tar.gz) skin, use the
+.I [file/add]
+menu to add the downloaded skin. xfskin will extract the skin on the correct location & display it in the list.
+
+.SH CREATING
+.P
+To create a skin, just press the create button on the main window.
+When you create a skin, please note that you have to enter at
+least a title, an author name and one comment line befor it is accepted.
+When a skin is created, a .tar.gz file of this skin is placed in ~/xfskins, ready for upload.
+
+.SH DELETING
+.P
+To delete a skin, just press the delete button on the main window.
+When pressing the delete button in the main window, when there are no themes available,
+the xfskins directory wil be deleted & recreated, what results in a 'new' installation,
+but also removes all (.tar.gz) files in the ~/xfskins directory.
+(so be carefull with that option, you're warned!)
+
+.SH SKINS
+.P
+Ok, so a skin is a collection of settings that together change the looks of XFCE.
+A skin does not include menu items or other settings that are system (or user) depending.
+To see what settings are included in a skin, see section
+.B SKINFILE
+below.
+.P
+The skins are stored in the xfskins directory in your home. 
+The name of a skin is the name of the directory the settings are stored in.
+A skin is typically contains the following file & directories:
+.I.P
+.TP 0
+.B ~/xfskins/<skinname>/<skinname>.xfce
+This file contains the various settings this skin makes to XFCE.
+.TP 0
+.B ~/xfskins/<skinname>/backdrop
+In this subdirectory the backdrop (if any) is stored.
+.TP 0
+.B ~/xfskins/<skinname>/icons
+The icons used by this skin are stored here
+.TP 0
+.B ~/xfskins/<skinname>/sounds
+Euh... A subdir to store the sounds used by this skin.
+.TP 0
+.B ~/xfskins/<skinname>/texture
+If there's a texture used, it's placed here.
+.P
+
+.SH CONVENTIONS
+.P
+To create a skin standard, there has to be a rule, saying which item on the 
+XFCE panel stands for which application group. Otherwise you could end up with
+an icon using a Netscape image, pointing to your trashcan. 
+So, to get somewhere i choose to use the 'default' symbols of XFCE as a reference:
+the internal icons of xfce.
+From left to right there are the following icons:
+.I.P
+.TP 20
+.B [xftree]
+files related, starting xftree, or whatever file-browser you like (default xftree)
+.TP 20
+.B [terminal]
+starts your terminal (default xfterm)
+.TP 20
+.B [mail]
+starts your mail client or browser (default netscape)
+.TP 20
+.B [editor]
+starts your text editor (default abiword)
+.TP 20
+.B [calendar]
+starts your calendar, PIM or whatever (nothing default)
+.TP 20
+.B [games]
+starts your games (no default)
+.TP 20
+.B [network]
+opens your network connections 
+.TP 20
+.B [graphics]
+opens your pic editors (xv default)
+.TP 20
+.B [trash]
+this one is a little odd, it default icon points to sound, 
+while the default app points to xftrash. I choose to use trash as default.
+(default app: xftrash)
+.TP 20
+.B [printer]
+opens xfprint by default
+.TP 20
+.B [configuration]
+opens various configuration applications
+.TP 20
+.B [tools]
+opens default tools & utilities.
+
+.SH SKINFILE
+.P
+The skinfile, is a config name with the same name as the skin, 
+using the extension .xfce. It contains the following settings:
+(not that you'll need them, just for those who want to edit a skin by hand)
+
+.TP 15
+.B author=
+well, who made the skin?
+.TP 15
+.B version=
+with what version of xfskin was it made (for future compatible?)
+.TP 15
+.B comment1=
+where is it about
+.TP 15
+.B comment2=
+line 2 for the ones who have a lot to say
+.TP 15
+.B comment3=
+an extra line for those who have even more to say
+.TP 15
+.B image=
+the backdrop used in this skin. only the name, paths are added by xfskin
+.TP 15
+.B style=
+style of the backdrop: stretch, tiled or auto. if omitted, auto is used
+.TP 15
+.B newdesk=
+sound made when switched to a new desk
+.TP 15
+.B addwin=
+sound made when a window is added
+.TP 15
+.B raisewin=
+sound made when a window is raised
+.TP 15
+.B lowerwin=
+sound made when a window is lowered
+.TP 15
+.B configwin=
+sound made when a window is configured
+.TP 15
+.B focuschange=
+sound made when a window focus is changed
+.TP 15
+.B destroywin=
+sound made when a window is closed
+.TP 15
+.B iconify=
+sound made when a window is iconified
+.TP 15
+.B de-iconify=
+sound made when a window is de-iconified
+.TP 15
+.B shade=
+sound made when a window is shaded
+.TP 15
+.B un-shade=
+sound made when a window is un-shaded
+.TP 15
+.B maximize=
+sound made when a window is maximized
+.TP 15
+.B de-maximize=
+sound made when a window is de-maximized
+.TP 15
+.B startup=
+sound made on xfce startup
+.TP 15
+.B shutdown=
+sound made on xfce shutdown
+.TP 15
+.B unknown=
+sound made on unknown events
+.TP 15
+.B files-icon=
+icon nr 1 on the XFCE bar, left to right, assuming 12 popups.
+(see CONVENTIONS section above for explanation)
+.TP 15
+.B term-icon=
+icon nr 2 on the XFCE bar
+.TP 15
+.B browse-icon=
+icon nr 3 on the XFCE bar
+.TP 15
+.B edit-icon=
+icon nr 4 on the XFCE bar
+.TP 15
+.B sched-icon=
+icon nr 5 on the XFCE bar
+.TP 15
+.B games-icon=
+icon nr 6 on the XFCE bar
+.TP 15
+.B net-icon=
+icon nr 7 on the XFCE bar
+.TP 15
+.B graph-icon=
+icon nr 8 on the XFCE bar
+.TP 15
+.B trash-icon=
+icon nr 9 on the XFCE bar
+.TP 15
+.B print-icon=
+icon nr 10 on the XFCE bar
+.TP 15
+.B config-icon=
+icon nr 11 on the XFCE bar
+.TP 15
+.B utils-icon=
+icon nr 12 on the XFCE bar
+.TP 15
+.B help-icon=
+Help icon (right most) on the XFCE bar
+.TP 15
+.B clocktype=
+Display an analog or digital clock. Analog is default.
+.TP 15
+.B 24h=
+Display the clock in military mode. Defaults to yes.
+.TP 15
+.B menufont=
+Font used for the root menus.
+.TP 15
+.B iconfont=
+Font used for the icons.
+.TP 15
+.B titlefont=
+Font used for window titles.
+.TP 15
+.B active-gradient=
+Use a gradient on active window (only Xfce_engine IFAIK), defaults to yes
+.TP 15
+.B inactive-gradient=
+Use a gradient on inactive window (only Xfce_engine IFAIK), defaults to yes
+.TP 15
+.B mouse=
+color of the mouse pointer
+.TP 15
+.B statusbar=
+color of gtk status-bars
+.TP 15
+.B clock=
+color of the clock & xfce buttons (also 3rd desktop, when not using a backdrop)
+.TP 15
+.B inactiveleft=
+left color of inactive window, when usng gradient titlebars.
+.TP 15
+.B root=
+color of the first desktop, also used as selection color
+.TP 15
+.B activeright=
+right color of the active window. Also the color of the second desktop.
+.TP 15
+.B activeleft=
+left color of the active window.
+.TP 15
+.B panel=
+color of the xfce panel, border etc.
+.TP 15
+.B engine=
+used theme engine (on the Panel tab of the Setup dialog), defaults to XFCE
+.TP 15
+.B win-engine=
+used window border style (on the Window tab of the Setup dialog), defaults to XFCE
+.TP 15
+.B font=
+Default font
+.TP 15
+.B texture=
+Used texture.
+.P
+
+.SH BUGS
+.P
+One of the 'bugs' i now know of, is that the XFCE panel sometimes doesn't
+show up when switching to a skin without a backdrop, for example the empty skin.
+Just restart xfwm (using the root menu) to have a work-around.
+.SH author
+.P
+H.R. ter Veer (terveer@subdimension.com)
+.SH SEE ALSO
+.P
+xfce, xfwm
+.P

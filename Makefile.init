@@ -1,0 +1,16 @@
+all:	libtool autoconfig
+
+no-libtool:	autoconfig
+
+libtool:
+	libtoolize --copy --force
+
+autoconfig:
+	aclocal --verbose
+	autoheader
+	automake --add-missing --copy --include-deps --foreign --gnu --verbose
+	autoconf
+	@echo System ready for compilation. Now run ./configure and make to build XFce
+
+
+

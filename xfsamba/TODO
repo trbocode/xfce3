@@ -1,0 +1,32 @@
+- buggy when mixed files and directories are dropped or pasted.
+-check and eliminate need for latin1 translation routines (no longer necesary
+on later versions of samba):
+  about this, 
+> I have something to report you about a little bug: xfsamba displays some 
+> cyrillic letters in filenames incorrectly (lies about some letters). 
+> Because of this it is impossible to download such files - smbclient 
+> sends a error message: file does not exist (xfsamba requests wrong 
+> filename). Would you like to correct this strange behavior?
+
+It is now fixed (0.49) and you should have better behaviour with
+cyrillic characters. Nonetheless, similar bugs were found in
+upload:FIXED
+download:FIXED
+drag and drop:NOT YET FIXED
+remove: PARTIALLY FIXED
+tar: NOT YET FIXED
+mnt: NOT YET FIXED
+mkdir: FIXED
+
+You can download 0.49 from the xfce CVS, or wait for 0.50 release when
+all the above should be fixed (with respect to samba 2.2.5, since the
+weird behaviour is due to workarounds for bugs in samba)
+
+
+-print by DnD
+-cut,copy and paste options
+-font (with iconsize) and background color
+-bug: gtk in suspended state when waiting for a forked smbumount which is
+      pending (mount a share, open a terminal with the xftree, close the
+      xftree, this will create condition).
+--- in xftree: enable recursive downloading when a directory is dropped there.

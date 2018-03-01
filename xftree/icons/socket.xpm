@@ -1,0 +1,23 @@
+/* XPM */
+static char * socket_xpm[] = {
+"16 16 4 1",
+" 	s None	c None",
+".	c blue",
+"X	c blue4",
+"o	c black",
+"                ",
+"          .X    ",
+"         .X     ",
+"        .X      ",
+"       .X       ",
+"      .X        ",
+"     .X         ",
+"    .XXXXXX     ",
+"   .......X     ",
+"        .X      ",
+"       .X       ",
+"   .  .X        ",
+"   ...X         ",
+"   ..X          ",
+"   .ooo         ",
+"                "};

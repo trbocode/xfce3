@@ -1,0 +1,21 @@
+Known bugs:
+
+*Only when extracting from tarfile from one xftree window to a *different* xftree window:
+ - If action is move (and tarfile is not compressed), extracted file is deleted but the    ctree is not updated.
+ - If action is extract, the created file has mode 0640 instead of the mode of the
+   file within the tarfile.
+
+*The entry information of symlinks to directories is that of the directory 
+ it points to. Otherwise it is the information of the symlink itself.
+ This is because this information is used to determine whether an update
+ is necesary. (This will be fixed with a checksum variable for directory 
+ changes).
+
+*Symlinks that point to directories are filtered as files, not directories
+
+*Extraction of files with embeded spaces from the inside of tar files will
+ fail.
+
+*If multiple instances of xftree are being run, closing one of them will delete
+ all temporary files. (They are temporary, after all).
+

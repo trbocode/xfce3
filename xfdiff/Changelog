@@ -1,0 +1,102 @@
+* changes xfdiff 1.2.8:
+  follow symlinks
+  some other modifications: gtk-2.0 option not compiling 
+  because the modifications have not been added for gtk2
+
+* changes xfdiff 1.2.7:
+  modified the patch file parser to take non unified format,
+  in particular, Mosix patches to the kernel.
+
+* changes xfdiff 1.2.6:
+- Put in a vpane for diagnostics (xfdiff_diag.c no longer used)
+- Put in directive for gtk+2.0 : 
+   drag+drop, fontselector (gtk bug), 
+   higlighted text color, wheel hack, xfcestyle (not using xfce-init?)
+   maybe some more stuff I haven't noticed.
+makefile for gtk2.0 (this will later be removed from this file):
+
+XFCE_SRC=/home/edscott/sourceforge/xfce
+
+IGTK=-I/usr/local/lib/gtk-2.0/include -I/usr/local/include/pango-1.0 -I/usr/local/include/atk-1.0 -I/usr/local/include/gtk-2.0 -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include 
+
+INC= -I$(XFCE_SRC) -I.  -I/usr/X11R6/include $(IGTK) -I$(XFCE_SRC)/libs/
+
+OPTS=-D__GTK_2_0 -DXFCE_DIR=\"/usr/local/share/xfce\" -DXFCE_LOCALE_DIR=\"/usr/local/share/locale\" -DXFCE_CONFDIR=\"/usr/local/etc/xfce\" 
+
+CFLAGS=-g -O2 -Wall -Wno-implicit-int -c $(INC) $(OPTS)
+
+LGTK= /usr/local/lib/libgdk_pixbuf-1.3.so /usr/local/lib/libgtk-x11-1.3.so /usr/local/lib/libgmodule-1.3.so /usr/local/lib/libglib-1.3.so /usr/local/lib/libgdk-x11-1.3.so
+
+LIBS=-rdynamic -L/usr/X11R6/lib -L/usr/lib -ldl -lXi -lXext -lX11 -lm -ldl -lXpm $(LGTK) -lSM -lICE 
+
+LINK=gcc -g -O2 -Wall -Wno-implicit-int 
+
+xfdiff : globber.o xfdiff.o xfdiff_colorsel.o xfdiff_gui.o xfdiff_misc.o makefile
+
+	$(LINK) -o xfdiff globber.o xfdiff.o  xfdiff_colorsel.o xfdiff_gui.o xfdiff_misc.o $(LIBS)  
+
+xfdiff.o : xfdiff.c xfdiff.h
+xfdiff_colorsel.o : xfdiff_colorsel.c xfdiff.h
+xfdiff_gui.o : xfdiff_gui.c xfdiff.h
+xfdiff_misc.o : xfdiff_misc.c xfdiff.h 
+
+clean:
+	rm *.o
+	rm xfdiff
+
+------------------------------------------------------------------------
+
+
+* changes xfdiff 1.2.4:
+- fixed a bug that made xfdiff-patch fail when viewing linux kernel patches
+
+* changes xfdiff 1.2.3:
+
+ - Several bugs fixed (resizing, diff'ing directories, binary files, etc.)
+ - Source code reorganized.
+ - More command line options.
+ - Xfdiff now lives in a separate directory.
+ - Modal dialogs now linked from ../libs/xfce-common.c 
+
+ - Line synchronization option added.
+ - Diff/Patch toggle added
+ - Auto set strip level option added
+ - Menubar enhanced but simplified.
+ - All "input paths" can now be dragged and dropped.
+
+New texts:
+	"Include subdirectories?"
+	"Include binary files?"
+	"Line synchronization enabled.\n"
+	"Line synchronization disabled.\n"
+	"****Binary data****\n"
+	"Reversed patch detected. Should I try reversing it?"
+	"Switch to patch mode"
+	"Switch to diff mode"
+	"Use line synchronization voids"
+	"Patch options only active in patch-mode"
+	"Automatic strip level"
+
+Corrected texts:
+	"View differences" (was "Do diff")
+	"View differences in new" (was "Do diff in new")
+	"Next difference" (was "Next diff")
+	"Previous difference" (was "Prev diff")
+	"Previous file" (was "Prev file")
+	"View patch created differences" (was "Do patch")
+	"View patch created differences in new" (was "Do patch in new")
+	"Apply patch to Hard Drive" (was "Apply patch")
+	"Undo patch to Hard Drive" (was "Undo patch")
+	"No file was found for patching\nEither the directory to apply patch is not correctly selected\nor an incorrect strip level was used.\n"
+		(was "[...] (default -p0)\n")  
+
+Obliterated texts:
+	"Press do_diff button again to see changes.\n" 
+	"No right file has been selected."
+	"No left file has been selected."
+	"That is a directory (or symlink)"
+
+ *  todo (maybe):
+- add option to interrupt a running "diff"
+ 
+

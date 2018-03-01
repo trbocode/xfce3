@@ -1,0 +1,36 @@
+# this is sample taskbar rc file
+# '#' in first column starts on-line comment
+
+# right-click popup menu
+# after 'Menu' option put in double quotes first menu label and then XFWM command
+#  to execute when menu is selected.%% is substituted by desktop selected by 
+#  from submenu (automatically added by taskbar)
+#  'SEP' is for creating menu separtator
+#  'TASKJAR' puts current task in taskjar 
+Menu "(De)Iconify" "Iconify"
+Menu "(Un)Shade" "Shade"
+Menu "Min/Maximize" "Maximize"
+Menu "Send to..." "WindowsDesk 0 %%"
+Menu SEP
+Menu "Close" "Close"
+Menu SEP
+Menu "Put in TaskJar" TASKJAR
+
+# after 'Taskjar' option put pattern ('*' and '?' wildcard are allowed) matching
+#  window names automatically put in taskjar. Bellow are examples
+# Taskjar mstasz*
+# Taskjar xterm*
+
+# after 'Option' option put various taskbar options. Currently available
+#  are: 
+#  -- 'WindowListSkip' or 'NO_WindowListSkip' - turns on/off 
+#  respect for WindowListSkip XFWM flag
+#  -- HidePanel - hides XFCE panel when taskbar is in 'Stand alone' mode
+
+Option WindowListSkip
+#Option HidePanel
+
+
+
+
+

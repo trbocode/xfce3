@@ -1,0 +1,89 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="19" id="copyright">
+
+<title>Copyright</title>
+
+<para>
+Copyright (C) 1997-2001 Olivier Fourdan (fourdan@xfce.org)
+</para>
+
+<variablelist>
+  <varlistentry>
+    <term>
+    - xfce, xfclock, xfbd, xfmouse & xfsound are written by :
+    </term>
+    <listitem><para>
+    Olivier Fourdan <email>fourdan@xfce.org</email>
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>
+    - XFTree is based on xtree from :
+    </term>
+    <listitem><para>
+    Rasca Gmelch <email>thron@gmx.de</email>
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>
+    - xfwm and xfpager are based on fvwm and fvwm2 from :
+    </term>
+    <listitem><para>
+    Robert Nation and Charles Hines
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>
+    - xfdiff, xfglob and xfsamba are written by :
+    </term>
+    <listitem><para>
+    Edscott Wilson Garcia <email>edscott@imp.mx</email>
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>
+    - xfbdmgr is written by :
+    </term>
+    <listitem><para>
+    Alex Lambert <email>alex@penwing.uklinux.net</email>
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>
+    - xfmenu and xfumed are written by :
+    </term>
+    <listitem><para>
+    Jasper Huijsmans <email>j.b.huijsmans@chem.rug.nl</email>
+    </para></listitem>
+  </varlistentry>
+</variablelist>
+
+     
+
+<para>
+This program is free software; you can redistribute it and/or modify it 
+under the terms of the GNU General Public License as published by the 
+Free Software Foundation; either version 2 of the License, or (at your 
+option) any later version.
+</para>
+
+<para>
+This program is distributed in the hope that it will be useful, but 
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License 
+for more details.
+</para>
+
+<para>
+You should have received a copy of the GNU General Public License along 
+with this program; if not, write to the Free Software Foundation, Inc., 
+59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+</para>
+
+</chapter>

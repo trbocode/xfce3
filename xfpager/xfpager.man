@@ -1,0 +1,86 @@
+.\" SCCS ID: xfpager.man 1.2.7 18/03/1998
+.TH XFce 1F "Olivier Fourdan"
+.SH NAME
+XFCE \- XFce Pager
+.SH SYNOPSYS
+.B xfpager [desks]
+.PP
+.SH DESCRIPTION
+xfpager is the pager for XFwm
+.PP
+xfpager must be started from XFwm's config or from XFce using the keyword "Module"
+to work with XFwm properly.
+.PP
+From XFce menus :
+.sp
+Module xfpager
+.fi
+Or from XFwm configuration file :
+.nf
+.sp
+AddToFunc "InitFunction"
++              "I" Module xfpager
+.sp
+.PP
+.SH CONFIGURATION OPTIONS
+Add these options to your default XFwm configuration file 
+(ie sample.xfwmrc, system.xfwmrc, $HOME/.xfwmrc)
+
+.IP "*xfpager.geometry \fIgeometry\fP"
+Specifies the pager windows location and geometry, in standard X11 notation. 
+
+.IP "*xfpager.icongeometry \fIgeometry\fP"
+Specifies a size (optional) and location (optional) for the pager's icon 
+window. 
+
+.IP "*xfpager.font \fIfont-name\fP"
+Specified a font to use to label the desktops.  If \fIfont_name\fP is
+"none" then no desktop labels will be displayed.
+
+.IP "*xfpager.smallfont \fIfont-name\fP"
+Specified a font to use to label the window names in the pager. If not
+specified, the window labels will be omitted. 
+
+.IP "*xfpager.label \fIdesk label\fP"
+Assigns the text \fIlabel\fP to desk \fIdesk\fP in the pager window.
+Useful for assigning symbolic names to desktops, ie
+.nf
+.sp
+*xfpager.label 1 One
+*xfpager.label 2 Two
+*xfpager.label 3 Three
+*xfpager.label 4 Four
+.sp
+.fi
+.PP
+.SH SEE ALSO
+xfce, xfwm
+.PP
+.SH AUTHOR
+xfpager is based on FvwmPager from :
+.PP
+Robert Nation 
+.PP
+Copyright 1994, Robert Nation. No guarantees or warantees or anything
+are provided or implied in any way whatsoever. Use this program at your
+own risk. Permission to use this program for any purpose is given,
+as long as the copyright is kept intact.
+.PP
+DeskColor patch contributed by Alan Wild
+.PP
+XFce/XFwm is written by :
+.PP
+Olivier Fourdan (fourdan@xfce.org)
+.PP
+.B  This software (XFce/XFwm) is absolutely free of charge. Can be distributed 
+.B freely, but mention original name and author if modified.
+.PP  
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHOR (O. FOURDAN) BE 
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN 
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+.P

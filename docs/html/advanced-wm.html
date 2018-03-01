@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Advanced XFwm configuration</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="PREVIOUS"
+TITLE="Other resources"
+HREF="resources.html"><LINK
+REL="NEXT"
+TITLE="General configuration"
+HREF="adv-wm-general.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="resources.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="adv-wm-general.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="PART"
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="TITLE"
+>II. Advanced XFwm configuration</H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>9. <A
+HREF="adv-wm-general.html"
+>General configuration</A
+></DT
+><DT
+>10. <A
+HREF="adv-wm-appearance.html"
+>Appearance</A
+></DT
+><DT
+>11. <A
+HREF="adv-wm-management.html"
+>Window management</A
+></DT
+><DT
+>12. <A
+HREF="adv-wm-menus.html"
+>Menus and functions</A
+></DT
+><DT
+>13. <A
+HREF="adv-wm-commands.html"
+>XFwm commands</A
+></DT
+><DT
+>14. <A
+HREF="adv-wm-bindings.html"
+>Keyboard shortcuts and mouse bindings</A
+></DT
+><DT
+>15. <A
+HREF="adv-wm-style.html"
+>Appearance of other application</A
+></DT
+><DT
+>16. <A
+HREF="adv-wm-xresources.html"
+>X Resources</A
+></DT
+><DT
+>17. <A
+HREF="adv-wm-defaults.html"
+>XFwm default configuration</A
+></DT
+><DT
+>18. <A
+HREF="adv-wm-examples.html"
+>Examples</A
+></DT
+></DL
+></DIV
+><DIV
+CLASS="PARTINTRO"
+><P
+>If you want to customize xfwm behaviour beyond what is possible in the
+setup dialog, or if for some reason you run xfwm without the panel (put 
+the command <B
+CLASS="COMMAND"
+>xfwm -noxfce</B
+> in your 
+<TT
+CLASS="FILENAME"
+>$HOME/.xinitrc</TT
+> file if you want this), you have to 
+read this part of the book. It involves editing a text configuration file
+in the good old unix tradition.</P
+><P
+>The first step to customize your xfwm configuration is to copy the
+sample configuration file to the your 
+<TT
+CLASS="FILENAME"
+>$HOME/.xfce</TT
+> directory. The
+location of this file depends on the compilation options. When compiling
+from source <TT
+CLASS="FILENAME"
+>/usr/local/etc/xfce</TT
+> is
+the default. For the binary packages this file can be found in 
+<TT
+CLASS="FILENAME"
+>/etc/X11/xfce</TT
+>.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><TT
+CLASS="PROMPT"
+> $ </TT
+><B
+CLASS="COMMAND"
+>cp</B
+> <TT
+CLASS="REPLACEABLE"
+><I
+>/etc/X11/xfce/xfwmrc</I
+></TT
+> <TT
+CLASS="FILENAME"
+>$HOME/.xfce</TT
+></PRE
+></TD
+></TR
+></TABLE
+><P
+>The configuration file contains commands for xfwm. The configuration 
+system is very flexible and has many options, but as a consequence it can 
+be rather complex.</P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="resources.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="adv-wm-general.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Other resources</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>General configuration</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,238 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="5" id="fileman">
+
+<title>File Manager</title>
+
+<para>
+XFTree is a very simple file manager, which provides a graphical user 
+interface to most common file operations. XFTree supports drag and drop 
+to itself, other GTK+ applications and, of course, the XFce panel.
+</para>
+
+<figure>
+  <title>XFTree</title>
+  <screenshot>
+    <screeninfo>xftree screenshot</screeninfo>
+    <graphic fileref="../images/xftree">
+  </screenshot>
+</figure>
+
+<para>
+Starting xftree will use the user's home directory as the default root if 
+no directory is given as argument.
+</para>
+
+<para>
+For XFTree a number of default shortcuts and mouse bindings are defined. 
+</para>
+
+<table frame="topbot" id="fm-bindings">
+<title>XFTree default mouse bindings</title>
+
+<tgroup cols="3" align="left">
+
+<thead>
+<row>
+  <entry>Mouse button</entry>
+  <entry>Click</entry>
+  <entry>Action</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>Right</entry>
+  <entry>Single</entry>
+  <entry>popup a context menu (which depends on selected items)</entry>
+</row>
+<row>
+  <entry>Left</entry>
+  <entry>Single</entry>
+  <entry>Select an item; [SHIFT] allow selection of multiple items and 
+  [CTRL] will add/remove items to the selection</entry>
+</row>
+<row>
+  <entry>Middle</entry>
+  <entry></entry>
+  <entry>Convenient for drag and drop since the selection will not be
+  changed.</entry>
+</row>
+<row>
+  <entry>Left</entry>
+  <entry>Double Click</entry>
+  <entry>Start the selected item or if the item is a regular file, start
+  the registered application. If the selected item is a directory, expand
+  or collapse the entry.</entry>
+</row>
+<row>
+  <entry>Left</entry>
+  <entry>Double Click + Alt key</entry>
+  <entry>The same as above, but start application in a terminal or if a
+  directory is selected change the root of the tree to that directory.
+  </entry>
+</row>
+<row>
+  <entry>Left or Middle</entry>
+  <entry>Drag and drop</entry>
+  <entry>By default, drag and drop moves the items. If [Ctrl] is pressed 
+  during drag, items are copied instead. Pressing [CTRL+SHIFT] during drag
+  and drop will link the destination to the source (symbolic link). Drag 
+  and drop of URL is allowed, e.g. from mozilla as long as CURL is 
+  available. The corresponding file will be downloaded</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para></para>
+
+<table frame="topbot" id="fm-shortcuts">
+<title>XFTree default keyboard shortcuts</title>
+
+<tgroup cols=2 align="left">
+
+<thead>
+<row>
+  <entry>Key</entry>
+  <entry>Action</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>A</keycap></keycombo>
+  </entry>
+  <entry>Select all items of the selected directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>Shift</keycap><keycap>A</keycap>
+    </keycombo>
+  </entry>
+  <entry>Unselect all</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>
+  </entry>
+  <entry>Open the about dialog</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>D</keycap></keycombo>
+  </entry>
+  <entry>Duplicate the marked file</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>Shift</keycap><keycap>D</keycap>
+    </keycombo>
+  </entry>
+  <entry>Hide/show hidden files (dotfiles)</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>E</keycap>
+    </keycombo>
+  </entry>
+  <entry>Empty the trash directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F</keycap>
+    </keycombo>
+  </entry>
+  <entry>Find files in the current directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>G</keycap>
+    </keycombo>
+  </entry>
+  <entry>Go to selected directory or ask if no directory is selected
+  </entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>D</keycap>
+    </keycombo>
+  </entry>
+  <entry>Go to home directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>I</keycap>
+    </keycombo>
+  </entry>
+  <entry>Properties of selected item</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>J</keycap>
+    </keycombo>
+  </entry>
+  <entry>Define a default application for a file name suffix</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>K</keycap>
+    </keycombo>
+  </entry>
+  <entry>create a new file</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>N</keycap>
+    </keycombo>
+  </entry>
+  <entry>create a new directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>Q</keycap>
+    </keycombo>
+  </entry>
+  <entry>Quit the program</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>R</keycap>
+    </keycombo>
+  </entry>
+  <entry>Rename selected file or directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>T</keycap>
+    </keycombo>
+  </entry>
+  <entry>Open trash directory in new window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>U</keycap>
+    </keycombo>
+  </entry>
+  <entry>Go up one directory</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>W</keycap>
+    </keycombo>
+  </entry>
+  <entry>Close current window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>X</keycap>
+    </keycombo>
+  </entry>
+  <entry>Delete selected items</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</chapter>

@@ -1,0 +1,280 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="3" id="setup">
+
+<title>Setup Dialog</title>
+
+<para>
+As stated before, XFce is very intuitive. All customization can be 
+performed through its graphical user interface. For this purpose XFce
+provides a setup dialog with 4 tabfolders :
+</para>
+
+<itemizedlist>
+  <listitem><para>Palette</para></listitem>
+  <listitem><para>XFce</para></listitem>
+  <listitem><para>Windows</para></listitem>
+  <listitem><para>Startup</para></listitem>
+</itemizedlist>
+
+<sect1 id="setup-palette">
+
+<title>Palette tabfolder</title>
+
+<figure>
+  <title>Palette tabfolder</title>
+  <screenshot>
+    <screeninfo>Palette setup screenshot</screeninfo>
+    <graphic fileref="../images/xfce_setup1">
+  </screenshot>
+</figure>
+
+<para>
+Since XFce is based on the popular GTK+ toolkit, it uses the .gtkrc style
+hidden configuration file located in the user's home directory. This 
+enables all GTK+ applications to share the same color scheme.
+</para>
+
+<para>
+While .gtkrc is usually copied from a theme or written by hand, XFce is 
+able to automatically generate the .gtkrc file from the color values and 
+font selected by the user in the palette setup screen.
+</para>
+
+<para>
+XFce is able to determine whether the .gtkrc file is customized by the 
+user or not. If one wants to build his own .gtkrc style or if one uses a 
+style from GNOME Control Center (gnomecc), XFce won't override it (as a 
+result, if you curently have a .gtkrc file in your home directory and you 
+want XFce to manage the style for you, you should remove or rename your 
+current ~/.gtkrc file). But if there is no .gtkrc file in user's home 
+directory or if it is empty, XFce will generate a .gtkrc file so all GTK+
+applications, including GNOME applications, will share exactly the same 
+look.
+</para>
+
+<para>
+A palette, from XFce's point of view, is made of 8 colors and a font name.
+Each color is used to display specific items in the XFce desktop, like the
+mouse pointer, the default window background, the text fields, etc. The 
+color you select for this palette are shared by all XFce aware applications
+(XFTree, XFClock,XFwm, etc.).
+</para>
+
+<para>
+By clicking on one of the colors, you can change it using the color 
+selector. The palette can be saved to disk using the "Save..." button.
+You can retrieve it later using the "Load..." button. You don't necessarily
+need to save your palette to disk unless you want to share it with other 
+users. The current palette is automatically saved to a file in the user's
+home directory so that XFce will have the same color scheme when you 
+restart it.
+</para>
+
+<para>
+In this tabfolder you can also choose a GTK engine to use. XFce can try to
+make other application use the xfce color scheme. You can activate this by 
+selecting the option "apply colors to all applications".
+</para>
+
+<para>
+The font used for displaying text in XFce is selected in the XFce tabfolder.
+</para>
+
+</sect1>
+
+<sect1 id="setup-xfce">
+
+<title>XFce tabfolder</title>
+
+<figure>
+  <title>XFce tabfolder</title>
+  <screenshot>
+    <screeninfo>XFce setup screenshot</screeninfo>
+    <graphic fileref="../images/xfce_setup2">
+  </screenshot>
+</figure>
+
+<para>This dialog gives access to all XFce options :</para>
+
+<itemizedlist>
+  <listitem><para>
+  Let XFce repaint the root window with the color of the screen button.
+  </para></listitem>
+  <listitem><para>
+  Use a gradient instead of plain color (only available if previous
+  option is selected). This option has no effect on terminals with
+  less that 256 colors, to reduce color usage.
+  </para></listitem>
+  <listitem><para>
+  Use tear-off menus (see popup menus, earlier in this manual).
+  </para></listitem>
+  <listitem><para>
+  Show subprocess diagnostic dialog. This option captures the output
+  to stderr for programs started from xfce.
+  </para></listitem>
+  <listitem><para>
+  Layer of the panel. Choosing a higher layer makes the panel stay
+  on top of all windows in a lower layer. You can choose layers from
+  1 to 12; 7 is the default value.
+  </para></listitem>
+  <listitem><para>
+  Digital clock on panel.
+  </para></listitem>
+  <listitem><para>
+  Use 24 hr clock.
+  </para></listitem>
+  <listitem><para>
+  Set the delay before tooltips appear.
+  </para></listitem>
+  <listitem><para>
+  The number of virtual screens available in XFce panel. From 2 to
+  10 screens are available.
+  </para></listitem>
+  <listitem><para>
+  The number of popup menus : You can choose to have from 0 up to 12
+  popup menus in XFce panel !
+  </para></listitem>
+  <listitem><para>
+  The size if icons displayed on the panel. If your pixmaps are
+  larger than the values specified, the images are automatically
+  scaled to fit the button.
+  </para></listitem>
+  <listitem><para>
+  The size of the icons in the popup menus. Same as above.
+  </para></listitem>
+  <listitem><para>
+  The font used in XFce applications (as for the palette, this font
+  is shared by all XFce applications).
+  </para></listitem>
+</itemizedlist>
+
+<note>
+  <title>Notes:</title>
+  
+  <orderedlist>
+    <listitem><para>
+    The option "repaint root window" overrides any other application
+    trying to use the root window. As a result, if you specify a
+    backdrop in xfbd, XFce's backdrop manager, make sure you disable
+    this option.
+    </para></listitem>
+    <listitem><para>
+    By changing the size of the icons, along with the number of popup
+    menus available in XFce panel,you can adapt XFce to all types of
+    screens including small screens.
+    </para></listitem>
+  </orderedlist>
+</note>  
+  
+</sect1>
+
+<sect1 id="setup-wm">
+
+<title>Windows Tabfolder</title>
+
+<figure>
+  <title>Windows tabfolder</title>
+  <screenshot>
+    <screeninfo>XFwm setup screenshot</screeninfo>
+    <graphic fileref="../images/xfce_setup3">
+  </screenshot>
+</figure>
+     
+<para>
+This tabfolder is for managing options for XFwm, the window manager. The
+behavior of the windows can be tuned by using the following options :
+</para>
+
+<itemizedlist>
+  <listitem><para>
+  Click to focus windows : If you enable this option, you will have
+  to click inside a window to give it the keyboard focus. Otherwise
+  the keyboard focus will be given to the window below the mouse
+  pointer. If you move the pointer the focus moves accordingly.
+  </para></listitem>
+  <listitem><para>
+  When Autoraise window is enabled (this option is not available if
+  "Click to focus" is enabled) the windows with keyboard focus are
+  automatically raised, i.e. placed on top of all other windows.
+  </para></listitem>
+  <listitem><para>
+  Show contents of windows during move/resize defines whether the
+  whole window or just an outline shadow should be shown during
+  move/resize operations. The outline shadow (ie if this option is
+  not selected) gives additional informations about the window
+  position and geometry. Please note that opaque move and resize can
+  load your system or your network if using Xfce on a remote X
+  terminal, by causing a lot of window exposure events.
+  </para></listitem>
+  <listitem><para>
+  The title bar of the active window can be painted using a solid or
+  a gradient color. Just select "Use gradient color for active window" 
+  to use a gradient color.
+  </para></listitem>
+  <listitem><para>
+  Window border style. XFce provides a number of window themes.
+  </para></listitem>
+  <listitem><para>
+  Set the size of the snap grid for windows. Window snapping is a
+  very convenient feature : When a window is moved such that it
+  touches another window or the screen edge it holds that position
+  for a moment. Using this feature, you can align windows quite
+  easily by just moving them till they hold then releasing them.
+  </para></listitem>
+  <listitem><para>
+  "Snapsize" option also drives the autodesk switch feature. By
+  setting a snapsize lower or equal to 5, the autodesk switch is
+  disabled.
+  </para></listitem>
+  <listitem><para>
+  XFwm automatically arranges the iconified windows on the screen.
+  You can specify where to place the icons by selecting top, left,
+  bottom or right.
+  </para></listitem>
+  <listitem><para>
+  The 3 last fields are for changing the fonts used by the window
+  manager, for titles, icons and menus respectively.
+  </para></listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="setup-startup">
+
+<title>Startup Tabfolder</title>
+
+<figure>
+  <title>Startup tabfolder</title>
+  <screenshot>
+    <screeninfo>Startup setup screenshot</screeninfo>
+    <graphic fileref="../images/xfce_setup4">
+  </screenshot>
+</figure>
+     
+<para>
+Using the options from this screen you can adjust which XFce core modules
+(daemons/services) you want to start when XFce starts. For example, if you
+don't want the pager to be launched on startup, just unselect the option. 
+Beware that if a module is not started, the corresponding feature won't be 
+enabled : If you don't start xfsound, you won't get any sound in XFce.
+</para>
+
+<para>Available options are:</para>
+
+<itemizedlist>
+  <listitem><para>Sound Module : starts xfsound module.</para></listitem>
+  <listitem><para>Mouse settings : starts xfmouse module.</para></listitem>
+  <listitem><para>Backdrop settings : starts xfbd to manage the background.
+  </para></listitem>
+  <listitem><para>Pager : starts xfpager module.</para></listitem>
+  <listitem><para>GNOME : starts xfgnome module to provide GNOME compatibility.
+  </para></listitem>
+  <listitem><para>GNOME menu : starts xfmenu to generate gnome menu in root menu
+  xfwm.</para></listitem>
+  <listitem><para>KDE menu : starts xfmenu to generate kde menu.</para></listitem>
+</itemizedlist>
+   
+</sect1>
+
+</chapter>

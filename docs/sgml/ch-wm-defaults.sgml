@@ -1,0 +1,221 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="17" id="adv-wm-defaults">
+
+<title>XFwm default configuration</title>
+
+<para>
+The following commands are issued when xfwm (re)starts. The functions, 
+menus, mouse bindings and keyboard shortcuts defined can be used and 
+customized in the $HOME/.xfce/xfwmrc file.
+</para>
+
+<programlisting>
+ XORValue 0
+ ModulePath $PATH
+ ActiveColor white #DCDCDC
+ InactiveColor black #DCDCDC
+ TitleStyle Active Solid #5F7EAB
+ TitleStyle Inactive Solid #C2C2C2
+ MenuColor black #DCDCDC white #5F7EAB
+ CursorColor white black
+ FocusMode Click
+ AnimateWin Off
+ OpaqueMove On
+ OpaqueResize On
+ AutoRaise Off
+ AutoRaiseDelay 250
+ SnapSize 10
+ SessionManagement On
+ WaitSession 10
+ IconFont fixed
+ IconGrid 10
+ IconSpacing 5
+ IconPos Right
+ 
+ Style "*" Title, BorderWidth 6
+ Style "XFce*" Sticky
+ Style "XFbd*" Sticky
+ Style "Popup*" Sticky
+ 
+ AddToMenu "__builtin_exit_menu__" "&amp;Restart" Restart xfwm
+ AddToMenu "__builtin_exit_menu__" "&amp;Quit" Quit
+ 
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 1" WindowsDesk 0 0
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 2" WindowsDesk 0 1
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 3" WindowsDesk 0 2
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 4" WindowsDesk 0 3
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 5" WindowsDesk 0 4
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 6" WindowsDesk 0 5
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 7" WindowsDesk 0 6
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 8" WindowsDesk 0 7
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 9" WindowsDesk 0 8
+ AddToMenu "__builtin_sendtodesk_menu__" "Workspace 10" WindowsDesk 0 9
+ 
+ AddToMenu "__builtin_window_menu__" "&amp;Move" Move
+ AddToMenu "__builtin_window_menu__" "&amp;Resize" Resize
+ AddToMenu "__builtin_window_menu__" "(De)&amp;Iconify" Iconify
+ AddToMenu "__builtin_window_menu__" "(Un)&amp;Stick" Stick
+ AddToMenu "__builtin_window_menu__" "(Un)S&amp;hade" Shade
+ AddToMenu "__builtin_window_menu__" "(Un)Ma&amp;ximize" Maximize 100 100
+ AddToMenu "__builtin_window_menu__" "" Nop
+ AddToMenu "__builtin_window_menu__" "Se&amp;nd to..." Popup "__builtin_sendtodesk_menu__"
+ AddToMenu "__builtin_window_menu__" "S&amp;witch to..." WindowList
+ AddToMenu "__builtin_window_menu__" "" Nop
+ AddToMenu "__builtin_window_menu__" "&amp;Close" Delete
+ 
+ AddToMenu "user_menu" "User Menu" Title
+ AddToMenu "user_menu" "Edit menu..." Exec xfumed
+ AddToMenu "user_menu" "" Nop
+ 
+ AddToMenu "__settings_menu__" "Settings" Title
+ AddToMenu "__settings_menu__" "&amp;Mouse..." Exec xfmouse -i
+ AddToMenu "__settings_menu__" "&amp;Backdrop..." Exec xfbd -i
+ AddToMenu "__settings_menu__" "&amp;Sound..." Exec xfsound
+ 
+ AddToMenu "__builtin_root_menu__" "&amp;New window" Exec xfterm
+ AddToMenu "__builtin_root_menu__" "&amp;User Menu" popup user_menu
+ AddToMenu "__builtin_root_menu__" "" Nop
+ AddToMenu "__builtin_root_menu__" "Run program ..." Exec xfrun
+ AddToMenu "__builtin_root_menu__" "" Nop
+ AddToMenu "__builtin_root_menu__" "&amp;Arrange icons" ArrangeIcons
+ AddToMenu "__builtin_root_menu__" "&amp;Iconify all" IconifyAll
+ AddToMenu "__builtin_root_menu__" "&amp;Refresh" Refresh
+ AddToMenu "__builtin_root_menu__" "Shuffle &amp;Up" Next [*] focus
+ AddToMenu "__builtin_root_menu__" "Shuffle &amp;Down" Prev [*] focus
+ AddToMenu "__builtin_root_menu__" "" Nop
+ AddToMenu "__builtin_root_menu__" "&amp;Settings" popup __settings_menu__
+ AddToMenu "__builtin_root_menu__" "" Nop
+ AddToMenu "__builtin_root_menu__" "&amp;Quit XFwm" popup "__builtin_exit_menu__"
+ 
+ AddToMenu "__Maximize_menu__" "&amp;Full Screen" Maximize 100 100
+ AddToMenu "__Maximize_menu__" "&amp;Vertical" Maximize 0 100
+ AddToMenu "__Maximize_menu__" "&amp;Horizontal" Maximize 100 0
+ 
+ AddToFunc WindowListFunc "I" WindowId $0 Iconify -1
+ + "I" WindowId $0 Focus
+ + "I" WindowId $0 Raise
+ + "I" WindowId $0 WarpToWindow 50 50
+ 
+ AddToFunc "InitFunction"
+ + "I" Desk 0 0
+ 
+ AddToFunc "RestartFunction"
+ + "I" Desk 0 0
+ 
+ AddToFunc "__Iconfunc__"
+ + "M" Move
+ + "D" Iconify
+ 
+ AddToFunc "__Move__"
+ + "M" Move
+ + "D" Maximize
+ 
+ AddToFunc "__Resize__"
+ + "M" Resize
+ 
+ AddToFunc "__builtin_showmemouse_or_move__"
+ + "M" Move
+ + "C" ShowMeMouse
+ 
+ AddToFunc "__builtin_windowops_or_die__"
+ + "M" PopUp "__builtin_window_menu__"
+ + "C" PopUp "__builtin_window_menu__"
+ + "D" Close
+ 
+ AddToFunc "__builtin_Focus_Prev__"
+ + "I" Prev [!Iconic CurrentDesk] Focus
+ 
+ AddToFunc "__builtin_focus_raise__"
+ + "I" Focus
+ + "I" Raise
+ 
+ AddToFunc "__builtin_iconify_and_focus__"
+ + "I" Iconify
+ + "I" Current [Iconic] __builtin_Focus_Prev__
+ 
+ AddToFunc "__builtin_maximize_function__"
+ + "C" Maximize 100 100
+ + "M" PopUp "__Maximize_menu__"
+ 
+ Mouse 0 1 A __builtin_windowops_or_die__
+ Mouse 0 4 A __builtin_maximize_function__
+ Mouse 0 3 A Stick
+ Mouse 0 6 A Iconify
+ Mouse 0 5 A Shade
+ Mouse 0 2 A Close
+ Mouse 0 2 S Destroy
+ Mouse 0 FS A Function __Resize__
+ Mouse 0 I A Function __Iconfunc__
+ Mouse 1 T A Function __Move__
+ Mouse 1 FS S Move
+ Mouse 1 FS M Move
+ Mouse 1 R A Menu __builtin_root_menu__
+ Mouse 1 W M __builtin_showmemouse_or_move__
+ Mouse 1 R M ShowMeMouse
+ Mouse 2 T A RaiseLower
+ Mouse 2 T C Iconify
+ Mouse 2 T M Iconify
+ Mouse 2 T S Iconify
+ Mouse 2 FS A Move
+ Mouse 2 R A Menu __builtin_window_menu__
+ Mouse 3 T A Shade
+ Mouse 3 FS S Move
+ Mouse 3 I A Menu __builtin_window_menu__
+ Mouse 3 R A WindowList CurrentDesk
+ 
+ Key Tab A M Switch
+ Key Tab A SM Next [CurrentDesk] __builtin_focus_raise__
+ Key Escape A S __builtin_iconify_and_focus__
+ Key Escape A C WindowList
+ Key Left A SC CursorMove -1 0
+ Key Right A SC CursorMove +1 +0
+ Key Up A SC CursorMove +0 -1
+ Key Down A SC CursorMove +0 +1
+ Key Left A SM CursorMove -10 +0
+ Key Right A SM CursorMove +10 +0
+ Key Up A SM CursorMove +0 -10
+ Key Down A SM CursorMove +0 +10
+ Key F1 A M Popup __builtin_window_menu__
+ Key F2 A M Popup __builtin_root_menu__
+ Key F3 A M Lower
+ Key F4 A M Close
+ Key F5 A M Next [*] focus
+ Key F6 A M Prev [*] focus
+ Key F7 A M Move
+ Key F8 A M Resize
+ Key F9 A M Iconify
+ Key F10 A M Maximize
+ Key F11 A M Shade
+ Key F12 A M Exec xfrun
+ Key F1 A C Desk 0 0
+ Key F2 A C Desk 0 1
+ Key F3 A C Desk 0 2
+ Key F4 A C Desk 0 3
+ Key F5 A C Desk 0 4
+ Key F6 A C Desk 0 5
+ Key F7 A C Desk 0 6
+ Key F8 A C Desk 0 7
+ Key F9 A C Desk 0 8
+ Key F10 A C Desk 0 9
+ Key Left A CM Desk -1
+ Key Right A CM Desk 1
+ Key Delete A CM exec xflock
+ Key L5 IW N RaiseLower
+ Key L5 IW S Lower
+ Key L5 IW C Raise
+ Key L7 IW A Iconify
+ 
+ WindowFont DEFAULTFONT
+ MenuFont DEFAULTFONT
+ IconFont DEFAULTFONT
+</programlisting>
+
+<note>
+  <title>Note:</title>
+  
+  <para>DEFAULTFONT is defined as 
+  -adobe-helvetica-medium-r-normal-*-12-*-*-*-p-*-iso8859-1</para>
+</note>     
+                                      
+</chapter>

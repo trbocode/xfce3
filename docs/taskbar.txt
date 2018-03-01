@@ -1,0 +1,103 @@
+How to use XFCE3 Taskbar
+author:		Marcin Staszyszyn
+date:		08-June-2002
+doc ver.: 	1.0
+taskbar ver. 	1.5
+
+0. New features
+for ver. 1.5
+
+1. Installation
+Taskbar is an integrated part of xfce panel and should be obtained together
+with xfce3 distribution.
+To enable taskbar in xfce simply pass '--enable-taskbar' option to 'configure'
+script. Hypothetical installation session can look like this: 
+	cd $XFCE_SRC_DIR
+	./configure --enable-taskbar 
+	make install-strip
+	
+2. Using taskbar
+To open taskbar click on thin, wide line at the bottom of xfce panel. It opens
+taskbar area. You can see there two small buttons: one on the left and second on
+the right side and a few relative big buttons representing X's windows. The 
+left-most small button is called 'close' button, the right-most -- 'taskjar' and
+other buttons are called 'task' buttons.
+
+'Close' button.
+This button is used to change the most important taskbar options. Right-click on
+it and pop-up menu appears. There you can:
+- 'Stand-alone' - switch between standalone (Windows95 like) and embedded (default) 
+   state
+- 'Sort order' - set sort order for 'task' buttons
+- 'System load' - on/off system load indicator on 'close' button. This feature is
+  available only on systems supporting system stats in '/proc/stat' file. I guess
+  that's only on Linux
+- 'Only current desk' - on/off showing only 'task' buttons for windows of current 
+  desk
+When showing system load is on, 'close' button changes colour from white (low 
+load) to dark red (high load) according to current CPU activity.
+Above menu setting are kept between XFCE invocations
+
+'Task' button(s)
+Task button appears for each window on xfce desktop. (see also 'taskbarrc file' 
+and 'Close button' sections). It has two states:
+'pressed' when window has currently focus and 'normal' otherwise. Only one 'task' 
+button can be in 'pressed' state at the moment. When you click on 'pressed' task
+button corresponding window is iconified. When you click on 'normal' one -- window
+pops up and obtains focus.
+When pop-up menu for 'task' button is defined (see 'taskbarrc file' section) right-
+clicking on 'task' button pops up menu from which you can execute XFWM command
+on corresponding window.
+
+'TaskJar' button
+Here you can put windows (task) which are rarely used. In such case 'task' button
+for specified window does not longer appear on taskbar area but that window is 
+accessible from 'taskjar' button. Just left-click on 'taskjar' button and select
+appropriate window name from pop-up menu left-clicking it. When you right-click 
+that menu item corresponding task is got out from taskjar and put back on taskbar.
+
+In order to put task into 'taskjar' you must configure pop-up menu for 'task' 
+buttons. See 'taskbarrc file' section later in this document. Standard xfce
+distribution comes with predefined menu which contains appropriate option.
+ 
+'taskbarrc' file
+The 'taskbarrc' file is stored in $HOME/.xfce and contains customization options
+for taskbar. There you can define:
+0) end-of-line comments. It must start at first column
+
+1) menu items for pop-up menu of 'task' button
+Menu "descr" "cmd"
+when 'desc' is menu item caption and 'cmd' is either any XFWM command or 'TASKJAR'
+
+For example:
+Menu "(Un)Shade" "Shade"
+Menu "Send to..." "WindowsDesk 0 %%"
+'%%' is replaced by desk number selected by user from submenu
+
+You can also put there menu separator:
+Menu SEP
+
+2) patterns matching window names to be automatically sent to taskjar, for example:
+Taskjar mstasz*
+Taskjar xosview*
+Please note that XFCE wildcards ('*' and '?') are allowed
+
+3) various XFCE options. 
+ Option WindowListSkip
+and
+ Option NO_WindowListSkip
+They turn on/off respect to WINDOWLISTSKIP flag, which removes window
+form taskbar. Please note that this option is SET be default (so you must use
+NO_WindowListSkip if you want to have all windows on taskbar)
+
+Option HidePanel
+hides XFCE panel when taskbar is in stand-alone (win95 like) mode
+
+
+
+
+
+
+
+
+

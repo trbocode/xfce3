@@ -1,0 +1,47 @@
+<!-- DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<preface id="intro">
+
+  <title>Introduction</title>
+  <subtitle><emphasis>By Olivier Fourdan</emphasis></subtitle>
+
+  <para>
+  The XFce project was first started because I needed a simple, light 
+  and efficient environment for my Linux System.
+  </para>
+   
+  <para>
+  There are now a lot of good environments and interfaces for Unix based 
+  systems, but most are either too heavy,  too expensive or even both !
+  </para>
+   
+  <para>
+  I wanted something easy to use and configure, stable, fast, and  last 
+  but not least, visually appealing...
+  </para>
+   
+  <para>
+  I believe that the desktop environment should increase user productivity. 
+  Therefore, the goal is to keep most system resources for the applications 
+  and not to consume all memory and CPU usage for what is used to display 
+  them.
+  </para>
+   
+  <para>
+  From version to version, XFce has become more and more user configurable. 
+  As XFce is made for the user, it has to be very simple to configure. 
+  That's why everything is driven by the mouse, using buttons, drag and 
+  drop, etc., and the configuration files are hidden from the user, 
+  although they are plain text.
+  </para>
+  
+  <figure>
+    <title>Typical XFce desktop</title>
+    <screenshot>
+      <screeninfo>Desktop screenshot</screeninfo>
+      <graphic fileref="../images/xfce_snap">
+    </screenshot>
+  </figure>
+
+</preface>
+

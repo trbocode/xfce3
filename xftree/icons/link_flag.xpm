@@ -1,0 +1,22 @@
+/* XPM */
+static char * link_flag_xpm[] = {
+"16 16 3 1",
+" 	c none",
+".	c #FFFFFF",
+"X	c #0000FF",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+".  ....  ....  .",
+"X..XXXX..XXXX..X",
+"XXXX..XXXX..XXXX",
+"X..XXXX..XXXX..X",
+".  ....  ....  ."};

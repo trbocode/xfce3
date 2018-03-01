@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Setup Dialog</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="User Manual"
+HREF="user-manual.html"><LINK
+REL="PREVIOUS"
+TITLE="XFce Panel"
+HREF="panel.html"><LINK
+REL="NEXT"
+TITLE="XFce tabfolder"
+HREF="setup-xfce.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="panel.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="setup-xfce.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="SETUP"
+>Setup Dialog</A
+></H1
+><P
+>As stated before, XFce is very intuitive. All customization can be 
+performed through its graphical user interface. For this purpose XFce
+provides a setup dialog with 4 tabfolders :</P
+><P
+></P
+><UL
+><LI
+><P
+>Palette</P
+></LI
+><LI
+><P
+>XFce</P
+></LI
+><LI
+><P
+>Windows</P
+></LI
+><LI
+><P
+>Startup</P
+></LI
+></UL
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="SETUP-PALETTE"
+>Palette tabfolder</A
+></H1
+><DIV
+CLASS="FIGURE"
+><P
+><IMG
+SRC="../images/xfce_setup1.jpg"></P
+><P
+><B
+>Figure 3-1. Palette tabfolder</B
+></P
+></DIV
+><P
+>Since XFce is based on the popular GTK+ toolkit, it uses the .gtkrc style
+hidden configuration file located in the user's home directory. This 
+enables all GTK+ applications to share the same color scheme.</P
+><P
+>While .gtkrc is usually copied from a theme or written by hand, XFce is 
+able to automatically generate the .gtkrc file from the color values and 
+font selected by the user in the palette setup screen.</P
+><P
+>XFce is able to determine whether the .gtkrc file is customized by the 
+user or not. If one wants to build his own .gtkrc style or if one uses a 
+style from GNOME Control Center (gnomecc), XFce won't override it (as a 
+result, if you curently have a .gtkrc file in your home directory and you 
+want XFce to manage the style for you, you should remove or rename your 
+current ~/.gtkrc file). But if there is no .gtkrc file in user's home 
+directory or if it is empty, XFce will generate a .gtkrc file so all GTK+
+applications, including GNOME applications, will share exactly the same 
+look.</P
+><P
+>A palette, from XFce's point of view, is made of 8 colors and a font name.
+Each color is used to display specific items in the XFce desktop, like the
+mouse pointer, the default window background, the text fields, etc. The 
+color you select for this palette are shared by all XFce aware applications
+(XFTree, XFClock,XFwm, etc.).</P
+><P
+>By clicking on one of the colors, you can change it using the color 
+selector. The palette can be saved to disk using the "Save..." button.
+You can retrieve it later using the "Load..." button. You don't necessarily
+need to save your palette to disk unless you want to share it with other 
+users. The current palette is automatically saved to a file in the user's
+home directory so that XFce will have the same color scheme when you 
+restart it.</P
+><P
+>In this tabfolder you can also choose a GTK engine to use. XFce can try to
+make other application use the xfce color scheme. You can activate this by 
+selecting the option "apply colors to all applications".</P
+><P
+>The font used for displaying text in XFce is selected in the XFce tabfolder.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="panel.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="setup-xfce.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>XFce Panel</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="user-manual.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>XFce tabfolder</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,23 @@
+/* XPM */
+static char * stale_lnk_xpm[] = {
+"16 16 4 1",
+" 	s None	c None",
+".	c black",
+"X	c #808080",
+"o	c red",
+"       XXXXXX   ",
+"      XX....XX  ",
+"     XX......XX ",
+"     X...XX...X ",
+"     X..X  X..X ",
+"     X..X  X..X ",
+"   XXXXXX X..X  ",
+"   XoX   X...X  ",
+"XXXXooX X...X   ",
+"oooooooXX..X    ",
+"XXXXooX X..X    ",
+"   XoX  XXXX    ",
+"   XX   X..X    ",
+"       X....X   ",
+"        X..X    ",
+"         XX     "};

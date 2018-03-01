@@ -1,0 +1,359 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Menus and functions</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="Advanced XFwm configuration"
+HREF="advanced-wm.html"><LINK
+REL="PREVIOUS"
+TITLE="Window management"
+HREF="adv-wm-management.html"><LINK
+REL="NEXT"
+TITLE="XFwm commands"
+HREF="adv-wm-commands.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="adv-wm-management.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="adv-wm-commands.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="ADV-WM-MENUS"
+>Menus and functions</A
+></H1
+><P
+>Menus and functions are quite similar from the viepoint of xfwm. A menu 
+item defines an xfwm commands to be executed when the entry is clicked. A
+function also consists of a number of xfwm commands that are either 
+executed directly or only on certain events. Functions can also be bound 
+to keys or mouse buttons.</P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="WM-CONF-MENUS"
+>Table 12-1. Menus and functions</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Command</TH
+><TH
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Description</TH
+><TH
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Example</TH
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>+</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Adds an additional item to a menu or function</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>(See below)</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AddToMenu &#60;mn&#62; [&#60;entry&#62; &#60;command&#62;]</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Starts the definition of a menu, or extends an existing one. An
+  &#38; in the entry name will create a keyboard accelerator for the next
+  character.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>AddToMenu "user_menu"</P
+><P
+>+ "&#38;Xterm" Exec xterm -e 
+  tcsh</P
+></TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AddToFunction &#60;fn&#62; [&#60;condition&#62; &#60;command&#62;]</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Starts the definition of a function, or extends an existing one
+  </TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>AddToFunc Move-or-Raise "I" Raise</P
+><P
+>+ "M" Move
+  </P
+><P
+>+ "D" Lower</P
+></TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>DestroyFunc &#60;fn&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Removes an unneeded function</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>DestroyFunc "Move-or-Raise"</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>DestroyMenu &#60;mn&#62;</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Removes an unneeded menu</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>DestroyMenu "Utilities"</TD
+></TR
+><TR
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AddToMenu &#60;mn&#62; &#60;title&#62; Title</TD
+><TD
+WIDTH="50%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Additional directive to the "AddToMenu" command to specify a 
+  title. The <B
+CLASS="COMMAND"
+>Title</B
+> command makes sure that there is 
+  a separator after the title.</TD
+><TD
+WIDTH="25%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>AddToMenu "my_menu" "My Menu" Title</TD
+></TR
+></TABLE
+></DIV
+><P
+>A function item definition takes an event as first argument (see example 
+in the table). The event is either a mouse action or an option to 
+immediately execute the item. The mouse events are only meaningfull if a 
+function is bound to a mouse button.</P
+><P
+>Recognized conditions in function definitions are:</P
+><P
+></P
+><UL
+><LI
+><P
+>  M : motion. Action takes effect on dragging the mouse.
+  </P
+></LI
+><LI
+><P
+>  I : immediate. Action takes effect immediately.
+  </P
+></LI
+><LI
+><P
+>  C : click. Action takes effect on a single mouse click.
+  </P
+></LI
+><LI
+><P
+>  D : doubleclick. Action takes effect on a doubleclick of the mouse.
+  </P
+></LI
+></UL
+><P
+>There are some special functions available in xfce. These functions can be 
+customized in the same way as user defined menus.</P
+><P
+></P
+><UL
+><LI
+><P
+>  InitFunction : run at startup
+  </P
+></LI
+><LI
+><P
+>  RestartFunction : run when restarting
+  </P
+></LI
+><LI
+><P
+>  ExitFunction : run at exit
+  </P
+></LI
+><LI
+><P
+>  WindowListFunc : run when entry in windowlist is pressed
+  </P
+></LI
+></UL
+><P
+>By default a number of menus and functions are defined. They have no 
+special meaning; they are just always defined when (re)starting xfwm. 
+See XFwm Defaults for the default 
+commands.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="adv-wm-management.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="adv-wm-commands.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Window management</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="advanced-wm.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>XFwm commands</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

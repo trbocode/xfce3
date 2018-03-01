@@ -1,0 +1,110 @@
+# List of source files containing translatable strings.
+# Copyright (C) 1995 Free Software Foundation, Inc.
+
+# Common library files
+libs/colorselect.c
+libs/fileselect.c
+libs/fontselection.c
+libs/xfce-common.c
+libs/xfce-common.c
+libs/xfce-common.c
+libs/xfce-common.c
+libs/xpmext.c
+# XFce source files
+xfce/action.c
+xfce/action_cb.c
+xfce/configfile.c
+xfce/diagnostic.c
+xfce/info.c
+xfce/modify.c
+xfce/modify_cb.c
+xfce/popup.c
+xfce/popup_cb.c
+xfce/screen.c
+xfce/selects.c
+xfce/setup.c
+xfce/startup.c
+xfce/xfce.c
+xfce/xfce_cb.c
+xfce/xfwm.c
+# XFTree source files
+xftree/entry.c
+xftree/gtk_dlg.c
+xftree/gtk_exec.c
+xftree/gtk_get.c
+xftree/gtk_prop.c
+xftree/io.c
+xftree/reg.c
+xftree/top.c
+xftree/tubo.c
+xftree/uri.c
+xftree/xtree.c
+xftree/xtree_cb.c
+xftree/xtree_colorsel.c
+xftree/xtree_cpy.c
+xftree/xtree_dnd.c
+xftree/xtree_du.c
+xftree/xtree_functions.c
+xftree/xtree_go.c
+xftree/xtree_gui.c
+xftree/xtree_icons.c
+xftree/xtree_mess.c
+xftree/xtree_misc.c
+xftree/xtree_pasteboard.c
+xftree/xtree_tar.c
+xftree/xtree_toolbar.c
+xftree/xtree_smb.c
+# XFDiff source files
+xfdiff/globber.c
+xfdiff/xfdiff.c
+xfdiff/xfdiff_colorsel.c
+xfdiff/xfdiff_diag.c
+xfdiff/xfdiff_gui.c
+xfdiff/xfdiff_misc.c
+# XFGlob source files
+xfglob/glob.c
+xfglob/globber.c
+xfglob/xfglob.c
+# XFClock source files
+xfclock/xfclock.c
+xfclock/xfclock_cb.c
+xfclock/xfclock_colorsel.c
+xfclock/xfclock_config.c
+xfclock/xfclock_menus.c
+xfclock/xfclock_style.c
+## XFMouse source files
+xfmouse/xfmouse.c
+# XFSound source files
+xfsound/xfsound.c
+# XFbd source files
+xfbd/xfbd.c
+xfbd/xfbdmgr.c
+xfbd/xfbdmgr_cb.c
+# XFwm source files
+xfwm/xfwm.c
+# XFpager source files
+# XFrun source files
+xfrun/xfrun.c
+#XFsamba source files
+xfsamba/tubo.c
+xfsamba/xfsamba.c
+xfsamba/xfsamba_download.c
+xfsamba/xfsamba_gui.c
+xfsamba/xfsamba_list.c
+xfsamba/xfsamba_nmblookup.c
+xfsamba/xfsamba_smblookup.c
+xfsamba/xfsamba_masterlookup.c
+xfsamba/xfsamba_masterresolve.c
+xfsamba/xfsamba_mem.c
+xfsamba/xfsamba_mkdir.c
+xfsamba/xfsamba_rm.c
+xfsamba/xfsamba_tar.c
+xfsamba/xfsamba_upload.c
+xfsamba/xfsamba_dnd.c
+#XFumed source files
+xfumed/xfumed.c
+xfumed/xfumed_gui.c
+xfumed/xfumed_gui_cb.c
+xfumed/xfumed.h
+xfumed/xfumed_gui.h
+xfumed/xfumed_gui_cb.h

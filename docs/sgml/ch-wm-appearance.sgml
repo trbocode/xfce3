@@ -1,0 +1,89 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="10" id="adv-wm-appearance">
+
+<title>Appearance</title>
+
+<note>
+  <title>Note:</title>
+  <para>(*) denotes parameters overridden by XFce at start-up.</para>
+</note>
+     
+<table frame="topbot" id="wm-conf-appearance">
+<title>Appearance of windows</title>
+
+<tgroup cols='3' align='left'>
+<colspec colnum='1' colwidth='1*'>
+<colspec colnum='2' colwidth='2*'>
+<colspec colnum='3' colwidth='1*'>
+
+<thead>
+<row>
+<entry>Command</entry>
+<entry>Description</entry>
+<entry>Example</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>ActiveColor &lt;c1> &lt;c2> (*)</entry>
+  <entry>Define color for active windows</entry>
+  <entry>ActiveColor #c0c0c0 #ffffff</entry>
+</row>
+<row>
+  <entry>CursorColor &lt;c1> &lt;c2> (*)</entry>
+  <entry>Define mouse cursor colors</entry>
+  <entry>CursorColor red white</entry>
+</row>
+<row>
+  <entry>Engine {XFce | Mofit | Trench} (*)</entry>
+  <entry>Choose xfwm them engine. There are three themes available.</entry>
+  <entry>Engine Trench</entry>
+</row>
+<row>
+  <entry>IconFont &lt;font> (*)</entry>
+  <entry>Defines font used to display icons</entry>
+  <entry>IconFont -*-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*</entry>
+</row>
+<row>
+  <entry>InactiveColor &lt;c1> &lt;c2> (*)</entry>
+  <entry>Defines colors for inactive windows</entry>
+  <entry>InactiveColor grey77 black</entry>
+</row>
+<row>
+  <entry>MenuColor &lt;c1> &lt;c2> &lt;c3> &lt;c4> (*)</entry>
+  <entry>Defines colors for menus</entry>
+  <entry>MenuColor red blue yellow green</entry>
+</row>
+<row>
+  <entry>MenuFont &lt;font> (*)</entry>
+  <entry>Defines menu font</entry>
+  <entry>MenuFont -*-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*</entry>
+</row>
+<row>
+  <entry>ShowButtons {Left | Right} &lt;n></entry>
+  <entry>Set the number of buttons shown on the title bar (1 to 3 on each
+  side)</entry>
+  <entry>ShowButtons Left 1</entry>
+</row>
+<row>
+  <entry>TitleStyle {Active | Inactive} Gradient &lt;c1> &lt;c2> (*)</entry>
+  <entry>Defines title bar style</entry>
+  <entry>TitleStyle Active Gradient blue grey77</entry>
+</row>
+<row>
+  <entry>TitleStyle {Active | Inactive} Solid &lt;c> (*)</entry>
+  <entry>Defines title bar style</entry>
+  <entry>TitleStyle Inactive Solid grey60</entry>
+</row>
+<row>
+  <entry>WindowFont &lt;font> (*)</entry>
+  <entry>Defines font for window titles</entry>
+  <entry>WindowFont -*-helvetica-bold-r-*-*-12-*-*-*-*-*-*-*</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+   
+</chapter>

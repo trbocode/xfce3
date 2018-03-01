@@ -1,0 +1,844 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Window Manager</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="User Manual"
+HREF="user-manual.html"><LINK
+REL="PREVIOUS"
+TITLE="Startup Tabfolder"
+HREF="setup-startup.html"><LINK
+REL="NEXT"
+TITLE="File Manager"
+HREF="fileman.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="setup-startup.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="fileman.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="WM"
+>Window Manager</A
+></H1
+><P
+>XFwm is the window manager that comes with XFce. It is fully integrated
+into the environment, providing a homogeneous interface with all XFce 
+applications. Moreover, XFwm is able to handle the most common window 
+hints shared by popular applications such as Motif, SUN Openwindows, KDE
+and GNOME applications.</P
+><P
+>Most user options are handled through XFce setup and do not require any 
+script customization. However, if you want access to the full power of
+xfwm configuration you can read all about it in 
+<A
+HREF="advanced-wm.html"
+>Part II. Advanced XFwm configuration</A
+>.</P
+><P
+>Without any specific customization XFwm provides several builtin menus and
+functions.</P
+><P
+></P
+><DL
+><DT
+><I
+CLASS="EMPHASIS"
+>Main menu</I
+></DT
+><DD
+><P
+>    The main menu can be obtained by clicking on the root window with
+    the left mouse button or by pressing [Alt+F2]. This menu provides
+    an access to the most common operations.
+    </P
+></DD
+><DT
+><I
+CLASS="EMPHASIS"
+>Window menu</I
+></DT
+><DD
+><P
+>    The window menu can be obtained by clicking on the root window with
+    the middle mouse button (or both left and right button, if you have
+    only 2 mouse buttons) or by pressing [Alt+F1]. This provides access
+    to functions acting on windows.
+    </P
+></DD
+><DT
+><I
+CLASS="EMPHASIS"
+>Window list</I
+></DT
+><DD
+><P
+>    The window list is obtained by clicking on the root window with the
+    right mouse button. It shows all running applications.
+    </P
+></DD
+></DL
+><P
+>A number of default keyboard shortcuts and mouse bindings for xfwm are 
+defined. These can only be altered through editing the configuration file
+(see <A
+HREF="advanced-wm.html"
+>Part II</A
+>).</P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="WM-SHORTCUTS-TABLE"
+>Table 4-1. XFwm default keyboard shortcuts</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Key</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Action</TH
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>Tab</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch application (Next window)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>Tab</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch application (Previous window)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>Tab</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch application (Previous window)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Shift</B
+>-<B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>arrow</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move pointer (fast)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Shift</B
+>-<B
+CLASS="KEYCAP"
+>Ctrl</B
+>-<B
+CLASS="KEYCAP"
+>arrow</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move pointer (slow)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F1</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open window menu</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F2</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open main menu</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F3</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Lower window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F4</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F5</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Next window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F7</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F8</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Resize window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F9</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Iconfify window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F10</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Maximize window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Ctrl</B
+>-<B
+CLASS="KEYCAP"
+>F1 to F10</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Switch to desktop 1 to 10</TD
+></TR
+></TABLE
+></DIV
+><P
+> </P
+><DIV
+CLASS="FIGURE"
+><P
+><IMG
+SRC="../images/buttons.jpg"></P
+><P
+><B
+>Figure 4-1. Title bar buttons</B
+></P
+></DIV
+><P
+>By default xfwm has 6 buttons on the title bar; three on the left and three
+on the right. They are numbered from outside to inside, alternating left and 
+right. This means button 1 is the first from the left, button 2 the first 
+from the right, button 3 the second from the left, etc.</P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="WM-BINDINGS-TABLE"
+>Table 4-2. XFwm default mouse bindings</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Mouse button</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Click</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Context</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Action</TH
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 1</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open window operations menu</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Double</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 1</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 3</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>(Un)Stick window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 5</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>(UnShade) window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 6</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Iconify window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 4</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>(Un)Maximize window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 2</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single+Shift key</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Button 2</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Destroy window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Title bar</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Raise/move window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Title bar</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>(Un)Shade window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Middle</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Title bar</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Raise/Lower window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Double</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Title bar</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>(Un)Maximize window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Root window</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open main menu</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Middle</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Root window</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open window operations menu</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Root window</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Display list of running applications</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Middle</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Window border</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single + Shift key</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Window border</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Move window</TD
+></TR
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="setup-startup.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="fileman.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Startup Tabfolder</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="user-manual.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>File Manager</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

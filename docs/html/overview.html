@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>XFce Overview</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="User Manual"
+HREF="user-manual.html"><LINK
+REL="PREVIOUS"
+TITLE="User Manual"
+HREF="user-manual.html"><LINK
+REL="NEXT"
+TITLE="XFce Panel"
+HREF="panel.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="user-manual.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="panel.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="OVERVIEW"
+>XFce Overview</A
+></H1
+><P
+>The XFce desktop environment consists of different components, each 
+providing a part of the functionality.</P
+><P
+></P
+><DL
+><DT
+><A
+HREF="panel.html"
+><I
+CLASS="EMPHASIS"
+>XFce Panel (xfce)</I
+></A
+></DT
+><DD
+><P
+>    The panel provides a clock, icons, pop-up menus, buttons to change
+    the virtual desktop and gives access to the configuration
+    dialog.
+    </P
+></DD
+><DT
+><A
+HREF="wm.html"
+><I
+CLASS="EMPHASIS"
+>Window Manager (xfwm)</I
+></A
+></DT
+><DD
+><P
+>    The window manager controls the placement, movement and decorations
+    of the windows. It also provides a root menu, keybindings and
+    session management.
+    </P
+></DD
+><DT
+><A
+HREF="fileman.html"
+><I
+CLASS="EMPHASIS"
+>File Manager (xftree)</I
+></A
+></DT
+><DD
+><P
+>    XFTree is a small, but versatile file manager.
+    </P
+></DD
+><DT
+><A
+HREF="utilities.html"
+><I
+CLASS="EMPHASIS"
+>Utilities</I
+></A
+></DT
+><DD
+><P
+>    XFce comes with a lot of utilities to make your life easier:
+    </P
+><P
+></P
+><UL
+><LI
+><P
+>      xfbd / xfbdmgr : xfbd sets the background of your desktop and
+      xfbdmgr allows you to create lists of backdrops for xfbd to choose 
+      from.
+      </P
+></LI
+><LI
+><P
+>      xfclock : clock and calendar (with appointment management).
+      </P
+></LI
+><LI
+><P
+>      xfdiff : graphical frontend to diff to view difference between
+      files or directories (and make or apply patches).
+      </P
+></LI
+><LI
+><P
+>      xfglob : graphical search tool.
+      </P
+></LI
+><LI
+><P
+>      xfgnome : xfwm module that provides gnome compatibility (activated
+      from the xfce setup dialog).
+      </P
+></LI
+><LI
+><P
+>      xfmenu : xfwm module to read gnome and kde menus and add them to
+      the xfwm menu.
+      </P
+></LI
+><LI
+><P
+>      xfmouse : xfwm module manage the mouse settings.
+      </P
+></LI
+><LI
+><P
+>      xfpager : xfwm module that shows the virtual desktops and allows
+      you to switch between them. It can be activated from the xfce
+      setup dialog.
+      </P
+></LI
+><LI
+><P
+>      xfrun : let's you run any command (includes a command history).
+      </P
+></LI
+><LI
+><P
+>      xfsamba : samba network browser. Samba is the protocol used to
+      communicate with windows computers.
+      </P
+></LI
+><LI
+><P
+>      xfsound : xfwm module that manages the sounds played for certain
+      events.
+      </P
+></LI
+><LI
+><P
+>      xfumed : user menu editor. Can be started from the xfwm menu.
+      Editor for the `User Programs' submenu.
+      </P
+></LI
+></UL
+></DD
+><DT
+><A
+HREF="overview.html#SCRIPTS"
+><I
+CLASS="EMPHASIS"
+>Scripts</I
+></A
+></DT
+><DD
+><P
+>    There are several scripts included in the XFce distribution to
+    offer some additional functionality:
+    </P
+><P
+></P
+><UL
+><LI
+><P
+>      xfhelp : started from the info icon on the right of the panel.
+      Starts a browser with the HTML help file (nestscape or another
+      browser defined by the $BROWSER environmental variable).
+      </P
+></LI
+><LI
+><P
+>      xflock : started from the lock icon on the center part of the
+      panel. Starts xscreensaver or xlock (one of these must be
+      installed for this to work).
+      </P
+></LI
+><LI
+><P
+>      xfmountdev : this script mounts a device and opens the appropriate
+      path in xftree. It looks at /etc/fstab for info on devices and
+      mountpoints. Takes a mountpoint as argument (e.g. xfmountdev
+      /mnt/floppy).
+      </P
+></LI
+><LI
+><P
+>      xfprint : started from the printer icon on the panel. allows you
+      to drag and drop files on the icon to have them printed.
+      </P
+></LI
+><LI
+><P
+>      xfterm : wrapper around an x terminal (xterm or another terminal
+      defined by the $TERMCMD environmental variable) that allows some
+      intelligent behaviour when dropping files on it from the file
+      manager, like showing a text file with less or a html file with
+      lynx.
+      </P
+></LI
+><LI
+><P
+>      xftrash : started from the recycle icon on the panel. Allows you
+      to drag and drop a file on the icon to put it in the recycle bin
+      of xftree.
+      </P
+></LI
+></UL
+></DD
+></DL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="user-manual.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="panel.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>User Manual</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="user-manual.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>XFce Panel</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,327 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="13" id="adv-wm-commands">
+
+<title>XFwm commands</title>
+
+<para>
+This large section describes all xfwm commands that may be used in menus 
+and function definitions. For menus generally only the "Exec", "PopUp" and
+"Nop" commands are used.
+</para>
+
+<table frame="topbot" id="wm-conf-commands">
+<title>XFwm commands</title>
+
+<tgroup cols=3 align="left">
+<colspec colnum=1 colwidth="1*">
+<colspec colnum=2 colwidth="2*">
+<colspec colnum=3 colwidth="1*">
+
+<thead>
+<row>
+<entry>Command</entry>
+<entry>Description</entry>
+<entry>Example</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>ArrangeIcons [&lt;desk1> &lt;desk2>]</entry>
+  <entry>Arange icons on the current desk or on &lt;desk1> to &lt;desk2>
+  </entry>
+  <entry>ArrangeIcons 0 9</entry>
+</row>
+<row>
+  <entry>Beep</entry>
+  <entry>Produces a beep</entry>
+  <entry>Beep</entry>
+</row>
+<row>
+  <entry>Close</entry>
+  <entry>Close a window</entry>
+  <entry>Close</entry>
+</row>
+<row>
+  <entry>Current [conditions] &lt;command></entry>
+  <entry>The Current, Next and Prev commands take a condition between 
+  square brackets as first argument and a command as second argument. 
+  The condition limits the action to certain window states. Possible 
+  conditions are described in the paragraph after this table.</entry>
+  <entry>Current [!Iconic] Focus</entry>
+</row>
+<row>
+  <entry>Delete</entry>
+  <entry>Sends a message to a window asking that it removes itself</entry>
+  <entry>Delete</entry>
+</row>
+<row>
+  <entry><para>Desk &lt;step></para><para>Desk 0 &lt;desk></para></entry>
+  <entry>Change to another desk/workspace. You can either specify a step
+  (1 means to next workspace, -1 means to previous workspace) or when the
+  first argument is 0, you can specify the number of the worlspace to go 
+  to (starting from 0).</entry>
+  <entry><para>Desk -1</para><para>Desk 0 3</para></entry>
+</row>
+<row>
+  <entry>Destroy</entry>
+  <entry>Send destroy signal to a window</entry>
+  <entry>Destroy</entry>
+</row>
+<row>
+  <entry>Echo &lt;s></entry>
+  <entry>Prints string to stderr</entry>
+  <entry>Echo "Done"</entry>
+</row>
+<row>
+  <entry>Exec &lt;c></entry>
+  <entry>Executes a command</entry>
+  <entry>Exec xedit</entry>
+</row>
+<row>
+  <entry>FlipFocus</entry>
+  <entry>Toggle focus between last two active windows</entry>
+  <entry>FlipFocus</entry>
+</row>
+<row>
+  <entry>Focus</entry>
+  <entry>Gives focus to a window</entry>
+  <entry>Focus</entry>
+</row>
+<row>
+  <entry>Function &lt;fn></entry>
+  <entry>Executes a function. Mostly used in mouse and key bindings.
+  </entry>
+  <entry>Mouse 1 T A Function Move-or-Raise</entry>
+</row>
+<row>
+  <entry>Iconify</entry>
+  <entry>(De)Iconifies a window</entry>
+  <entry>Iconify</entry>
+</row>
+<row>
+  <entry>IconifyAll</entry>
+  <entry>Iconifies all windows in a workspace</entry>
+  <entry>IconifyAll</entry>
+</row>
+<row>
+  <entry>KillModule &lt;m></entry>
+  <entry>Kills a module</entry>
+  <entry>KillModule xfpager</entry>
+</row>
+<row>
+  <entry>Lower</entry>
+  <entry>Lowers a window</entry>
+  <entry>Lower</entry>
+</row>
+<row>
+  <entry>Maximize [&lt;p1> &lt;p2>]</entry>
+  <entry>Maximizes a window. You may specify a horizontal percentage p1
+  and a vertical percentage p2.</entry>
+  <entry>Maximize 0 100</entry>
+</row>
+<row>
+  <entry>Menu &lt;m> &lt;dbl-click-action></entry>
+  <entry>Displays menu or triggers action if user performed a double click
+  </entry>
+  <entry>Menu "Utilities" Close</entry>
+</row>
+<row>
+  <entry>Module &lt;m></entry>
+  <entry>Executes a module</entry>
+  <entry>Module xfce</entry>
+</row>
+<row>
+  <entry>Move [&lt;x> &lt;y>]</entry>
+  <entry>Moves a window</entry>
+  <entry>Move</entry>
+</row>
+<row>
+  <entry>Next [conditions] &lt;command></entry>
+  <entry>The Current, Next and Prev commands take a condition between 
+  square brackets as first argument and a command as second argument. 
+  The condition limits the action to certain window states. Possible 
+  conditions are described in the paragraph after this table.</entry>
+  <entry>Next [!Iconic] Focus</entry>
+</row>
+<row>
+  <entry>None</entry>
+  <entry>Does nothing</entry>
+  <entry>None</entry>
+</row>
+<row>
+  <entry>Nop</entry>
+  <entry>No operation. Creates a separator in a menu</entry>
+  <entry>AddToMenu "user_menu" "" Nop</entry>
+</row>
+<row>
+  <entry>PopUp</entry>
+  <entry>Pops up a menu</entry>
+  <entry>AddToMenu "user_menu" "My Menu" PopUp "my_menu"</entry>
+</row>
+<row>
+  <entry>Prev [conditions] &lt;command></entry>
+  <entry>The Current, Next and Prev commands take a condition between 
+  square brackets as first argument and a command as second argument. 
+  The condition limits the action to certain window states. Possible 
+  conditions are described in the paragraph after this table.</entry>
+  <entry>Prev [!Iconic] Focus</entry>
+</row>
+<row>
+  <entry>Quit</entry>
+  <entry>Quits xfwm and consequently exits the X session, closing all
+   running applications</entry>
+  <entry>Quit</entry>
+</row>
+<row>
+  <entry>Raise</entry>
+  <entry>Raises a window</entry>
+  <entry>Raise</entry>
+</row>
+<row>
+  <entry>RaiseLower</entry>
+  <entry>Raises or Lowers a window dependng on current state</entry>
+  <entry>RaiseLower</entry>
+</row>
+<row>
+  <entry>Read &lt;f></entry>
+  <entry>Reads a configuration file</entry>
+  <entry>Read ~/.xfce/myssettings</entry>
+</row>
+<row>
+  <entry>Recapture</entry>
+  <entry>Recapture all windows</entry>
+  <entry>Recapture</entry>
+</row>
+<row>
+  <entry>Refresh</entry>
+  <entry>Refresh the screen</entry>
+  <entry>Refresh</entry>
+</row>
+<row>
+  <entry>RefreshWindow</entry>
+  <entry>Refresh current window</entry>
+  <entry>RefreshWindow</entry>
+</row>
+<row>
+  <entry>Resize [&lt;x &lt;y>]</entry>
+  <entry>Resizes a window</entry>
+  <entry>Resize</entry>
+</row>
+<row>
+  <entry>Restart</entry>
+  <entry>Restart xfwm</entry>
+  <entry>Restart</entry>
+</row>
+<row>
+  <entry>Shade</entry>
+  <entry>(Un)Shades a window</entry>
+  <entry>Shade</entry>
+</row>
+<row>
+  <entry>ShowMeMouse</entry>
+  <entry>Shows the mouse by animating a circle around the pointer</entry>
+  <entry>ShowMeMouse</entry>
+</row>
+<row>
+  <entry>Stick</entry>
+  <entry>Make a window sticky</entry>
+  <entry>Stick</entry>
+</row>
+<row>
+  <entry>Switch</entry>
+  <entry>Switch focus to next window</entry>
+  <entry>Switch</entry>
+</row>
+<row>
+  <entry>Wait &lt;name></entry>
+  <entry>Waits until window &lt;name> appears</entry>
+  <entry>Wait xterm</entry>
+</row>
+<row>
+  <entry>WarpToWindow &lt;p1> &lt;p2></entry>
+  <entry>Warps mouse pointer to window. &lt;p1> and &lt;p2> are
+  horizontal and vertical percentage of the screen.</entry>
+  <entry>WarpToWindow 50 50</entry>
+</row>
+<row>
+  <entry>WindowId &lt;n> &lt;cmd></entry>
+  <entry>Perform an action on window with ID &lt;n> as shown in the 
+  windowlist. Used in WindowListFunc, which is executed when an 
+  entry in the windowlist is pressed.</entry>
+  <entry>WindowId $0 Focus</entry>
+</row>
+<row>
+  <entry>WindowList</entry>
+  <entry>Gives a list of all windows on the screen</entry>
+  <entry>WindowList</entry>
+</row>
+<row>
+  <entry><para>WindowsDesk &lt;step></para><para>WindowsDesk 0 
+  &lt;desk></para></entry>
+  <entry>Send current window to another desk/workspace. You can either 
+  specify a step (1 means to next workspace, -1 means to previous 
+  workspace) or when the first argument is 0, you can specify the number
+  of the worlspace to go to (starting from 0).</entry>
+  <entry><para>WindowsDesk -1</para><para>WindowsDesk 0 3</para></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para>
+The window circulation functions Next, Prev and Current take an argument 
+between square brackets to customize the behaviour. Conditions may be 
+combined separated by spaces.
+</para>
+
+<programlisting>
+<command> Next</command> [ !Iconic CurrentDesk] Iconify
+</programlisting>
+
+<para>Recognized conditions are :</para>
+
+<itemizedlist>
+  <listitem><para>
+  ! : Negates the following option
+  </para></listitem>
+  <listitem><para>
+  Iconic
+  </para></listitem>
+  <listitem><para>
+  Visible
+  </para></listitem>
+  <listitem><para>
+  Sticky
+  </para></listitem>
+  <listitem><para>
+  Maximized
+  </para></listitem>
+  <listitem><para>
+  Transient
+  </para></listitem>
+  <listitem><para>
+  Raised
+  </para></listitem>
+  <listitem><para>
+  CurrentDesk
+  </para></listitem>
+  <listitem><para>
+  CurrentPage
+  </para></listitem>
+  <listitem><para>
+  CurrentPageAnyDesk
+  </para></listitem>
+  <listitem><para>
+  CurrentScreen
+  </para></listitem>
+  <listitem><para>
+  CirculateHit
+  </para></listitem>
+  <listitem><para>
+  CirculateHitIcon
+  </para></listitem>
+</itemizedlist>
+       
+</chapter>

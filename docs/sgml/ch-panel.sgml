@@ -1,0 +1,96 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="2" id="panel">
+
+<title>XFce Panel</title>
+
+<para>The functions of the main panel are:</para>
+
+<itemizedlist>
+  <listitem><para>Launch applications</para></listitem>
+  <listitem><para>Open popup menus</para></listitem>
+  <listitem><para>Switch virtual desktop</para></listitem>
+  <listitem><para>Give access to the configuration of the desktop</para></listitem>
+</itemizedlist>
+
+<figure>
+  <title>Main panel</title>
+  <screenshot>
+    <screeninfo>Panel screenshot</screeninfo>
+    <graphic fileref="../images/xfce_panel">
+  </screenshot>
+</figure>
+
+<para>
+The clock has no function other than showing the time. You can select an
+analog or digital clock by clicking with the right mouse button on the 
+clock.
+</para>
+     
+<para>
+The icons are used to launch applications.To modify an icon on the main 
+panel, or associate a command to an icon, click on the corresponding icon
+with the right mouse button.
+</para>
+
+<para>
+Some text based applications, such as "vi" require a terminal (xterm) to be 
+opened. You can use the keyword "term" to start a terminal before running
+the command.
+</para>
+
+<programlisting>
+<command>term <replaceable>vi</replaceable></command>
+</programlisting>
+
+<para>
+The number of virtual desktops is user configurable, from 2 to 10 desktops.
+See <link linkend="setup">Setup Dialog</link> later in this manual for more
+details.
+</para>
+
+<para>
+To change the label of a virtual screen button, click on the button
+using the right mouse button.
+</para>
+
+<para>
+On top of each icon, there is a little tiny arrow. Each of these buttons 
+opens a popup menu. 
+</para>
+     
+<figure>
+  <title>Pop-up menu</title>
+  <screenshot>
+    <screeninfo>Pop-up screenshot</screeninfo>
+    <graphic fileref="../images/xfce_popup">
+  </screenshot>
+</figure>
+
+<para>
+Popup menus are another way of launching applications from the XFce panel.
+Each entry is associated with an application that is launched when the menu
+entry is selected. Drag and drop from various file managers (XFTree 
+included, of course) is supported. For example, you can drag a C source 
+file onto the X-Edit entry and xedit will be started and open the specified
+file. 
+</para>
+
+<para>
+An existing entry can be modified by using the right mouse button. The item
+on the top of the menu, called "Add icon...", is used to add new entries to 
+the menu. Drag and drop is also supported, but it does not trigger the same 
+action. In fact, when you drop a file (preferably an executable) an entry 
+is automatically added to the corresponding menu with a default icon. You 
+can later change this icon by using the right mouse button.
+</para>
+
+<para>
+By clicking on the line at the bottom of the menu you can "detach"
+the menu. Once a menu is detached you can move it around your
+screen and it stays opened even if an entry is selected, which can
+be very convenient. This only works when the option "Use tear-off
+menu" is enabled.
+</para>
+
+</chapter>

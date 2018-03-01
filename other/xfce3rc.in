@@ -1,0 +1,199 @@
+# XFce 3 Configuration File - Do not edit
+[Coords]
+	-1
+	-1
+[ButtonLabels]
+	One
+	Two
+	Three
+	Four
+	Five
+	Six
+	Seven
+	Eight
+	Nine
+	Ten
+[External_Icons]
+	XFCE_DIR/icons/FolderDeposit.xpm
+	XFCE_DIR/icons/FileAPP.xpm
+	XFCE_DIR/icons/CheckMarkMonitor.xpm
+	XFCE_DIR/icons/Interface.xpm
+	XFCE_DIR/icons/NetscapeLogo.xpm
+	XFCE_DIR/icons/Printer.xpm
+	XFCE_DIR/icons/Info.xpm
+	XFCE_DIR/icons/RecycleLogo.xpm
+	None
+	XFCE_DIR/icons/3dpaint.xpm
+	XFCE_DIR/icons/TrueDie.xpm
+	None
+	None
+[Popups]
+	8
+[Icons]
+	99,99,99,4,99,99,99,99,8,99,99,11,7
+[WorkSpace]
+	NoRepaint
+	Solid
+[Lock]
+	xflock
+[MenuOption]
+	Detach
+[XFwmOption]
+	ClickToFocus
+	OpaqueMove
+	OpaqueResize
+	5
+	119
+	NoAutoraise
+	OpaqueActive
+	GradientInactive
+	IconsOnRight
+	-adobe-helvetica-bold-r-normal-*-12-*-*-*-p-*-iso8859-1
+	-adobe-helvetica-medium-r-normal-*-12-*-*-*-p-*-iso8859-1
+	-adobe-helvetica-medium-r-normal-*-12-*-*-*-p-*-iso8859-1
+	MapFocus
+	Xfce_engine
+[Screens]
+	4
+[Tooltips]
+        250
+[Clock]
+        Digital
+        24hrs
+[Sizes]
+	SmallPanelIcons
+	SmallMenuIcons
+[XColors]
+        Ignore
+[Diagnostic]
+        Ignore
+[Layer]
+        6
+[Commands]
+	xftree
+	xfrun
+	xfterm
+	xfmouse -i
+	netscape
+	xfprint
+	xfhelp
+	xftrash
+	None
+	xv
+	None
+	None
+	abiword
+[Menu1]
+	XFClock
+	XFCE_DIR/icons/Clock.xpm
+	xfclock
+	XFTree
+	XFCE_DIR/icons/FileManager.xpm
+	xftree
+	SMB Browser...
+	XFCE_DIR/icons/xfsamba.xpm
+	xfsamba
+	File search...
+	XFCE_DIR/icons/MagnifyGlas.xpm
+	xfglob
+	Mount CDROM
+	XFCE_DIR/icons/ColoredCompactDisc.xpm
+	xfmountdev /mnt/cdrom
+	Mount floppy
+	XFCE_DIR/icons/DiskFloppy.xpm
+	xfmountdev /mnt/floppy
+	Run...
+	XFCE_DIR/icons/FileAPP.xpm
+	xfrun
+[Menu2]
+	Calculator
+	XFCE_DIR/icons/OldBlueAddingMachine.xpm
+	xcalc
+	Editres
+	XFCE_DIR/icons/X_server.xpm
+	editres
+        Diff tool (xfdiff)
+        XFCE_DIR/icons/ForwardBackwardPagesBook.xpm
+        xfdiff
+	Magnify
+	XFCE_DIR/icons/MagnifyGlas.xpm
+	xmag
+	Debugger
+	XFCE_DIR/icons/BulletHole.xpm
+	xxgdb
+	GNU Emacs
+	XFCE_DIR/icons/Edit.xpm
+	emacs
+	GNOME Panel
+	XFCE_DIR/icons/Gnome-panel.xpm
+	panel
+[Menu3]
+	X-Terminal
+	XFCE_DIR/icons/CheckMarkMonitor.xpm
+	xfterm
+	X-Edit
+	XFCE_DIR/icons/Document.xpm
+	xedit
+	Vi
+	XFCE_DIR/icons/Keys.xpm
+	Term vi
+[Menu4]
+	XFSkin
+	XFCE_DIR/icons/xfskin.xpm
+	xfskin
+	XFPager
+	XFCE_DIR/icons/RayTracedGear.xpm
+	Module xfpager
+	XFMouse
+	XFCE_DIR/icons/Mouse.xpm
+	xfmouse -i
+	XFSound
+	XFCE_DIR/icons/MicroPhonePro.xpm
+	xfsound -i
+	Backdrop
+	XFCE_DIR/icons/MaelstromInFrame.xpm
+	xfbd -i
+	XFGnome
+	XFCE_DIR/icons/Gnome-logo.xpm
+	Module xfgnome
+	Gfx. Configuration
+	XFCE_DIR/icons/BWwidgets.xpm
+	imlib_config
+	Screensaver Opt.
+	XFCE_DIR/icons/KeysOnChain.xpm
+	xscreensaver-demo
+[Menu5]
+	Netscape Browser
+	XFCE_DIR/icons/Netscape3.xpm
+	netscape
+	Netscape Mail
+	XFCE_DIR/icons/News.xpm
+	netscape -mail
+[Menu6]
+	Printer
+	XFCE_DIR/icons/Printer.xpm
+	xfprint
+[Menu7]
+	AbiWord
+	XFCE_DIR/icons/Pen.xpm
+	abiword
+	Nedit
+	XFCE_DIR/icons/Book.xpm
+	nedit
+[Menu8]
+	Trash
+	XFCE_DIR/icons/RecycleLogo.xpm
+	xftrash
+[Menu9]
+[Menu10]
+	Gimp
+	XFCE_DIR/icons/GIMP.xpm
+	gimp
+	XV
+	XFCE_DIR/icons/XV.xpm
+	xv
+	X-Paint
+	XFCE_DIR/icons/3dpaint.xpm
+	xpaint
+[Menu11]
+[Menu12]

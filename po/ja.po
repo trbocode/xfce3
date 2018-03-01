@@ -1,0 +1,4301 @@
+# XFCE Translations for Japanese
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# Yamahata Kenichiro <mogutan@din.or.jp>, 1999.
+#
+#: xfsamba/xfsamba_gui.c:1326 xfsamba/xfsamba_gui.c:1331
+#: xfsamba/xfsamba_gui.c:1337 xfsamba/xfsamba_gui.c:1342
+#: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+#: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+#: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce-3.8.14c\n"
+"POT-Creation-Date: 2002-09-01 01:01+0200\n"
+"PO-Revision-Date: 2002-03-29 13:58+0900\n"
+"Last-Translator: Yosuke Nakajima <ynakajim@janis.or.jp>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+#: xfdiff/xfdiff_colorsel.c:85
+msgid "Select Color"
+msgstr "色の選択"
+
+#: libs/fileselect.c:79
+msgid "Select File"
+msgstr "ファイルの選択"
+
+#: libs/fontselection.c:80
+msgid "Font Selection"
+msgstr "フォントの選択"
+
+#. this is an invisible button
+#: libs/xfce-common.c:268 xfdiff/xfdiff_gui.c:1401 xfdiff/xfdiff_misc.c:130
+#: xfdiff/xfdiff_misc.c:136 xftree/xtree_toolbar.c:343
+msgid "OK"
+msgstr ""
+
+#: libs/xfce-common.c:278
+msgid "Message"
+msgstr "メッセージ"
+
+#: libs/xfce-common.c:391 xfdiff/xfdiff_misc.c:133 xfumed/xfumed_gui_cb.c:75
+#: xfumed/xfumed_gui_cb.c:126
+msgid "Yes"
+msgstr "はい"
+
+#: libs/xfce-common.c:392 xfdiff/xfdiff_misc.c:133 xfumed/xfumed_gui_cb.c:76
+#: xfumed/xfumed_gui_cb.c:127
+msgid "No"
+msgstr "いいえ"
+
+#: libs/xfce-common.c:397 xfdiff/xfdiff_misc.c:133
+msgid "Question"
+msgstr "質問"
+
+#: libs/xfce-common.c:632
+msgid "Terminated: "
+msgstr "強制終了: "
+
+#: libs/xpmext.c:377 libs/xpmext.c:404
+#, fuzzy, c-format
+msgid "*** WARNING ***: Cannot load image file %s\n"
+msgstr "*** 警告 ***: イメージファイル %s がロードできません\n"
+
+#: libs/xpmext.c:425
+#, c-format
+msgid "*** WARNING ***: Cannot load pixmap file %s\n"
+msgstr "*** 警告 ***: pixmapファイル %s がロードできません\n"
+
+#: xfce/action.c:64
+msgid "Define action ..."
+msgstr "アクションの定義 ..."
+
+#: xfce/action.c:109 xfce/modify.c:160
+msgid "Command Line :"
+msgstr "コマンドライン :"
+
+#: xfce/action.c:118
+msgid "Icon Style :"
+msgstr "アイコンのスタイル :"
+
+#: xfbd/xfbd.c:532 xfce/action.c:141 xfce/action.c:150 xfce/modify.c:232
+#: xfce/modify.c:240 xfsound/xfsound.c:509
+msgid "Browse ..."
+msgstr "参照 ..."
+
+#. ok and cancel buttons
+#: xfbd/xfbd.c:518 xfce/action.c:173 xfce/modify.c:276 xfce/screen.c:134
+#: xfce/setup.c:1175 xfmouse/xfmouse.c:287 xfrun/xfrun.c:207
+#: xfsamba/xfsamba.c:272 xfsamba/xfsamba_gui.c:596
+#: xfsamba/xfsamba_masterresolve.c:130 xfsamba/xfsamba_tar.c:422
+#: xfsound/xfsound.c:606 xftree/gtk_exec.c:188 xftree/gtk_prop.c:214
+#: xfumed/xfumed_gui.c:352
+msgid "Ok"
+msgstr "OK"
+
+#: xfbd/xfbd.c:559 xfce/action.c:182 xfce/modify.c:293 xfce/screen.c:144
+#: xfce/setup.c:1192 xfmouse/xfmouse.c:308 xfrun/xfrun.c:208
+#: xfsound/xfsound.c:627 xftree/gtk_exec.c:189 xftree/gtk_prop.c:215
+#: xftree/xtree_cpy.c:860 xftree/xtree_cpy.c:1324 xfumed/xfumed_gui.c:359
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: xfce/action_cb.c:77
+msgid "You must provide the command to execute !"
+msgstr "実行するコマンドを用意してください"
+
+#: xfce/configfile.c:69
+#, c-format
+msgid ""
+"XFce : Syntax error in configuration file\n"
+"(%s)\n"
+msgstr ""
+"XFce : 設定ファイルの文法エラーです\n"
+"(%s)\n"
+
+#: xfce/configfile.c:70 xfclock/xfclock_config.c:54
+msgid ""
+"Syntax error in configuration file\n"
+"Aborting"
+msgstr ""
+"設定ファイルの文法エラーです\n"
+"中止します"
+
+#: xfce/configfile.c:77
+#, c-format
+msgid ""
+"XFce : Data mismatch error in config file\n"
+"(%s)\n"
+msgstr ""
+"XFce : 設定ファイルのデータが不適当です\n"
+"(%s)\n"
+
+#: xfce/configfile.c:78 xfclock/xfclock_config.c:62
+msgid ""
+"Data mismatch error in configuration file\n"
+"Aborting"
+msgstr ""
+"設定ファイルのデータが不適当です\n"
+"中止します"
+
+#: xfce/configfile.c:237 xfclock/xfclock_config.c:130
+msgid "Cannot create file"
+msgstr "ファイルが作成できません"
+
+#: xfce/configfile.c:393
+msgid "Cannot reset configuration file"
+msgstr "設定ファイルを作成し直せません"
+
+#: xfce/configfile.c:396
+msgid "Creating new config file...\n"
+msgstr "新しい設定ファイルを作成しています...\n"
+
+#: xfce/configfile.c:497 xfce/configfile.c:507
+msgid "Cannot open configuration file"
+msgstr "設定ファイルを開けません"
+
+#: xfce/configfile.c:513
+msgid "Does not looks like an XFce 3 configuration file !"
+msgstr "XFce3の設定ファイルではないようです！"
+
+#: xfce/configfile.c:514
+#, fuzzy
+msgid ""
+"Do you want to reset the configuration file ?\n"
+" \t(The previous file will be saved with a \".orig\" extension)"
+msgstr ""
+"設定ファイルを作成し直しますか？\n"
+"\t(現在の設定ファイルは \".orig\" という拡張子をつけられて保存されます)"
+
+#: xfce/configfile.c:525
+msgid "Cannot open new config, Giving up..."
+msgstr "新たな設定ファイルを開けません あきらめます..."
+
+#: xfce/configfile.c:526
+msgid "Cannot load configuration file"
+msgstr "設定ファイルがロードできません"
+
+#: xfce/configfile.c:532
+msgid "Cannot use old version of XFce configuration files"
+msgstr "古いバージョンのXFceの設定ファイルは使用できません"
+
+#: xfce/diagnostic.c:88 xfce/diagnostic.c:124
+msgid "Subprocess diagnostic"
+msgstr "サブプロセスの診断"
+
+#: xfbd/xfbd.c:550 xfce/diagnostic.c:110 xfdiff/xfdiff_diag.c:181
+#: xfdiff/xfdiff_gui.c:1593 xfglob/xfglob.c:659 xftree/xtree_mess.c:927
+msgid "Clear"
+msgstr "クリア"
+
+#: xfce/diagnostic.c:115 xfdiff/xfdiff_diag.c:186 xfglob/xfglob.c:670
+#: xftree/xtree_mess.c:932
+msgid "Dismiss"
+msgstr "やめる"
+
+#: xfce/info.c:76
+msgid "Info ..."
+msgstr "情報 ..."
+
+#: xfbd/xfbd.c:436 xfce/info.c:107 xfce/modify.c:132 xfce/popup.c:116
+#: xfce/popup.c:222 xfce/startup.c:91 xfce/xfce.c:202 xfce/xfce.c:242
+#: xfce/xfce.c:521 xfce/xfce.c:552 xfce/xfce.c:649 xfce/xfce.c:670
+#: xfce/xfce.c:703 xfce/xfce.c:718 xfce/xfce.c:776 xfce/xfce.c:797
+#: xfglob/xfglob.c:559 xfmouse/xfmouse.c:200 xfsamba/xfsamba_gui.c:1247
+msgid "Couldn't create pixmap"
+msgstr "pixmapを作成できません"
+
+#: xfce/info.c:121
+msgid "By Olivier Fourdan (c) 1997-2002"
+msgstr ""
+
+#: xfce/info.c:184
+msgid "Accept"
+msgstr "同意します"
+
+#: xfce/modify.c:74 xfce/modify.c:352
+msgid "Modify Item ..."
+msgstr "項目の変更 ..."
+
+#: xfce/modify.c:138
+msgid "Preview Icon"
+msgstr ""
+"アイコンの\n"
+"プレビュー"
+
+#: xfce/modify.c:169
+msgid "Icon File :"
+msgstr "アイコンファイル : "
+
+#: xfce/modify.c:178
+msgid "Label :"
+msgstr "ラベル :"
+
+#: xfce/modify.c:187
+#, fuzzy
+msgid "Position :"
+msgstr "位置 :"
+
+#: xfbd/xfbdmgr.c:179 xfce/modify.c:285 xfumed/xfumed_gui.c:136
+msgid "Remove"
+msgstr "削除"
+
+#: xfbd/xfbdmgr.c:173 xfce/modify.c:335
+msgid "Add Item ..."
+msgstr "アイテムを追加 ..."
+
+#: xfce/modify_cb.c:115
+msgid "Are you sure you want to remove this entry ?"
+msgstr "この項目を削除してよろしいですか？"
+
+#: xfce/modify_cb.c:156 xfce/modify_cb.c:185
+msgid ""
+"You must provide the command\n"
+"and the label, at least !"
+msgstr ""
+"少なくともコマンドラインと題名は\n"
+"設定しなければなりません！"
+
+#: xfce/popup.c:199
+msgid "Add a new entry..."
+msgstr "新しい項目を追加..."
+
+#: xfce/popup.c:228
+msgid "Add icon..."
+msgstr "アイコンの追加..."
+
+#: xfce/popup.c:254
+msgid "Click to tear off popup menu"
+msgstr "クリックでポップアップメニューを分離"
+
+#: xfce/popup_cb.c:192
+msgid "Cannot find the file you dropped !"
+msgstr "ドロップされたファイルが見つかりません！"
+
+#: xfce/screen.c:60
+msgid "Screen label ..."
+msgstr "スクリーンラベル ..."
+
+#: xfce/screen.c:105
+msgid "Define screen label :"
+msgstr "スクリーンラベルの定義 :"
+
+#: xfce/selects.c:58
+msgid "Files related"
+msgstr "関連づけられたファイル"
+
+#: xfce/selects.c:59
+msgid "Terminals/Connections"
+msgstr "ターミナル/接続"
+
+#: xfce/selects.c:60
+msgid "Mail tools/browsers"
+msgstr "メール ツール/ブラウザ"
+
+#: xfce/selects.c:61
+msgid "Print manager"
+msgstr "プリントマネージャ"
+
+#: xfce/selects.c:62
+msgid "Configuration"
+msgstr "設定"
+
+#: xfce/selects.c:63
+msgid "Misc. tools/Utilities"
+msgstr "雑多なツール/ユーティリティ"
+
+#: xfce/selects.c:64
+msgid "Manual/Help browser"
+msgstr "マニュアル/ヘルプ ブラウザ"
+
+#: xfce/selects.c:65
+msgid "Writing/Text tools"
+msgstr "ライティング/テキスト ツール"
+
+#: xfce/selects.c:66
+msgid "Schedule/Appointments"
+msgstr "スケジュール/約束"
+
+#: xfce/selects.c:67
+msgid "Multimedia"
+msgstr "マルチメディア"
+
+#: xfce/selects.c:68
+msgid "Games"
+msgstr "ゲーム"
+
+#: xfce/selects.c:69
+msgid "Network"
+msgstr "ネットワーク"
+
+#: xfce/selects.c:70
+msgid "Sound"
+msgstr "サウンド"
+
+#: xfce/selects.c:71
+msgid "External..."
+msgstr "外部..."
+
+#: xfce/setup.c:283
+msgid "Setup"
+msgstr "セットアップ"
+
+#: xfce/setup.c:362
+msgid "GTK theme engine : "
+msgstr "GTK テーマエンジン : "
+
+#: xfce/setup.c:384
+msgid "Apply colors to all applications"
+msgstr "すべてのアプリケーションに色を適用"
+
+#: xfbd/xfbdmgr.c:167 xfce/setup.c:404
+msgid "Load ..."
+msgstr "ロード ..."
+
+#: xfbd/xfbdmgr.c:161 xfce/setup.c:412
+msgid "Save ..."
+msgstr "保存 ..."
+
+#: xfce/setup.c:420
+msgid "Default"
+msgstr "標準"
+
+#: xfce/setup.c:442
+msgid "Repaint root window of workspace"
+msgstr "ワークスペースを再描画する"
+
+#: xfce/setup.c:449
+msgid "Use gradient color as wallpaper"
+msgstr "グラデーションカラーを壁紙として使用する"
+
+#: xfce/setup.c:456
+msgid "Use tear-off menus"
+msgstr "パネルメニューを分離可能にする"
+
+#: xfce/setup.c:463
+msgid "Show subprocess diagnostic dialog"
+msgstr "サブプロセスの診断ダイアログの表示"
+
+#: xfce/setup.c:470
+msgid "Panel layer"
+msgstr "パネルレイヤー"
+
+#: xfce/setup.c:484
+#, fuzzy
+msgid "Bottom"
+msgstr "下"
+
+#: xfce/setup.c:502 xfce/setup.c:911
+msgid "Top"
+msgstr "上"
+
+#: xfce/setup.c:509
+msgid "Clock"
+msgstr "時計"
+
+#: xfce/setup.c:523
+msgid "Use digital clock on panel"
+msgstr "デジタル表示"
+
+#: xfce/setup.c:530
+msgid "Use military time (24 hours)"
+msgstr "24時間表示"
+
+#: xfce/setup.c:537
+msgid "Tooltips"
+msgstr "ツールチップ"
+
+#: xfce/setup.c:551
+msgid "Tooltips delay (ms.) : "
+msgstr "ツールチップ遅延時間 (ミリ秒) : "
+
+#: xfce/setup.c:566
+msgid "Virtual Screens"
+msgstr "仮想デスクトップ"
+
+#: xfce/setup.c:587
+msgid "Number of virtual desktops : "
+msgstr "仮想デスクトップの数 : "
+
+#: xfce/setup.c:608
+msgid "switch desktop at screen border, fixed factor 4: "
+msgstr "画面の縁でデスクトップをきりかえる、固定因数 4: "
+
+#: xfce/setup.c:626
+msgid "Popups & Icons"
+msgstr "ポップアップとアイコン"
+
+#: xfce/setup.c:640
+msgid "Number of popup menus : "
+msgstr "ポップアップメニューの数 : "
+
+#: xfce/setup.c:654
+msgid "Size of icons on panel"
+msgstr "パネル用アイコンのサイズ"
+
+#: xfce/setup.c:668 xfce/setup.c:703
+msgid "Large"
+msgstr "大"
+
+#: xfce/setup.c:675 xfce/setup.c:710
+msgid "Medium"
+msgstr "中"
+
+#: xfce/setup.c:682 xfce/setup.c:717
+msgid "Small"
+msgstr "小"
+
+#: xfce/setup.c:689
+msgid "Size of icons on pop-up menus"
+msgstr "ポップアップメニュー用アイコンのサイズ"
+
+#: xfce/setup.c:724
+msgid "Font style"
+msgstr "フォントスタイル"
+
+#: xfce/setup.c:745 xfce/setup.c:1038 xfce/setup.c:1045 xfce/setup.c:1052
+msgid "Browse..."
+msgstr "参照..."
+
+#: xfce/setup.c:769
+msgid "Click to focus windows"
+msgstr "ウィンドウのクリックでフォーカスを移す"
+
+#: xfce/setup.c:776
+msgid "Automatically focus on new window"
+msgstr "自動的に新しいウィンドウにフォーカスを移す"
+
+#: xfce/setup.c:783
+msgid "Auto raise windows"
+msgstr "ウィンドウ内へのカーソル移動で自動的にフォーカスを移す"
+
+#: xfce/setup.c:790
+#, fuzzy
+msgid "Show contents of window while moving"
+msgstr "ウィンドウ移動中にウィンドウ内を表示"
+
+#: xfce/setup.c:797
+#, fuzzy
+msgid "Show contents of window while resizing"
+msgstr "ウィンドウサイズ変更中にウィンドウ内を表示"
+
+#: xfce/setup.c:804
+#, fuzzy
+msgid "Use gradient color for the active window"
+msgstr "アクティブウィンドウにグラデーションカラーを使用する"
+
+#: xfce/setup.c:811
+#, fuzzy
+msgid "Use gradient color for inactive windows"
+msgstr "非アクティブウィンドウにグラデーションカラーを使用する"
+
+#: xfce/setup.c:834
+msgid "Window border style : "
+msgstr "ウィンドウの縁のスタイル : "
+
+#: xfce/setup.c:872
+msgid "Window snapping size (0 disable) : "
+msgstr "ウィンドウのスナップ数 (0で無効) : "
+
+#: xfce/setup.c:899
+msgid "Icon position"
+msgstr "アイコンの位置"
+
+#: xfce/setup.c:918 xfmouse/xfmouse.c:206
+msgid "Left"
+msgstr "左"
+
+#: xfce/setup.c:925
+msgid "bottom"
+msgstr "下"
+
+#: xfce/setup.c:932 xfmouse/xfmouse.c:216
+msgid "Right"
+msgstr "右"
+
+#: xfce/setup.c:1011
+msgid "Title font :"
+msgstr "タイトルのフォント :"
+
+#: xfce/setup.c:1020
+msgid "Icon font :"
+msgstr "アイコンのフォント :"
+
+#: xfce/setup.c:1029
+msgid "Menu font :"
+msgstr "メニューのフォント :"
+
+#: xfce/setup.c:1076
+msgid "Sound module (xfsound)"
+msgstr "サウンドモジュール (xfsound)"
+
+#: xfce/setup.c:1083
+msgid "Mouse settings (xfmouse)"
+msgstr "マウスの設定 (xfmouse)"
+
+#: xfce/setup.c:1090
+msgid "Backdrop settings (xfbd)"
+msgstr "背景の設定 (xfbd)"
+
+#: xfce/setup.c:1097
+msgid "Pager (xfpager)"
+msgstr "ページャー (xfpager)"
+
+#: xfce/setup.c:1104
+msgid "GNOME (xfgnome)"
+msgstr ""
+
+#: xfce/setup.c:1111
+msgid "GNOME menu (xfmenu)"
+msgstr "GNOME メニュー (xfmenu)"
+
+#: xfce/setup.c:1118
+msgid "KDE menu (xfmenu)"
+msgstr "KDE メニュー (xfmenu)"
+
+#: xfce/setup.c:1126
+#, fuzzy
+msgid "Debian menu (xfmenu)"
+msgstr "KDE メニュー (xfmenu)"
+
+#: xfce/setup.c:1138
+msgid "Palette"
+msgstr "パレット"
+
+#: xfce/setup.c:1144
+msgid "XFce"
+msgstr ""
+
+#: xfce/setup.c:1150
+msgid "Windows"
+msgstr "ウィンドウ"
+
+#: xfce/setup.c:1156 xfce/startup.c:60 xfsound/xfsound.c:88
+msgid "Startup"
+msgstr "スタートアップ"
+
+#: xfbd/xfbd.c:541 xfce/setup.c:1184 xfmouse/xfmouse.c:299
+#: xfsound/xfsound.c:619
+msgid "Apply"
+msgstr "適用"
+
+#: xfce/startup.c:97
+#, fuzzy
+msgid "Please wait, XFce is loading..."
+msgstr "XFce をロードしています..."
+
+#: xfce/xfce.c:67
+msgid "One"
+msgstr "1"
+
+#: xfce/xfce.c:67
+msgid "Two"
+msgstr "2"
+
+#: xfce/xfce.c:67
+msgid "Three"
+msgstr "3"
+
+#: xfce/xfce.c:67
+msgid "Four"
+msgstr "4"
+
+#: xfce/xfce.c:67
+msgid "Five"
+msgstr "5"
+
+#: xfce/xfce.c:68
+msgid "Six"
+msgstr "6"
+
+#: xfce/xfce.c:68
+msgid "Seven"
+msgstr "7"
+
+#: xfce/xfce.c:68
+msgid "Eight"
+msgstr "8"
+
+#: xfce/xfce.c:68
+msgid "Nine"
+msgstr "9"
+
+#: xfce/xfce.c:68
+msgid "Ten"
+msgstr "10"
+
+#: xfce/xfce.c:69
+msgid "Eleven"
+msgstr "11"
+
+#: xfce/xfce.c:69
+msgid "Twelve"
+msgstr "12"
+
+#: xfce/xfce.c:69
+msgid "Thirteen"
+msgstr "13"
+
+#: xfce/xfce.c:69
+msgid "Fourteen"
+msgstr "14"
+
+#: xfce/xfce.c:69
+msgid "Fifteen"
+msgstr "15"
+
+#: xfce/xfce.c:70
+msgid "Sixteen"
+msgstr "16"
+
+#: xfce/xfce.c:70
+msgid "Seventeen"
+msgstr "17"
+
+#: xfce/xfce.c:70
+msgid "Eighteen"
+msgstr "18"
+
+#: xfce/xfce.c:70
+msgid "Nineteen"
+msgstr "19"
+
+#: xfce/xfce.c:70
+msgid "Twenty"
+msgstr "20"
+
+#: xfce/xfce.c:107 xfclock/xfclock_menus.c:112
+msgid "Digital mode"
+msgstr "デジタルモード"
+
+#: xfce/xfce.c:115
+msgid "24 hours mode"
+msgstr "24時間モード"
+
+#: xfce/xfce.c:665 xfclock/xfclock_menus.c:241
+msgid "About..."
+msgstr "このアプリケーションについて..."
+
+#: xfce/xfce.c:698
+msgid "Setup..."
+msgstr "セットアップ..."
+
+#: xfbd/xfbdmgr.c:185 xfce/xfce.c:725 xfclock/xfclock_menus.c:65
+#: xfclock/xfclock_menus.c:91 xfglob/xfglob.c:1953 xfumed/xfumed_gui.c:171
+msgid "Quit"
+msgstr "終了"
+
+#. kind of semphor
+#: xfce/xfce_cb.c:66
+msgid "Sunday"
+msgstr "日曜日"
+
+#: xfce/xfce_cb.c:67
+msgid "Monday"
+msgstr "月曜日"
+
+#: xfce/xfce_cb.c:68
+msgid "Tuesday"
+msgstr "火曜日"
+
+#: xfce/xfce_cb.c:69
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: xfce/xfce_cb.c:70
+msgid "Thursday"
+msgstr "木曜日"
+
+#: xfce/xfce_cb.c:71
+msgid "Friday"
+msgstr "金曜日"
+
+#: xfce/xfce_cb.c:72
+msgid "Saturday"
+msgstr "土曜日"
+
+#: xfce/xfce_cb.c:75
+msgid "January"
+msgstr "1月"
+
+#: xfce/xfce_cb.c:76
+msgid "February"
+msgstr "2月"
+
+#: xfce/xfce_cb.c:77
+msgid "March"
+msgstr "3月"
+
+#: xfce/xfce_cb.c:78
+msgid "April"
+msgstr "4月"
+
+#: xfce/xfce_cb.c:79
+msgid "May"
+msgstr "5月"
+
+#: xfce/xfce_cb.c:80
+msgid "June"
+msgstr "6月"
+
+#: xfce/xfce_cb.c:81
+msgid "July"
+msgstr "7月"
+
+#: xfce/xfce_cb.c:82
+msgid "August"
+msgstr "8月"
+
+#: xfce/xfce_cb.c:83
+msgid "September"
+msgstr "9月"
+
+#: xfce/xfce_cb.c:84
+msgid "October"
+msgstr "10月"
+
+#: xfce/xfce_cb.c:85
+msgid "November"
+msgstr "11月"
+
+#: xfce/xfce_cb.c:86
+msgid "December"
+msgstr "12月"
+
+#: xfce/xfce_cb.c:101
+msgid ""
+"Are you sure you want to Quit ?\n"
+"This might log you off !"
+msgstr ""
+"本当に終了しますか？\n"
+"終了するとログアウトします！"
+
+#: xfce/xfce_cb.c:169
+msgid ""
+"You've selected a desktop which is not currently\n"
+"visible in XFce panel."
+msgstr "現在XFceパネルからは認識できないデスクトップが選択されました。"
+
+#: xfce/xfwm.c:94
+msgid "XFCE: Communication pipe closed. Exiting...\n"
+msgstr "XFCE: 通信パイプが切断されました。終了します...\n"
+
+#: xfce/xfwm.c:471 xfwm/xfwm.c:865 xfwm/xfwm.c:866 xfwm/xfwm.c:867
+#: xfwm/xfwm.c:868 xfwm/xfwm.c:869 xfwm/xfwm.c:870 xfwm/xfwm.c:871
+#: xfwm/xfwm.c:872 xfwm/xfwm.c:873 xfwm/xfwm.c:874
+msgid "Workspace"
+msgstr "ワークスペース"
+
+#. SJB ok = gtk_button_new_with_label (_("Ok"));
+#: xftree/gtk_dlg.c:318
+#, fuzzy
+msgid "_Ok"
+msgstr "OK"
+
+#. SJB ok = gtk_button_new_with_label (_("Yes"));
+#: xftree/gtk_dlg.c:323
+#, fuzzy
+msgid "_Yes"
+msgstr "はい"
+
+#. SJB ok = gtk_button_new_with_label (_("Continue"));
+#: xftree/gtk_dlg.c:328
+#, fuzzy
+msgid "_Continue"
+msgstr "続行"
+
+#. SJB cancel = gtk_button_new_with_label (_("Cancel"));
+#: xftree/gtk_dlg.c:351
+#, fuzzy
+msgid "_Cancel"
+msgstr "キャンセル"
+
+#. SJB cancel = gtk_button_new_with_label (_("No"));
+#: xftree/gtk_dlg.c:356
+#, fuzzy
+msgid "_No"
+msgstr "いいえ"
+
+#: xftree/gtk_dlg.c:366 xftree/gtk_prop.c:229
+msgid "Skip"
+msgstr "無視"
+
+#. SJB all = gtk_button_new_with_label (_("All"));
+#: xftree/gtk_dlg.c:376
+#, fuzzy
+msgid "_All"
+msgstr "全て"
+
+#. SJB close = gtk_button_new_with_label (_("Close"));
+#: xftree/gtk_dlg.c:386
+#, fuzzy
+msgid "_Close"
+msgstr "閉じる"
+
+#: xftree/gtk_exec.c:166 xftree/xtree_gui.c:200 xftree/xtree_gui.c:203
+msgid "Open with ..."
+msgstr "関連して開く ..."
+
+#: xfrun/xfrun.c:203 xftree/gtk_exec.c:170 xftree/xtree_gui.c:219
+#: xfwm/xfwm.c:900
+msgid "Run program ..."
+msgstr "プログラムの実行 ..."
+
+#: xfrun/xfrun.c:237 xftree/gtk_exec.c:220
+msgid "Open in terminal"
+msgstr "ターミナルで開く"
+
+#: xftree/gtk_exec.c:225
+msgid "Remember application"
+msgstr "アプリケーションの登録"
+
+#. this should never happen
+#.
+#: xftree/gtk_exec.c:249
+#, c-format
+msgid "Fatal error in %s at %d\n"
+msgstr "致命的なエラー %s が %d で発生しました\n"
+
+#: xftree/gtk_exec.c:256 xftree/reg.c:667
+msgid "Can't find in PATH"
+msgstr ""
+
+#: xftree/gtk_get.c:96
+#, fuzzy
+msgid " bytes received"
+msgstr " バイト受信しました"
+
+#: xftree/gtk_prop.c:205 xftree/xtree_toolbar.c:111
+msgid "Properties"
+msgstr "プロパティ"
+
+#: xftree/gtk_prop.c:230
+msgid "All"
+msgstr "全て"
+
+#. date and size page
+#: xftree/gtk_prop.c:241
+msgid "Info"
+msgstr "情報"
+
+#: xftree/gtk_prop.c:246
+msgid "Name :"
+msgstr "名前 :"
+
+#: xftree/gtk_prop.c:265
+msgid "Type :"
+msgstr "種類 :"
+
+#: xftree/gtk_prop.c:285
+msgid "Size :"
+msgstr "サイズ :"
+
+#: xftree/gtk_prop.c:293
+msgid "Creation Time :"
+msgstr "作成日時 :"
+
+#: xftree/gtk_prop.c:301
+msgid "Modification Time :"
+msgstr "更新日時 :"
+
+#: xftree/gtk_prop.c:309
+msgid "Access Time :"
+msgstr "アクセス日時 :"
+
+#: xftree/gtk_prop.c:317
+msgid "Permissions"
+msgstr "パーミッション"
+
+#: xfglob/xfglob.c:1616 xftree/gtk_prop.c:321 xftree/gtk_prop.c:418
+msgid "Owner :"
+msgstr "所有者 :"
+
+#: xfglob/xfglob.c:1617 xfglob/xfglob.c:1641 xfglob/xfglob.c:1664
+#: xftree/gtk_prop.c:322 xftree/gtk_prop.c:346 xftree/gtk_prop.c:369
+msgid "Read"
+msgstr "読み込み"
+
+#: xfglob/xfglob.c:1621 xfglob/xfglob.c:1645 xfglob/xfglob.c:1668
+#: xftree/gtk_prop.c:326 xftree/gtk_prop.c:350 xftree/gtk_prop.c:373
+msgid "Write"
+msgstr "書き込み"
+
+#: xfglob/xfglob.c:1625 xfglob/xfglob.c:1649 xfglob/xfglob.c:1672
+#: xftree/gtk_prop.c:330 xftree/gtk_prop.c:354 xftree/gtk_prop.c:377
+msgid "Execute"
+msgstr "実行"
+
+#: xfglob/xfglob.c:1629 xftree/gtk_prop.c:334
+msgid "Set UID"
+msgstr "UID のセット"
+
+#: xfglob/xfglob.c:1640 xftree/gtk_prop.c:345 xftree/gtk_prop.c:429
+msgid "Group :"
+msgstr "グループ :"
+
+#: xfglob/xfglob.c:1653 xftree/gtk_prop.c:358
+msgid "Set GID"
+msgstr "GID のセット"
+
+#: xfglob/xfglob.c:1663 xftree/gtk_prop.c:368
+msgid "Other :"
+msgstr "その他 :"
+
+#: xfglob/xfglob.c:1676 xftree/gtk_prop.c:381
+msgid "Sticky"
+msgstr "Sticky(メモリ常駐)"
+
+#: xftree/gtk_prop.c:407 xftree/xtree_gui.c:1132
+msgid "Owner"
+msgstr "所有者"
+
+#: xftree/gtk_prop.c:412 xftree/gtk_prop.c:423 xftree/xtree_functions.c:407
+#: xftree/xtree_functions.c:409 xftree/xtree_functions.c:455
+#: xftree/xtree_functions.c:457 xftree/xtree_go.c:188 xftree/xtree_go.c:189
+#: xftree/xtree_gui.c:1474 xftree/xtree_gui.c:1476
+msgid "unknown"
+msgstr "不明"
+
+#: xftree/gtk_prop.c:450
+msgid "RPM info"
+msgstr ""
+
+#: xftree/reg.c:610 xftree/xtree_cb.c:705 xftree/xtree_cb.c:822
+#: xftree/xtree_cpy.c:1375
+msgid "This function is not available for the contents of tar files"
+msgstr "この機能は tar ファイルの中には利用できません"
+
+#: xftree/reg.c:618
+#, fuzzy, c-format
+msgid "Register program for directory \"%s\""
+msgstr "ファイル \"%s\" 用にプログラムを登録する"
+
+#: xftree/reg.c:625
+msgid "Can't find suffix in filename, using complete filename"
+msgstr "ファイルの拡張子がみつかりません ファイル名全体を使用します"
+
+#: xftree/reg.c:632
+#, c-format
+msgid "Register program for file \"%s\""
+msgstr "ファイル \"%s\" 用にプログラムを登録する"
+
+#: xftree/reg.c:636
+#, c-format
+msgid "Register program for suffix \"%s\""
+msgstr "拡張子 \"%s\" 用にプログラムを登録する"
+
+#: xftree/xtree.c:236
+#, c-format
+msgid "XFTree, based on XTree Version %s\n"
+msgstr "XFTree, XTreeバージョン %s を元にしています\n"
+
+#: xftree/xtree.c:237
+#, c-format
+msgid "directory: %s\n"
+msgstr "ディレクトリ: %s\n"
+
+#: xftree/xtree.c:244 xftree/xtree.c:283
+#, c-format
+msgid "creating directory: %s\n"
+msgstr "ディレクトリを作成しています: %s\n"
+
+#: xftree/xtree.c:300
+#, c-format
+msgid "geometry: %dx%d+%d+%d\n"
+msgstr "寸法: %dx%d+%d+%d\n"
+
+#: xftree/xtree_cb.c:327
+#, fuzzy
+msgid "error deleting file"
+msgstr "削除ファイルのエラー"
+
+#. nothing to delete
+#: xftree/xtree_cb.c:414 xftree/xtree_cb.c:780 xftree/xtree_tar.c:775
+msgid "No files marked !"
+msgstr "選択されたファイルがありません！"
+
+#: xftree/xtree_cb.c:475 xftree/xtree_cb.c:477
+msgid "Delete item ?"
+msgstr "削除しますか？"
+
+#: xftree/xtree_cb.c:487 xftree/xtree_cb.c:491
+msgid "Can't move file to trash, hard delete ?"
+msgstr "ごみ箱へ移動できません 完全に削除しますか？"
+
+#: xftree/xtree_cb.c:573
+#, fuzzy
+msgid "This is XFTree "
+msgstr "XFDiff です"
+
+#: xftree/xtree_cb.c:573
+#, fuzzy
+msgid ""
+" (C) under GNU GPL\n"
+"with code contributed by:\n"
+"Rasca, Berlin\n"
+"Olivier Fourdan\n"
+"Edscott Wilson Garcia\n"
+msgstr ""
+"XFTree (C) は GNU GPL の元で\n"
+"以下の人々によって貢献されています:\n"
+"Rasca, Berlin\n"
+"Olivier Fourdan\n"
+"Edscott Wilson Garcia\n"
+
+#: xftree/xtree_cb.c:591 xftree/xtree_cb.c:602
+msgid "New_Folder"
+msgstr "新しいフォルダ"
+
+#: xftree/xtree_cb.c:642 xftree/xtree_cb.c:650
+#, fuzzy
+msgid "New_File"
+msgstr "新しいファイル"
+
+#: xftree/xtree_cb.c:670 xftree/xtree_cb.c:746 xftree/xtree_cpy.c:1486
+#, fuzzy
+msgid "File exists !"
+msgstr "ファイルが存在します！"
+
+#: xftree/xtree_cb.c:699
+msgid "No item marked !"
+msgstr "項目が一つも選択されていません！"
+
+#: xftree/xtree_cb.c:715
+msgid "Rename to : "
+msgstr "名前の変更 : "
+
+#: xftree/xtree_cb.c:723 xftree/xtree_cpy.c:1464
+msgid "Character not allowed in filename"
+msgstr "ファイル名には使用できない文字です"
+
+#: xftree/xtree_cb.c:807
+msgid "Nothing selected !"
+msgstr "選択されていません！"
+
+#: xftree/xtree_cb.c:1069
+#, fuzzy
+msgid "command finished\n"
+msgstr "コマンドライン :"
+
+#: xftree/xtree_cb.c:1294
+#, fuzzy
+msgid "Override?"
+msgstr "上書きしますか？"
+
+#: xftree/xtree_cpy.c:228
+msgid "Insufficient system memory"
+msgstr "システムメモリが足りません"
+
+#: xftree/xtree_cpy.c:249
+msgid "Too few bytes transferred ! Device full ?"
+msgstr "わずかのバイトが転送されました！デバイスはいっぱいですか？"
+
+#: xftree/xtree_cpy.c:253
+#, fuzzy
+msgid "Too many bytes transferred !?"
+msgstr "多くのバイトが転送されました!?"
+
+#: xftree/xtree_cpy.c:257 xftree/xtree_cpy.c:261
+msgid "Can't stat() file"
+msgstr "ファイルのステータスを取得できません"
+
+#: xftree/xtree_cpy.c:265 xftree/xtree_cpy.c:269
+#, fuzzy
+msgid "Error closing file"
+msgstr "エラー ファイルを閉じます"
+
+#: xftree/xtree_cpy.c:273
+msgid "Error deleting"
+msgstr "削除エラー"
+
+#: xfsamba/xfsamba_dnd.c:96 xftree/xtree_cpy.c:277 xftree/xtree_cpy.c:509
+msgid "Can't copy FIFO"
+msgstr "FIFO はコピーできません"
+
+#: xfsamba/xfsamba_dnd.c:99 xftree/xtree_cpy.c:281 xftree/xtree_cpy.c:512
+msgid "Can't copy device file"
+msgstr "デバイスファイルはコピーできません"
+
+#: xfsamba/xfsamba_dnd.c:102 xftree/xtree_cpy.c:285 xftree/xtree_cpy.c:515
+msgid "Can't copy socket"
+msgstr "ソケットはコピーできません"
+
+#: xftree/xtree_cpy.c:854
+#, fuzzy
+msgid "Counting files"
+msgstr "ファイルをカウントしています"
+
+#: xftree/xtree_cpy.c:1226
+#, c-format
+msgid "%d / %d"
+msgstr ""
+
+#: xftree/xtree_cpy.c:1302
+msgid "Source: "
+msgstr "元: "
+
+#: xftree/xtree_cpy.c:1309
+msgid "Target: "
+msgstr "先: "
+
+#: xftree/xtree_cpy.c:1316
+msgid "beginning copy operation"
+msgstr ""
+
+#: xftree/xtree_cpy.c:1331
+msgid "XFTree: Copy"
+msgstr "XFTree: コピー"
+
+#: xftree/xtree_cpy.c:1332
+msgid "XFTree: Move"
+msgstr "XFTree: 移動"
+
+#: xftree/xtree_cpy.c:1333
+#, fuzzy
+msgid "XFTree: Link"
+msgstr "XFTree: リンク"
+
+#: xftree/xtree_cpy.c:1437 xftree/xtree_cpy.c:1525
+#, fuzzy
+msgid "No file or directory selected!"
+msgstr "ディレクトリが選択されていません！"
+
+#: xftree/xtree_cpy.c:1440
+#, fuzzy
+msgid "Only one file or directory can be selected!"
+msgstr "ディレクトリを選択してください！"
+
+#: xftree/xtree_cpy.c:1446
+#, fuzzy
+msgid "This function is not available for the contents of tar/rpm files"
+msgstr "この機能は tar ファイルの中には利用できません"
+
+#: xftree/xtree_cpy.c:1456
+#, fuzzy
+msgid "Symlink name : "
+msgstr "シンボリックリンクの名前 : "
+
+#: xftree/xtree_dnd.c:169
+msgid "Unknown action !"
+msgstr "不明な動作です！"
+
+#: xftree/xtree_du.c:82
+msgid "Disk usage:"
+msgstr "ディスク使用:"
+
+#: xftree/xtree_du.c:148
+#, fuzzy
+msgid "No directory selected !"
+msgstr "ディレクトリが選択されていません！"
+
+#: xftree/xtree_functions.c:518 xftree/xtree_gui.c:1224
+#, fuzzy
+msgid "files"
+msgstr "ファイル"
+
+#: xftree/xtree_functions.c:581
+msgid "internal malloc error:"
+msgstr "内部の不正エラー:"
+
+#: xftree/xtree_go.c:171
+#, fuzzy
+msgid "Cannot find path"
+msgstr "パスが見つかりません"
+
+#. entry_return = (char *)xf_dlg_combo (win->top,_("Go to"), "/", list);
+#: xftree/xtree_go.c:294 xftree/xtree_gui.c:810
+msgid "Go to"
+msgstr "移動"
+
+#: xftree/xtree_gui.c:119 xftree/xtree_gui.c:121 xftree/xtree_gui.c:122
+#: xftree/xtree_gui.c:123
+msgid "Extract files from"
+msgstr ""
+
+#: xftree/xtree_gui.c:119 xftree/xtree_gui.c:121 xftree/xtree_gui.c:122
+#: xftree/xtree_gui.c:123
+#, fuzzy
+msgid "Extract into"
+msgstr "抜粋"
+
+#: xftree/xtree_gui.c:120 xftree/xtree_gui.c:124 xftree/xtree_gui.c:125
+#: xftree/xtree_gui.c:126 xftree/xtree_gui.c:127
+msgid "Uncompress"
+msgstr ""
+
+#: xftree/xtree_gui.c:128 xftree/xtree_gui.c:129
+msgid "Install/update"
+msgstr ""
+
+#: xftree/xtree_gui.c:152 xftree/xtree_gui.c:564 xftree/xtree_gui.c:566
+#, fuzzy
+msgid "Open icon view"
+msgstr "新しいウィンドウで開く"
+
+#: xftree/xtree_gui.c:155
+#, fuzzy
+msgid "Open tree view"
+msgstr "新しいウィンドウで開く"
+
+#: xftree/xtree_gui.c:156
+#, fuzzy
+msgid "Open terminal view"
+msgstr "ターミナルで開く"
+
+#: xfsamba/xfsamba_mkdir.c:202 xftree/xtree_gui.c:158
+#: xftree/xtree_toolbar.c:109
+#, fuzzy
+msgid "New Folder"
+msgstr "新しいフォルダ"
+
+#: xftree/xtree_gui.c:159
+#, fuzzy
+msgid "New file"
+msgstr "新しいファイル"
+
+#: xftree/xtree_gui.c:163
+#, fuzzy
+msgid "Touch ..."
+msgstr "上へ移動 ..."
+
+#: xftree/xtree_gui.c:164
+#, fuzzy
+msgid "Symlink ..."
+msgstr "シンボリックリンク ..."
+
+#: xfsamba/xfsamba_gui.c:1336 xftree/xtree_gui.c:165
+#: xftree/xtree_toolbar.c:103
+msgid "Delete ..."
+msgstr "削除 ..."
+
+#: xftree/xtree_gui.c:168
+#, fuzzy
+msgid "Paste"
+msgstr "貼り付け ..."
+
+#: xftree/xtree_gui.c:171 xftree/xtree_gui.c:220 xftree/xtree_toolbar.c:105
+msgid "Find ..."
+msgstr "検索 ..."
+
+#: xftree/xtree_gui.c:172 xftree/xtree_gui.c:224
+msgid "Show disk usage ..."
+msgstr "ディスク使用の表示 ..."
+
+#: xftree/xtree_gui.c:175
+#, fuzzy
+msgid "Cut"
+msgstr "切り取り ..."
+
+#: xftree/xtree_gui.c:176
+#, fuzzy
+msgid "Copy"
+msgstr "コピー"
+
+#: xftree/xtree_gui.c:179
+msgid "List pasteboard contents"
+msgstr "ペーストボードの内容のリスト"
+
+#: xftree/xtree_gui.c:180
+msgid "Clear pasteboard"
+msgstr "ペーストボードのクリア"
+
+#: xftree/xtree_gui.c:182
+msgid "Select all"
+msgstr "すべて選択"
+
+#: xftree/xtree_gui.c:183
+msgid "Unselect"
+msgstr "選択解除"
+
+#: xftree/xtree_gui.c:184 xftree/xtree_toolbar.c:115
+msgid "Toggle Dotfiles"
+msgstr "ドットファイルの表示/非表示"
+
+#: xftree/xtree_gui.c:186 xftree/xtree_toolbar.c:113
+msgid "Open Trash"
+msgstr "ごみ箱を開く"
+
+#: xftree/xtree_gui.c:187 xftree/xtree_toolbar.c:114
+msgid "Empty Trash"
+msgstr "ごみ箱を空にする"
+
+#: xftree/xtree_gui.c:191
+msgid "Duplicate"
+msgstr "複製"
+
+#: xftree/xtree_gui.c:192
+msgid "Rename ..."
+msgstr "名前の変更 ..."
+
+#: xftree/xtree_gui.c:193
+msgid "Properties ..."
+msgstr "プロパティ ..."
+
+#: xftree/xtree_gui.c:197 xftree/xtree_gui.c:209 xftree/xtree_toolbar.c:96
+msgid "Go to ..."
+msgstr "移動 ..."
+
+#: xftree/xtree_gui.c:206
+msgid "Register ..."
+msgstr "登録 ..."
+
+#: xftree/xtree_gui.c:212 xftree/xtree_toolbar.c:98
+msgid "Go home"
+msgstr "ホームへ"
+
+#: xftree/xtree_gui.c:213
+msgid "Go back"
+msgstr "戻る"
+
+#: xftree/xtree_gui.c:214 xftree/xtree_toolbar.c:97
+msgid "Go up"
+msgstr "上へ"
+
+#: xftree/xtree_gui.c:215
+#, fuzzy
+msgid "Update"
+msgstr "更新"
+
+#: xftree/xtree_gui.c:221 xftree/xtree_toolbar.c:106
+#, fuzzy
+msgid "Differences ..."
+msgstr "差分(diff) ..."
+
+#: xftree/xtree_gui.c:222
+msgid "Patch viewer ..."
+msgstr "パッチビューア ..."
+
+#: xftree/xtree_gui.c:223 xftree/xtree_toolbar.c:107
+#, fuzzy
+msgid "Browse SMB network ..."
+msgstr "SMB ネットワークの参照 ..."
+
+#: xftree/xtree_gui.c:227 xftree/xtree_toolbar.c:91
+msgid "Close window"
+msgstr "ウィンドウを閉じる"
+
+#: xftree/xtree_gui.c:228
+#, fuzzy
+msgid "Quit ..."
+msgstr "終了 ..."
+
+#. quit only on main menu now, so that default geometry is saved correctly with cb_quit.
+#: xftree/xtree_gui.c:233
+msgid "Subsort by file type"
+msgstr "ファイルタイプでサブソート（並び変え）"
+
+#: xftree/xtree_gui.c:234
+#, fuzzy
+msgid "Enable filter"
+msgstr "フィルタ可能"
+
+#: xftree/xtree_gui.c:235
+#, fuzzy
+msgid "Abbreviate paths"
+msgstr "パスの省略"
+
+#: xftree/xtree_gui.c:237
+msgid "Status box"
+msgstr "ステータスボックス"
+
+#: xftree/xtree_gui.c:238
+msgid "Status titles"
+msgstr "ステータスタイトル"
+
+#: xftree/xtree_gui.c:239
+msgid "Short titles"
+msgstr "タイトルでソート（並び変え）"
+
+#: xftree/xtree_gui.c:241 xftree/xtree_toolbar.c:436
+#, fuzzy
+msgid "Hide toolbar"
+msgstr "ツールバーの非表示"
+
+#: xftree/xtree_gui.c:242
+msgid "Hide titles"
+msgstr "タイトルの非表示"
+
+#: xftree/xtree_gui.c:243
+msgid "Hide sizes"
+msgstr "サイズの非表示"
+
+#: xftree/xtree_gui.c:244
+msgid "Hide dates"
+msgstr "日時の非表示"
+
+#: xftree/xtree_gui.c:245
+#, fuzzy
+msgid "Hide owner"
+msgstr "所有者のの非表示"
+
+#: xftree/xtree_gui.c:246
+msgid "Hide group"
+msgstr "グループの非表示"
+
+#: xftree/xtree_gui.c:247
+#, fuzzy
+msgid "Hide mode"
+msgstr "モードの非表示"
+
+#: xftree/xtree_gui.c:248
+msgid "Hide ../ "
+msgstr ""
+
+#: xftree/xtree_gui.c:251
+msgid "Sort by file name"
+msgstr "ファイル名でソート（並び変え）"
+
+#: xftree/xtree_gui.c:252
+msgid "Sort by file size"
+msgstr "ファイルサイズでソート（並び変え）"
+
+#: xftree/xtree_gui.c:253
+msgid "Sort by file date"
+msgstr "ファイルの日時でソート（並び変え）"
+
+#: xftree/xtree_gui.c:577 xftree/xtree_gui.c:579
+#, fuzzy
+msgid "Create"
+msgstr "作成"
+
+#. Create "File" menu
+#: xfclock/xfclock_menus.c:85 xfdiff/xfdiff_gui.c:1168
+#: xfsamba/xfsamba_gui.c:1266 xftree/xtree_gui.c:750
+msgid "File"
+msgstr "ファイル"
+
+#. Create "Edit" menu
+#: xfsamba/xfsamba_gui.c:1277 xftree/xtree_gui.c:781 xfumed/xfumed_gui.c:129
+#, fuzzy
+msgid "Edit"
+msgstr "編集"
+
+#. Create "Tools" menu
+#: xfsamba/xfsamba_gui.c:1289 xftree/xtree_gui.c:835
+#, fuzzy
+msgid "Tools"
+msgstr "ツール"
+
+#. Create "View" menu
+#: xfsamba/xfsamba_gui.c:1293 xftree/xtree_gui.c:859
+msgid "View"
+msgstr "ビュー"
+
+#. Create "Preferences" menu
+#: xfsamba/xfsamba_gui.c:1304 xftree/xtree_gui.c:889
+#, fuzzy
+msgid "Preferences"
+msgstr "選択"
+
+#: xftree/xtree_gui.c:895
+#, fuzzy
+msgid "Hide main menu"
+msgstr "メインメニューの非表示"
+
+#: xftree/xtree_gui.c:903 xftree/xtree_gui.c:933
+msgid "Save geometry on exit"
+msgstr "ジオメトリ(geometry)を保存して終了"
+
+#: xftree/xtree_gui.c:910 xftree/xtree_gui.c:935
+msgid "Double click does GOTO"
+msgstr "ダブルクリックで開く"
+
+#: xftree/xtree_gui.c:918 xftree/xtree_gui.c:937
+msgid "Drag does copy"
+msgstr "ドラッグでコピー"
+
+#: xftree/xtree_gui.c:925
+msgid "Use rsync instead of scp"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1305 xftree/xtree_gui.c:941
+#, fuzzy
+msgid "Set background color"
+msgstr "背景の色のセット"
+
+#: xfsamba/xfsamba_gui.c:1306 xftree/xtree_gui.c:946
+#, fuzzy
+msgid "Set font"
+msgstr "フォントのセット"
+
+#: xftree/xtree_gui.c:952 xftree/xtree_toolbar.c:354
+#, fuzzy
+msgid "Configure toolbar"
+msgstr "ツールバーの設定"
+
+#: xftree/xtree_gui.c:957
+#, fuzzy
+msgid "Redefine home directory"
+msgstr "ホームディレクトリの再定義"
+
+#. Create "Help" menu
+#: xfclock/xfclock_menus.c:234 xfdiff/xfdiff_gui.c:1270
+#: xfsamba/xfsamba_gui.c:1311 xftree/xtree_gui.c:963
+msgid "Help"
+msgstr "ヘルプ"
+
+#: xftree/xtree_gui.c:970
+#, fuzzy
+msgid "Icon view"
+msgstr "アイコンファイル : "
+
+#: xfsamba/xfsamba_gui.c:1312 xftree/xtree_gui.c:975
+msgid "Drag and drop"
+msgstr "ドラッグ アンド ドロップ"
+
+#: xftree/xtree_gui.c:980
+msgid "Rsync and scp"
+msgstr ""
+
+#: xftree/xtree_gui.c:987
+msgid "Unlisted shortcut keys"
+msgstr "リストにないショートカットキー"
+
+#: xftree/xtree_gui.c:992
+msgid "Custom shortcut keys"
+msgstr "カスタムショートカットキー"
+
+#: xftree/xtree_gui.c:997
+msgid "Registered applications"
+msgstr "登録されたアプリケーション"
+
+#: xftree/xtree_gui.c:1003
+msgid "About ..."
+msgstr "このプログラムについて ..."
+
+#: xfglob/xfglob.c:606 xfsamba/xfsamba_gui.c:1486 xftree/xtree_gui.c:1127
+msgid "Name"
+msgstr "名前"
+
+#. titles[COL_SIZE] = (preferences & SIZE_IN_KB)?_("Size (Kb)"):_("Size (bytes)");
+#: xfglob/xfglob.c:608 xftree/xtree_gui.c:1129
+msgid "Size (bytes)"
+msgstr "サイズ (バイト)"
+
+#: xfglob/xfglob.c:609 xftree/xtree_gui.c:1130
+#, fuzzy
+msgid "Last changed"
+msgstr "最終更新時間"
+
+#: xfglob/xfglob.c:610 xftree/xtree_gui.c:1131
+#, fuzzy
+msgid "Mode"
+msgstr "モード"
+
+#: xftree/xtree_gui.c:1133
+#, fuzzy
+msgid "Group"
+msgstr "グループ"
+
+#: xftree/xtree_gui.c:1207
+#, fuzzy
+msgid "Filter:"
+msgstr "フィルタ:"
+
+#: xftree/xtree_gui.c:1218
+msgid "dirs"
+msgstr "ディレクトリ"
+
+#: xftree/xtree_gui.c:1331
+msgid "Show main menu"
+msgstr "メインメニューの表示"
+
+#. some fonts are buggy on startup with iso-8859-1 systems (like mine)
+#: xfdiff/xfdiff_gui.c:526 xfdiff/xfdiff_misc.c:801 xfsamba/xfsamba_gui.c:84
+#: xftree/xtree_mess.c:109
+msgid "Could not load specified font\n"
+msgstr "特定のフォントがロードできません\n"
+
+#: xftree/xtree_mess.c:453
+msgid "Override ?"
+msgstr "上書きしますか？"
+
+#: xftree/xtree_mess.c:454
+msgid "with"
+msgstr "以下のファイルで。"
+
+#: xftree/xtree_mess.c:533 xftree/xtree_mess.c:534 xftree/xtree_mess.c:550
+#: xftree/xtree_mess.c:551
+msgid "Default xftreerc file cannot be created\n"
+msgstr "デフォルト（初期）の xftreerc が作成できません\n"
+
+#: xftree/xtree_mess.c:588
+msgid "Default xftreerc file cannot be read\n"
+msgstr "デフォルト（初期）の xftreerc がロードできません\n"
+
+#: xftree/xtree_mess.c:800
+msgid ""
+"Xftree handles keyboard shortcuts dynamically.\n"
+"This means that you can open a menu,highlight an entry\n"
+"and press a keyboard key to create the shortcut."
+msgstr ""
+"Xftree たくさんの動的なキーボードショートカット\n"
+"これはエントリーをハイライトさせ、キーを押すだけで\n"
+"ショートカットが作れるということです。"
+
+#: xftree/xtree_mess.c:809
+msgid ""
+"The Xftree icon view is the ROX-filer. At the moment this has to be "
+"installed\n"
+"separately from XFCE. A ROX-filer specific for XFCE will soon be available."
+msgstr ""
+
+#: xftree/xtree_mess.c:818
+msgid ""
+"Xftree allows you to drag and drop to/from\n"
+"xftree windows running on different hosts.\n"
+"You may use either scp or rsync for the copying.\n"
+"User authentication is done by ssh.\n"
+"See \"man ssh\" if you desire host based\n"
+"instead of password based authentication.\n"
+"\n"
+"Xftree will also accept drops from other\n"
+"filemanagers running on different hosts.\n"
+msgstr ""
+
+#: xftree/xtree_mess.c:834
+msgid ""
+"Xftree can register applications by filename or filetype\n"
+"by selecting \"Register\" from one of the menus or by selecting\n"
+"\"Register application\" on mouse double-click.\n"
+"If you wish to edit the applications that are already registered,\n"
+" please look at ~/.xfce/xtree.reg."
+msgstr ""
+"Xftree はメニューから\"登録\"を選ぶ、\n"
+"もしくはダブルクリックして、\"アプリケーションの登録\"を選ぶだけで\n"
+"ファイル名またはファイルタイプでアプリケーションを登録できます。\n"
+"もし、すでに登録していたら、 ~/.xfce/xtree.reg を見てください。"
+
+#: xftree/xtree_mess.c:843
+#, fuzzy
+msgid ""
+"Xftree handles drag and drop the following way:\n"
+"SHIFT drag+drop --> move\n"
+"CTRL drag+drop --> copy\n"
+"SHIFT-CTRL drag+drop --> link\n"
+"The default drag+drop action is move,\n"
+"but can be changed in the preferences menu.\n"
+"To drag multiple files, use the middle button.\n"
+"Also:\n"
+"Multiple selection by button 1 click-and-drag\n"
+"is available on the first click after a GOTO or REGEN.\n"
+msgstr ""
+"Xftree のドラッグアンドドロップには次のような方法があります:\n"
+"SHIFT ドラッグ+ドロップ --> 移動\n"
+"CTRL ドラッグ+ドロップ --> コピー\n"
+"SHIFT-CTRL ドラッグ+ドロップ --> リンク\n"
+"デフォルト（初期）のドラッグ+ドロップ動作は移動ですが、\n"
+"好みのメニューに変えることができます。\n"
+"複数のファイルをドラッグするには、中ボタンを使って下さい。\n"
+
+#: xftree/xtree_mess.c:861
+msgid "Keyboard shortcuts are a fast way to access menu functions."
+msgstr ""
+"キーボードショートカットはメニューの機能にアクセスする一番早い方法です。"
+
+#: xftree/xtree_mess.c:905
+msgid "Xftree results"
+msgstr "Xftree の結果"
+
+#: xftree/xtree_mess.c:1158
+#, fuzzy
+msgid "Home directory : "
+msgstr "ホームディレクトリ: "
+
+#: xfsamba/xfsamba_dnd.c:528 xftree/xtree_pasteboard.c:166
+msgid "The pasteboard is currently empty."
+msgstr "ペーストボードは現在は空です。"
+
+#: xfsamba/xfsamba_dnd.c:535 xftree/xtree_pasteboard.c:173
+msgid "Not a valid file transfer pasteboard."
+msgstr ""
+
+#: xftree/xtree_pasteboard.c:244
+#, fuzzy
+msgid "The pasteboard is currently empty.\n"
+msgstr "ペーストボードは現在は空です。"
+
+#: xftree/xtree_pasteboard.c:246
+msgid "No pasteboard available."
+msgstr ""
+
+#: xftree/xtree_tar.c:417
+msgid "tar: execution error"
+msgstr ""
+
+#. only 32 elements allowed in TOOLBARICONS
+#: xftree/xtree_toolbar.c:88
+#, fuzzy
+msgid "New icon view"
+msgstr "新しいウィンドウ"
+
+#: xftree/xtree_toolbar.c:89
+msgid "New tree view"
+msgstr ""
+
+#: xftree/xtree_toolbar.c:90
+#, fuzzy
+msgid "New terminal"
+msgstr "ターミナルで開く"
+
+#: xftree/xtree_toolbar.c:92
+#, fuzzy
+msgid "Run ..."
+msgstr "プログラムの実行 ..."
+
+#: xftree/xtree_toolbar.c:94
+#, fuzzy
+msgid "Update ..."
+msgstr "更新 ..."
+
+#: xftree/xtree_toolbar.c:95
+#, fuzzy
+msgid "Go back ..."
+msgstr "戻る ..."
+
+#: xfsamba/xfsamba_gui.c:1332 xftree/xtree_toolbar.c:100
+#, fuzzy
+msgid "Cut ..."
+msgstr "切り取り ..."
+
+#: xfsamba/xfsamba_gui.c:1333 xftree/xtree_toolbar.c:101
+#, fuzzy
+msgid "Copy ..."
+msgstr "コピー ..."
+
+#: xfsamba/xfsamba_gui.c:1334 xftree/xtree_toolbar.c:102
+#, fuzzy
+msgid "Paste ..."
+msgstr "貼り付け ..."
+
+#: xftree/xtree_toolbar.c:110
+msgid "New file ..."
+msgstr "新しいファイル ..."
+
+#: xftree/xtree_toolbar.c:337
+#, fuzzy
+msgid "Action"
+msgstr "動作"
+
+#: xftree/xtree_toolbar.c:338
+msgid "Small icons. "
+msgstr "小さいアイコン。"
+
+#: xftree/xtree_toolbar.c:339
+#, fuzzy
+msgid "Large icons. "
+msgstr "大きいアイコン。"
+
+#: xftree/xtree_toolbar.c:342
+msgid "Regen"
+msgstr ""
+
+#: xftree/xtree_toolbar.c:443
+msgid "Large buttons"
+msgstr "大きいボタン"
+
+#. printf("dbg:%s\n",_("File download failed."));
+#: xftree/xtree_smb.c:175
+#, fuzzy
+msgid "File download failed."
+msgstr "ファイルのダウンロードがキャンセルされました。"
+
+#: xftree/xtree_smb.c:199
+#, fuzzy
+msgid "Downloading files from "
+msgstr "ファイルをダウンロードしています..."
+
+#: xftree/xtree_smb.c:232
+msgid ""
+"SMB downloads disabled.\n"
+"Command not found"
+msgstr ""
+
+#: xftree/xtree_smb.c:238
+#, fuzzy
+msgid "Cannot open"
+msgstr "tarファイルが開けません"
+
+#: xftree/xtree_smb.c:263
+#, fuzzy
+msgid "DnD error"
+msgstr "致命的なエラー"
+
+#: xftree/xtree_smb.c:263
+msgid "Incorrect DnD specification"
+msgstr ""
+
+#: xftree/xtree_smb.c:307
+msgid "Only drops from a single share are allowed"
+msgstr ""
+
+#. convenience location of duplicate dialog texts
+#. non-static
+#: xfdiff/xfdiff.c:116
+msgid "Strip level now set to "
+msgstr "パス除去レベル(strip level)をセット"
+
+#: xfdiff/xfdiff.c:117
+msgid "No patch file has been selected."
+msgstr "パッチファイルが選択されていません。"
+
+#: xfdiff/xfdiff.c:118
+msgid "No directory to apply patch has been selected."
+msgstr "パッチを適用するディレクトリが選択されていません。"
+
+#: xfdiff/xfdiff.c:119
+msgid "No left path has been selected."
+msgstr "左のパッチが選択されていません。"
+
+#: xfdiff/xfdiff.c:120
+msgid "No right path has been selected."
+msgstr "右のパッチが選択されていません。"
+
+#. static
+#: xfdiff/xfdiff.c:122
+msgid "Patch file can not be opened for read!"
+msgstr "パッチファイルを開いて読み込むことができません！"
+
+#: xfdiff/xfdiff.c:123
+msgid ""
+"Files are identical\n"
+"(or binary files that may or may not differ)"
+msgstr ""
+"ファイルは同一です。\n"
+"（もしくは異なった／異なっていないバイナリファイルかもしれません。）"
+
+#: xfdiff/xfdiff.c:124
+msgid "Patch file is not in unified format"
+msgstr "パッチファイルは統一されたフォーマットではありません"
+
+#: xfdiff/xfdiff.c:125
+msgid "****Empty file****\n"
+msgstr "****空のファイル****\n"
+
+#. missing color attribute
+#: xfdiff/xfdiff.c:314 xfdiff/xfdiff.c:320
+msgid "****Binary data****\n"
+msgstr "****バイナリデータ****\n"
+
+#: xfdiff/xfdiff.c:404
+msgid ""
+"You have selected a directory.\n"
+"Should subdirectories be included?"
+msgstr ""
+"ディレクトリが選択されました。\n"
+"サブディレクトリも含めますか？"
+
+#: xfdiff/xfdiff.c:469
+msgid " versus "
+msgstr " 対 "
+
+#. 10 is size of MAXINT of 32 bits:
+#: xfdiff/xfdiff.c:489 xfdiff/xfdiff.c:493
+msgid "different sections found"
+msgstr "異なる部分が見つかりました"
+
+#: xfdiff/xfdiff.c:577
+msgid "Include binary files?"
+msgstr "バイナリファイルを含めますか？"
+
+#: xfdiff/xfdiff.c:579
+msgid "Include subdirectories?"
+msgstr "サブディレクトリを含めますか？"
+
+#: xfdiff/xfdiff.c:583
+#, fuzzy
+msgid "Working diff...\n"
+msgstr "diffしています...\n"
+
+#: xfdiff/xfdiff.c:948
+msgid ""
+"Patch file has been modified by another process\n"
+"Please reload\n"
+msgstr ""
+"他のプロセスによりパッチファイルが変更されました。\n"
+"リロードしてください\n"
+
+#: xfdiff/xfdiff.c:1158
+msgid "Reversed patch detected. Should I try reversing it?"
+msgstr "パッチが逆転しています。もどしますか？"
+
+#: xfdiff/xfdiff.c:1167
+msgid "Now forking diff. Please be patient.\n"
+msgstr "diffで分岐しています。しばらくお待ちください。\n"
+
+#: xfdiff/xfdiff.c:1169
+msgid "Finished forking.\n"
+msgstr "作業が終わりました。\n"
+
+#: xfdiff/xfdiff.c:1388
+msgid "Running patch...\n"
+msgstr "パッチしています...\n"
+
+#: xfdiff/xfdiff.c:1456
+msgid "xfdiff version"
+msgstr "xfdiff バージョン"
+
+#: xfdiff/xfdiff.c:1457
+msgid "use xfdiff [ -h | --help | -p] [leftfile] [rightfile]\n"
+msgstr "xfdiffを使う [ -h | --help | -p] [左のファイル] [右のファイル]\n"
+
+#: xfdiff/xfdiff.c:1458
+msgid "-p : leftfile and rightfile are a patchdir and a patchfile\n"
+msgstr "-p : 左のファイルと右のファイルのパッチディレクトリとパッチファイル\n"
+
+#: xfdiff/xfdiff.c:1459
+msgid "-PN: N is strip level (0-9) for patch (quick toggle)\n"
+msgstr "-PN: Nはパッチのパス除去レベル(strip level) (0-9)（クイック切替え）\n"
+
+#: xfdiff/xfdiff.c:1460
+msgid "-R: patch file is reversed (quick toggle)\n"
+msgstr "-R: パッチファイルの逆転（クイック切替え）\n"
+
+#: xfdiff/xfdiff.c:1461
+msgid "-N: patch file is not reversed (quick toggle)\n"
+msgstr "-N: パッチファイルを逆転しない（クイック切替え）\n"
+
+#: xfdiff/xfdiff.c:1462
+msgid ""
+"-h, --help : print this message\n"
+"\n"
+msgstr ""
+"-h, --help : このメッセージを表示\n"
+"\n"
+
+#: xfdiff/xfdiff.c:1463
+msgid "xfdiff (c) Edscott Wilson Garcia 2001, under GNU-GPL\n"
+msgstr ""
+
+#: xfdiff/xfdiff.c:1464
+msgid ""
+"XFCE modules copyright Olivier Fourdan 1999-2001, under GNU-GPL\n"
+"\n"
+msgstr ""
+
+#: xfdiff/xfdiff_diag.c:135
+msgid "Xfdiff diagnostic"
+msgstr "Xfdiffの診断"
+
+#: xfdiff/xfdiff_gui.c:175
+msgid "A patch file and directory must be selected first!"
+msgstr "パッチファイルとディレクトリが最初に選択されなくてはいけません！"
+
+#: xfdiff/xfdiff_gui.c:187
+msgid "Patch has been undone."
+msgstr "パッチされませんでした。"
+
+#: xfdiff/xfdiff_gui.c:187
+msgid "Patch has been applied."
+msgstr "パッチが適用されました。"
+
+#: xfdiff/xfdiff_gui.c:202
+msgid "Please select a name for the patch file in the next dialog."
+msgstr "次のダイアログでパッチファイルの名前を選択してください。"
+
+#: xfdiff/xfdiff_gui.c:221
+msgid ""
+"XFdiff will now start diff.\n"
+"Please be patient (xfdiff might seem to hang).\n"
+"Diff will be working"
+msgstr ""
+"XFdiffがdiffを開始します。\n"
+"しばらくお待ちください（xfdiffが止まったように見えるかもしれません）。\n"
+"diff作業を開始します"
+
+#: xfdiff/xfdiff_gui.c:228
+msgid "Patch file could not be created"
+msgstr "パッチファイルが作成できませんでした"
+
+#: xfdiff/xfdiff_gui.c:233 xfdiff/xfdiff_gui.c:238
+msgid "Strip level for created patch file="
+msgstr "作成するパッチファイルのパス除去レベル(strip level)="
+
+#: xfdiff/xfdiff_gui.c:240
+msgid " has been created\n"
+msgstr " が作成されました\n"
+
+#: xfdiff/xfdiff_gui.c:254
+msgid "Patch file creation cancelled"
+msgstr "パッチファイルの作成がキャンセルされました"
+
+#: xfdiff/xfdiff_gui.c:404
+msgid "Line synchronization enabled.\n"
+msgstr "ラインの同期が可能です。\n"
+
+#: xfdiff/xfdiff_gui.c:406
+msgid "Line synchronization disabled.\n"
+msgstr "ラインの同期はできません。\n"
+
+#: xfdiff/xfdiff_gui.c:443
+msgid "Patch verbose diagnostics enabled.\n"
+msgstr "パッチ verbose 診断可能。\n"
+
+#: xfdiff/xfdiff_gui.c:445
+msgid "Patch verbose diagnostics disabled.\n"
+msgstr "パッチ verbose 診断不可能。\n"
+
+#: xfdiff/xfdiff_gui.c:464
+msgid "Line numbers enabled.\n"
+msgstr "ラインナンバー可能です。\n"
+
+#: xfdiff/xfdiff_gui.c:466
+msgid "Line numbers disabled.\n"
+msgstr "ラインナンバー不可能です。\n"
+
+#: xfdiff/xfdiff_gui.c:478
+msgid "Polygons will now be filled.\n"
+msgstr "ポリゴンは十分です。\n"
+
+#: xfdiff/xfdiff_gui.c:480
+msgid "Polygons will now *not* be filled.\n"
+msgstr "ポリゴンは*不*十分です。\n"
+
+#: xfdiff/xfdiff_gui.c:494
+msgid "Patch will now be assumed reversed.\n"
+msgstr "パッチが逆転されたと仮定します。\n"
+
+#: xfdiff/xfdiff_gui.c:496
+msgid "Patch will now be assumed *not* reversed.\n"
+msgstr "パッチが逆転して*いない*と仮定します。\n"
+
+#.
+#: xfdiff/xfdiff_gui.c:517
+#, fuzzy
+msgid "Font selection"
+msgstr "フォントの選択"
+
+#: xfdiff/xfdiff_gui.c:585
+#, fuzzy
+msgid "Select highlight background color"
+msgstr "背景のハイライト色"
+
+#: xfdiff/xfdiff_gui.c:588
+msgid "Select highlight text color"
+msgstr "テキストのハイライト色"
+
+#: xfdiff/xfdiff_gui.c:686 xfdiff/xfdiff_gui.c:687
+msgid "Warning: cannot read from "
+msgstr "警告: 読み込めません "
+
+#: xfdiff/xfdiff_gui.c:691 xfdiff/xfdiff_gui.c:692
+msgid "is not in patch file."
+msgstr "はパッチファイルではありません。"
+
+#: xfdiff/xfdiff_gui.c:798
+msgid "Default .xfdiffrc file cannot be created\n"
+msgstr "デフォルト（初期）の .xfdiffrc ファイルが作成できません\n"
+
+#: xfdiff/xfdiff_gui.c:818
+msgid "Default configuration has been saved\n"
+msgstr "デフォルト（初期）設定が保存されました\n"
+
+#: xfdiff/xfdiff_gui.c:826
+msgid "This is XFDiff "
+msgstr "XFDiff です"
+
+#: xfdiff/xfdiff_gui.c:826
+msgid ""
+"\n"
+"(c) by Edscott Wilson Garcia under GNU GPL\n"
+"XFCE modules (c) Olivier Fourdan http://www.xfce.org/"
+msgstr ""
+
+#: xfdiff/xfdiff_gui.c:845
+msgid "There is no next difference"
+msgstr "次に違いはありません"
+
+#: xfdiff/xfdiff_gui.c:854
+msgid "There is no previous difference"
+msgstr "前に違いはありません"
+
+#: xfdiff/xfdiff_gui.c:876
+msgid "There is no such file"
+msgstr "そのようなファイルはありません"
+
+#: xfdiff/xfdiff_gui.c:886
+msgid "There is no next file"
+msgstr "次のファイルはありません"
+
+#: xfdiff/xfdiff_gui.c:897
+msgid "There is no previous file"
+msgstr "前のファイルはありません"
+
+#. only spot where directories for input is not OK:
+#: xfdiff/xfdiff_gui.c:984
+#, fuzzy
+msgid "That is a directory (or symlink)"
+msgstr "それはディレクトリです（もしくはシンボリックリンク）"
+
+#: xfdiff/xfdiff_gui.c:1169
+#, fuzzy
+msgid "Select left file"
+msgstr "左のファイルの選択"
+
+#: xfdiff/xfdiff_gui.c:1170
+#, fuzzy
+msgid "Select right file"
+msgstr "右のファイルの選択"
+
+#: xfdiff/xfdiff_gui.c:1171
+#, fuzzy
+msgid "Select patch file"
+msgstr "パッチファイルの選択"
+
+#: xfdiff/xfdiff_gui.c:1172
+msgid "Select directory where to apply patch"
+msgstr "パッチを適用するディレクトリの選択"
+
+#: xfdiff/xfdiff_gui.c:1175
+msgid "Switch to patch mode"
+msgstr "パッチモードに切替え"
+
+#: xfdiff/xfdiff_gui.c:1178
+msgid "Switch to diff mode"
+msgstr "差分(diff)モードに切替え"
+
+#: xfdiff/xfdiff_gui.c:1183 xfdiff/xfdiff_gui.c:1610
+#: xfsamba/xfsamba_gui.c:1274
+#, fuzzy
+msgid "Exit"
+msgstr "終了"
+
+#. Create "Settings" menu
+#: xfdiff/xfdiff_gui.c:1186
+#, fuzzy
+msgid "Diff Settings"
+msgstr "Diff の設定"
+
+#. shortcut_menu(TOGGLENOT,menu,_("Show diagnostics"),
+#. (gpointer)cb_toggle_diagnostics, (gpointer) silent);
+#: xfdiff/xfdiff_gui.c:1189
+#, fuzzy
+msgid "Font"
+msgstr "フォント"
+
+#: xfdiff/xfdiff_gui.c:1190
+msgid "Highlight text color"
+msgstr "テキストのハイライト色"
+
+#: xfdiff/xfdiff_gui.c:1191
+#, fuzzy
+msgid "Highlight background color"
+msgstr "背景のハイライト色"
+
+#: xfdiff/xfdiff_gui.c:1192
+msgid "Fill polygons"
+msgstr "フルポリゴン"
+
+#: xfdiff/xfdiff_gui.c:1193
+msgid "Show line numbers"
+msgstr "行数の表示"
+
+#: xfdiff/xfdiff_gui.c:1195
+msgid "Use line synchronization voids"
+msgstr "ラインの同期の使用"
+
+#: xfdiff/xfdiff_gui.c:1201
+msgid "Save settings as default"
+msgstr "デフォルト（初期）の設定で保存"
+
+#: xfdiff/xfdiff_gui.c:1203
+#, fuzzy
+msgid "Patch Settings"
+msgstr "パッチの設定"
+
+#: xfdiff/xfdiff_gui.c:1205
+msgid "Verbose patch diagnostics"
+msgstr "verbose パッチの診断"
+
+#: xfdiff/xfdiff_gui.c:1207
+msgid "Patch options only active in patch-mode"
+msgstr "パッチのオプションはパッチモードで有効です"
+
+#. watchout, REVERSE_TOGGLE is #define patchM[whatever] at xfdiff.h
+#: xfdiff/xfdiff_gui.c:1212
+msgid "Assume patch is reversed"
+msgstr "パッチを逆転したと仮定"
+
+#: xfdiff/xfdiff_gui.c:1214
+msgid "Auto strip level"
+msgstr "オートパス除去レベル(strip level)"
+
+#. Create "Actions" menu
+#: xfdiff/xfdiff_gui.c:1243 xfumed/xfumed_gui.c:92
+msgid "Actions"
+msgstr "動作"
+
+#: xfdiff/xfdiff_gui.c:1244
+#, fuzzy
+msgid "View differences"
+msgstr "差分を表示"
+
+#: xfdiff/xfdiff_gui.c:1245
+msgid "View differences in new"
+msgstr "新しい差分を表示"
+
+#: xfdiff/xfdiff_gui.c:1247
+msgid "View patch created differences"
+msgstr "差分パッチの作成を表示"
+
+#: xfdiff/xfdiff_gui.c:1250
+msgid "View patch created differences in new"
+msgstr "新しい差分パッチの作成を表示"
+
+#: xfdiff/xfdiff_gui.c:1255
+#, fuzzy
+msgid "Create patch file"
+msgstr "パッチファイルの作成"
+
+#: xfdiff/xfdiff_gui.c:1262
+#, fuzzy
+msgid "Apply patch to Hard Drive"
+msgstr "ハードドライブにパッチを適用"
+
+#: xfdiff/xfdiff_gui.c:1265
+msgid "Undo patch to Hard Drive"
+msgstr "ハードドライブへのパッチを元に戻す"
+
+#: xfdiff/xfdiff_gui.c:1271 xfglob/xfglob.c:1922
+#, fuzzy
+msgid "About"
+msgstr "このプログラムについて"
+
+#. gtk_button_new_with_label (_("Clear"));
+#. gtk_box_pack_end (GTK_BOX (bbox),button,TRUE,TRUE , 0);
+#. GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
+#. gtk_widget_show (button);
+#. gtk_signal_connect (GTK_OBJECT (button), "clicked",
+#. GTK_SIGNAL_FUNC (on_clear_show_diag),
+#. (gpointer) text);
+#: xfdiff/xfdiff_gui.c:1603
+#, fuzzy
+msgid "Next difference"
+msgstr "次の違い"
+
+#: xfdiff/xfdiff_gui.c:1606
+#, fuzzy
+msgid "Prev difference"
+msgstr "前の違い"
+
+#: xfdiff/xfdiff_gui.c:1607
+#, fuzzy
+msgid "Next file"
+msgstr "次のファイル"
+
+#: xfdiff/xfdiff_gui.c:1608
+#, fuzzy
+msgid "Previous file"
+msgstr "前のファイル"
+
+#: xfdiff/xfdiff_misc.c:91
+msgid "Could not set selected font"
+msgstr "選択されたフォントがセットできません"
+
+#: xfdiff/xfdiff_misc.c:130
+#, fuzzy
+msgid "Confirm"
+msgstr "確認"
+
+#: xfdiff/xfdiff_misc.c:130
+#, fuzzy
+msgid "Abort"
+msgstr "中止"
+
+#: xfdiff/xfdiff_misc.c:136
+#, fuzzy
+msgid "Alert"
+msgstr "警告"
+
+#: xfdiff/xfdiff_misc.c:361
+msgid ""
+"A bug?\n"
+"Please send full traceback to xfce-dev@moongroup.com"
+msgstr ""
+"バグ？\n"
+"すべてのトレースバック（形跡）を xfce-dev@moongroup.com へ送ってください"
+
+#: xfdiff/xfdiff_misc.c:366
+msgid "Low memory (malloc) error: xfdiff_aborting run"
+msgstr "メモリ不足(malloc)エラー: xfdiffを中止します"
+
+#: xfdiff/xfdiff_misc.c:369
+msgid "file open error: xfdiff_aborting run"
+msgstr "ファイルオープンエラー: xfdiffを中止します"
+
+#: xfdiff/xfdiff_misc.c:372
+msgid "unspecified error: xfdiff_aborting run"
+msgstr "不明なエラー: xfdiffを中止します"
+
+#: xfdiff/xfdiff_misc.c:604
+msgid ""
+"No file was found for patching\n"
+"Either the directory to apply patch is not correctly selected\n"
+"or an incorrect strip level was used.\n"
+msgstr ""
+"パッチするファイルがみつかりません\n"
+"パッチを適用するディレクトリも選択されていません\n"
+"もしくは間違ったパス除去レベルが使われています。\n"
+
+#: xfdiff/xfdiff_misc.c:621
+msgid ""
+"Patch command has produced reject output.\n"
+"See diagnostics window."
+msgstr ""
+"パッチコマンド製作の出力がキャンセルされました。\n"
+"診断ウィンドウを見てください。"
+
+#: xfdiff/xfdiff_misc.c:648
+msgid "No directory was selected!"
+msgstr "ディレクトリが選択されていません！"
+
+#.
+#: xfdiff/xfdiff_misc.c:662
+msgid "Directory or file selection"
+msgstr "ファイル／ディレクトリ選択"
+
+#: xfdiff/xfdiff_misc.c:697 xfdiff/xfdiff_misc.c:700
+msgid "Please select it in the next dialog."
+msgstr "次のダイアログで選択してください。"
+
+#: xfdiff/xfdiff_misc.c:738
+#, fuzzy
+msgid "File exists, overwrite?"
+msgstr "ファイルが存在します 上書きしますか？"
+
+#: xfdiff/xfdiff_misc.c:742
+#, fuzzy
+msgid "Cannot open file for write\n"
+msgstr "ファイルが開けません"
+
+#: xfdiff/xfdiff_misc.c:924 xfdiff/xfdiff_misc.c:929
+#, fuzzy
+msgid "couldn't allocate color"
+msgstr "色が配置できません"
+
+#. font color!
+#: xfdiff/xfdiff_misc.c:963 xfdiff/xfdiff_misc.c:987
+msgid "Patch: "
+msgstr "パッチ: "
+
+#: xfdiff/xfdiff_misc.c:966 xfdiff/xfdiff_misc.c:992
+msgid " applied at: "
+msgstr " ここに適用: "
+
+#: xfdiff/xfdiff_misc.c:1012
+msgid "Press OK to see patch diffs"
+msgstr "OKを押すとパッチの相違を表示します"
+
+#: xfglob/xfglob.c:460 xfglob/xfglob.c:461
+msgid "Results limit reached"
+msgstr "リミット達成結果"
+
+#: xfglob/xfglob.c:469
+#, fuzzy
+msgid "Cancelled"
+msgstr "キャンセルされました"
+
+#: xfglob/xfglob.c:470
+msgid "Search canceled!\n"
+msgstr "検索を中止！\n"
+
+#: xfglob/xfglob.c:495 xfglob/xfglob.c:525
+msgid "Glob run must finish or be cancelled first."
+msgstr ""
+"Glob動作ははじめにフィニッシュもしくはキャンセルされなければいけません。"
+
+#: xfglob/xfglob.c:508
+#, fuzzy
+msgid "Find results.\n"
+msgstr "検索結果"
+
+#: xfglob/xfglob.c:588 xfglob/xfglob.c:680
+#, fuzzy
+msgid "Find results..."
+msgstr "検索結果..."
+
+#: xfglob/xfglob.c:607 xfglob/xfglob.c:1362
+#, fuzzy
+msgid "Directory"
+msgstr "ディレクトリ"
+
+#: xfglob/xfglob.c:1032
+msgid "Incoherent size considerations!"
+msgstr "矛盾したサイズ考慮です。"
+
+#. for (j=0;j<i;j++) printf ("%s ",argument[j]);printf ("\n");
+#: xfglob/xfglob.c:1202
+msgid "Result of "
+msgstr "結果 "
+
+#: xfglob/xfglob.c:1213 xfglob/xfglob.c:1556
+#, fuzzy
+msgid "File type :"
+msgstr "ファイルタイプ :"
+
+#: xfglob/xfglob.c:1285
+msgid "Anyone"
+msgstr "だれか"
+
+#. translation of filetypes
+#: xfglob/xfglob.c:1362
+msgid "Any kind"
+msgstr "なんでも"
+
+#: xfglob/xfglob.c:1362
+msgid "Regular"
+msgstr "普通"
+
+#: xfglob/xfglob.c:1362
+msgid "Symlink"
+msgstr "シンボリックリンク"
+
+#: xfglob/xfglob.c:1362
+msgid "Socket"
+msgstr "ソケット"
+
+#: xfglob/xfglob.c:1362
+msgid "Block device"
+msgstr "ブロックデバイス"
+
+#: xfglob/xfglob.c:1362
+msgid "Character device"
+msgstr "キャラクタデバイス"
+
+#: xfglob/xfglob.c:1362
+msgid "FIFO"
+msgstr ""
+
+#: xfglob/xfglob.c:1372
+msgid "Xfglob"
+msgstr ""
+
+#. *******************************
+#. show the notebook pages:
+#. fourth circle : notebook tabs stuff
+#: xfglob/xfglob.c:1423 xfglob/xfglob.c:1913 xfglob/xfglob.c:1941
+#, fuzzy
+msgid "Find"
+msgstr "検索"
+
+#: xfglob/xfglob.c:1435
+#, fuzzy
+msgid "Path : "
+msgstr "パス : "
+
+#: xfglob/xfglob.c:1444
+#, fuzzy
+msgid "Browse"
+msgstr "参照"
+
+#: xfglob/xfglob.c:1453
+#, fuzzy
+msgid "File filter : "
+msgstr "ファイルフィルタ : "
+
+#: xfglob/xfglob.c:1461
+msgid "What's a file filter?"
+msgstr "ファイルフィルタは？"
+
+#: xfglob/xfglob.c:1468
+msgid ""
+"Basic rules:\n"
+"\n"
+"*  Will match any character zero or more times.\n"
+"?  Will match any character exactly one time\n"
+msgstr ""
+"* は何もなしもしくはどんな長さでも一致。\n"
+"? はどんな長さでも一文字一致\n"
+
+#: xfglob/xfglob.c:1474
+msgid "Search subdirectories too"
+msgstr "サブディレクトリも検索"
+
+#: xfglob/xfglob.c:1476
+msgid "Limit results to first : "
+msgstr "はじめのリミット結果 : "
+
+#: xfglob/xfglob.c:1489
+#, fuzzy
+msgid "Content search"
+msgstr "内容検索"
+
+#: xfglob/xfglob.c:1501
+#, fuzzy
+msgid "Containing : "
+msgstr "含むもの : "
+
+#: xfglob/xfglob.c:1512
+msgid "Case sensitive search"
+msgstr "高感度な場合検索"
+
+#: xfglob/xfglob.c:1513
+msgid "Extended regexp"
+msgstr "regexp延長"
+
+#: xfglob/xfglob.c:1516
+msgid "What's a regexp?"
+msgstr "regexpとは？"
+
+#: xfglob/xfglob.c:1522
+msgid ""
+"Reserved characters for extended regexp are\n"
+". ^ $ [ ] ? * + { } | \\ ( ) : \n"
+"In  basic regular expressions the metacharacters\n"
+"?, +, {, |, (, and ) lose their special meaning.\n"
+"\n"
+"The  period  .   matches  any  single  character.\n"
+"The caret ^ matches at the start of line.\n"
+"The dollar $ matches at the end of line.\n"
+"\n"
+"Characters within [ ] matches any single \n"
+"       character in the list.\n"
+"Characters within [^ ] matches any single\n"
+"       character *not* in the list.\n"
+"Characters inside [ - ] matches a range of\n"
+"       characters (ie [0-9] or [a-z]).\n"
+"\n"
+"A regular expression may be followed by one\n"
+"       of several repetition operators:\n"
+"?      The preceding item is optional and matched\n"
+"       at most once.\n"
+"*      The preceding item will be matched zero\n"
+"       or more times.\n"
+"+      The preceding item will be matched one or\n"
+"       more times.\n"
+"{n}    The preceding item is matched exactly n times.\n"
+"{n,}   The preceding item is matched n or more times.\n"
+"{n,m}  The preceding item is matched at least n times,\n"
+"       but not more than m times.\n"
+"\n"
+"To match any reserved character, precede it with \\. \n"
+"\n"
+"Two regular expressions may be joined by the logical or\n"
+"       operator |.\n"
+"Two regular expressions may be concatenated.\n"
+"\n"
+"More information is available by typing \"man grep\"\n"
+"       at the command prompt.\n"
+msgstr ""
+"Reserved characters for extended regexp are\n"
+". ^ $ [ ] ? * + { } | \\ ( ) : \n"
+"メタキャラクタの普通の表現\n"
+"?, +, {, |, (, と ) それらの特別な意味を失う。\n"
+"\n"
+"ピリオド . は何か一つの文字の一致。\n"
+"キャレット ^ ははじめのラインの一致。\n"
+"ドル $ は終わりのラインの一致。\n"
+"\n"
+"[ ]の中のリストはどれか一文字の一致。\n"
+"[^ ]の中のリストはどれか一文字*でない*一致。\n"
+"[ - ]の中のリストはその範囲内の一致\n"
+"       （すなわち[0-9]もしくは[a-z]）。\n"
+"\n"
+"普通の表現は一つのそれぞれの繰り返し\n"
+"       はたらきをフォローしてよい:\n"
+"?      この文字は任意の一文字の一致\n"
+"*      この文字は何もなしもしくはどんな長さでも一致。\n"
+"+      この文字は一文字もしくはどんな長さでも一致。\n"
+"{n}    この文字は厳密にn回の一致。\n"
+"{n,}   この文字はn回かそれ以上の一致。\n"
+"{n,m}  この文字は最小のn回もしくはたったm回の一致。\n"
+"\n"
+"たくさんの文字予約はプレコードと \\. \n"
+"\n"
+"二つの表現を論理的につなげたい場合は|。\n"
+"二つの表現を含む。\n"
+"\n"
+"これ以上の情報が欲しい場合ははコマンドプロンプトで\n"
+"        \"man grep\" とタイプしてみてください。\n"
+
+#: xfglob/xfglob.c:1543
+msgid "File considerations"
+msgstr "ファイルの考慮"
+
+#: xfglob/xfglob.c:1567
+msgid "Stay on single filesystem"
+msgstr "単一のファイルシステム上のみ"
+
+#: xfglob/xfglob.c:1568
+msgid "What's a single filesystem?"
+msgstr "単一のファイルシステムとは？"
+
+#: xfglob/xfglob.c:1572
+msgid ""
+"Staying on a single filesystem will hinder\n"
+"searching on different physical disk partitions.\n"
+"This is especially useful if you do not want\n"
+"to search into nfs or smb mounts.\n"
+msgstr ""
+"一つのファイルシステム上に居続ける、は、\n"
+"他のディスクパーティーションの検索を妨げます。\n"
+"これは nfs や smb マウントを検索したくない時に特に役立ちます。\n"
+
+#: xfglob/xfglob.c:1594
+#, fuzzy
+msgid "Permission considerations"
+msgstr "パーミッションの考慮"
+
+#: xfglob/xfglob.c:1598
+msgid "How does permission filtering work?"
+msgstr "パーミッションフィルタとは？"
+
+#: xfglob/xfglob.c:1602
+msgid ""
+"When permission filtering is active:\n"
+"-If a file has one of the chosen permission bits,\n"
+"  it will match.\n"
+"-If no permission bit is chosen, files with \n"
+"  no set permission bits will match.\n"
+msgstr ""
+"パーミッションフィルタは次の場合有効です:\n"
+"-ファイルが選択されたパーミッションのとき。\n"
+"-パーミッション選択なしで、ファイルがパーミッションなしのとき。\n"
+
+#: xfglob/xfglob.c:1698
+msgid "User/group considerations"
+msgstr "ユーザ／グループの考慮"
+
+#: xfglob/xfglob.c:1702
+msgid "How does user/group filtering work?"
+msgstr "ユーザ／グループフィルタって？"
+
+#: xfglob/xfglob.c:1706
+msgid ""
+"If user and group are both set to any \n"
+"value other than anyone:\n"
+"-files must meet both criteria in order\n"
+"  to match\n"
+msgstr ""
+"ユーザとグループが両方とも他の誰かだったら:\n"
+"-一致の基準はファイルが両方とも適当である場合\n"
+
+#: xfglob/xfglob.c:1717
+#, fuzzy
+msgid "User ID: "
+msgstr "ユーザID: "
+
+#: xfglob/xfglob.c:1728
+#, fuzzy
+msgid "Group ID: "
+msgstr "グループID: "
+
+#: xfglob/xfglob.c:1743
+msgid "Size considerations"
+msgstr "サイズの考慮"
+
+#: xfglob/xfglob.c:1747
+msgid "How does size filtering work?"
+msgstr "サイズフィルタって？"
+
+#: xfglob/xfglob.c:1751
+msgid ""
+"-If a size of 0 (zero) is specified for \n"
+" size-less-than, this will be ignored.\n"
+"-If both size-greater-than and size-less-than\n"
+" are specified, both criteria must be met\n"
+" in order for a file to match.\n"
+msgstr ""
+"-もしサイズが 0 （ゼロ）以上特定のサイズ以下は無視する。\n"
+"-もし特定のサイズ以上、特定のサイズ以下だったら\n"
+"無視してファイルの一致を整える。\n"
+
+#: xfglob/xfglob.c:1763
+msgid "Size greater than (KB): "
+msgstr "これより大きいサイズ (KB): "
+
+#: xfglob/xfglob.c:1778
+msgid "Size less than (KB): "
+msgstr "これより小さいサイズ (KB): "
+
+#: xfglob/xfglob.c:1798
+msgid "Time considerations"
+msgstr "時間の考慮"
+
+#: xfglob/xfglob.c:1802
+msgid "How does time filtering work?"
+msgstr "時間フィルタって？"
+
+#: xfglob/xfglob.c:1806
+msgid ""
+"Three different time modes may be selected:\n"
+"*modified:\n"
+"  This changes when the file is modified, e.g.\n"
+"  by mknod(2), truncate(2), utime(2) and write(2)\n"
+" (of  more than  zero  bytes). Moreover, modification\n"
+"  time of a directory is changed by the creation or \n"
+"  deletion of  files  in  that directory. Modification\n"
+"  time is not changed for changes in owner, group,\n"
+"  hard link count, or mode.\n"
+"\n"
+"*changed:\n"
+"  This field is changed by writing or setting inode\n"
+"  information (i.e., owner, group, link count, mode).\n"
+"\n"
+"*accessed:\n"
+"  This field is changed by file accesses, e.g. by\n"
+"  exec(2), mknod(2), pipe(2), utime(2) and read(2)\n"
+"  (of more than zero bytes). Other routines, like\n"
+"  mmap(2), may or may not update access time.\n"
+"\n"
+"Please note: after filtering a file through glob, it\n"
+"will have its access time altered, so two consecutive\n"
+"runs will not produce identical results.\n"
+msgstr ""
+"おそらく三つの違う時間モードが選択されました。:\n"
+"*修正:\n"
+"ファイルを修正すると変更されます。たとえば mknod(2),\n"
+"truncate(2), utime(2)やwrite(2)によって変更されます。\n"
+"（ゼロバイト以上）。さらに、ディレクトリの修正時間は\n"
+"そのディレクトリー内のファイルの生成もしくは削除によって\n"
+"変更されます。修正時間は、所有者、グループ、ハードリンク\n"
+"カウントやモードの変更では変更されません。\n"
+"\n"
+"*変更:\n"
+"ここは書き込みまたはiノードのセットによって変更されます。\n"
+"（すなわち、所有者、グループ、リンクカウント、モード）\n"
+"\n"
+"*アクセス:\n"
+"ここはファイルアクセスによって変更されます。たとえば\n"
+"exec(2), mknod(2), pipe(2), utime(2) and read(2)によって\n"
+"変更されます（ゼロバイト以上）。他の手段はmmap(2)のようなもので\n"
+"アクセスタイム更新されるかもしれません。\n"
+"\n"
+"注意: フィルタしたあと、globはその間じゅうアクセスタイムを\n"
+"変更します。したがって、連続する二つの動作が同じ結果には\n"
+"ならないでしょう。\n"
+
+#: xfglob/xfglob.c:1818
+#, fuzzy
+msgid "Modified"
+msgstr "修正"
+
+#: xfglob/xfglob.c:1819
+#, fuzzy
+msgid "Changed"
+msgstr "更新時間"
+
+#: xfglob/xfglob.c:1820
+#, fuzzy
+msgid "Accessed"
+msgstr "アクセス日時"
+
+#: xfglob/xfglob.c:1826
+msgid "In the previous : "
+msgstr "プレビュー : "
+
+#: xfglob/xfglob.c:1836
+msgid "Minutes"
+msgstr "分"
+
+#: xfglob/xfglob.c:1837
+#, fuzzy
+msgid "Hours"
+msgstr "時"
+
+#: xfglob/xfglob.c:1838
+#, fuzzy
+msgid "Days"
+msgstr "日"
+
+#: xfglob/xfglob.c:1839
+#, fuzzy
+msgid "Months"
+msgstr "月"
+
+#: xfglob/xfglob.c:1870
+msgid "General considerations"
+msgstr "一般的な考慮"
+
+#: xfglob/xfglob.c:1880
+msgid "Do not look into binary files"
+msgstr "バイナリファイルを探さない"
+
+#: xfglob/xfglob.c:1882
+msgid "Output count of matching lines"
+msgstr "一致した行を出力"
+
+#: xfglob/xfglob.c:1884
+msgid "Match anywhere"
+msgstr "どこにも一致"
+
+#: xfglob/xfglob.c:1885
+msgid "Match whole words only"
+msgstr "完全な単語のマッチのみ"
+
+#: xfglob/xfglob.c:1886
+msgid "Match whole lines only"
+msgstr "完全な行のマッチのみ"
+
+#: xfglob/xfglob.c:1887
+msgid "Output files where no match is found"
+msgstr "出力ファイルにどこにも一致は見つかりません"
+
+#: xfglob/xfglob.c:1916
+#, fuzzy
+msgid "Filter options"
+msgstr "フィルタオプション"
+
+#: xfglob/xfglob.c:1919
+msgid "Content options"
+msgstr "内容のオプション"
+
+#: xfglob/xfglob.c:1947
+#, fuzzy
+msgid "Results"
+msgstr "結果"
+
+#: xfglob/xfglob.c:1962
+msgid "working..."
+msgstr "作業中..."
+
+#: xfglob/xfglob.c:1965
+#, fuzzy
+msgid "Cancel Search"
+msgstr "検索取消"
+
+#: xfglob/xfglob.c:2014
+#, fuzzy
+msgid "Nothing found...\n"
+msgstr "見つかりません...\n"
+
+#: xfglob/xfglob.c:2022
+#, fuzzy
+msgid "Files found="
+msgstr "ファイル発見="
+
+#: xfglob/xfglob.c:2025
+msgid "(interrupted because limit exceded)"
+msgstr "（限界を越えたため中断）"
+
+#: xfglob/xfglob.c:2079
+msgid "lines"
+msgstr "行"
+
+#: xfglob/xfglob.c:2145
+msgid "unable to stat:"
+msgstr "スタット不可能:"
+
+#: xfclock/xfclock.c:118
+msgid "XFClock - XFce Clock & Calendar"
+msgstr "XFClock - XFce 時計とカレンダー"
+
+#: xfclock/xfclock_cb.c:217
+msgid ""
+"XFClock\n"
+"(c) 1997-2002 Olivier Fourdan"
+msgstr ""
+
+#: xfclock/xfclock_config.c:53
+#, c-format
+msgid ""
+"XFclock : Syntax error in configuration file\n"
+"(%s)\n"
+msgstr ""
+"XFclock : 設定ファイルの文法エラーです\n"
+"(%s)\n"
+
+#: xfclock/xfclock_config.c:61
+#, c-format
+msgid ""
+"XFclock : Data mismatch error in config file\n"
+"(%s)\n"
+msgstr ""
+"XFclock : 設定ファイルのデータが不一致です\n"
+"(%s)\n"
+
+#: xfclock/xfclock_menus.c:48
+msgid "Hide/show menubar"
+msgstr "メニューの表示/非表示"
+
+#: xfclock/xfclock_menus.c:54 xfclock/xfclock_menus.c:103
+msgid "Hide/show calendar"
+msgstr "カレンダーの表示/非表示"
+
+#. Create "Settings" menu
+#: xfclock/xfclock_menus.c:96 xfwm/xfwm.c:892
+msgid "Settings"
+msgstr "設定"
+
+#: xfclock/xfclock_menus.c:119
+msgid "24 hour mode"
+msgstr "24時間モード"
+
+#: xfclock/xfclock_menus.c:126
+msgid "Display AM/PM"
+msgstr "午前/午後の表示"
+
+#: xfclock/xfclock_menus.c:133
+msgid "Display seconds"
+msgstr "秒の表示"
+
+#: xfclock/xfclock_menus.c:144
+msgid "Background color..."
+msgstr "背景の色..."
+
+#: xfclock/xfclock_menus.c:149
+msgid "Foreground color..."
+msgstr "前景の色..."
+
+#: xfclock/xfclock_menus.c:154
+msgid "Font..."
+msgstr "フォント..."
+
+#: xfclock/xfclock_menus.c:163
+msgid "Hide menubar"
+msgstr "メニューの非表示"
+
+#. Create "Calendar options" menu
+#: xfclock/xfclock_menus.c:169
+msgid "Calendar Options"
+msgstr "カレンダーオプション"
+
+#: xfclock/xfclock_menus.c:176
+#, fuzzy
+msgid "Mark Fridays"
+msgstr "金曜日をマーク"
+
+#: xfclock/xfclock_menus.c:183
+#, fuzzy
+msgid "Mark Saturdays"
+msgstr "土曜日をマーク"
+
+#: xfclock/xfclock_menus.c:190
+#, fuzzy
+msgid "Mark Sundays"
+msgstr "日曜日をマーク"
+
+#: xfclock/xfclock_menus.c:201
+msgid "Show week numbers"
+msgstr "週数の表示"
+
+#: xfclock/xfclock_menus.c:208
+msgid "Show day names"
+msgstr "日の名前の表示"
+
+#: xfclock/xfclock_menus.c:215
+msgid "Show heading"
+msgstr "見出しの表示"
+
+#: xfclock/xfclock_menus.c:226
+msgid "Week starts on Monday"
+msgstr "週を月曜日から始める"
+
+#: xfmouse/xfmouse.c:66
+#, fuzzy
+msgid "xfmouse: Error, cannot open display.\n"
+msgstr "xfmouse: エラー 画面が開けません。\n"
+
+#: xfmouse/xfmouse.c:67
+msgid "Is X running and $DISPLAY correctly set ?\n"
+msgstr "Xを動作させ、$DISPLAYをセットしますか？\n"
+
+#: xfmouse/xfmouse.c:144
+msgid "XFMouse - XFce Mouse Configuration"
+msgstr "XFMouse - XFceのマウス設定"
+
+#: xfmouse/xfmouse.c:177
+msgid "Button Settings"
+msgstr "ボタン設定"
+
+#: xfmouse/xfmouse.c:225
+msgid "Motion Settings"
+msgstr "動作設定"
+
+#: xfmouse/xfmouse.c:252
+msgid "Threshold : "
+msgstr "しきい値 : "
+
+#: xfmouse/xfmouse.c:261
+msgid "Acceleration : "
+msgstr "加速度 : "
+
+#: xfbd/xfbd.c:695 xfmouse/xfmouse.c:441
+#, c-format
+msgid "Usage : %s [OPTIONS]\n"
+msgstr "使用法 : %s [OPTIONS]\n"
+
+#: xfbd/xfbd.c:696 xfmouse/xfmouse.c:442
+msgid "   Where OPTIONS are :\n"
+msgstr "   どこのオプションですか :\n"
+
+#: xfmouse/xfmouse.c:443
+msgid "   -i : interactive\n"
+msgstr "   -i : 対話式\n"
+
+#: xfmouse/xfmouse.c:444
+msgid ""
+"   -d : apply configuration and exit (default)\n"
+"\n"
+msgstr ""
+"   -d : 設定を適用して終了（デフォルト）\n"
+"\n"
+
+#: xfbd/xfbd.c:699 xfmouse/xfmouse.c:445
+#, c-format
+msgid ""
+"%s is part of the XFce distribution, written by Olivier Fourdan\n"
+"\n"
+msgstr ""
+"%s はOlivier Fourdanによって作成されたXFceの一部です\n"
+"\n"
+
+#: xfsound/xfsound.c:75
+msgid "New Desk"
+msgstr "新しいデスクトップ"
+
+#: xfsound/xfsound.c:76
+msgid "Add Window"
+msgstr "ウィンドウの追加"
+
+#: xfsound/xfsound.c:77
+msgid "Raise Window"
+msgstr "ウィンドウのアクティブ化"
+
+#: xfsound/xfsound.c:78
+msgid "Lower Window"
+msgstr "ウィンドウの非アクティブ化"
+
+#: xfsound/xfsound.c:79
+msgid "Configure Window"
+msgstr "ウィンドウの設定"
+
+#: xfsound/xfsound.c:80
+msgid "Focus Change"
+msgstr "フォーカスの切替え"
+
+#: xfsound/xfsound.c:81
+msgid "Destroy Window"
+msgstr "ウィンドウの破棄"
+
+#: xfsound/xfsound.c:82
+msgid "Iconify"
+msgstr "アイコン化"
+
+#: xfsound/xfsound.c:83
+msgid "De-iconify"
+msgstr "非アイコン化"
+
+#: xfsound/xfsound.c:84
+msgid "Shade"
+msgstr "シェード(Shade)"
+
+#: xfsound/xfsound.c:85
+msgid "Un-Shade"
+msgstr "非シェード(Un-Shade)"
+
+#: xfsound/xfsound.c:86
+msgid "Maximize"
+msgstr "最大化"
+
+#: xfsound/xfsound.c:87
+msgid "De-maximize"
+msgstr "非最大化"
+
+#: xfsound/xfsound.c:89
+msgid "Shutdown"
+msgstr "シャットダウン"
+
+#: xfsound/xfsound.c:90
+msgid "Unknown"
+msgstr "不明"
+
+#: xfsound/xfsound.c:442
+msgid "XFSound - XFce Sound Manager"
+msgstr "XFSound - XFceサウンドマネージャー"
+
+#: xfsound/xfsound.c:489
+msgid "Event : "
+msgstr "イベント : "
+
+#: xfsound/xfsound.c:496
+msgid "Sound file : "
+msgstr "サウンドファイル : "
+
+#: xfsound/xfsound.c:503
+msgid "Test"
+msgstr "テスト"
+
+#: xfsound/xfsound.c:543
+msgid "Play Sound"
+msgstr "サウンドの再生"
+
+#: xfsound/xfsound.c:551
+msgid "Command : "
+msgstr "コマンド : "
+
+#: xfsound/xfsound.c:575
+msgid "Internal"
+msgstr "内部の機能を使用"
+
+#: xfsound/xfsound.c:581
+msgid "External"
+msgstr "外部コマンドを使用"
+
+#: xfbd/xfbd.c:280
+msgid ""
+"Error\n"
+"Cannot open file"
+msgstr ""
+"エラー\n"
+"ファイルが開けません"
+
+#: xfbd/xfbd.c:282
+msgid ""
+"Error\n"
+"Cannot allocate colors"
+msgstr ""
+"エラー\n"
+"色が確保できません"
+
+#: xfbd/xfbd.c:284
+msgid ""
+"Error\n"
+"File format invalid"
+msgstr ""
+"エラー\n"
+"ファイルフォーマットが違います"
+
+#: xfbd/xfbd.c:286
+msgid ""
+"Error\n"
+"Color definition invalid"
+msgstr ""
+"エラー\n"
+"色定義が正しくありません"
+
+#: xfbd/xfbd.c:288
+msgid ""
+"Error\n"
+"Not enough Memory"
+msgstr ""
+"エラー\n"
+"メモリーが不足しています"
+
+#: xfbd/xfbd.c:405
+msgid "XFbd - XFce Backdrop Manager"
+msgstr "XFbd - XFce背景マネージャー"
+
+#: xfbd/xfbd.c:448 xfbd/xfbdmgr.c:148
+msgid "Filename : "
+msgstr "ファイル名 : "
+
+#: xfbd/xfbd.c:470
+msgid "Display image : "
+msgstr "ディスプレイイメージ : "
+
+#: xfbd/xfbd.c:477
+#, fuzzy
+msgid "Tiled"
+msgstr "タイル状にする"
+
+#: xfbd/xfbd.c:485
+msgid "Stretched"
+msgstr "拡大する"
+
+#: xfbd/xfbd.c:493
+#, fuzzy
+msgid "Auto"
+msgstr "自動"
+
+#: xfbd/xfbd.c:697
+msgid "   -i : interactive, prompts for backdrop to display\n"
+msgstr "   -i :対話式、ディスプレイの背景のプロンプト\n"
+
+#: xfbd/xfbd.c:698
+msgid ""
+"   -d : display, reads configuration and exit (default)\n"
+"\n"
+msgstr ""
+"   -d :ディスプレイ、設定を読み込んで終了（デフォルト（初期））\n"
+"\n"
+
+#: xfbd/xfbdmgr.c:89
+msgid "xfbdmgr - XFCE List Manager"
+msgstr "xfbdmgr - XFCE リストマネージャ"
+
+#: xfbd/xfbdmgr.c:257
+#, fuzzy
+msgid "File not found.\n"
+msgstr "ファイルが見つかりません。\n"
+
+#: xfwm/xfwm.c:862
+msgid "&Restart"
+msgstr "再起動(&R)"
+
+#: xfwm/xfwm.c:863
+msgid "&Quit"
+msgstr "終了(&Q)"
+
+#: xfwm/xfwm.c:876
+msgid "&Move"
+msgstr "移動(&M)"
+
+#: xfwm/xfwm.c:877
+msgid "&Resize"
+msgstr "サイズ変更(&R)"
+
+#: xfwm/xfwm.c:878
+msgid "(De)&Iconify"
+msgstr "(非)アイコン化(&I)"
+
+#: xfwm/xfwm.c:879
+msgid "(Un)&Stick"
+msgstr "(非)くっつき(&S)"
+
+#: xfwm/xfwm.c:880
+msgid "(Un)S&hade"
+msgstr "(非)シェード(&H)"
+
+#: xfwm/xfwm.c:881
+msgid "(Un)Ma&ximize"
+msgstr "(非)最大化(&X)"
+
+#: xfwm/xfwm.c:883
+msgid "Se&nd to..."
+msgstr "送る(&N)..."
+
+#: xfwm/xfwm.c:884
+msgid "S&witch to..."
+msgstr "切替え(&W)..."
+
+#: xfwm/xfwm.c:886
+msgid "&Close"
+msgstr "閉じる(&C)"
+
+#: xfwm/xfwm.c:888
+msgid "User Menu"
+msgstr "ユーザメニュー"
+
+#: xfwm/xfwm.c:889
+#, fuzzy
+msgid "Edit menu..."
+msgstr "メニューの編集..."
+
+#: xfwm/xfwm.c:893
+msgid "&Mouse..."
+msgstr "マウス(&M)..."
+
+#: xfwm/xfwm.c:894
+msgid "&Backdrop..."
+msgstr "背景(&B)..."
+
+#: xfwm/xfwm.c:895
+msgid "&Sound..."
+msgstr "サウンド(&S)..."
+
+#: xfwm/xfwm.c:897
+msgid "&New window"
+msgstr "新しいウィンドウ(&N)"
+
+#: xfwm/xfwm.c:898
+msgid "&User Menu"
+msgstr "ユーザメニュー(&U)"
+
+#: xfwm/xfwm.c:902
+msgid "&Arrange icons"
+msgstr "アイコンの整列(&A)"
+
+#: xfwm/xfwm.c:903
+#, fuzzy
+msgid "&Iconify all"
+msgstr "アイコン化(&I)"
+
+#: xfwm/xfwm.c:904
+msgid "&Refresh"
+msgstr "更新(&R)"
+
+#: xfwm/xfwm.c:905
+msgid "Shuffle &Up"
+msgstr "フォーカス上移動(&U)"
+
+#: xfwm/xfwm.c:906
+msgid "Shuffle &Down"
+msgstr "フォーカス下移動(&D)"
+
+#: xfwm/xfwm.c:908
+#, fuzzy
+msgid "&Settings"
+msgstr "設定(&S)"
+
+#: xfwm/xfwm.c:910
+msgid "&Quit XFwm"
+msgstr "XFwmを終了(&Q)"
+
+#: xfwm/xfwm.c:912
+#, fuzzy
+msgid "&Full Screen"
+msgstr "フルスクリーン(&F)"
+
+#: xfwm/xfwm.c:913
+msgid "&Vertical"
+msgstr "垂直線(&V)"
+
+#: xfwm/xfwm.c:914
+msgid "&Horizontal"
+msgstr "水平線(&H)"
+
+#: xfwm/xfwm.c:1244
+#, fuzzy
+msgid "xfwm terminated: "
+msgstr "強制終了: "
+
+#: xfsamba/xfsamba.c:260
+msgid "Samba failure! Xfsamba could not find file:"
+msgstr "Samba失敗！ Xfsambaは次のファイルを見つけられません:"
+
+#: xfsamba/xfsamba.c:268
+msgid "(please install Samba or else correct the PATH environment variable)"
+msgstr "（Sambaをインストールまたはパスを選択してください）"
+
+#: xfsamba/xfsamba_download.c:86
+msgid "File download failed. See diagnostics for reason."
+msgstr "ファイルのダウンロードに失敗しました。理由は診断を見てください。"
+
+#. upload was successful:
+#: xfsamba/xfsamba_download.c:90
+msgid "Download done."
+msgstr "ダウンロード完了。"
+
+#: xfsamba/xfsamba_download.c:126
+#, fuzzy
+msgid "Downloading file..."
+msgstr "ファイルをダウンロードしています..."
+
+#: xfsamba/xfsamba_download.c:139
+msgid "File download cancelled."
+msgstr "ファイルのダウンロードがキャンセルされました。"
+
+#: xfsamba/xfsamba_download.c:147
+#, fuzzy
+msgid "Download failed."
+msgstr "ダウンロード失敗しました。"
+
+#: xfsamba/xfsamba_gui.c:319
+msgid ""
+"If you have win95 nodes on your network, xfsamba might not find\n"
+"a master browser. If you start smb services on your linux box,\n"
+"making it a samba-server, the problem will be fixed as long as\n"
+"the win95 box(es) are reset. You know the routine, reset wind*ws\n"
+"for changes to take effect. Otherwise,\n"
+"you must type in the node to be browsed and hit RETURN.\n"
+msgstr ""
+"もしネットワークにwin95ノードがあれば、xfsambaはマスターブラウザを\n"
+"見つけられないかもしれません。もしsmbサービスをLinux boxでスタート\n"
+"するなら、それをsamba-serverとして作りましょう。その問題は、win95 boxの\n"
+"リセットと同じくらいの時間で解決します。手順ををしっているなら、\n"
+"wind*wsリセットの効果を変えます。さもなければ、ブラウズする\n"
+"ノード(node)をタイプして RETURN を押さなければなりません。\n"
+
+#: xfsamba/xfsamba_gui.c:324
+msgid ""
+"Full drag and drop capability is provided between xfsamba and\n"
+"the companion file browser \"xftree\". Drag and drop may or not\n"
+"work with other file browsers"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:331
+msgid ""
+"In order to mount SMB share, the following samba files must be suid-root:\n"
+"- smbmnt\n"
+"- smbumount\n"
+"these file are usually in /usr/bin, and root must perform:\n"
+"$ chmod u+s smbmount smbumount\n"
+"(This option is not available in FreeBSD4.4)"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:343
+msgid ""
+"To search for files on remote SMB shares\n"
+"first mount the share with the mount tool\n"
+"and then use the xftree search utility to do the search\n"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:350
+msgid ""
+"To view differences on a remote SMB share\n"
+"first mount the share with the mount tool\n"
+"and then use the xftree diff utility to display the differences.\n"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:358
+msgid "This is XFSamba "
+msgstr "XFSamba です "
+
+#: xfsamba/xfsamba_gui.c:358
+msgid ""
+"\n"
+"(c) Edscott Wilson Garcia under GNU GPL"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:542
+msgid "Please provide information for server "
+msgstr "サーバに情報を供給してください "
+
+#: xfsamba/xfsamba_gui.c:544
+msgid "Please provide browsing preferences "
+msgstr "好みのプロバイドブラウジングを選択してください "
+
+#: xfsamba/xfsamba_gui.c:561
+#, fuzzy
+msgid "Username : "
+msgstr "ユーザ名 : "
+
+#: xfsamba/xfsamba_gui.c:585
+msgid "Password  : "
+msgstr "パスワード  : "
+
+#: xfsamba/xfsamba_gui.c:625 xfsamba/xfsamba_gui.c:631
+#, fuzzy
+msgid "A single file can be selected!"
+msgstr "ファイルを選択してください！"
+
+#: xfsamba/xfsamba_gui.c:644 xfsamba/xfsamba_gui.c:650
+#: xfsamba/xfsamba_gui.c:663 xfsamba/xfsamba_gui.c:669
+#: xfsamba/xfsamba_gui.c:719 xfsamba/xfsamba_gui.c:725
+#, fuzzy
+msgid "A single directory must be selected!"
+msgstr "ディレクトリを選択してください！"
+
+#: xfsamba/xfsamba_gui.c:683 xfsamba/xfsamba_gui.c:706
+msgid "Something to be deleted must be selected!"
+msgstr "何か削除するものを選択してください！"
+
+#: xfsamba/xfsamba_gui.c:694
+msgid "Only elements from a single share may be selected!"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1041
+msgid "Going to master browser..."
+msgstr "マスターブラウザに行っています..."
+
+#: xfsamba/xfsamba_gui.c:1051
+msgid "Going back..."
+msgstr "戻る..."
+
+#: xfsamba/xfsamba_gui.c:1063
+msgid "Going forward..."
+msgstr "進む..."
+
+#: xfsamba/xfsamba_gui.c:1079
+msgid "Attempting to stop query..."
+msgstr "質問(Query)の停止を試みています..."
+
+#: xfsamba/xfsamba_gui.c:1083
+msgid "Query stopped."
+msgstr "質問(Query)停止。"
+
+#. (s): multiple file upload/download enabled by DnD mostly
+#: xfsamba/xfsamba_gui.c:1268
+#, fuzzy
+msgid "Download..."
+msgstr "ダウンロード..."
+
+#: xfsamba/xfsamba_gui.c:1269
+#, fuzzy
+msgid "Upload..."
+msgstr "アップロード..."
+
+#: xfsamba/xfsamba_gui.c:1271
+#, fuzzy
+msgid "New folder..."
+msgstr "新しいフォルダ..."
+
+#: xfsamba/xfsamba_gui.c:1272
+#, fuzzy
+msgid "Delete..."
+msgstr "削除..."
+
+#: xfsamba/xfsamba_gui.c:1273 xfsamba/xfsamba_tar.c:443
+msgid "Tar..."
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1278
+#, fuzzy
+msgid "Paste..."
+msgstr "貼り付け ..."
+
+#: xfsamba/xfsamba_gui.c:1279
+#, fuzzy
+msgid "Cut..."
+msgstr "切り取り ..."
+
+#: xfsamba/xfsamba_gui.c:1280
+#, fuzzy
+msgid "Copy..."
+msgstr "コピー ..."
+
+#. GOTO
+#: xfsamba/xfsamba_gui.c:1283
+msgid "Go"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1284
+#, fuzzy
+msgid "Home..."
+msgstr "ホーム..."
+
+#: xfsamba/xfsamba_gui.c:1285
+#, fuzzy
+msgid "Reload..."
+msgstr "再読み込み..."
+
+#: xfsamba/xfsamba_gui.c:1286
+#, fuzzy
+msgid "Forward..."
+msgstr "進む..."
+
+#: xfsamba/xfsamba_gui.c:1287
+#, fuzzy
+msgid "Back..."
+msgstr "戻る..."
+
+#: xfsamba/xfsamba_gui.c:1290
+msgid "Local file browser"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1291
+msgid "Mount remote share"
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1295
+msgid "Show diagnostics"
+msgstr "診断を表示"
+
+#: xfsamba/xfsamba_gui.c:1297
+msgid "Hide diagnostics"
+msgstr "診断を非表示"
+
+#: xfsamba/xfsamba_gui.c:1299
+msgid "Show browser links"
+msgstr "ブラウザリンクの表示"
+
+#: xfsamba/xfsamba_gui.c:1301
+msgid "Hide browser links"
+msgstr "ブラウザリンクの非表示"
+
+#: xfsamba/xfsamba_gui.c:1307
+#, fuzzy
+msgid "Browse as..."
+msgstr "参照..."
+
+#: xfsamba/xfsamba_gui.c:1313
+#, fuzzy
+msgid "Mounting SMB shares"
+msgstr "ファイルをカウントしています"
+
+#: xfsamba/xfsamba_gui.c:1314
+#, fuzzy
+msgid "Searching"
+msgstr "警告"
+
+#: xfsamba/xfsamba_gui.c:1315
+#, fuzzy
+msgid "Differences"
+msgstr "差分(diff) ..."
+
+#: xfsamba/xfsamba_gui.c:1316
+#, fuzzy
+msgid "Master browsers"
+msgstr "マスターブラウザについて..."
+
+#: xfsamba/xfsamba_gui.c:1317
+#, fuzzy
+msgid "About xfsamba"
+msgstr "xfsamba について ..."
+
+#: xfsamba/xfsamba_gui.c:1321
+#, fuzzy
+msgid "Stop ..."
+msgstr "停止 ..."
+
+#: xfsamba/xfsamba_gui.c:1325
+#, fuzzy
+msgid "Xftree ..."
+msgstr "差分(diff) ..."
+
+#: xfsamba/xfsamba_gui.c:1327
+#, fuzzy
+msgid "Back ..."
+msgstr "戻る..."
+
+#: xfsamba/xfsamba_gui.c:1328
+#, fuzzy
+msgid "Forward ..."
+msgstr "進む..."
+
+#: xfsamba/xfsamba_gui.c:1329
+#, fuzzy
+msgid "Reload ..."
+msgstr "再読み込み ..."
+
+#: xfsamba/xfsamba_gui.c:1330
+#, fuzzy
+msgid "Home ..."
+msgstr "ホーム ..."
+
+#: xfsamba/xfsamba_gui.c:1335
+#, fuzzy
+msgid "New folder ..."
+msgstr "新しいフォルダ ..."
+
+#: xfsamba/xfsamba_gui.c:1338
+#, fuzzy
+msgid "Mount ..."
+msgstr "このプログラムについて ..."
+
+#: xfsamba/xfsamba_gui.c:1339
+#, fuzzy
+msgid "Download ..."
+msgstr "ダウンロード ..."
+
+#: xfsamba/xfsamba_gui.c:1340
+#, fuzzy
+msgid "Upload ..."
+msgstr "アップロード ..."
+
+#: xfsamba/xfsamba_gui.c:1341
+msgid "Tar ..."
+msgstr ""
+
+#: xfsamba/xfsamba_gui.c:1343
+msgid "Set View 1"
+msgstr "ビューのセット 1"
+
+#: xfsamba/xfsamba_gui.c:1344
+msgid "Set View 2"
+msgstr "ビューのセット 2"
+
+#: xfsamba/xfsamba_gui.c:1345
+msgid "Set View 3"
+msgstr "ビューのセット 3"
+
+#: xfsamba/xfsamba_gui.c:1346
+#, fuzzy
+msgid "Set View 4"
+msgstr "ビューのセット 3"
+
+#: xfsamba/xfsamba_gui.c:1348
+#, fuzzy
+msgid "Help ..."
+msgstr "ヘルプ ..."
+
+#: xfsamba/xfsamba_gui.c:1432
+#, fuzzy
+msgid "Location : "
+msgstr "場所 : "
+
+#: xfsamba/xfsamba_gui.c:1446
+msgid "Show IP"
+msgstr "IPを表示"
+
+#. location shares
+#: xfsamba/xfsamba_gui.c:1472
+msgid "Location shares : "
+msgstr "場所の割り当て : "
+
+#: xfsamba/xfsamba_gui.c:1487
+#, fuzzy
+msgid "Size"
+msgstr "サイズ"
+
+#: xfsamba/xfsamba_gui.c:1488
+#, fuzzy
+msgid "Date"
+msgstr "日時"
+
+#: xfsamba/xfsamba_gui.c:1489
+msgid "Comment"
+msgstr "コメント"
+
+#. location computer links
+#: xfsamba/xfsamba_gui.c:1538
+msgid "Location known servers : "
+msgstr "場所のわかるサーバ : "
+
+#. location workgroup links
+#: xfsamba/xfsamba_gui.c:1566
+msgid "Location known workgroups : "
+msgstr "場所のわからないサーバ : "
+
+#: xfsamba/xfsamba_gui.c:1628
+msgid "Welcome to xfsamba."
+msgstr "xfsamba にようこそ。"
+
+#. no jalo para arreglar directorios:
+#. gtk_ctree_sort_node ((GtkCTree *)shares,(GtkCTreeNode *)selected.node);
+#.
+#: xfsamba/xfsamba_list.c:236
+msgid "Retrieve done."
+msgstr "回収(Retrieve)しました。"
+
+#: xfsamba/xfsamba_list.c:241 xfsamba/xfsamba_smblookup.c:175
+msgid "Query password has been requested."
+msgstr "質問(Query)パスワードはリクエストしました。"
+
+#: xfsamba/xfsamba_list.c:284
+msgid "List failed."
+msgstr "リスト失敗しました。"
+
+#: xfsamba/xfsamba_list.c:303
+msgid "Retreiving..."
+msgstr ""
+
+#: xfsamba/xfsamba_masterresolve.c:217 xfsamba/xfsamba_masterresolve.c:218
+#: xfsamba/xfsamba_nmblookup.c:51 xfsamba/xfsamba_nmblookup.c:52
+#, fuzzy
+msgid "Resolved"
+msgstr "解決しました"
+
+#: xfsamba/xfsamba_nmblookup.c:105 xfsamba/xfsamba_nmblookup.c:106
+msgid "Resolving for"
+msgstr "解決"
+
+#: xfsamba/xfsamba_smblookup.c:86
+#, fuzzy
+msgid "Shares"
+msgstr "割り当て"
+
+#: xfsamba/xfsamba_smblookup.c:88
+msgid "Links to other servers"
+msgstr "他のサーバにリンク"
+
+#: xfsamba/xfsamba_smblookup.c:90
+msgid "Links to other workgroups"
+msgstr "他のワークグループにリンク"
+
+#: xfsamba/xfsamba_smblookup.c:154
+msgid "Query done."
+msgstr "質問(Query)しました。"
+
+#: xfsamba/xfsamba_smblookup.c:160
+msgid "Query failed. Machine may be down."
+msgstr "質問(Query)失敗。おそらくマシンはダウンしています。"
+
+#: xfsamba/xfsamba_smblookup.c:354
+#, fuzzy
+msgid "Querying"
+msgstr "質問(Querying)"
+
+#: xfsamba/xfsamba_masterlookup.c:77
+msgid "No master browser found. See diagnostics."
+msgstr "マスターブラウザが見つかりません。診断を見てください。"
+
+#: xfsamba/xfsamba_masterlookup.c:78
+msgid ""
+"No master browser found.\n"
+"Please type a computer name at location and hit RETURN"
+msgstr ""
+"マスターブラウザが見つかりません。\n"
+"コンピュータ名を場所にタイプして RETURN を押してください"
+
+#: xfsamba/xfsamba_masterlookup.c:134
+msgid "Looking for master browsers..."
+msgstr "マスターブラウザを探しています..."
+
+#: xfsamba/xfsamba_masterresolve.c:110
+msgid "Please provide netbios name for master browser at "
+msgstr "ネットバイオス名を次の場所に供給してください "
+
+#: xfsamba/xfsamba_masterresolve.c:179
+msgid "Master browser netbios name must be provided."
+msgstr "マスターブラウザネットバイオス名が供給されています。"
+
+#: xfsamba/xfsamba_masterresolve.c:227 xfsamba/xfsamba_masterresolve.c:228
+#: xfsamba/xfsamba_masterresolve.c:234
+msgid "No status response"
+msgstr "ステータスの返答がありません"
+
+#: xfsamba/xfsamba_masterresolve.c:246
+msgid "Master browser not resolved. Use location box to browse."
+msgstr ""
+"マスターブラウザが解決されていません。\n"
+"ブラウズに場所ボックスを使ってください。"
+
+#: xfsamba/xfsamba_masterresolve.c:247
+msgid ""
+"No master browser resolved.\n"
+"Please type a computer name at location and hit RETURN"
+msgstr ""
+"マスターブラウザが解決されていません。\n"
+"場所にコンピュータ名をタイプし、 RETURN を押してください"
+
+#: xfsamba/xfsamba_masterresolve.c:301 xfsamba/xfsamba_masterresolve.c:302
+#, fuzzy
+msgid "Resolving"
+msgstr "解決しました"
+
+#: xfsamba/xfsamba_mkdir.c:93
+msgid "Directory creation failed. See diagnostics for details."
+msgstr "ディレクトリ作成失敗。詳細は診断を見てください。"
+
+#: xfsamba/xfsamba_mkdir.c:102
+#, fuzzy
+msgid "Directory created."
+msgstr "ディレクトリを作成しました。"
+
+#: xfsamba/xfsamba_mkdir.c:151
+#, fuzzy
+msgid "Create directory cancelled."
+msgstr "ディレクトリの作成を中止しました。"
+
+#: xfsamba/xfsamba_mkdir.c:162
+#, fuzzy
+msgid "Create directory failed."
+msgstr "ディレクトリの作成に失敗しました。"
+
+#: xfsamba/xfsamba_mkdir.c:187
+#, fuzzy
+msgid "Creating dir..."
+msgstr "ディレクトリを作成しています..."
+
+#. here, dialog to ask new dir name
+#: xfsamba/xfsamba_mkdir.c:202
+#, fuzzy
+msgid "New directory name:"
+msgstr "ホームディレクトリ: "
+
+#: xfsamba/xfsamba_rm.c:48
+msgid "Really delete remote items?"
+msgstr ""
+
+#: xfsamba/xfsamba_rm.c:51 xfsamba/xfsamba_rm.c:189
+msgid "Remove cancelled."
+msgstr "削除を中止しました。"
+
+#: xfsamba/xfsamba_rm.c:137
+msgid "Remove failed. See diagnostics for details."
+msgstr "削除失敗。詳細は診断を見てください。"
+
+#: xfsamba/xfsamba_rm.c:152
+msgid "Remove complete."
+msgstr "削除完了。"
+
+#: xfsamba/xfsamba_rm.c:179
+#, fuzzy
+msgid "Removing..."
+msgstr "削除しています..."
+
+#: xfsamba/xfsamba_rm.c:186
+msgid "Sorry, top level shares cannot be removed."
+msgstr "すみません。トップレベル割り当ての削除ができませんでした。"
+
+#: xfsamba/xfsamba_tar.c:123
+msgid "Tar failed. See diagnostics for details."
+msgstr "tar 失敗。詳細は診断を見てください。"
+
+#: xfsamba/xfsamba_tar.c:128
+msgid "Tar extraction has completed"
+msgstr "tar 抽出完了"
+
+#: xfsamba/xfsamba_tar.c:133
+msgid "Tar command complete."
+msgstr "tar コマンド完了。"
+
+#: xfsamba/xfsamba_tar.c:155
+msgid "Please select input tarfile next."
+msgstr "次に入力tarファイルを選んでください。"
+
+#: xfsamba/xfsamba_tar.c:159
+msgid "Please select the output tarfile next."
+msgstr "次に出力tarファイルを選んでください。"
+
+#: xfsamba/xfsamba_tar.c:193 xfsamba/xfsamba_tar.c:234
+msgid "Tar cancelled."
+msgstr "tarキャンセルしました。"
+
+#: xfsamba/xfsamba_tar.c:205
+#, fuzzy
+msgid "Cannot open tar file"
+msgstr "tarファイルが開けません"
+
+#: xfsamba/xfsamba_tar.c:216
+#, fuzzy
+msgid "Cannot create tar file"
+msgstr "tarファイルが作成できません"
+
+#: xfsamba/xfsamba_tar.c:327
+msgid "create"
+msgstr "作成"
+
+#: xfsamba/xfsamba_tar.c:330
+msgid "extract"
+msgstr "抜粋"
+
+#: xfsamba/xfsamba_tar.c:373
+msgid "full"
+msgstr "完全"
+
+#: xfsamba/xfsamba_tar.c:376
+#, fuzzy
+msgid "incremental"
+msgstr "増加"
+
+#: xfsamba/xfsamba_tar.c:399
+msgid "do not reset archive bit"
+msgstr "アーカイブをリセットしない"
+
+#: xfsamba/xfsamba_tar.c:402
+msgid "reset archive bit"
+msgstr "アーカイブをリセット"
+
+#: xfsamba/xfsamba_tar.c:414
+msgid "Options"
+msgstr "オプション"
+
+#: xfsamba/xfsamba_upload.c:106
+msgid "Uploaded file."
+msgstr "ファイルをアップロードしました。"
+
+#: xfsamba/xfsamba_upload.c:138
+msgid "File upload failed. See diagnostics for reason."
+msgstr "すべてアップロード失敗。詳細は診断を見てください。"
+
+#: xfsamba/xfsamba_upload.c:143 xfsamba/xfsamba_upload.c:284
+msgid "Upload done."
+msgstr "アップロードしました。"
+
+#: xfsamba/xfsamba_upload.c:170
+#, fuzzy
+msgid "Uploading file..."
+msgstr "ファイルをアップロードしています..."
+
+#: xfsamba/xfsamba_upload.c:176
+msgid "File upload cancelled."
+msgstr "ファイルのアップロードは中止されました。"
+
+#: xfsamba/xfsamba_upload.c:186
+msgid "Specified file does not exist"
+msgstr "特定のファイルが存在しません"
+
+#: xfsamba/xfsamba_upload.c:187 xfsamba/xfsamba_upload.c:201
+#, fuzzy
+msgid "Upload failed."
+msgstr "アップロードに失敗しました。"
+
+#: xfsamba/xfsamba_upload.c:254
+#, fuzzy
+msgid "Upload produced errors. See diagnostics for reason."
+msgstr "すべてアップロード失敗。詳細は診断を見てください。"
+
+#: xfsamba/xfsamba_upload.c:361
+#, fuzzy
+msgid "Uploading files..."
+msgstr "ファイルをアップロードしています..."
+
+#: xfsamba/xfsamba_dnd.c:502
+#, fuzzy
+msgid "No target selected!"
+msgstr "ディレクトリが選択されていません！"
+
+#: xfsamba/xfsamba_dnd.c:507
+#, fuzzy
+msgid "More than one target selected!"
+msgstr "選択されていません！"
+
+#: xfsamba/xfsamba_dnd.c:545
+msgid "Files are on a remote host"
+msgstr ""
+
+#: xfumed/xfumed_gui.c:47
+msgid "User Menu Editor"
+msgstr "ユーザメニュー"
+
+#: xfumed/xfumed_gui.c:80
+#, fuzzy
+msgid "Caption"
+msgstr "見出し"
+
+#: xfumed/xfumed_gui.c:86
+#, fuzzy
+msgid "Command"
+msgstr "コマンド"
+
+#: xfumed/xfumed_gui.c:108
+#, fuzzy
+msgid "Move Up"
+msgstr "上に移動"
+
+#: xfumed/xfumed_gui.c:115
+msgid "Move Down"
+msgstr "下に移動"
+
+#: xfumed/xfumed_gui.c:122
+msgid "Add"
+msgstr "追加"
+
+#: xfumed/xfumed_gui.c:157
+#, fuzzy
+msgid "Save"
+msgstr "保存"
+
+#: xfumed/xfumed_gui.c:164
+#, fuzzy
+msgid "Reset"
+msgstr "リセット"
+
+#: xfumed/xfumed_gui.c:252
+msgid "Edit Entry"
+msgstr "エントリーの編集"
+
+#: xfumed/xfumed_gui.c:254
+msgid "Add Entry"
+msgstr "エントリーの追加"
+
+#: xfumed/xfumed_gui.c:275
+#, fuzzy
+msgid "Type: "
+msgstr "種類: "
+
+#: xfumed/xfumed_gui.c:282
+#, fuzzy
+msgid "Caption: "
+msgstr "見出し: "
+
+#: xfumed/xfumed_gui.c:289
+#, fuzzy
+msgid "Command: "
+msgstr "コマンド: "
+
+#: xfumed/xfumed_gui_cb.c:24
+msgid "Your changes will take effect on next startup"
+msgstr "変更は次回の起動時に有効になります"
+
+#: xfumed/xfumed_gui_cb.c:70
+msgid ""
+"There are unsaved changes to the menu.\n"
+"\n"
+"Do you want to save the changes ?"
+msgstr ""
+"メニューへの変更が保存されていません。\n"
+"\n"
+"変更を保存しますか？"
+
+#: xfumed/xfumed_gui_cb.c:77
+msgid "Don't Quit"
+msgstr "終了しない"
+
+#: xfumed/xfumed_gui_cb.c:122
+#, fuzzy
+msgid "Do you want to delete this entry ?"
+msgstr "この項目を削除してよろしいですか？"
+
+#: xfumed/xfumed_gui_cb.c:124
+msgid ""
+"If you delete a submenu, all its entries and \n"
+"submenus will also be deleted.\n"
+"\n"
+"Do you want to delete this submenu ?"
+msgstr ""
+"サブメニューを削除するとそのすべてのエントリーと\n"
+"サブメニューが削除されます。\n"
+"\n"
+"このサブメニューを削除しますか？"
+
+#: xfumed/xfumed.h:10
+msgid "Item"
+msgstr "アイテム"
+
+#: xfumed/xfumed.h:11
+#, fuzzy
+msgid "Submenu"
+msgstr "選択箇所へ移動"
+
+#: xfumed/xfumed.h:12
+msgid "Separator"
+msgstr "セパレータ"
+
+#~ msgid "file x of x"
+#~ msgstr "x のファイル x"
+
+#~ msgid "Insert from pasteboard"
+#~ msgstr "ペーストボードから貼り付け"
+
+#, fuzzy
+#~ msgid "Cut to pasteboard"
+#~ msgstr "ペーストボードへ切り取り"
+
+#~ msgid "Copy to pasteboard"
+#~ msgstr "ペーストボードへコピー"
+
+#, fuzzy
+#~ msgid "Cannot create pasteboard\n"
+#~ msgstr "ファイルが作成できません\n"
+
+#~ msgid "Pasteboard contents:\n"
+#~ msgstr "ペーストボード内容:\n"
+
+#, fuzzy
+#~ msgid "Terminal"
+#~ msgstr "ターミナル"
+
+#~ msgid "Please provide a name for the new directory at"
+#~ msgstr "次の場所に新しいディレクトリの名前の供給をしてください"
+
+#~ msgid "Confirm remove?"
+#~ msgstr "本当に削除しますか？"
+
+#, fuzzy
+#~ msgid "child:bytes:%d bytes received (%d bps)"
+#~ msgstr "%d バイト受信しました (%d バイト/秒)"
+
+#~ msgid "Information"
+#~ msgstr "情報"
+
+#~ msgid "Error"
+#~ msgstr "エラー"
+
+#~ msgid "Dialog"
+#~ msgstr "ダイアログ"
+
+#~ msgid "Source : "
+#~ msgstr "元 : "
+
+#~ msgid "Target : "
+#~ msgstr "先 : "
+
+#~ msgid "XFTree: Download"
+#~ msgstr "XFTree: ダウンロード"
+
+#~ msgid "%ld Bytes"
+#~ msgstr "%ld バイト"
+
+#~ msgid "%d bytes"
+#~ msgstr "%d バイト"
+
+#, fuzzy
+#~ msgid "dbg:malloc error in %s at line %d\n"
+#~ msgstr "dbg:不正エラーが%sの%d行目で発生しました\n"
+
+#~ msgid "Can't create : "
+#~ msgstr "作成できません : "
+
+#~ msgid "New Folder ..."
+#~ msgstr "新しいフォルダ ..."
+
+#~ msgid "move"
+#~ msgstr "移動"
+
+#~ msgid "Do you want to %s the item(s) to"
+#~ msgstr "アイテムをを%sしますか"
+
+#~ msgid "Source and Target directories are the same"
+#~ msgstr "元と先のディレクトリが同じです"
+
+#~ msgid "exists and is not a directory"
+#~ msgstr "存在します ディレクトリではありません"
+
+#~ msgid "Unknown transfer mode: %d\n"
+#~ msgstr "不明な転送モードです: &d\n"
+
+#~ msgid "Error getting info from"
+#~ msgstr "情報の取得に失敗しました: "
+
+#~ msgid "Fatal Error"
+#~ msgstr "致命的なエラー"
+
+#~ msgid "0 bytes transferred"
+#~ msgstr "0 バイト転送しました"
+
+#~ msgid "Can't transfer a directory to a file"
+#~ msgstr "ディレクトリをファイルへ転送はできません"
+
+#~ msgid "Move to trash failed"
+#~ msgstr "ごみ箱への移動に失敗しました"
+
+#~ msgid ""
+#~ "This is XFTree, based on 'XTree' \n"
+#~ "(c) by Rasca\n"
+#~ "published under GNU GPL\n"
+#~ "http://home.pages.de/~rasca/xap/"
+#~ msgstr ""
+#~ "XFTree, 'XTree'がもとになっています\n"
+#~ "GNU GPLの元で公開されています\n"
+#~ "http://home.pages.de/~rasca/xap/"
+
+#~ msgid "Target must be a directory !"
+#~ msgstr "先がディレクトリでなければなりません"
+
+#~ msgid "Type not supported.. (%d)\n"
+#~ msgstr "サポートされていない種類です.. (%d)\n"
+
+#~ msgid "Override file?"
+#~ msgstr "ファイルを上書きしますか？"
+
+#~ msgid "Override file ?"
+#~ msgstr "ファイルを上書きしますか？"
+
+#~ msgid "Go to marked"
+#~ msgstr "選択箇所へ移動"
+
+#~ msgid "Unselect all"
+#~ msgstr "全てを選択解除"
+
+#~ msgid "New windows"
+#~ msgstr "新しいウィンドウ"
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "なし"
+
+#, fuzzy
+#~ msgid "Go to parent menu"
+#~ msgstr "親メニューに移動"
+
+#, fuzzy
+#~ msgid "Go to submenu"
+#~ msgstr "サブメニューへ移動"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "種類"
+
+#~ msgid "XFce : %s File not found.\n"
+#~ msgstr "XFce : ファイル %s が見つかりません。\n"
+
+#~ msgid "Whoooops !"
+#~ msgstr "おっと！"
+
+#, fuzzy
+#~ msgid "Full path to file"
+#~ msgstr "ファイルのフルパス"
+
+#, fuzzy
+#~ msgid "Permissions :"
+#~ msgstr "パーミッション :"
+
+#, fuzzy
+#~ msgid "Executable"
+#~ msgstr "実行可能"
+
+#, fuzzy
+#~ msgid "Download file"
+#~ msgstr "ダウンロードファイル"
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "再読み込み"
+
+#, fuzzy
+#~ msgid "File upload not allowed."
+#~ msgstr "ファイルのアップロードが許可されていません。"
+
+#~ msgid "&Cancel"
+#~ msgstr "キャンセル(&C)"
+
+#, fuzzy
+#~ msgid "Do patch in new"
+#~ msgstr "新しくパッチ"
+
+#~ msgid "Find pattern in '%s'"
+#~ msgstr "'%s' 中のパターンに一致しました"
+
+#~ msgid "Are you sure you want to quit ?"
+#~ msgstr "終了してもよろしいですか？"
+
+#~ msgid " Starting XFTree ... "
+#~ msgstr "XFTreeを起動しています ..."

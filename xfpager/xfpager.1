@@ -1,0 +1,75 @@
+.\" SCCS ID: xfpager.1 3.0.0 12/06/1999
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+xfpager \- xfce/xfwm Pager
+.SH SYNOPSYS
+.B xfpager 
+[desks]
+.PP
+.TP 6
+.BI desks
+Specifies the number of desks to manage. Default is 10.
+.PP
+.SH DESCRIPTION
+xfpager is the pager for XFwm
+.PP
+xfpager must be started from XFwm's config or from XFce using the keyword "Module"
+to work with XFwm properly.
+.PP
+From XFce menus :
+.sp
+Module xfpager
+.fi
+Or from XFwm configuration file :
+.nf
+.sp
+AddToFunc "InitFunction"
++              "I" Module xfpager
+.sp
+.PP
+.SH CONFIGURATION OPTIONS
+Add these options to your default XFwm configuration file 
+(ie sample.xfwmrc, system.xfwmrc, $HOME/.xfwmrc)
+
+.IP "*xfpager.geometry \fIgeometry\fP"
+Specifies the pager windows location and geometry, in standard X11 notation. 
+
+.IP "*xfpager.icongeometry \fIgeometry\fP"
+Specifies a size for the pager's icon window. 
+
+.IP "*xfpager.font \fIfont-name\fP"
+Specified a font to use to label the desktops.  If \fIfont_name\fP is
+"none" then no desktop labels will be displayed.
+
+.IP "*xfpager.smallfont \fIfont-name\fP"
+Specified a font to use to label the window names in the pager. If not
+specified, the window labels will be omitted. 
+
+.IP "*xfpager.label \fIdesk label\fP"
+Assigns the text \fIlabel\fP to desk \fIdesk\fP in the pager window.
+Useful for assigning symbolic names to desktops, ie
+.nf
+.sp
+*xfpager.label 1 One
+*xfpager.label 2 Two
+*xfpager.label 3 Three
+*xfpager.label 4 Four
+.sp
+.fi
+.PP
+.SH SEE ALSO
+xfce, xftree, xfwm, xfpager, xfsound, xfmouse, xfbd, xfclock
+.PP
+.SH AUTHOR
+xfpager is based on FvwmPager from :
+.PP
+Robert Nation 
+.PP
+Copyright 1994, Robert Nation. No guarantees or warantees or anything
+are provided or implied in any way whatsoever. Use this program at your
+own risk. Permission to use this program for any purpose is given,
+as long as the copyright is kept intact.
+.PP
+DeskColor patch contributed by Alan Wild
+.PP
+xfce is written by Olivier Fourdan (fourdan@xfce.org)

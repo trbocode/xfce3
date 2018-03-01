@@ -1,0 +1,449 @@
+########################################################################
+# FVWM configuration file.                                             #
+#                                                                      #
+# Rui Fernando A. Silva, PORTUGAL (ruifs@teleweb.pt)                   #
+########################################################################
+
+
+##############
+#
+# Here you can define the colors of the windows and the fonts
+#
+
+# I like this color scheme... Gray.
+HiForeColor 		lightgray
+HiBackColor 		slategray
+
+StickyForeColor		Black
+StickyBackColor		#d3d3d3
+
+MenuForeColor           Black
+MenuBackColor           slategray
+MenuStippleColor        darkgrey
+
+Font			-adobe-helvetica-*-r-*-*-12-*-*-*-*-*-*-*
+WindowFont		-adobe-helvetica-*-r-*-*-12-*-*-*-*-*-*-*
+
+
+
+##############
+#
+# MWM Emulation, uncomment what you need
+#
+
+#MWMFunctionHints
+#MWMHintOverride
+
+MWMBorders
+MWMButtons
+MWMMenus
+MWMDecorHints
+
+############
+#
+# Some nice stuff, try them
+#
+
+# I like ClickToFocus... I think you all like it too.
+#DecorateTransients
+ClickToFocus
+#SloppyFocus
+
+
+###########################
+#
+# Buttons
+#
+
+# I like them with this size... if tou want, you can modify it. 
+# By the way, Button 1 - File, Button 2 - (Un)Maximize, Button 4 - Minimize  
+ButtonStyle 1 50x22
+ButtonStyle 2 60x60
+ButtonStyle 4 22x22
+
+###########################
+#
+# Path configuration
+#
+
+# You must modify it, if it is necessary
+IconPath   /usr/X11R6/include/X11/bitmaps/:/usr/share/icons/:/usr/share/icons/mini/
+ModulePath /usr/lib/X11/fvwm:/usr/X11R6/bin:/usr/bin:/usr/local/bin:/usr/X11/bin
+
+
+
+#########################
+#
+# Desktops, window creation, 
+#
+
+# Don't use it...
+DeskTopSize 1x1
+#DeskTopScale 32
+
+
+
+################
+#
+# Window Placement and motion
+#
+
+# Random Placement is nice... 
+RandomPlacement
+
+# SmartPlacement makes new windows pop-up in blank regions of screen 
+# if possible, or falls back to random or interactive placement.
+#SmartPlacement
+
+# With SmartPlacement, windows will place themselves over icons. 
+#StubbornPlacement
+
+# NoPPosition instructs fvwm to ignore the PPosition field in window 
+# geometry hints. Don't uncomment
+#NoPPosition
+
+# I don't like OpaqueMove... uncomment if you like. If you want to use it to larger windows than 100% of the screen you must modify the parameter.
+#OpaqueMove 100 
+
+
+####################
+#
+# Icon Stuff
+#
+
+# Where to you want your icons?
+IconBox -70 1 -1 -140
+
+# Try it, if you like it... I don't.
+#SuppressIcons
+
+# StubbornIcons makes icons de-iconify into their original position on the
+# desktop, instead of on the current page. Uncomment if you need it
+#StubbornIcons
+
+# With AutoPlacement, icons will normally place themselves underneath active
+# windows. This option changes that. Don't uncomment... it's not so necessary
+#StubbornIconPlacement
+
+# It can be usefull to have all icons following you.
+#StickyIcons
+
+
+###############################
+#
+# Style stuff... add things to it, if you want.
+#
+#
+
+Style "*" Color #cfcfb0/#808080,Icon unknown1.xpm, HandleWidth 3,BorderWidth 2
+
+Style "Fvwm*" 		Sticky, NoTitle, NoHandles, WindowListSkip, BorderWidth 1
+Style "XFce*" 		Sticky
+Style "XFbd*"           Sticky
+Style "Popup menu*" 	Sticky
+Style "Alert*"          Sticky
+Style "Question*"       Sticky
+
+
+
+########################################
+#
+# Init and Restart Functions
+#
+#
+
+# InitFunction is called everytime you start fvwm.
+# If you like xfsound, xfbd and xfmouse to be started uncomment.
+# You can add what you want: a banner, some other background programs...
+
+Function "InitFunction"
+	Module  "I"	xfsound
+	Module	"I"	xfce
+	Desk	"I"	0 0
+	Exec    "I"     xfbd -d
+	Exec    "I"     xfmouse -d
+EndFunction
+
+# RestartFunction is called when you select Restart
+# Once again, if you like xfsound, xfbd and xfmouse uncomment.
+# Don't forget those extra programs I've talked on InitFunctions
+
+Function "RestartFunction"
+	Module  "I"	xfsound
+	Module  "I"     xfce -shared
+	Desk    "I"     0 0
+	Exec    "I"     xfbd -d
+	Exec    "I"     xfmouse -d
+EndFunction
+
+
+##################################
+#
+# Menus
+#
+#
+
+# Looking to the structure, easily you'll undestrand it.
+# Modify at your will. This is a very basic structure just to show how it works
+#
+
+Popup "Quit-Verify"
+	Title	"End session ?"
+	Restart "Restart " fvwm
+	Quit	"Quit "
+EndPopup
+
+Popup "Module-Popup"
+	Title	"Modules"
+	Module  "XFce"		xfce -shared
+	Module	"Identify"	FvwmIdent
+	Module  "Save Desktop"  FvwmSave
+	Module  "WinList"       FvwmWinList
+EndPopup
+
+Popup "Window-Ops2"
+	Move    "&Move	Alt+F7"
+	Resize  "&Size	Alt+F8" 
+	Iconify "(Un)Mi&nimize	Alt+F9"
+	Maximize "(Un)Ma&ximize	Alt+F10"
+	Lower   "&Lower	Alt+F3"
+	Nop     ""
+	Close   "&Close	Alt+F4"
+EndPopup
+
+Popup "Apps"
+	Title	"Apps"
+	Exec	"Emacs"		exec emacs &
+	Exec	"Lyx"		exec lyx &
+	Exec	"xfm"		exec xfm &
+EndPopup
+
+Popup "Internet"
+    Title "Internet"
+    Exec	"Netscape-Communicator"	exec netscape &
+    Exec	"Netscape-Mail"		exec netscape -mail &
+    Exec	"XChat IRC"		exec xchat &
+    Exec	"WxFTP"			exec wxftp &
+    Nop		""
+    Exec	"Kppp"			exec kppp &
+End Popup
+
+Popup "Graphics"
+    Title	"Graphics"
+    Exec	"Gimp"			exec gimp &
+    Exec	"GQView"		exec gqview &
+    Exec	"Xpaint"		exec xpaint &
+    Nop		""
+    Exec	"Ghostview"		exec gv &
+    Exec	"xDVI"			exec xdvi &
+    Exec	"xPDF"			exec xpdf &	
+EndPopup
+
+Popup 	"Multimedia"
+    Title	"Multimedia"
+    Exec	"XMMS"			exec xmms &
+    Exec	"XplayCD"		exec xplaycd &
+EndPopup
+
+Popup	"System"
+    Title	"System"
+    Exec	"Control-Panel"		exec control-panel &
+    Exec	"Gno-RPM"		exec gnorpm &
+    Exec	"LinuxConf"		exec linuxconf &
+EndPopup
+
+Popup "Programs"
+	Popup		"Apps"   	Apps
+	Popup		"Graphics"	Graphics
+	Popup		"Internet"	Internet
+	Popup		"Multimedia"	Multimedia
+EndPopup
+
+
+Popup "Main menu"
+	Title 		"Main menu"
+	Exec    	"New window"	exec xterm
+	CirculateUp	"Shuffle Up"
+	CirculateDown	"Shuffle Down"	
+	Refresh		"Refresh"	
+	Nop		""
+	Popup		"Programs"	Programs
+	Nop		""
+	Popup		"System"	System
+	Nop		""
+	Exec		"Mouse..."	exec xfmouse -i
+	Exec		"Backdrop..."	exec xfbd -i
+        Exec		"Sound..."      exec xfsound
+	Nop		""
+	Popup		"Window..."	Window-Ops2
+	Nop		""
+	Popup		"Modules..."	Module-Popup
+	Nop		""
+	Popup		"Quit..."	Quit-Verify
+EndPopup
+
+Popup "Window Ops"
+	Title	"Window Ops	"
+	Move    "&Move	Alt+F7"
+	Resize  "&Size	Alt+F8" 
+	Lower   "&Lower	Alt+F3"
+	Raise   "Raise	"
+	Stick	"(Un)Stick	"
+	Iconify "(Un)Mi&nimize	Alt+F9"
+	Maximize "(Un)Ma&ximize	Alt+F10"
+	Maximize "(Un)Maximize Vertical	"	0 100
+	Nop     ""
+	Close   "&Close	Alt+F4"
+EndPopup
+
+
+###########################################
+#
+# Windows Functions
+#
+# It's easy to undestrand, isn't it?
+#
+
+
+Function "Iconify-and-Raise"
+	Iconify	"Motion"
+	Raise "Motion"
+EndPopup
+
+Function "Move-or-Lower"
+	Move 		"Motion"
+	Lower		"Motion"
+	Lower		"Click"
+	RaiseLower	"DoubleClick"
+EndFunction
+
+Function "Move-or-Iconify"
+	Move 		"Motion"
+	PopUp		"Click" Window-Ops2
+	Iconify		"DoubleClick"
+EndFunction
+
+Function "windowops-or-die"
+	PopUp		"Motion" Window-Ops2
+	PopUp		"Click" Window-Ops2
+	Close 	 	"DoubleClick"
+EndFunction
+
+Function "Move-or-Raise"
+	Move            "Motion"
+	Raise           "Motion"
+	Raise           "Click"
+	Iconify      	"DoubleClick" 
+EndFunction
+
+Function "Move-or-Lower"
+	Move            "Motion"
+	Lower           "Click"
+	RaiseLower      "DoubleClick"
+EndFunction
+
+Function "Resize-or-Raise"
+	Resize          "Motion"
+	Raise           "Motion"
+	Raise           "Click"
+	RaiseLower      "DoubleClick"
+EndFunction
+
+Function "Resize-or-Lower"
+	Resize          "Motion"
+	Lower           "Click"
+	RaiseLower      "DoubleClick"
+EndFunction
+
+
+#########################################
+#
+# Mouse and keyboard functions
+#
+# I like them like this... as in the original file. 
+# Modify at your will
+#
+
+
+#     Button	Context Modifi 	Function
+Mouse 1		R   	A       PopUp "Main menu"
+Mouse 2		R    	A      	PopUp "Window Ops"
+Mouse 3		R    	A      	WindowList
+
+#     Button	Context Modifi 	Function
+Mouse 0		1    	A      	Function "windowops-or-die"
+Mouse 0		2    	A     	Maximize
+Mouse 0		4    	A     	Iconify
+
+Mouse 1         FS      A       Function "Resize-or-Raise"
+Mouse 2         FS      A       Function "Resize-or-Lower"
+Mouse 1         T       A       Function "Move-or-Raise"
+Mouse 2         T       A       Function "Move-or-Lower"
+
+Mouse 1		I	A	Function "Move-or-Iconify"
+Mouse 2		I	A	Function "Move-or-Iconify"
+Mouse 3		I	A	PopUp 	 "Window-Ops2"
+Mouse 3		FST    	A      	Function "windowops-or-die"
+
+Key Left	A	C	Scroll -100 0
+Key Right	A	C	Scroll +100 +0
+Key Up		A	C	Scroll +0   -100
+Key Down	A	C	Scroll +0   +100
+
+Key Left	A	M	Scroll -10 +0
+Key Right	A	M	Scroll +10 +0
+Key Up		A	M	Scroll +0   -10
+Key Down	A	M	Scroll +0   +10
+
+Key Left	A	SC	CursorMove -1 0
+Key Right	A	SC	CursorMove +1 +0
+Key Up		A	SC	CursorMove +0   -1
+Key Down	A	SC	CursorMove +0   +1
+
+Key Left	A	SM	CursorMove -10 +0
+Key Right	A	SM	CursorMove +10 +0
+Key Up		A	SM	CursorMove +0   -10
+Key Down	A	SM	CursorMove +0   +10
+
+Key F1		A	M	Popup "Window Ops"
+Key F2		A	M	Popup "Main menu"
+Key F3		A	M	Lower
+Key F4		A	M	Destroy
+Key F5		A	M	CirculateUp
+Key F6		A	M	CirculateDown
+Key F7		A	M	Move
+Key F8		A	M	Resize
+Key F9		A	M	Iconify
+Key F10		A	M	Maximize
+
+Key L5                IW      N       RaiseLower
+Key L5                IW      S       Lower
+Key L5                IW      C       Raise
+Key L7                IW      A       Iconify
+
+
+
+#####################
+#
+# Window Identifier 
+#
+
+# Choose colors and font.
+*FvwmIdentBack black
+*FvwmIdentFore lightgray
+*FvwmIdentFont -adobe-helvetica-*-r-*-*-12-*-*-*-*-*-*-*
+
+
+#####################
+#
+# Window List
+#
+
+# Obsolete, because, with a simple click with the right button of the mouse you get a list... You can use, if want. 
+# Choose colors and font
+*FvwmWinListBack #908090
+*FvwmWinListFore Black
+*FvwmWinListFont -adobe-helvetica-*-r-*-*-12-*-*-*-*-*-*-*
+*FvwmWinListUseSkipList
+*FvwmWinListGeometry +0-1
+

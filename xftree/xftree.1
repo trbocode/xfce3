@@ -1,0 +1,128 @@
+.\" SCCS ID: xftree.1 06/12/1999
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+xftree \- File manager for XFce
+.SH SYNOPSYS
+.B xftree 
+[--display] [-v] [-g] [<directory>]
+.PP
+.TP 6
+.BI \--display " host:dpy"
+specifies the server to connect to.
+.TP
+.BI \-v
+.br
+Verbose mode, give some output on startup.
+.TP
+.BI <dir>
+Use this directory as the root for the tree on startup.
+.TP
+.BI \-g \ <x-geometry>
+Define the geometry of the toplevel window, e.g.
+.I \-g 300x400
+.PP
+.SH DESCRIPTION
+xftree is the File Manager of XFce, the Cholesterol Free Desktop Environment.
+.SH QUICK REFERENCE
+Starting
+.I xftree
+will use the home directory as the default root directory
+if no directory is specified.
+
+Right mouse button: pops up a context menu (which depends on selected
+items).
+
+Left mouse button: select an item; [SHIFT] allow selection of multiple
+items and [CTRL] will add/remove items to the selection. 
+
+Middle mouse button: useful for drag and drop, as the selection
+will not be changed.
+
+DoubleClick: start the selected application or if the item is
+a regular file, start the registered program and pass the file name
+as argument.
+
+Alt+DoubleClick: same as above but start in a terminal program.
+If the item is a directory, change the root of the tree
+to that directory.
+
+Drag and Drop: By default, drag and drop copy the items.
+If [SHIFT] is pressed during drag, items are moved instead of copied. 
+The same way, holding [CTRL+SHIFT] during drag'n drop will link the 
+items.
+Drag and drop of URL is allowed, e.g. from mozilla. The corresponding 
+file will be downloaded.
+.SH KEYBOARD SHORT CUTS
+.TP
+Alt+A
+select all items in the current directory.
+.TP
+Alt+Shift+A
+Unselect all.
+.TP
+Ctrl+A
+display the 'about' dialog.
+.TP
+Alt+D
+duplicate the marked file.
+.TP
+Alt+Shift+D
+hide/show hidden files (dotfiles).
+.TP
+Alt+E
+empty the trash folder.
+.TP
+Alt+F
+find files in the current folder.
+.TP
+Alt+G
+go to selected directory or prompt the user if no directory is selected.
+.TP
+Alt+H
+go to home directory.
+.TP
+Alt+I
+properties/information on selected items.
+.TP
+Alt+J
+register an application for a file name suffix.
+.TP
+Alt+K
+create a new file.
+.TP
+Alt+N
+create a new directory.
+.TP
+Alt+Q
+quit the program.
+.TP
+Alt+R
+rename selected file/directory.
+.TP
+Alt+T
+open trash folder in a new window.
+.TP
+Alt+U
+go one directory up.
+.TP
+Alt+W
+close current window.
+.TP
+Ctrl+X
+delete selected items.
+.SH FILES
+.TP
+$HOME/.xap/xtree.reg
+xftree registry
+.TP
+$HOME/.xap/.trash/
+xftree's trash directory
+.br
+.PP
+.SH SEE ALSO
+xfce, xftree, xfwm, xfpager, xfsound, xfmouse, xfbd, xfclock
+.PP
+.SH AUTHOR
+xftree is based on xtree (c) Rasca, Berlin
+.P
+xfce is written by Olivier Fourdan (fourdan@xfce.org)

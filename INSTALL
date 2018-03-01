@@ -1,0 +1,84 @@
+1) Requirements
+===============
+
+To compile and run XFce 3.x, you'll need :
+* gtk+ 1.2.x
+* glib 1.2.x
+* libXpm 4.x
+* gcc
+
+XFce can make use of the following, if available :
+* Imlib
+* libpng
+* libjpeg
+* libgif (or libungif)
+* libtiff
+
+2) Configuration and Compilation 
+================================
+
+2.1) For those upgrading from previous versions of XFce :
+---------------------------------------------------------
+
+./configure --prefix=/usr/X11R6 --datadir=/var --sysconfdir=/var
+make
+make install-strip
+
+Note: 'make install-strip' may not work on all OS. You might choose to use
+'make install' and strip programs manually afterwards to save memory and disk
+space.
+
+2.2) If you want to stay in the GNU spirit :
+--------------------------------------------
+
+./configure --prefix=/usr/local --datadir=/usr/local/share --sysconfdir=/etc/X11
+make
+make install
+
+You can override compilation option regarding XFCE_DIR (usually $datadir/xfce/)
+by setting the environment variable XFCE_DATA
+
+Eg.:
+
+export XFCE_DATA=/usr/local/share; xfce
+
+If you are using a system with CDE installed, you can also specify --enable-dt 
+at configure time. This will set up some dtlogin resource files in /etc/dt
+to add an entry for XFce in dtlogin.
+
+This will copy some configurations files to /usr/dt/config in order to dtlogin
+to be able to display XFce in the list of default sessions available.
+
+Eg.:
+
+./configure --prefix=/usr/local --datadir=/usr/local/share --enable-dt
+
+If you have Imlib installed on your system, but you don't want XFce to make
+use of it (ie fallback to standard Xpm support), specify --enable-imlib=no and 
+--enable-gdk-pixbuf=no at configuration time.
+
+Eg.:
+
+./configure --prefix=/usr/local --datadir=/usr/local/share \
+ --enable-imlib=no --enable-gdk-pixbuf=no
+
+
+3) User setup
+=============
+
+XFce provides 2 convenient scripts for easy installation/configuration of XFce.
+
+Run xfce_setup to set up replacement files in user's home directory. These files
+will fire up xfwm and xfce every time the user starts an X session 
+(through startx or through xdm).
+
+The previous configurations files are saved in a hidden directory .xfce_bckp/
+
+Afterwards, one can use xfce_remove to restore the previous files.
+
+As XFce supports Native Language Supports (NLS), make sure the environment 
+variable LANG is correctly set for your country.
+
+E.g.:
+bash : 	export LANG="fr"
+csh : 	setenv LANG "fr"

@@ -1,0 +1,37 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="9" id="adv-wm-general">
+
+<title>General configuration</title>
+
+<table frame="topbot" id="wm-conf-general">
+<title>General xfwm configuration commands</title>
+
+<tgroup cols=3 align="left">
+
+<thead>
+<row>
+<entry>Command</entry>
+<entry>Description</entry>
+<entry>Example</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>ModulePath</entry>
+  <entry>Set Module path</entry>
+  <entry>ModulePath $PATH</entry>
+</row>
+<row>
+  <entry>ExecUseSHELL</entry>
+  <entry>Set shell to use for executing commands. Initial value is
+  taken from <envar>$SHELL</envar> or defaults to <filename>/bin/sh
+  </filename></entry>
+  <entry>ExecUseSHELL bash</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</chapter>

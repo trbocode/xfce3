@@ -1,0 +1,196 @@
+# XFce 3 Configuration File - Do not edit
+[Coords]
+	176
+	722
+[ButtonLabels]
+	Едно
+	Две
+	Три
+	Четири
+	Пет
+	Шест
+	Седем
+	Осем
+	Девет
+	Десет
+[External_Icons]
+	XFCE_DIR/icons/FolderDeposit.xpm
+	XFCE_DIR/icons/FileAPP.xpm
+	XFCE_DIR/icons/CheckMarkMonitor.xpm
+	XFCE_DIR/icons/Interface.xpm
+	XFCE_DIR/icons/NetscapeLogo.xpm
+	XFCE_DIR/icons/Printer.xpm
+	XFCE_DIR/icons/Info.xpm
+	XFCE_DIR/icons/RecycleLogo.xpm
+	None
+	XFCE_DIR/icons/3dpaint.xpm
+	XFCE_DIR/icons/TrueDie.xpm
+	None
+	None
+[Popups]
+	8
+[Icons]
+	99,99,99,4,99,99,99,99,8,99,99,11,7
+[WorkSpace]
+	NoRepaint
+	Solid
+[Lock]
+	xflock
+[MenuOption]
+	Detach
+[XFwmOption]
+	ClickToFocus
+	OpaqueMove
+	OpaqueResize
+	5
+	119
+	NoAutoraise
+	OpaqueActive
+	GradientInactive
+	IconsOnRight
+	-cronyx-helvetica-medium-r-normal-*-12-*-*-*-p-*-microsoft-cp1251
+	-cronyx-helvetica-medium-r-normal-*-12-*-*-*-p-*-microsoft-cp1251
+	-cronyx-helvetica-medium-r-normal-*-12-*-*-*-p-*-microsoft-cp1251
+	MapFocus
+	Xfce_engine
+[Screens]
+	4
+[Tooltips]
+	250
+[Clock]
+	Digital
+	24hrs
+[Sizes]
+	SmallPanelIcons
+	SmallMenuIcons
+[XColors]
+	Apply
+[Diagnostic]
+	Ignore
+[Layer]
+	6
+[Commands]
+	xftree
+	xfrun
+	xfterm
+	xfmouse -i
+	netscape
+	xfprint
+	xfhelp
+	xftrash
+	None
+	xv
+	None
+	None
+	abiword
+[Menu1]
+	Часовник
+	XFCE_DIR/icons/Clock.xpm
+	xfclock
+	Файлов мениджър
+	XFCE_DIR/icons/FileManager.xpm
+	xftree
+	SMB Браузър...
+	XFCE_DIR/icons/xfsamba.xpm
+	xfsamba
+	Търсене на файл...
+	XFCE_DIR/icons/MagnifyGlas.xpm
+	xfglob
+	Монтирай CD
+	XFCE_DIR/icons/ColoredCompactDisc.xpm
+	xfmountdev /mnt/cdrom
+	Монтирай флопи
+	XFCE_DIR/icons/DiskFloppy.xpm
+	xfmountdev /mnt/floppy
+	Стартирай...
+	XFCE_DIR/icons/FileAPP.xpm
+	xfrun
+[Menu2]
+	Калкулатор
+	XFCE_DIR/icons/OldBlueAddingMachine.xpm
+	xcalc
+	Editres
+	XFCE_DIR/icons/X_server.xpm
+	editres
+	Diff tool (xfdiff)
+	XFCE_DIR/icons/ForwardBackwardPagesBook.xpm
+	xfdiff
+	Лупа
+	XFCE_DIR/icons/MagnifyGlas.xpm
+	xmag
+	Debugger
+	XFCE_DIR/icons/BulletHole.xpm
+	xxgdb
+	GNU Emacs
+	XFCE_DIR/icons/Edit.xpm
+	emacs
+	Панел на GNOME
+	XFCE_DIR/icons/Gnome-panel.xpm
+	panel
+[Menu3]
+	X-Терминал
+	XFCE_DIR/icons/CheckMarkMonitor.xpm
+	xfterm
+	X-Редактор
+	XFCE_DIR/icons/Document.xpm
+	xedit
+	Vi
+	XFCE_DIR/icons/Keys.xpm
+	Vi в терминал
+[Menu4]
+	XFPager
+	XFCE_DIR/icons/RayTracedGear.xpm
+	Module xfpager
+	Настройка на мишката
+	XFCE_DIR/icons/Mouse.xpm
+	xfmouse -i
+	Настройка на звука
+	XFCE_DIR/icons/MicroPhonePro.xpm
+	xfsound -i
+	Декорация
+	XFCE_DIR/icons/MaelstromInFrame.xpm
+	xfbd -i
+	XFGnome
+	XFCE_DIR/icons/Gnome-logo.xpm
+	Module xfgnome
+	Gfx. Configuration
+	XFCE_DIR/icons/BWwidgets.xpm
+	imlib_config
+	Screensaver Opt.
+	XFCE_DIR/icons/KeysOnChain.xpm
+	xscreensaver-demo
+[Menu5]
+	Netscape браузър
+	XFCE_DIR/icons/Netscape3.xpm
+	netscape
+	Електронна поща
+	XFCE_DIR/icons/News.xpm
+	netscape -mail
+[Menu6]
+	Принтер
+	XFCE_DIR/icons/Printer.xpm
+	xfprint
+[Menu7]
+	AbiWord
+	XFCE_DIR/icons/Pen.xpm
+	abiword
+	Nedit
+	XFCE_DIR/icons/Book.xpm
+	nedit
+[Menu8]
+	Кошче за боклук
+	XFCE_DIR/icons/RecycleLogo.xpm
+	xftrash
+[Menu9]
+[Menu10]
+	Gimp
+	XFCE_DIR/icons/GIMP.xpm
+	gimp
+	XV
+	XFCE_DIR/icons/XV.xpm
+	xv
+	X-Paint
+	XFCE_DIR/icons/3dpaint.xpm
+	xpaint
+[Menu11]
+[Menu12]

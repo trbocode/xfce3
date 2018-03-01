@@ -1,0 +1,111 @@
+.\" SCCS ID: glob.1 12/10/2000
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+glob \- File globber for XFce
+.SH SYNOPSYS
+.B glob 
+[-r] [-v] [-d ddd] [-m mmm] [-f filter] [-s (+/-)size]
+[-t type] [-p perm] [grep options...] 
+.PP
+.TP 6
+.BI \-v 
+.br
+verbose
+.TP
+.BI \-V 
+.br
+Print version number information
+.TP
+.BI \-P 
+.br
+print process id
+.TP
+.BI \-f\ filter
+.br
+file filter (enclosed in quotes if regexp *,? or [] is used)
+.TP
+.BI \-r 
+.br
+recursive
+.TP
+.BI \-s\ \+kbytes
+.br
+Size greater than kbytes KBYTES
+.TP
+.BI \-s\ \-kbytes
+.br
+size less than kbytes KBYTES
+.TP
+.BI \-p\ perm
+.br
+perm is either suid | exe
+.TP
+.BI \-t\ type
+.br
+reg | dir | sym | sock | blk | chr | fifo (regular, directory, symlink, socket, blk_dev, 
+chr_dev, fifo)
+.TP
+.BI \-d\ ddd
+.br
+created or modified in the previous (int) dd days
+.TP
+.BI \-m\ mmm
+.br
+created or modified in the previous (int) mm months
+.TP
+.BI \-p\ perm
+.br
+perm is either suid | exe
+.TP
+.BI \-e\ string
+.br
+containing string (if *,? or [], use quotes)
+.TP
+.BI \-E\ regexp
+.br
+containing regexp: (use quotes).
+.TP
+.BI \-i 
+.br
+ignore case (for search string -c)
+.TP
+.BI \-y 
+.br
+same as -i (obsolete)
+.TP
+.BI \-L 
+.br
+print the  name  of each input file from which *no* 
+output would normally have been printed.
+.TP
+.BI \-c 
+.br
+only print a count of matching lines for each input file.
+.TP
+.BI \-w 
+.br
+Select  only  those  lines  containing matches that 
+form whole words. Word-constituent  characters  are 
+letters, digits, and the underscore.
+.TP
+.BI \-x 
+.br
+Select only those matches that  exactly  match  the whole line.
+.TP
+.BI \-Z 
+.br
+Output  a  zero  byte  (the  ASCII  NUL  character) 
+instead of the character that  normally  follows  a 
+file  name
+.PP
+.SH DESCRIPTION
+glob is a file globber for XFce, the Cholesterol Free Desktop Environment.
+.PP
+.SH REQUIREMENTS
+.B glob requires GNU grep 2.x or higher
+.SH SEE ALSO
+xfce, xfglob, xftree, xfwm, xfpager, xfsound, xfmouse, xfbd, xfclock
+.PP
+.SH AUTHOR
+Edscott Wilson Garcia
+

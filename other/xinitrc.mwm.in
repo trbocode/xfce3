@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# Start-up stuff from ~/Desktop/Autostart (as it seems to be the new standard)
+#
+# Some distro needs to allow even localhost to use the display
+# Uncomment this if you experience "Can't open display" when running 
+# programs from xfce. BEWARE this is considered as a vulnerability !
+#
+# xhost +$HOSTNAME
+#
+xsetroot -solid black -cursor_name watch
+
+# Unselect the following line to get a BIG mouse cursor in Xfce :
+# xset +fp "XFCE_DIR/cursors"
+
+# Set up additionnal fonts that ship with Xfce (Change id38121117)
+xset fp+ "XFCE_DIR/fonts"
+
+for i in `ls ${HOME}/Desktop/Autostart/`; do
+  if test -x $HOME/Desktop/Autostart/$i; then
+     $HOME/Desktop/Autostart/$i &
+  fi
+done
+#
+# Start the window manager 
+#
+mwm&
+# Start "xfbd" for backdrop management
+xfbd&
+# Start "xfmouse" for userdefined mouse settings
+xfmouse&
+# And at last, start "xfce"
+xfce
+xsetroot -solid black

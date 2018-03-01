@@ -1,0 +1,96 @@
+#!/bin/sh
+#
+#  gxfce
+#
+#  Copyright (C) 1999 Olivier Fourdan (fourdan@xfce.org)
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+#
+# xfce_install - set up XFce on a user account
+#
+#
+
+BKUP=$HOME/.xfce_bkup
+FILES="Xclients xinitrc xsession gtkrc"
+DATE=`date +%m%d%H%M%S`
+XFCE_CONF=XFCE_CONFDIR
+XFCE_DATADIR=XFCE_DIR
+
+# Check existance of $BKUP directory
+# and create it if it does not exist
+
+if [ ! -d $BKUP ]; then
+	mkdir $BKUP
+fi
+
+if [ ! -d $HOME/.xfce ]; then
+	mkdir $HOME/.xfce
+fi
+
+if [ ! -d $HOME/.xfce/trash ]; then
+	mkdir $HOME/.xfce/trash
+fi
+
+if [ ! -d $HOME/Desktop ]; then
+	mkdir $HOME/Desktop
+fi
+
+if [ ! -d $HOME/Desktop/Autostart ]; then
+	mkdir $HOME/Desktop/Autostart
+fi
+
+if [ ! -f $HOME/.xfce/xtree.reg ]; then
+	cp XFCE_CONFDIR/xtree.reg $HOME/.xfce/xtree.reg
+fi
+
+if [ -f $HOME/Desktop/Autostart/xfdefs.py ]; then
+	rm -f $HOME/Desktop/Autostart/xfdefs.py
+	echo An existing file $HOME/Desktop/Autostart/xfdefs.py has been deleted
+fi
+
+# Save previous version and install new one
+
+for i in $FILES; do
+	if [ -f $HOME/.$i ]; then
+		mv -f $HOME/.$i $BKUP/$i.$DATE 2>/dev/null
+		cp -f $BKUP/$i.$DATE $BKUP/.$i 2>/dev/null
+		echo File $HOME/.$i has been moved to $BKUP/.$i.$DATE
+	fi
+	if [ -f $XFCE_CONF/$i ]; then
+		cp -f XFCE_CONFDIR/$i $HOME/.$i 
+		chmod u+x $HOME/.$i
+		echo A new file $HOME/.$i has been created
+	fi
+done
+
+if [ -f $XFCE_CONF/xinitrc ]; then
+	cp -f XFCE_CONFDIR/xinitrc $HOME/.xfce/ 
+	chmod u+x $HOME/.xfce/xinitrc
+	echo A new file $HOME/.xfce/xinitrc has been created
+fi
+
+if [ -f $XFCE_CONF/taskbarrc ]; then
+	cp -f XFCE_CONFDIR/taskbarrc $HOME/.xfce/ 
+	echo A new file $HOME/.xfce/taskbarrc has been created
+fi
+
+if [ ! -f $HOME/.xfcolors ]; then
+	cp -f $XFCE_DATADIR/palettes/Default $HOME/.xfce/xfcolors
+	echo An new file $HOME/.xfce/xfcolors has been created
+fi
+
+echo Installation complete
+exit 0

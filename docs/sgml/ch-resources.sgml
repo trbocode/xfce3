@@ -1,0 +1,23 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="8" id="resources">
+
+<title>Other resources</title>
+
+<para>
+Here are some places you can look for more information. Also, some of the
+programs provide manpages.
+</para>
+
+<simplelist type="horiz" columns="2">
+  <member>The XFce web site : </member>
+  <member><ulink url="http://www.xfce.org">http://www.xfce.org</ulink></member>
+  <member>The Sourceforge site : </member>
+  <member><ulink url="http://sf.net/projects/xfce">http://sf.net/projects/xfce
+  </ulink></member>
+  <member>The mailing lists : </member>
+  <member><ulink url="http://www.xfce.org/subscribe.html">
+  http://www.xfce.org/subscribe.html</ulink></member>
+</simplelist>
+
+</chapter>

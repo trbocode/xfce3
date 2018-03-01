@@ -1,0 +1,319 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="4" id="wm">
+
+<title>Window Manager</title>
+
+<para>
+XFwm is the window manager that comes with XFce. It is fully integrated
+into the environment, providing a homogeneous interface with all XFce 
+applications. Moreover, XFwm is able to handle the most common window 
+hints shared by popular applications such as Motif, SUN Openwindows, KDE
+and GNOME applications.
+</para>
+
+<para>
+Most user options are handled through XFce setup and do not require any 
+script customization. However, if you want access to the full power of
+xfwm configuration you can read all about it in 
+<link linkend="advanced-wm">Part II. Advanced XFwm configuration</link>.
+</para>
+
+<para>
+Without any specific customization XFwm provides several builtin menus and
+functions.
+</para>
+
+<variablelist>
+  <varlistentry>
+    <term><emphasis>Main menu</emphasis></term>
+    <listitem><para>
+    The main menu can be obtained by clicking on the root window with
+    the left mouse button or by pressing [Alt+F2]. This menu provides
+    an access to the most common operations.
+    </para></listitem>
+  </varlistentry>
+     
+  <varlistentry>
+    <term><emphasis>Window menu</emphasis></term>
+    <listitem><para>
+    The window menu can be obtained by clicking on the root window with
+    the middle mouse button (or both left and right button, if you have
+    only 2 mouse buttons) or by pressing [Alt+F1]. This provides access
+    to functions acting on windows.
+    </para></listitem>
+  </varlistentry>
+     
+  <varlistentry>
+    <term><emphasis>Window list</emphasis></term>
+    <listitem><para>
+    The window list is obtained by clicking on the root window with the
+    right mouse button. It shows all running applications.
+    </para></listitem>
+  </varlistentry>
+</variablelist>
+
+<para>
+A number of default keyboard shortcuts and mouse bindings for xfwm are 
+defined. These can only be altered through editing the configuration file
+(see <link linkend="advanced-wm">Part II</link>).
+</para>
+
+<table frame="topbot" id="wm-shortcuts-table">
+<title>XFwm default keyboard shortcuts</title>
+
+<tgroup cols="2" align="left">
+
+<thead>
+<row>
+<entry>Key</entry>
+<entry>Action</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>Tab</keycap></keycombo>
+  </entry>
+  <entry>Switch application (Next window)</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>Tab</keycap></keycombo>
+  </entry>
+  <entry>Switch application (Previous window)</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>Tab</keycap></keycombo>
+  </entry>
+  <entry>Switch application (Previous window)</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Shift</keycap><keycap>Alt</keycap><keycap>arrow</keycap>
+    </keycombo>
+  </entry>
+  <entry>Move pointer (fast)</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>arrow</keycap>
+    </keycombo>
+  </entry>
+  <entry>Move pointer (slow)</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F1</keycap>
+    </keycombo>
+  </entry>
+  <entry>Open window menu</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F2</keycap>
+    </keycombo>
+  </entry>
+  <entry>Open main menu</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F3</keycap>
+    </keycombo>
+  </entry>
+  <entry>Lower window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F4</keycap>
+    </keycombo>
+  </entry>
+  <entry>Close window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F5</keycap>
+    </keycombo>
+  </entry>
+  <entry>Next window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F7</keycap>
+    </keycombo>
+  </entry>
+  <entry>Move window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F8</keycap>
+    </keycombo>
+  </entry>
+  <entry>Resize window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F9</keycap>
+    </keycombo>
+  </entry>
+  <entry>Iconfify window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Alt</keycap><keycap>F10</keycap>
+    </keycombo>
+  </entry>
+  <entry>Maximize window</entry>
+</row>
+<row>
+  <entry>
+    <keycombo><keycap>Ctrl</keycap><keycap>F1 to F10</keycap>
+    </keycombo>
+  </entry>
+  <entry>Switch to desktop 1 to 10</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para> </para>
+
+<figure>
+  <title>Title bar buttons</title>
+  <screenshot>
+    <screeninfo>buttons screenshot</screeninfo>
+    <graphic fileref="../images/buttons">
+  </screenshot>
+</figure>
+
+<para>
+By default xfwm has 6 buttons on the title bar; three on the left and three
+on the right. They are numbered from outside to inside, alternating left and 
+right. This means button 1 is the first from the left, button 2 the first 
+from the right, button 3 the second from the left, etc.
+</para>
+
+<table frame="topbot" id="wm-bindings-table">
+<title>XFwm default mouse bindings</title>
+
+<tgroup cols="4" align="left">
+
+<thead>
+<row>
+<entry>Mouse button</entry>
+<entry>Click</entry>
+<entry>Context</entry>
+<entry>Action</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single</entry>
+  <entry>Button 1</entry>
+  <entry>Open window operations menu</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Double</entry>
+  <entry>Button 1</entry>
+  <entry>Close window</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single</entry>
+  <entry>Button 3</entry>
+  <entry>(Un)Stick window</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single</entry>
+  <entry>Button 5</entry>
+  <entry>(UnShade) window</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single</entry>
+  <entry>Button 6</entry>
+  <entry>Iconify window</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single</entry>
+  <entry>Button 4</entry>
+  <entry>(Un)Maximize window</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single</entry>
+  <entry>Button 2</entry>
+  <entry>Close window</entry>
+</row>
+<row>
+  <entry>Left or Right</entry>
+  <entry>Single+Shift key</entry>
+  <entry>Button 2</entry>
+  <entry>Destroy window</entry>
+</row>
+<row>
+  <entry>Left</entry>
+  <entry>Single</entry>
+  <entry>Title bar</entry>
+  <entry>Raise/move window</entry>
+</row>
+<row>
+  <entry>Right</entry>
+  <entry>Single</entry>
+  <entry>Title bar</entry>
+  <entry>(Un)Shade window</entry>
+</row>
+<row>
+  <entry>Middle</entry>
+  <entry>Single</entry>
+  <entry>Title bar</entry>
+  <entry>Raise/Lower window</entry>
+</row>
+<row>
+  <entry>Left</entry>
+  <entry>Double</entry>
+  <entry>Title bar</entry>
+  <entry>(Un)Maximize window</entry>
+</row>
+<row>
+  <entry>Left</entry>
+  <entry>Single</entry>
+  <entry>Root window</entry>
+  <entry>Open main menu</entry>
+</row>
+<row>
+  <entry>Middle</entry>
+  <entry>Single</entry>
+  <entry>Root window</entry>
+  <entry>Open window operations menu</entry>
+</row>
+<row>
+  <entry>Right</entry>
+  <entry>Single</entry>
+  <entry>Root window</entry>
+  <entry>Display list of running applications</entry>
+</row>
+<row>
+  <entry>Middle</entry>
+  <entry>Single</entry>
+  <entry>Window border</entry>
+  <entry>Move window</entry>
+</row>
+<row>
+  <entry>Right</entry>
+  <entry>Single + Shift key</entry>
+  <entry>Window border</entry>
+  <entry>Move window</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</chapter>

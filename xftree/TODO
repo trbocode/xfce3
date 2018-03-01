@@ -1,0 +1,43 @@
+- allow for multiple programs to be registered for a single filetype 
+- incorporate xfglob results as main level tree entries (or extend
+  xfglob to use stuff from xftree, this would be xfglob stuff then)
+- In xtree_tar.c, when determining "mode", do a search of all open xfree
+  windows until the extracted file is found (tar_extract()) (what ?)
+- Toolbar icon + menu elements for "print", and a rootlevel tree (on 
+  expanding it you would get a queue list, with options for deleting
+  entries, etc.)
+- Create a linked list of "cut paths", "copied paths" so as to change
+  the icons if the paths happen to be in the way of an update_tree. also,
+  the changing of the X pasteboard should cause a update_tree (because of
+  the icon story).i.e., changing the Xpastboard caused an update of the
+  linked lists cut/copy, which in turn, when changed, causes an update_tree
+  event. (what ?) 
+- gtk-2
+
+Maybe :
+- Enable .deb expansion. (I need a debian box to do the testing first).
+- open a "goto desktop", to open the ROX desktop. 
+- use hostnames in dnd like rox?
+- allow rcp or rsync --rsh=rsh?
+- incorporate root level entries for roxy pinboards? a "goto desktop", 
+  to open the ROX pinboards?
+- a recursive chown, chmod, chgrp for setting properties?
+- Toolbar icon + menu elements for "print"
+
+xftree2:
+Use nicer icons, like the small ones from nautilus.
+examine the way other file managers deal with problem directories (/dev, nfs)
+Modulariztion with xfsamba and xfglob.
+Top level tree entries: smb, local, glob.
+Desireable toplevel entries: rsync, rcp/scp (fish), nfs, smbfs
+Plus a rpm/pkg module (also desireable for deb)
+good details:
+  -location/goto box with dynamic label (like nautilus)
+  -icon view is good for dnd directory selection (you can have a tabulated window for examining the interior of directories a-la-xftree. Up to 3 at a time).
+  examine the use of /usr/share/nautilus/filesystem_attributes.xml.
+ 
+
+
+****************************************************************
+****************************************************************
+

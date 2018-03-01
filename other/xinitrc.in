@@ -1,0 +1,48 @@
+#!/bin/sh
+#
+# xinitrc file for XFce 3 startxfce script
+
+# Some distro needs to allow even localhost to use the display
+# Uncomment this if you experience "Can't open display" when running 
+# programs from xfce. BEWARE this is considered as a vulnerability !
+#
+# xhost +$HOSTNAME
+#
+xsetroot -solid black -cursor_name watch
+
+# Unselect the following line to get a BIG mouse cursor in Xfce :
+# xset +fp "XFCE_DIR/cursors"
+
+# Set up additionnal fonts that ship with Xfce (Change id38121117)
+xset fp+ "XFCE_DIR/fonts"
+
+# Start-up stuff from ~/Desktop/Autostart directory, if it exists
+# (as it seems to be the new standard)
+if [ -d "$HOME/Desktop/Autostart" ]; then
+  for i in `ls -1 ${HOME}/Desktop/Autostart/ 2>/dev/null`; do
+    if [ -x $HOME/Desktop/Autostart/$i ]; then
+      $HOME/Desktop/Autostart/$i &
+    fi
+  done
+fi
+
+# Uncomment this if you have xmodmap loading additional keycodes.
+# set the XKEYS variable to the correct file
+
+# XKEYS=/etc/X11/xinit/.Xmodmap
+# if [ -f $XKEYS ]; then
+#   xmodmap $XKEYS
+# fi  
+
+# Uncomment this if you run gkrellm. See http://www.gkrellm.net for 
+# more info. It will launch gkrellm if it's not already running
+# if [ -z $(grep gkrellm ${HOME}/.xfce/xfwm-session) ]; then
+# 	exec `which gkrellm` &
+# fi
+
+# Launch xscreensaver (if available)
+xscreensaver -no-splash &
+
+# Finally, launch XFce window manager
+exec xfwm
+xsetroot -solid black

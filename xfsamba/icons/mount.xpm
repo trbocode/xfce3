@@ -1,0 +1,29 @@
+/* XPM */
+static char * mount_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"16 16 7 1",
+/* colors */
+" 	c None",
+".	c #008000",
+"X	c green",
+"o	c black",
+"O	c white",
+"+	c darkgray",
+"@	c grey50",
+/* pixels */
+"             XX.",
+"            XX. ",
+"           XX.  ",
+"          XX.   ",
+"  XX.    XX.    ",
+"   XX.  XX.     ",
+"    XX.XX.      ",
+"     XXX.       ",
+" oooooooooooooo ",
+"oOOOOOOOOOOOO@@o",
+"oO+++++++++XX@@o",
+"oO+++++++++++@@o",
+"oOoooooooooo+@@o",
+"oOOOOOOOOOOO+@@o",
+"o+@@@@@@@@@@@@o@",
+" ooooooooooooo@ "};

@@ -1,0 +1,16 @@
+[Coords]
+	64
+	584
+	343
+	148
+[Colors]
+	-1 -1 -1
+	-1 -1 -1
+	*
+[Options]
+	DisplayCalendar
+	DisplayMenuBar
+	AnalogClock
+	HideSeconds
+	HideAMPM
+	HideMilitary

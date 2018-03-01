@@ -1,0 +1,105 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="7" id="install">
+
+<title>Compiling and installing xfce</title>
+
+<para>
+XFce uses GNU autoconf and GNU automake to generate the makefiles. As a 
+result, configuration can be performed as simply as typing 
+<command>./configure</command> in the xfce source directory !
+</para>
+
+<para>
+Typing <command>./configure --help</command> will give a list of available 
+options.
+</para>
+
+<para>
+Once the configuration is over, run <command>make</command> and 
+<command>make install</command>. On Linux systems, you might want to reduce
+the size of executables by doing a <command>make install-strip</command>.
+This will discard all symbols from the program files (for example, xfce is
+10 times smaller without the symbols).
+</para>
+
+<para></para>
+ 
+<para>
+Three convenient scripts are provided for easy installation/configuration 
+of XFce.
+</para>
+
+<variablelist>
+  <varlistentry>
+    <term>
+    <emphasis>xfce_setup</emphasis>
+    </term>
+    <listitem><para>
+    Run xfce_setup to set up replacement files in user's home
+    directory. These files will fire up xfwm and xfce every time the
+    user starts an X session (through startx or through xdm).</para>
+    <para>
+    The existing configurations files are saved in a hidden directory
+    (<filename role="directory">$HOME/.xfce_bckp</filename>). 
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>
+    <emphasis>xfce_remove</emphasis>
+    </term>
+    <listitem><para>
+    Afterwards, one can use xfce_remove to restore the previous configuration 
+    files.
+    </para></listitem>
+  </varlistentry>
+  
+  <varlistentry>
+    <term>
+    <emphasis>xfce_upgrade</emphasis>
+    </term>
+    <listitem><para>
+    To upgrade from an existing xfce installation, type xfce_upgrade.
+    This will adjust the setup files to any changes that may have
+    occurred between the two releases.
+    </para></listitem>
+  </varlistentry>
+</variablelist>
+     
+<para></para>
+ 
+<para>
+The directory specified at configuration time for the data can be overridden 
+afterwards by setting the environment variable <envar>XFCE_DATA</envar> to 
+another directory.
+</para>
+
+<programlisting>
+<prompt> bash$ </prompt><command>export</command> <envar>XFCE_DATA</envar
+>=<replaceable>/usr/local/share</replaceable>
+</programlisting>
+
+<programlisting>
+<prompt> csh$ </prompt><command>setenv</command> <envar>XFCE_DATA</envar
+> <replaceable>/usr/local/share</replaceable>
+</programlisting>
+
+<para></para>
+ 
+<para>
+Since XFce supports Native Language Supports (NLS), make sure the environment 
+variable <envar>LANG</envar> is correctly set for your country.
+</para>
+
+<programlisting>
+<prompt> bash$ </prompt><command>export</command> <envar>LANG</envar
+>=<replaceable>"fr"</replaceable>
+</programlisting>
+
+<programlisting>
+<prompt> csh$ </prompt><command>setenv</command> <envar>LANG</envar
+> <replaceable>"fr"</replaceable>
+</programlisting>
+     
+</chapter>

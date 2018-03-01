@@ -1,0 +1,23 @@
+/* XPM */
+static char * page_xpm[] = {
+"16 16 4 1",
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c #808080",
+"                ",
+"  ........      ",
+"  .XXXXX.o.     ",
+"  .XXXXX.Xo.    ",
+"  .XXXXX.XXo.   ",
+"  .XXXXX.....o  ",
+"  .XXXXXXooo.o  ",
+"  .XXXXXXXXX.o  ",
+"  .XXXXXXXXX.o  ",
+"  .XXXXXXXXX.o  ",
+"  .XXXXXXXXX.o  ",
+"  .XXXXXXXXX.o  ",
+"  .XXXXXXXXX.o  ",
+"  ...........o  ",
+"   ooooooooooo  ",
+"                "};

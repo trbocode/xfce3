@@ -1,0 +1,54 @@
+<!-- DOCTYPE part PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<part label="II" id="advanced-wm">
+
+<title>Advanced XFwm configuration</title>
+
+<partintro>
+
+<para>
+If you want to customize xfwm behaviour beyond what is possible in the
+setup dialog, or if for some reason you run xfwm without the panel (put 
+the command <command>xfwm -noxfce</command> in your 
+<filename>$HOME/.xinitrc</filename> file if you want this), you have to 
+read this part of the book. It involves editing a text configuration file
+in the good old unix tradition.
+</para>
+
+<para>
+The first step to customize your xfwm configuration is to copy the
+sample configuration file to the your 
+<filename role="directory">$HOME/.xfce</filename> directory. The
+location of this file depends on the compilation options. When compiling
+from source <filename role="directory">/usr/local/etc/xfce</filename> is
+the default. For the binary packages this file can be found in 
+<filename role="directory">/etc/X11/xfce</filename>.
+</para>
+
+<programlisting>
+<prompt> $ </prompt><command>cp</command> <replaceable
+>/etc/X11/xfce/xfwmrc</replaceable> <filename role="directory"
+>$HOME/.xfce</filename>
+</programlisting>
+
+<para>
+The configuration file contains commands for xfwm. The configuration 
+system is very flexible and has many options, but as a consequence it can 
+be rather complex.
+</para>
+
+</partintro>
+
+&ch-wm-general;
+&ch-wm-appearance;
+&ch-wm-management;
+&ch-wm-menus;
+&ch-wm-commands;
+&ch-wm-bindings;
+&ch-wm-style;
+&ch-wm-xresources;
+&ch-wm-defaults;
+&ch-wm-examples;
+
+</part>
+

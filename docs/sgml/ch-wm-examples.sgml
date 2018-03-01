@@ -1,0 +1,109 @@
+<!-- DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<chapter label="18" id="adv-wm-examples">
+
+<title>Examples</title>
+
+<para>
+Two examples of xfwm configuration will be presented: The addition of a new
+menu to the default user menu and the removal of all default keyboard 
+shortcuts.
+</para>
+
+<sect1 id="wm-examples-1">
+
+<title>Adding items to the user menu</title>
+
+<para>
+If you wish to add new entries to the existing user menu, you can add 
+something like the following lines to your 
+<filename>$HOME/.xfce/xfwmrc</filename> file.
+</para>
+
+<programlisting>
+ # Adding a menu to the default user menu :
+ # (This is just a sample, modify it to fit your need)
+ #
+ AddToMenu "my_menu"
+ + "&amp;Gnome Terminal" Exec gnome-terminal
+ + "" Nop
+ + "&amp;The GIMP" Exec gimp
+ #
+ # Menu "user_menu" is the name of the default user menu
+ #
+ AddToMenu "user_menu"
+ + "&amp;My menu" popup "my_menu"
+</programlisting>
+
+<para>
+Obviously, this is just an example. The preferred way to customize the user
+menu is by using a <filename>$HOME/.xfce/xfwm.user_menu</filename> file. 
+This is always read by xfwm. The menu editor xfumed, which can be started 
+from the default "User Menu", edits this file. The main root menu is named
+"__builtin_root_menu__".
+</para>
+
+</sect1>
+
+<sect1 id="wm-examples-2">
+
+<title>Removing existing keyboard shortcuts</title>
+
+<para>
+Some applications require specific keyboard shortcuts, that can interfere
+with xfwm shortcuts. To remove the default existing keyboard shortcuts 
+defined in xfwm, add the following lines to your
+<filename>$HOME/.xfce/xfwmrc</filename> :
+</para>
+
+<programlisting>
+ # Uncomment the following if you want tot remove default keyboard
+ shortcuts
+ # (Some applications require this, as they use the same shortcuts)
+ Key Tab A M -
+ Key Escape A S -
+ Key Escape A C -
+ Key Left A SC -
+ Key Right A SC -
+ Key Up A SC -
+ Key Down A SC -
+ Key Left A SM -
+ Key Right A SM -
+ Key Up A SM -
+ Key Down A SM -
+ Key F1 A M -
+ Key F2 A M -
+ Key F3 A M -
+ Key F4 A M -
+ Key F5 A M -
+ Key F6 A M -
+ Key F7 A M -
+ Key F8 A M -
+ Key F9 A M -
+ Key F10 A M -
+ Key F11 A M -
+ Key F1 A C -
+ Key F2 A C -
+ Key F3 A C -
+ Key F4 A C -
+ Key F5 A C -
+ Key F6 A C -
+ Key F7 A C -
+ Key F8 A C -
+ Key F9 A C -
+ Key F10 A C -
+ Key L5 IW N -
+ Key L5 IW S -
+ Key L5 IW C -
+ Key L7 IW A -
+</programlisting>                                    
+
+<note>
+  <title>Note:</title>
+  
+  <para>L5 and L7 are keys on SUN keyboards.</para>
+</note>
+
+</sect1>
+
+</chapter>

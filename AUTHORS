@@ -1,0 +1,67 @@
+- xfce, xfclock, xfbd, xfmouse & xfsound are written by :
+  Olivier Fourdan (fourdan@xfce.org)
+
+- xftree is based on xtree (C) Rasca Gmelch :
+  Rasca Gmelch <thron@gmx.de>
+
+- xfglob and xfdiff are contributed by :
+  Edscott Wilson Garcia <edscott@imp.mx>
+  
+- xfmenu (GNOME and KDE menu loader) is contributed by :
+  Jasper B. Huijsmans <J.B.Huijsmans@chem.rug.nl>
+
+- xfbdmgr (backdrop list manager) is from :
+  Alex Lambert <alex@penwing.uklinux.net>
+
+- xfwm and xfpager are originally based on fvwm and fvwm2 from :
+  Robert Nation
+  Charles Hines
+
+- xfgnome is based on Gnome module for Afterstep by :
+  Rafal Wierzbicki <rafal@mcss.mcmaster.ca>
+
+- xfce theme engine is based on original GTK+ themes, Notif theme 
+  (by Owen Taylor and The Rasterman) and Notif2 theme by Roberto 
+  Machorro.
+
+Patches contributed by (in no special order)
+
+- Guido Draheim <guidod@gmx.de>
+- <anubis@dotd.mudservices.com>
+- Adam Sampson <azz@gnu.org>
+- Albert Chin-A-Young <china@thewrittenword.com>
+- Yamahata Kenichiro <mogutan@din.or.jp>
+- Beau Kuiper <ekuiperba@cc.curtin.edu.au>
+- Joakim Andreasson <karanne@flashback.net>
+- Francois Petitjean <francois.petitjean@bureauveritas.com>
+- Khadiyd Idris <khadx@francemel.com>
+- Daniel McSorley <mcsorley@cis.ohio-state.edu>
+- Jason Litowitz <jlitowitz@visto.com>
+- Lorenz Minder <lminder@gmx.net>
+- Ruediger <ruediger@gmx.net>
+- J.B. Huijsmans <j.b.huijsmams@chem.rug.nl>
+- M. Roxo da Motta <roxo@conectiva.com.br>
+- Ingo "LaSombra" Hoffmann <lasombra@terra.com.br>
+- Petr Blaha <pblaha@suse.cz>
+- Chuck Mead <csm@moongroup.com>
+- Giancarlo Rosso <gianca.rosso@katamail.com>
+- David Weber <david_weber@gmx.de>
+- Peeter Vois <Peeter.Vois@mail.ee>
+- Martin Pekar <cortex@nextra.sk>
+- Ken Sodemann <stufflehead@bigfoot.com>
+- Joerg Koenig <J.C.koenig@t-online.de>
+- Victor Meghesan <meghesan@usa.net>
+- Damien <damien@mandrakesoft.com>
+- Joakim Andreasson <karanne@flashback.net>
+- Josip Rodin <joy@cibalia.gkvk.hr>
+- Daniel Statescu <Daniel.Statescu@bigfoot.com>
+- Myckel Habets <myckel@superweb.nl>
+- Roy Culley <tgdcuro1@gd2.swissptt.ch>
+- Ramón Flores d'as Seixas <fa2ramon@usc.es>
+- Thomas Jaeger <jaeger@mathematik.tu-darmstadt.de>
+- Carlo Corridore <Carlo@alenianola.finmeccanica.it>
+- Rui Fernando A. Silva, <ruifs@teleweb.pt>
+- Harm ter Veer <terveer@subdimension.com>
+- Stephane Paltani <spaltani@cfa.harvard.edu>
+
+

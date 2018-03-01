@@ -1,0 +1,37 @@
+#!/bin/bash
+
+rm -f /tmp/Xrootenv.0
+rm -f /tmp/fvwmrc*
+
+if [ -f $HOME/.xinitrc ]; then
+	env > /tmp/Xrootenv.0
+	/bin/sh $HOME/.xinitrc
+	exit
+fi
+
+if [ -f $HOME/.fvwm2rc.m4 ]; then
+	RCFILE=$HOME/.fvwm2rc.m4
+else
+	RCFILE=/etc/X11/TheNextLevel/.fvwm2rc.m4
+fi
+
+if [ ! -z $(type -path fvwm95-2) ]; then
+	env > /tmp/Xrootenv.0
+	exec fvwm95-2 -f "FvwmM4 -debug $RCFILE" -display :0 \
+		> $HOME/.FVWM95-errors 2>&1
+fi
+
+if [ ! -z $(type -path fvwm2) ]; then
+	env > /tmp/Xrootenv.0
+	exec fvwm2 -f "FvwmM4 -debug $RCFILE" -display :0 \
+		> $HOME/.FVWM2-errors 2>&1
+fi
+
+if [ ! -z $(type -path fvwm) ]; then
+	exec fvwm
+fi
+
+# last resort
+
+xterm &
+exec twm

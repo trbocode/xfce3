@@ -1,0 +1,87 @@
+Added Random Backdrop Facility
+==============================
+
+structure of .xfbdrc
+--------------------
+
+Second line is now a field containing 0 for a single image or 1 for a list file
+
+Added a List File structure
+---------------------------
+
+First line indicates how many files are in list. Individual images follow.
+
+in xfbd.h
+---------
+
+added a gtk_widget, random_backdrop - 	this determines whether the file chosen
+					is a list (true) or an image (false) 
+added a string, filename	    -	this is the ACTUAL filename in the rc 
+					file.
+added a char iList		    -	'0' File name is an image
+					'1' File name is a list
+changed prototype for readstr()	    -	added a char* to the prototype to allow
+					the random field to be read in
+changed prototype for writestr()    -	added a char* to the prototype to allow
+					the random field to be written out
+added prototype for select_backdrp()-	assigns a file from a list file (first
+					argument) to second argument
+
+in xfbd.c
+---------
+
+readstr()
+-+-+-+-+-
+Added code to read in second line (List or simgle image)
+
+writestr()
+-+-+-+-+-+
+Added code to write second line (list or single image)
+
+create_xfbd()
+-+-+-+-+-+-+-
+Added code to set up the random_backdrop checkbutton.
+
+select_backdrp()
+-+-+-+-+-+-+-+-+
+Opens list file
+Reads in number of files in list
+checks that the number of files is more than 0 
+generates a random number
+reads in filenames till gets to randomly selected one
+finish the strings properly
+if there was a problem opening file, set both filename and backdrp to NONAME
+
+main()
+-+-+-+
+initialise iList
+Randomize Timer
+initialize filename
+changed readstr() line to read into filename and iList
+added code to select backdrop if necessary (two places)
+
+xfbd_cb.h
+---------
+No changes
+
+xfbd_cb.c
+---------
+
+apply_cb()
+-+-+-+-+-+
+Added code to select a backdrop from the list if necessary
+
+cancel_cb()
+-+-+-+-+-+-
+Added code to free up filename
+
+ok_cb()
+-+-+-+-
+Added code to select backdrop from list if necessary
+Added code to free up filename
+
+clear_cb()
+-+-+-+-+-+
+Added Code to unset the random_backdrop checkbutton
+Added code to set filename to NONAME
+

@@ -1,0 +1,23 @@
+/* XPM */
+static char * appinfo_xpm[] = {
+"16 16 4 1",
+" 	c none",
+".	c #FFFFFFFFFFFF",
+"X	c #595959595959",
+"o	c #808080808080",
+"     .....      ",
+"   ..XXXXX..    ",
+"  .XXX...XXX.   ",
+" .XXXX...XXXX.  ",
+" .XXXXXXXXXXX.  ",
+".XXXX....XXXXX. ",
+".XXXXX...XXXXX.X",
+".XXXXX...XXXXX.X",
+".XXXXX...XXXXX.X",
+" .XXXX...XXXX.XX",
+" .XXX.....XXX.Xo",
+"  .XXXXXXXXX.Xo ",
+"   ..XXXXX..Xo  ",
+"    X.....XXo   ",
+"     XXXXXXo    ",
+"      ooooo     "};

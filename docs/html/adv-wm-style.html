@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Appearance of other application</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="Advanced XFwm configuration"
+HREF="advanced-wm.html"><LINK
+REL="PREVIOUS"
+TITLE="Keyboard shortcuts and mouse bindings"
+HREF="adv-wm-bindings.html"><LINK
+REL="NEXT"
+TITLE="X Resources"
+HREF="adv-wm-xresources.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="adv-wm-bindings.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="adv-wm-xresources.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="ADV-WM-STYLE"
+>Appearance of other application</A
+></H1
+><P
+>With the <B
+CLASS="COMMAND"
+>Style</B
+> command it is possible to set some properties for 
+applications. The general form of the command is:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+><B
+CLASS="COMMAND"
+>Style</B
+> "Pattern" option1 [,option2 [,...]]</PRE
+></TD
+></TR
+></TABLE
+><P
+>"Pattern" is matched to the name of an application (the name that will be
+shown in the title bar). For example:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Style "xeyes" Sticky, NoBorder
+Style "Moz*" Icon "/usr/share/xfce/icons/NetscapeLogo.xpm"</PRE
+></TD
+></TR
+></TABLE
+><P
+>The available options for the Style command are :</P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="WM-CONF-STYLE"
+>Table 15-1. Options for the style command</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Option</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Description</TH
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Authorize_Translate</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Some applications ask for a specific location.
+  This should be honored unless you're using Xinerama and the
+  application that asks for a positionning is not Xinerama aware and
+  asks for an arbitrary location. For this kind of application you can
+  use the flag "Authorize_Translate" that tells xfwm to translate the
+  coordinates to the current screen even if the application asked for a
+  specific location</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>BorderWidth &#60;n&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Set borderwidth</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>CirculateSkipIcon</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Skip iconified application when switching focus</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>CirculateSkip</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Skip application when switching focus</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>CirculateHitIcon</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Don't skip iconified application when switching focus</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Icon &#60;f&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Set the icon to use for an application</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Layer &#60;n&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Set layer to start application in. Layer can be between 0
+   and 12.</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>NoBorder</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Don't show border</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>NoIcon</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Don't show icon</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>NoTitle</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Don't show title bar</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>StickyIcon</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Show icon on all workspaces</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>StartIconic</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Start application iconified</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>StaysOnBottom</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Keep application below all other applications. This is
+   the same as setting the layer to 0.</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>StaysOnTop</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Keep application above all other applications. This is the
+   same as setting the layer to 12.</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sticky</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Show window on all workspaces</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>StartsOnDesk &#60;n&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Starts application on specified desk</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Title</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Change the title of the application</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>WindowListSkip</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Don't show application in window list</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>WindowListHit</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Show application in window list</TD
+></TR
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="adv-wm-bindings.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="adv-wm-xresources.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Keyboard shortcuts and mouse bindings</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="advanced-wm.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>X Resources</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

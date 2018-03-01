@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# This script is part of XFce
+# "ossdsp" option submitted by "Sami Tikka" <sami.tikka@kolumbus.fi>
+# exec sox "$1" -t ossdsp /dev/dsp
+# Use "play" that ships with sox to play the file since it can deal
+# with different hardware types....
+exec play "$1"

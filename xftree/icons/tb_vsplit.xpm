@@ -1,0 +1,29 @@
+/* XPM */
+static char * tb_vsplit_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"18 18 5 1",
+/* colors */
+" 	c none",
+".	c #DCDEE5",
+"X	c #000000",
+"o	c #FFFFFF",
+"O	c #5D6069",
+/* pixels */
+"                  ",
+" .XXXXXXXXXXXXXX  ",
+" .X....oXO....oX  ",
+" .X..o.oXO..o.oXO ",
+" .X.oo.oXO.oo.oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .X....oXO....oXO ",
+" .XoooooXooooooXO ",
+" .XXXXXXXXXXXXXXO ",
+"    OOOOOOOOOOOOO ",
+"                  "};

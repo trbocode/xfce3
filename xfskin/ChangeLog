@@ -1,0 +1,20 @@
+0.2.3
+- added checkbutton to enable/disable window-engine (border style)
+0.2.2
+- added support for window-engine (win-engine variable)
+  (backward compatible)
+0.2.1
+- that restartXFCE keeps chasing me.... added catch, to report user
+0.2.0
+- added menubar with extra file - add option
+- replaced the info button -> refresh button
+  (info now in the menu)
+- fix for restartXFCE (freeBSD / Linux / Solaris)
+- version check: need tcl >= 8
+0.1.2
+- fix for xfskin if no xfsoundrc is found
+0.1.1
+- fix for restartXFCE (solaris)
+- include sound pathname in quotes when containing spaces
+0.1
+- initial version.

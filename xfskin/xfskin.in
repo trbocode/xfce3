@@ -1,0 +1,1119 @@
+#!/bin/sh
+# \
+exec wish "$0" "$@"
+#-- version check
+if {$tcl_version < 8} {
+  label .label -text "you need tcl version 8.x to run xfskin"
+  button .ok -text OK -command "exit" -border 1
+  pack .label -side top -pady 5
+  pack .ok -side top -pady 5
+  bind . <Return> "exit"
+} else {
+#------------------------------------------------------------------------------
+set skin_root	[file join $env(HOME) "xfskins"]
+
+#--change from $HOME/xfce - $HOME depending XFCE version
+if {([file exists [file join $env(HOME) ".xfce"]])&&([file isdirectory [file join $env(HOME) ".xfce"]])} {
+  set conf_dir	[file join $env(HOME) ".xfce"]
+  set bdrc	"xfbdrc"
+  set colrc	"xfcolors"
+  set sndrc	"xfsoundrc"
+  set xfcerc	"xfce3rc"
+} else {
+  set conf_dir	$env(HOME)
+  set bdrc	".xfbdrc"
+  set colrc	".xfcolors"
+  set sndrc	".xfsoundrc"
+  set xfcerc	".xfce3rc"
+
+}
+set xfce_share "XFCE_DIR"
+#------------------------------------------------------------------------------
+#--gui--
+set version		"0.2.3"
+wm title . 		"xfskin ($version)"
+wm iconname .		"xfskin ($version)"
+set fixedfont		"-*-lucidatypewriter-medium-r-normal-*-12-*-*-*-m-*-*-*"
+set sel_color		#306090
+#set sel_color		SeaGreen
+set exitinst		1
+set opback		1
+set opengine		1
+set opfonts		1
+set opicons		1
+set oppalet		1
+set opsounds		1
+#------------------------------------------------------------------------------
+#--enable testing of themes
+set tst_skin		0
+set tst_conf		1
+#------------------------------------------------------------------------------
+#--settings--
+set backdrop		""
+set style		""
+set clock(0)		""
+set fonts(0)		""
+set gradient(0)		""
+set winengine		""
+set icons(0)		""
+set palet(0)		""
+set sounds(0)		""
+set author(0)		""
+set skin_name		""
+#------------------------------------------------------------------------------
+#--conf-vars--
+set pal_conf(1)		"mouse=";	set pal_conf(2)		"statusbar="
+set pal_conf(3)		"clock=";	set pal_conf(4)		"inactive-left="
+set pal_conf(5)		"root=";	set pal_conf(6)		"active-right="
+set pal_conf(7)		"active-left=";	set pal_conf(8)		"panel="
+set pal_conf(9)		"engine=";	set pal_conf(10)	"font="
+set pal_conf(11)	"texture="
+#--
+set ico_conf(1)		"files-icon=";	set ico_conf(2)		"utils-icon="
+set ico_conf(3)		"term-icon=";	set ico_conf(4)		"config-icon="
+set ico_conf(5)		"browse-icon=";	set ico_conf(6)		"print-icon="
+set ico_conf(7)		"help-icon=";	set ico_conf(8)		"trash-icon="
+set ico_conf(9)		"sched-icon=";	set ico_conf(10)	"graph-icon="
+set ico_conf(11)	"games-icon=";	set ico_conf(12)	"net-icon="
+set ico_conf(13)	"edit-icon="
+#--
+set def_icon(1)		"0";		set def_icon(2)		"5"
+set def_icon(3)		"1";		set def_icon(4)		"4"
+set def_icon(5)		"2";		set def_icon(6)		"3"
+set def_icon(7)		"6";		set def_icon(8)		"12"
+set def_icon(9)		"8";		set def_icon(10)	"7"
+set def_icon(11)	"10";		set def_icon(12)	"11"
+set def_icon(13)	"7"
+#--
+set snd_conf(1)		"newdesk=";	set snd_conf(2)		"addwin="
+set snd_conf(3)		"raisewin=";	set snd_conf(4)		"lowerwin="
+set snd_conf(5)		"configwin=";	set snd_conf(6)		"focuschange="
+set snd_conf(7)		"destroywin=";	set snd_conf(8)		"iconify="
+set snd_conf(9)		"de-iconify=";	set snd_conf(10)	"shade="
+set snd_conf(11)	"un-shade=";	set snd_conf(12)	"maximize="
+set snd_conf(13)	"de-maximize=";	set snd_conf(14)	"startup="
+set snd_conf(15)	"shutdown=";	set snd_conf(16)	"unknown="
+#--
+#------------------------------------------------------------------------------
+
+proc initvals {} {
+  .inst.val.back select
+  .inst.val.engine select  
+  .inst.val.fonts select
+  .inst.val.icons select
+  .inst.val.palette select
+  .inst.val.sounds select
+  .setup.exit select 
+  get_skin_dir
+}
+#initvals
+
+proc get_skin_dir {} {
+global skin_root
+  if {[file exists [file join $skin_root]]} {
+    .inst.skins.list delete 0 end
+    foreach i [lsort [glob -nocomplain [file join $skin_root *]]] {
+    if [file isdirectory $i] { 
+	.inst.skins.list insert end [file tail $i]
+    }	
+    }
+    .inst.skins.list selection set active
+  } else {
+    if {![file exists [file join $skin_root]]} {
+      file mkdir $skin_root
+      txt_screen "welcome to xfskin" 10
+      .scrn.txt.text insert end \
+"welcome to xfskin.
+------------------
+A directory $skin_root is created to store your XFCE skins.
+Please extract your downloaded themes here, themes you create
+will also be stored here.
+
+enjoy!
+"
+    }  
+  }  
+}
+#get_skin_dir
+
+proc get_xfwm_id {} {
+  set sysname [string tolower [exec uname]]
+  switch $sysname \
+  "sunos" { set uid [exec sh -c "id |cut -f 2 -d =|cut -f 1 -d \\("]
+            set pid [string trim [ exec ps -U $uid -o pid,comm | grep xfwm ]]} \
+  "linux" { set pid [string trim [ exec ps x -opid,command | egrep {(xfwm$)|(xfwm )} | grep -v grep ]]} \
+  "freebsd" { set pid [string trim [ exec ps x -opid,command | egrep {(xfwm$)|(xfwm )} | grep -v grep ]]} \
+  default { set pid [string trim [ exec ps x -opid,command | egrep {(xfwm$)|(xfwm )} | grep -v grep ]]}
+  return [string range $pid 0 [expr [string first \  $pid] -1]]
+}
+#get_xfwm_id
+
+proc restartXFCE {} {
+global exitinst 
+  if {[catch {set pid [get_xfwm_id]}]} {
+    tk_messageBox -title "ERROR" -message "could not detect xfwm\nplease restart manual"
+  } else {
+    exec kill -USR1 $pid
+    if {$exitinst} { 
+      exit
+    }
+  }
+}
+#restartXFCE
+
+proc txt_screen {title height} {
+global fixedfont
+  if {[winfo exists .scrn]} { destroy .scrn }
+  
+  toplevel .scrn
+  wm title .scrn "$title"
+  
+  frame 	.scrn.txt  -relief sunken -border 1
+  text  	.scrn.txt.text -border 1 -yscroll ".scrn.txt.scroll set" \
+  			       -width 80 -setgrid 1 -height $height
+  scrollbar 	.scrn.txt.scroll -border 1 -relief flat -command ".scrn.txt.text yview"
+  pack 		.scrn.txt.scroll -side right -fill y
+  pack		.scrn.txt.text   -expand yes -fill both
+  
+  frame		.scrn.but -relief raised -border 1
+  button	.scrn.but.button -text OK -command "destroy .scrn" -border 1
+  pack		.scrn.but.button -pady 5
+  pack		.scrn.txt -fill both
+  pack		.scrn.but -fill both
+}
+#txt_screen
+
+proc file_open {} {
+  set types {
+    {"gzip tarred skins"	{.tar.gz}	}
+    {"all files"		*}
+  }
+  return [tk_getOpenFile -filetypes $types -parent .]
+}
+#file_open
+
+#------------------------------------------------------------------------------
+#--help procs
+proc cut_string {substr  line default} {
+  set result [string trim [string range $line [string length $substr] 255]]
+  if {[string length $result] <1} {
+    set result $default
+  }
+  return $result
+}
+proc max_string {line len} {
+  while {[string length $line] < $len} {
+    set line $line\ 
+  }
+  return $line
+}
+proc putdb {line} {
+  if {![winfo exists .scrn]} { txt_screen "test info" 30}
+  .scrn.txt.text insert end $line\n
+}
+proc cycle_file {file} {
+  if {[file exists $file]} {
+    file copy -force $file $file.~
+    file copy -force $file.bak $file
+    file delete -force $file.bak
+    file rename -force $file.~ $file.bak
+    } else {
+      file rename -force $file.bak $file
+    }
+}
+#--cut_string
+#------------------------------------------------------------------------------
+#--get skin items
+
+proc get_skin_info {} {
+global skin_root
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+  while {[gets $file line] > -1} {
+    if {[string match "author=*" [string tolower $line]]} {
+      if {[string match "" [string range $line 7 255]]} {
+      .info.inf.cmd.author configure -anchor w -text "No author name found"
+      } else {
+      .info.inf.cmd.author configure -anchor w -text [string range $line 7 255]
+    }
+    }
+    if {[string match "version=*" [string tolower $line]]} {
+      .info.inf.cmd.version configure -anchor w -text [string range $line 8 255]
+    }
+    if {[string match "comment1=*" [string tolower $line]]} {
+      .info.inf.cmd.comment1 configure -anchor w -text [string range $line 9 255]
+    }
+    if {[string match "comment2=*" [string tolower $line]]} {
+      .info.inf.cmd.comment2 configure -anchor w -text [string range $line 9 255]
+    }
+    if {[string match "comment3=*" [string tolower $line]]} {
+      .info.inf.cmd.comment3 configure -anchor w -text [string range $line 9 255]
+    }
+  }
+}
+#get_skin_info
+
+proc get_skin {} {
+global tst_skin
+
+  if {[string length [.inst.skins.list get active]] >0} {
+    get_skin_bd $tst_skin
+    get_skin_clock $tst_skin
+    get_skin_fonts $tst_skin
+    get_skin_gradient $tst_skin
+    get_skin_icons $tst_skin
+    get_skin_palet $tst_skin
+    get_skin_sounds $tst_skin
+  }
+}
+#get_skin
+
+proc get_skin_bd {tst_skin} {
+global skin_root backdrop style
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+  
+  if {$tst_skin} { putdb "--backdrop-------" }  
+  while {[gets $file line] > -1} {
+    if {[string match "image=*" [string tolower $line]]} {
+      set backdrop [cut_string "image=" $line "None"]
+      if {![string match "None" $backdrop]} {
+        set backdrop [file join $skin_root $skin_name "backdrop" $backdrop]
+      }
+      if {$tst_skin} { putdb "backdrop=      \'$backdrop\'" }
+    }
+    if {[string match "style=*" [string tolower $line]]} {
+      set style [cut_string "style=" $line "auto"]
+      if {$tst_skin} { putdb "style=         \'$style\'" }
+    }
+  }
+  close $file
+}
+#get_skin_bd
+
+proc get_skin_clock {tst_skin} {
+global skin_root clock
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+  
+  if {$tst_skin} { putdb "--clock------------" }  
+  while {[gets $file line] > -1} {
+    if {[string match "clocktype=*" [string tolower $line]]} {
+      if {[string match "digital" [string tolower [cut_string "clocktype=" $line "Analog"]]]} {
+        set clock(1) "Digital"
+      } else {
+        set clock(1) "Analog"
+      }
+      if {$tst_skin} { putdb "clock=         \'$clock(1)\'" }
+    }
+    if {[string match "24h=*" [string tolower $line]]} {
+      set tempval [string tolower [cut_string "24h=" $line "24hrs"]]
+      if {([string match "no" $tempval])||([string match "false" $tempval])} {
+        set clock(2) "12hrs"
+      } else {
+        set clock(2) "24hrs"
+      }
+      if {$tst_skin} { putdb "hours=         \'$clock(2)\'" }      
+    }
+  }
+  close $file
+}
+#get_skin_clock
+
+proc get_skin_fonts {tst_skin} {
+global skin_root fonts
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+  
+  if {$tst_skin} { putdb "--fonts------------" }  
+  while {[gets $file line] > -1} {
+    if {[string match "titlefont=*" [string tolower $line]]} {
+      set fonts(1) [cut_string "titlefont=" $line "-*-helvetica-medium-r-normal-*-*-100-*-*-p-*-*-*"]
+      if {$tst_skin} { putdb "titlefont=     \'$fonts(1)\'" }
+    }
+    if {[string match "menufont=*" [string tolower $line]]} {
+      set fonts(2) [cut_string "menufont=" $line "-*-helvetica-medium-r-normal-*-*-100-*-*-p-*-*-*"]
+      if {$tst_skin} { putdb "menufont=      \'$fonts(2)\'" }
+    }
+    if {[string match "iconfont=*" [string tolower $line]]} {
+      set fonts(3) [cut_string "iconfont=" $line "-*-helvetica-medium-r-normal-*-*-100-*-*-p-*-*-*"]
+      if {$tst_skin} { putdb "iconfont=      \'$fonts(3)\'" }
+    }
+  }
+}
+#get_skin_fonts
+
+proc get_skin_gradient {tst_skin} {
+global skin_root gradient winengine
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+
+  if {$tst_skin} { putdb "--gradients--------" }  
+  while {[gets $file line] > -1} {
+    if {[string match "active-gradient=*" [string tolower $line]]} {
+      set tempval [string tolower [cut_string "active-gradient=" $line "yes"]]
+      if {([string match "no" $tempval])||([string match "false" $tempval])} {
+        set gradient(1) "OpaqueActive"
+      } else {
+        set gradient(1) "GradientActive"
+      }
+      if {$tst_skin} { putdb "active-grad=   \'$gradient(1)\'" }      
+    }
+    if {[string match "inactive-gradient=*" [string tolower $line]]} {
+      set tempval [string tolower [cut_string "inactive-gradient=" $line "yes"]]
+      if {([string match "no" $tempval])||([string match "false" $tempval])} {
+        set gradient(2) "OpaqueActive"
+      } else {
+        set gradient(2) "GradientActive"
+      }
+      if {$tst_skin} { putdb "inactive-grad= \'$gradient(2)\'" }      
+    }
+    if {[string match "win-engine=*" [string tolower $line]]} {
+      set winengine [cut_string "win-engine=" $line "Xfce_engine"]
+      if {$tst_skin} { putdb "window-engine= \'$winengine\'" }      
+    }
+  }
+  close $file
+}
+#get_skin_gradient
+
+proc get_skin_icons {tst_skin} {
+global skin_root icons ico_conf
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+
+  if {$tst_skin} { putdb "--icons-------------" }  
+  while {[gets $file line] > -1} {
+    for {set x 1} {$x <=13} {incr x} {
+      if {[string match $ico_conf($x)* [string tolower $line]]} {
+        set icons($x) [cut_string $ico_conf($x) $line "None"]
+	if {![string match "None" $icons($x)]} {
+          set icons($x) [file join $skin_root $skin_name "icons" $icons($x)]  
+	}  	
+        if {$tst_skin} { putdb "[max_string $ico_conf($x) 14] \'$icons($x)\'" }
+      }
+    }
+  }
+}
+#get_skin_icons
+
+proc get_skin_palet {tst_skin} {
+global skin_root palet pal_conf
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+
+  for {set x 1} {$x <=11} {incr x} { set palet($x) "" }
+  if {$tst_skin} { putdb "--palette----------" }  
+  while {[gets $file line] > -1} {
+    for {set x 1} {$x <=11} {incr x} {
+      if {[string match $pal_conf($x)* [string tolower $line]]} {
+        set palet($x) [cut_string $pal_conf($x) $line ""]
+        }
+    }
+  }
+  if {[string length $palet(11)] > 0} {
+    set palet(11) [file join $skin_root $skin_name "texture" $palet(11)]
+  }
+  if {$tst_skin} { 
+    for {set x 1} {$x <=11} {incr x} {
+      putdb "[max_string $pal_conf($x) 14] \'$palet($x)\'"
+    }
+  }
+}
+#get_skin_palet
+
+proc get_skin_sounds {tst_skin} {
+global skin_root sounds snd_conf
+  set skin_name [.inst.skins.list get active]
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile r]
+
+  for {set x 1} {$x <=16} {incr x} { set sounds($x) "" }
+  if {$tst_skin} { putdb "--sounds-----------" }
+  while {[gets $file line] > -1} {
+    for {set x 1} {$x <=16} {incr x} {
+      if {[string match $snd_conf($x)* [string tolower $line]]} {
+        set sounds($x) [cut_string $snd_conf($x) $line ""]
+	if {[string length $sounds($x)] >0} {
+          set sounds($x) [file join $skin_root $skin_name "sounds" $sounds($x)]      
+	}
+        if {[string first \  $skin_name] >0} {
+	  set sounds($x) '$sounds($x)'
+	}
+        if {$tst_skin} { putdb "[max_string $snd_conf($x) 14] \'$sounds($x)\'" }
+      }
+    }
+  }
+}
+#get_skin_sounds
+#------------------------------------------------------------------------------
+#--write skin to configs
+
+proc put_config {} {
+global conf_dir bdrc colrc sndrc xfcerc tst_skin skin_root opback oppalet opsounds
+  set tst_skin 0
+  if {[string length [.inst.skins.list get active]] >0} {  
+    get_skin
+  
+    if {$opback} {
+      put_conf_bd
+    } else { file copy -force [file join $conf_dir $bdrc] [file join $conf_dir $bdrc.bak] }
+    if {$oppalet} {
+      put_conf_palet
+    } else { file copy -force [file join $conf_dir $colrc] [file join $conf_dir $colrc.bak] } 
+    put_conf_rc
+    if {$opsounds} {
+      put_conf_sounds
+    } else { file copy -force [file join $conf_dir $sndrc] [file join $conf_dir $sndrc.bak] } 
+    restartXFCE
+  }
+}
+#put_config
+
+proc put_conf_bd {} {
+global conf_dir backdrop style bdrc
+  set bdfile [file join $conf_dir $bdrc]
+  
+  if {[file exists $bdfile]} {
+    file copy -force $bdfile $bdfile.bak
+  }
+  set file [open $bdfile w]
+  puts $file $backdrop
+  puts $file $style
+  close $file
+}
+#put_conf_bd
+
+proc put_conf_palet {} {
+global colrc conf_dir palet opfonts env
+  set palfile [file join $conf_dir $colrc]
+  if {[file exists $palfile]} {
+    file copy -force $palfile $palfile.bak
+    if {! $opfonts} {
+      set file [open $palfile r]
+      for {set x 1} {$x <=10} {incr x} { gets $file oldfont }
+      close $file
+      set $palet(10) $oldfont
+    }
+  }  
+  set file [open $palfile w]
+  for {set x 1} {$x <=8} {incr x} { puts $file $palet($x) }
+  puts $file "engine=$palet(9)"
+  puts $file $palet(10)
+  puts $file $palet(11)
+  close $file
+  set gtkrc [file join $env(HOME) ".gtkrc"]
+  if {[file exists $gtkrc]} {
+    file delete -force $gtkrc
+  }
+}
+#put_conf_palet
+
+proc put_conf_rc {} {
+global conf_dir backdrop clock def_icon fonts gradient winengine icons opback opengine opfonts opicons xfcerc
+  set rcfile [file join $conf_dir $xfcerc]
+
+  if {[file exists $rcfile]} {
+    file copy -force $rcfile $rcfile.bak
+    set ifile [open $rcfile.bak r]
+    set ofile [open $rcfile w]
+    while {[gets $ifile line] > -1} {
+      puts $ofile $line
+      #--ext icons
+      if {([string match "?External_Icons\]*" $line ])&&($opicons)} {
+        for {set x 1} {$x <=13} {incr x} { 
+	  puts $ofile "        $icons($x)"
+	  gets $ifile line
+	}
+      }
+      #--use of icons
+      if {([string match "?Icons\]*" $line ])&&($opicons)} {
+        puts -nonewline $ofile "        "
+        for {set x 1} {$x <=12} {incr x} {
+	  if {[string match "None" $icons($x)]} {
+            puts -nonewline $ofile "$def_icon($x),"
+	  } else {
+	    puts -nonewline $ofile "99,"
+	  }
+	}
+	if {[string match "None" $icons($x)]} {
+          puts $ofile $def_icon($x)
+	} else {
+	  puts $ofile "99"
+	}
+        gets $ifile line
+      }
+      #--repaint of backdrop
+      if {([string match "?WorkSpace\]*" $line])&&([string match "None" $backdrop])&&($opback)} {
+        puts $ofile "        Repaint"
+	gets $ifile line
+      }
+      if {([string match "?WorkSpace\]*" $line])&&(![string match "None" $backdrop])&&($opback)} {
+        puts $ofile "        NoRepaint"
+	gets $ifile line
+      }
+      #--fonts, gradients & window engine
+      if {[string match "?XFwmOption\]*" $line]} {
+        for {set x 1} {$x <=6} {incr x} {
+	  gets $ifile line
+	  puts $ofile $line
+	}
+	for {set x 1} {$x <=2} {incr x} {
+	  gets $ifile line
+	  puts $ofile "        $gradient($x)"
+	}
+	gets $ifile line
+	puts $ofile $line
+	for {set x 1} {$x <=3} {incr x} {
+	  gets $ifile line
+	  if {$opfonts} {
+	    puts $ofile "        $fonts($x)"
+	  } else {  
+	    puts $ofile $line
+	  }
+	}
+	gets $ifile line
+	puts $ofile $line
+	if {([string length $winengine] > 0)&&($opengine)} {
+	  gets $ifile line
+          puts $ofile "        $winengine"
+	}		
+      }
+      #--clock
+      if {[string match "?Clock\]*" $line]} {
+	for {set x 1} {$x <=2} {incr x} {
+	  gets $ifile line
+	  puts $ofile "        $clock($x)"
+	}
+      }      
+    }
+    close $ifile
+    close $ofile
+  } else {
+    tk_messageBox -title "ERROR" -message "Could not open user resource file:\n$rcfile"
+  }
+}
+#put_conf_rc
+
+proc put_conf_sounds {} {
+global conf_dir sndrc sounds
+  set sndfile [file join $conf_dir $sndrc] 
+  set playcmd "xfplay"
+  if {[file exists $sndfile]} {
+    file copy -force $sndfile $sndfile.bak
+    set file [open $sndfile r]
+    gets $file playcmd
+    gets $file playcmd
+    close $file
+  }  
+  set file [open $sndfile w]
+  puts $file "Play"
+  puts $file $playcmd
+  for {set x 1} {$x <=16} {incr x} { puts $file $sounds($x) }
+  close $file
+}
+#put_conf_sounds
+#------------------------------------------------------------------------------
+#--get config
+proc get_conf {} {
+global author skin_name skin_root tst_conf
+  if {([string length [.info.inf.cmd.comment1 get]] >0)&&([string length [.info.inf.cmd.author get]] >0)} {
+    set skin_name  [.info.inf.cmd.skin_name get]
+    if {([string length $skin_name] < 3)||([file exists [file join $skin_root $skin_name]])} {
+      tk_messageBox -icon error -title "Can not create skin" -message "Name to short, or skin allready exists.\nskin title: $skin_name"
+      exit
+    }
+    set author(1) [.info.inf.cmd.author get]
+    set author(2) [.info.inf.cmd.comment1 get]
+    set author(3) [.info.inf.cmd.comment2 get]
+    set author(4) [.info.inf.cmd.comment3 get]
+    destroy .info
+    build_skin_base
+  } else {
+    return
+  }
+  get_conf_bd $tst_conf
+  get_conf_palet $tst_conf
+  get_conf_rc $tst_conf  
+  get_conf_snd $tst_conf  
+  put_skin
+  pack_skin
+  get_skin_dir
+}
+#get_conf
+
+proc build_skin_base {} {
+global skin_name skin_root
+  if {[string length $skin_name] >= 3} {
+    file mkdir [file join $skin_root $skin_name]
+    if {[file exists [file join $skin_root $skin_name]]} {
+      file mkdir [file join $skin_root $skin_name "backdrop"]
+      file mkdir [file join $skin_root $skin_name "icons"]
+      file mkdir [file join $skin_root $skin_name "sounds"]
+      file mkdir [file join $skin_root $skin_name "texture"]    
+    } else {
+      tk_messageBox -icon error -title "Can not create skin" -message "Not enought file-rights"
+    }
+  }
+}
+
+proc get_conf_bd {tst_conf} {
+global conf_dir skin_name skin_root backdrop style bdrc xfce_share
+  set bdfile [file join $conf_dir $bdrc]
+  if {$tst_conf} { putdb "--backdrop-------" } 
+  if {[file exists $bdfile]} {
+    set file [open $bdfile r]
+    gets $file backdrop
+    gets $file style
+    close $file
+  } else {
+    set backdrop ""
+    set style "auto"
+  }
+  if {[file exists $backdrop]} {
+    file copy $backdrop [file join $skin_root $skin_name "backdrop" [file tail $backdrop]]
+    set backdrop [file tail $backdrop]    
+  } elseif {[file exists [file join $xfce_share $backdrop]]} {
+    file copy [file join $xfce_share $backdrop] [file join $skin_root $skin_name "backdrop" [file tail $backdrop]]
+    set backdrop [file tail $backdrop]
+  } else {
+    if {$tst_conf} { putdb "ERROR: could not copy backdrop, assuming none" }
+      set backdrop ""
+    }
+  if {$tst_conf} { putdb "backdrop=      \'$backdrop\'" }
+  if {$tst_conf} { putdb "style=         \'$style\'" }
+}
+#get_conf_bd
+
+proc get_conf_palet {tst_conf} {
+global conf_dir pal_conf skin_name skin_root palet colrc xfce_share
+  set palfile [file join $conf_dir $colrc]
+  if {$tst_conf} { putdb "--palette----------" }  
+  if {[file exists $palfile]} {
+    set file [open $palfile r]
+    for {set x 1} {$x <=11} {incr x} {
+      gets $file palet($x)
+    }
+  }
+  set palet(9) [string range $palet(9) 7 255]
+  if {[string length $palet(11)] > 0} {
+    if {[file exists $palet(11)]} {
+      file copy $palet(11) [file join $skin_root $skin_name "texture" [file tail $palet(11)]]
+      set palet(11) [file tail $palet(11)]
+    } elseif {[file exists [file join $xfce_share $palet(11)]]} {
+      file copy [file join $xfce_share $palet(11)] [file join $skin_root $skin_name "texture" [file tail $palet(11)]]
+      set palet(11) [file tail $palet(11)]
+    } else {
+      if {$tst_conf} { putdb "ERROR: could not copy palette, assuming none" }
+      set palet(11) ""
+    }
+  }
+  if {$tst_conf} { 
+    for {set x 1} {$x <=11} {incr x} {
+      putdb "[max_string $pal_conf($x) 14] \'$palet($x)\'"
+    }
+  }
+}
+#get_conf_palet
+
+proc get_conf_rc {tst_conf} {
+global conf_dir clock fonts gradient winengine ico_conf icons skin_name skin_root xfcerc xfce_share
+  set rcfile [file join $conf_dir $xfcerc]
+  if {$tst_conf} { putdb "--xfcerc------------" } 
+  if {[file exists $rcfile]} {
+    set file [open $rcfile r]
+    while {[gets $file line] > -1} {
+      #--ext icons
+      if {[string match "?External_Icons\]*" $line ]} {
+        for {set x 1} {$x <=13} {incr x} { 
+	  gets $file icons($x)
+	  set icons($x) [string trim $icons($x)]
+	  if {![string match "None" $icons($x)]} {
+            if {[file exists $icons($x)]} {
+              catch [file copy $icons($x) [file join $skin_root $skin_name "icons" [file tail $icons($x)]]]
+              set icons($x) [file tail $icons($x)]
+            } elseif {[file exists [file join $xfce_share $icons($x)]]} {
+              catch [file copy [file join $xfce_share $icons($x)] [file join $skin_root $skin_name "icons" [file tail $icons($x)]]]
+              set icons($x) [file tail $icons($x)]
+          } else {
+            if {$tst_conf} { putdb "ERROR copying $icons($x), assuming none" }
+            set icons($x) ""
+          }
+        } else {
+          set icons($x) ""
+	}
+	if {$tst_conf} { putdb "[max_string $ico_conf($x) 14] \'$icons($x)\'" }
+	}
+      }
+      #--fonts & gradients
+      if {[string match "?XFwmOption\]*" $line]} {
+        for {set x 1} {$x <=6} {incr x} {
+	  gets $file line
+	}
+	for {set x 1} {$x <=2} {incr x} {
+	  gets $file gradient($x)
+	  set gradient($x) [string trim $gradient($x)]	  
+	  if {[string match "GradientActive" $gradient($x)]} {
+	    set gradient($x) "yes"
+	  } else {
+  	    set gradient($x) "no"
+	  }
+	}
+        if {$tst_conf} { putdb "active-grad=   \'$gradient(1)\'" }
+        if {$tst_conf} { putdb "inactive-grad= \'$gradient(2)\'" }	
+	gets $file line
+	for {set x 1} {$x <=3} {incr x} {
+	  gets $file fonts($x)
+  	  set fonts($x) [string trim $fonts($x)]
+	}
+        if {$tst_conf} { putdb "titlefont=     \'$fonts(1)\'" }
+        if {$tst_conf} { putdb "menufont=      \'$fonts(2)\'" }
+        if {$tst_conf} { putdb "iconfont=      \'$fonts(3)\'" }
+	gets $file line
+	gets $file winengine
+	set winengine [string trim $winengine]
+	if {$tst_conf} { putdb "window engine= \'$winengine\'"}
+      }
+      #--clock
+      if {[string match "?Clock\]*" $line]} {
+	for {set x 1} {$x <=2} {incr x} {
+	  gets $file clock($x)
+	  set clock($x) [string trim $clock($x)]
+	}
+	if {[string match "12hrs" $clock(2)]} {
+	  set clock(2) "no"
+	} else {
+	  set clock(2) "yes"
+	}
+        if {$tst_conf} { putdb "clock=         \'$clock(1)\'" }
+        if {$tst_conf} { putdb "24 hours=      \'$clock(2)\'" }      
+      }      
+    }
+    close $file
+  }
+}
+#get_conf_rc
+
+proc get_conf_snd {tst_conf} {
+global conf_dir snd_conf sounds skin_name skin_root sndrc xfce_share
+  set sndfile [file join $conf_dir $sndrc]
+  if {$tst_conf} { putdb "--sounds------------" } 
+  if {[file exists $sndfile]} {
+    set file [open $sndfile r]
+    while {[gets $file line] > -1} {
+      gets $file line
+      for {set x 1} {$x <=16} {incr x} { 
+        gets $file sounds($x)
+        set sounds($x) [string trim $sounds($x)]
+        if {[string length $sounds($x)] > 0} {
+          if {[file exists $sounds($x)]} {
+            catch [file copy $sounds($x) [file join $skin_root $skin_name "sounds" [file tail $sounds($x)]]]
+            set sounds($x) [file tail $sounds($x)]
+          } elseif {[file exists [file join $xfce_share $sounds($x)]]} {
+            catch [file copy [file join $xfce_share $sounds($x)] [file join $skin_root $skin_name "sounds" [file tail $sounds($x)]]]
+            set sounds($x) [file tail $sounds($x)]
+          } else {
+            set sounds($x) ""
+          }
+      }
+      }
+    }
+  } else {
+    for {set x 1} {$x <=16} {incr x} { set sounds($x) "" }
+  }
+  if {$tst_conf} {
+    for {set x 1} {$x <=16} {incr x} { putdb "[max_string $snd_conf($x) 14] \'$sounds($x)\'" }	
+  }
+}
+#get_conf_snd
+
+proc put_skin {} {
+global author ico_conf pal_conf snd_conf skin_root skin_name backdrop style clock fonts gradient winengine icons palet sounds version
+  set skin_var(1) "author="; set skin_var(2) "version="; set skin_var(3) "comment1="
+  set skin_var(4) "comment2="; set skin_var(5) "comment3="; set skin_var(6) "image="
+  set skin_var(7) "style="; set skin_var(8) "clocktype="; set skin_var(9) "24h="
+  set skin_var(10) "menufont="; set skin_var(11) "iconfont="; set skin_var(12) "titlefont="
+  set skin_var(13) "active-gradient="; set skin_var(14) "inactive-gradient=";set skin_var(15) "win-engine="
+
+  set skinfile [file join $skin_root $skin_name $skin_name.xfce]
+  set file [open $skinfile w]
+  puts $file "----=/==-=---------------------------------==/==-=-----------------"
+  puts $file "-   /  skinfile for xfce.                   /-"
+  puts $file "--=/=-------------------------------------=/=-------------"
+  puts $file "$skin_var(1)$author(1)"
+  puts $file "$skin_var(2)$version"
+  puts $file "$skin_var(3)$author(2)"
+  puts $file "$skin_var(4)$author(3)"
+  puts $file "$skin_var(5)$author(4)"
+  puts $file "--------------------"
+  puts $file "$skin_var(6)$backdrop"
+  puts $file "$skin_var(7)$style"
+  puts $file "--------------------"
+  for {set x 1} {$x <=16} {incr x} { puts $file "$snd_conf($x)$sounds($x)" }
+  puts $file "--------------------"
+  for {set x 1} {$x <=13} {incr x} { puts $file "$ico_conf($x)$icons($x)"  }
+  puts $file "--------------------"
+  puts $file "$skin_var(8)$clock(1)"
+  puts $file "$skin_var(9)$clock(2)"    
+  puts $file "--------------------"
+  puts $file "$skin_var(10)$fonts(1)"
+  puts $file "$skin_var(11)$fonts(2)"    
+  puts $file "$skin_var(12)$fonts(3)"    
+  puts $file "--------------------" 
+  puts $file "$skin_var(13)$gradient(1)"    
+  puts $file "$skin_var(14)$gradient(2)"    
+  puts $file "$skin_var(15)$winengine"
+  puts $file "--------------------"
+  for {set x 1} {$x <=11} {incr x} {
+    puts $file "$pal_conf($x)$palet($x)"
+  }
+  puts $file "-------------<eof>--"
+  close $file
+}
+#------------------------------------------------------------------------------
+proc prev_skin {} {
+global conf_dir bdrc colrc sndrc xfcerc env
+  set file [file join $conf_dir $bdrc]
+  if {[file exists $file.bak ]} { cycle_file $file } else { file rename -force $file $file.bak }
+  set file [file join $conf_dir $colrc]
+  if {[file exists $file.bak ]} { cycle_file $file }
+  set file [file join $conf_dir $sndrc]
+  if {[file exists $file.bak ]} { cycle_file $file } else { file rename -force $file $file.bak }
+  set file [file join $conf_dir $xfcerc]
+  if {[file exists $file.bak ]} { cycle_file $file }
+  set gtkrc [file join $env(HOME) ".gtkrc"]
+  if {[file exists $gtkrc]} {
+    file delete -force $gtkrc
+  }
+  restartXFCE
+}
+
+proc del_skin {} {
+global skin_root
+
+  set file [file join $skin_root [.inst.skins.list get active]]
+  set dodelete [ tk_messageBox -default "no" -type yesno -icon question -title "Deleting skin:" -message "Are you sure you want to delete \nskin: [.inst.skins.list get active] ?" ]
+  if {![string compare $dodelete yes ]} {
+    exec rm -rf $file
+    if {[file exists $file.tar.gz]} {
+      exec rm -f $file.tar.gz
+    }
+    get_skin_dir
+  }
+}
+#del_skin
+
+proc unpack_skin {} {
+global skin_root
+  set skin_name [file_open]
+  if {[string length $skin_name] > 0} {
+    cd $skin_root
+    exec tar xzf $skin_name
+    get_skin_dir    
+  }
+}
+#unpack_skin
+
+proc pack_skin {} {
+global skin_root skin_name
+  cd $skin_root
+  exec tar czf $skin_name.tar.gz $skin_name
+}
+#pack_skin
+
+proc put_info {} {
+  if {[winfo exists .info]} { destroy .info }
+  if {[string length [.inst.skins.list get active]] >0} {  
+    toplevel .info
+    wm title .info "skin: [.inst.skins.list get active]"
+    frame .info.buttons
+    frame .info.inf
+    frame .info.inf.lbl
+    frame .info.inf.cmd -relief sunken -border 1
+  
+    label .info.inf.lbl.author   -text "author:  "
+    label .info.inf.lbl.version  -text "version: "
+    label .info.inf.lbl.comment1 -text "comment: "
+    label .info.inf.lbl.comment2
+    label .info.inf.lbl.comment3
+
+    label .info.inf.cmd.author -text "(none  found)"
+    label .info.inf.cmd.version -text "(none  found)"
+    label .info.inf.cmd.comment1 -text "(none  found)"
+    label .info.inf.cmd.comment2
+    label .info.inf.cmd.comment3
+
+    button .info.buttons.ok -text OK -command "destroy .info" -border 1
+    bind .info <Return> "destroy .info"
+    
+    pack .info.inf.lbl.author \
+         .info.inf.lbl.version \
+         .info.inf.lbl.comment1 \
+         .info.inf.lbl.comment2 \
+         .info.inf.lbl.comment3 \
+         .info.inf.cmd.author \
+         .info.inf.cmd.version \
+         .info.inf.cmd.comment1 \
+         .info.inf.cmd.comment2 \
+         .info.inf.cmd.comment3 -side top -anchor w
+
+    pack .info.inf.lbl .info.inf.cmd -side left -fill both -expand yes
+    pack .info.buttons.ok -side top -expand yes -pady 2
+    pack .info.inf .info.buttons -side top -fill x -expand yes
+
+    get_skin_info
+    raise .info
+  }
+}
+#put_info
+
+proc ask_info {} {
+global version
+  if {[winfo exists .info]} { destroy .info }
+  
+  toplevel .info
+  wm title .info "create skin"
+  frame .info.buttons
+  frame .info.inf
+  frame .info.inf.lbl
+  frame .info.inf.cmd -relief sunken -border 1
+  label .info.inf.lbl.skin_name -text "title:  "
+  label .info.inf.lbl.author   -text "author:  "
+  label .info.inf.lbl.version  -text "version: "
+  label .info.inf.lbl.comment1 -text "comment: "
+  label .info.inf.lbl.comment2
+  label .info.inf.lbl.comment3
+
+  entry .info.inf.cmd.skin_name -width 40 -relief flat
+  entry .info.inf.cmd.author   -width 40 -relief flat
+  label .info.inf.cmd.version  -text "$version"
+  entry .info.inf.cmd.comment1 -width 40 -relief flat 
+  entry .info.inf.cmd.comment2 -width 40 -relief flat
+  entry .info.inf.cmd.comment3 -width 40 -relief flat
+
+  button .info.buttons.ok -text OK -command "get_conf" -border 1
+  bind .info <Return> "get_conf"
+    
+  pack .info.inf.lbl.skin_name \
+       .info.inf.lbl.author \
+       .info.inf.lbl.version \
+       .info.inf.lbl.comment1 \
+       .info.inf.lbl.comment2 \
+       .info.inf.lbl.comment3 \
+       .info.inf.cmd.skin_name \
+       .info.inf.cmd.author \
+       .info.inf.cmd.version \
+       .info.inf.cmd.comment1 \
+       .info.inf.cmd.comment2 \
+       .info.inf.cmd.comment3 -side top -anchor w
+
+  pack .info.inf.lbl .info.inf.cmd -side left -fill both -expand yes
+  pack .info.buttons.ok -side top -expand yes -pady 2
+  pack .info.inf .info.buttons -side top -fill x -expand yes
+
+  focus .info.inf.cmd.skin_name
+  raise .info
+}
+#ask_info
+
+proc buildscreen {} {
+global exitinst opback opengine opfonts opicons oppalet opsounds fixedfont sel_color tst_skin tst_conf
+  
+  frame .inst -border 1
+  frame .inst.val
+  frame .inst.skins
+  label .inst.val.label  -font $fixedfont -anchor w -text " <skin options>"
+
+  #--check buttons & listbox
+  checkbutton .inst.val.back    -border 1 -selectcolor $sel_color -justify left -anchor w -text " install backdrop  " -onvalue 1 -offvalue 0 -variable opback
+  checkbutton .inst.val.fonts   -border 1 -selectcolor $sel_color -justify left -anchor w -text " install fonts" -onvalue 1 -offvalue 0 -variable opfonts
+  checkbutton .inst.val.engine  -border 1 -selectcolor $sel_color -justify left -anchor w -text " install borderstyle" -onvalue 1 -offvalue 0 -variable opengine
+  checkbutton .inst.val.icons   -border 1 -selectcolor $sel_color -justify left -anchor w -text " install icons" -onvalue 1 -offvalue 0 -variable opicons
+  checkbutton .inst.val.palette -border 1 -selectcolor $sel_color -justify left -anchor w -text " install palette" -onvalue 1 -offvalue 0 -variable oppalet
+  checkbutton .inst.val.sounds  -border 1 -selectcolor $sel_color -justify left -anchor w -text " install sounds" -onvalue 1 -offvalue 0 -variable opsounds
+  scrollbar .inst.skins.scroll -border 1 -relief flat -command ".inst.skins.list yview"
+  listbox .inst.skins.list -font $fixedfont -relief sunken -border 1 -yscroll ".inst.skins.scroll set" \
+  -width 20 -height 10 -selectbackground $sel_color
+
+  
+  pack .inst.val.label .inst.val.back .inst.val.engine .inst.val.fonts \
+       .inst.val.icons .inst.val.palette .inst.val.sounds -fill x -padx 5
+
+  pack .inst.skins.scroll -side right -fill y
+  pack .inst.skins.list -side left -fill both -expand yes
+
+  pack .inst.val -fill both -side left
+  pack .inst.skins -fill both -side left -expand yes
+
+  #--program options
+  frame  .setup -relief raised -border 1  
+  checkbutton .setup.exit -border 1  -selectcolor $sel_color -justify left -anchor w \
+  -text " exit xfskin after installing" -onvalue 1 -offvalue 0 -variable exitinst
+  pack .setup.exit -fill x -expand no
+  #--buttons
+  frame  .buttons -relief raised -border 1
+  button .buttons.install -border 1  -command "put_config"    -text "install" 
+  button .buttons.delete  -border 1  -command "del_skin"      -text "delete"
+  button .buttons.revert  -border 1  -command "prev_skin"     -text "revert"  
+  button .buttons.create  -border 1  -command "ask_info"      -text "create"
+  button .buttons.info    -border 1  -command "get_skin_dir"  -text "refresh"
+  button .buttons.exit    -border 1  -command "exit"          -text "exit"
+  if {$tst_skin >0} { 
+    button .buttons.test    -border 1  -command "get_skin"    -text "test"  
+    pack .buttons.test -side left -expand yes -pady 5 -padx 3
+  }
+  
+  pack .buttons.install .buttons.delete .buttons.revert .buttons.create .buttons.info .buttons.exit -side left -pady 5 -padx 3
+  pack .inst -side top -fill both -expand yes -pady 5
+
+  # -expand yes
+  pack .setup -side top -fill both -ipady 2 
+  pack .buttons -side top -fill both -ipady 3
+}
+#buildscreen
+
+proc buildmenu {} {
+global exitinst opback opfonts opicons oppalet opsounds fixedfont sel_color tst_skin tst_conf
+
+  menu .menu -tearoff 0 -border 1
+  #--file
+  set m .menu.file
+  menu $m -tearoff 0 -border 1
+  .menu add cascade -label "file" -menu $m -underline 0
+  $m add command -label "add" -command {"unpack_skin"}
+  $m add separator
+  $m add command -label "install" -command {"put_config"}
+  $m add command -label "delete" -command {"del_skin"}
+  $m add command -label "revert" -command {"prev_skin"}
+  $m add separator
+  $m add command -label "exit" -command "exit"
+  #info
+  set m .menu.info
+  menu $m -tearoff 0 -border 1
+  .menu add cascade -label "info" -menu $m -underline 0
+  $m add command -label "author" -command {"put_info"}  
+  if {$tst_skin >0} { 
+    $m add command -label "resources" -command {"get_skin"}
+  }
+  #--
+  . configure -menu .menu
+}
+#buildmenu
+
+#main
+tk_setPalette [. cget -background]
+buildscreen 
+buildmenu
+initvals
+if {[winfo exists .scrn]} { lower . }
+
+
+#--end version check
+}

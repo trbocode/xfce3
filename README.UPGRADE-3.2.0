@@ -1,0 +1,26 @@
+
+READ THIS: IMPORTANT NOTE
+=========================
+
+If you're not upgrading from a previous version of XFce, please disregard this
+note.
+
+Due to the changes in the directory structure (ie XFce files are now located in
+/usr/share/xfce/ instead of /var/XFCE as it was until version 3.2.0), the 
+configuration files created by previous versions of XFce may get inaccurate.
+
+Ths simplest way to avoid problems after upgrading to XFce 3.2.0 is to 
+link /var/XFCE to /usr/share/xfce (this should be done before starting XFce)
+
+To do so, remove the previous files :
+
+	rm -R /var/XFCE
+
+and link the new directory to /var/XFCE :
+
+	ln -s /usr/share/xfce /var/XFCE
+
+By doing so, all previous configuration files that point to the previous 
+directory structure will stay usable (icons, backdrops, sounds, etc.)
+
+Olivier.

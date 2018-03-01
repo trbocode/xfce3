@@ -1,0 +1,41 @@
+.\" SCCS ID: xfgnome.1 3.0.0 12/06/1999
+.TH xfce 1F "Olivier Fourdan"
+.SH NAME
+xfgnome \- xfce/xfwm GNOME compliancy module
+.SH SYNOPSYS
+.B xfgnome 
+[desks]
+.PP
+.TP 6
+.BI desks
+Specifies the number of desks to manage. Default is 10.
+.PP
+.SH DESCRIPTION
+xfgnome is the GNOME compliancy module for XFwm.
+.PP
+xfgnome translates xfwm messages into GNOME hints on the fly and enables GNOME 
+applications to interact with XFwm.  
+.PP
+xfgnome must be started from XFwm's config or from XFce using the keyword "Module"
+to work with XFwm properly.
+.PP
+From XFce menus :
+.sp
+Module xfgnome
+.fi
+Or from XFwm configuration file :
+.nf
+.sp
+AddToFunc "InitFunction"
++              "I" Module xfgnome
+.sp
+.PP
+.SH SEE ALSO
+xfce, xftree, xfwm, xfpager, xfsound, xfmouse, xfbd, xfclock
+.PP
+.SH AUTHOR
+xfgnome is based on Gnome module for Afterstep by :
+.PP
+Rafal Wierzbicki <rafal@mcss.mcmaster.ca>
+.PP
+xfce is written by Olivier Fourdan (fourdan@xfce.org)

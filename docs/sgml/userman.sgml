@@ -1,0 +1,17 @@
+<!-- DOCTYPE part PUBLIC "-//OASIS//DTD DocBook V4.1//EN" -->
+
+<part label="I" id="user-manual">
+
+<title>User Manual</title>
+
+&ch-overview;
+&ch-panel;
+&ch-setup;
+&ch-wm;
+&ch-fileman;
+&ch-utilities;
+&ch-install;
+&ch-resources;
+
+</part>
+

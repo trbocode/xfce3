@@ -1,0 +1,637 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>File Manager</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="HOME"
+TITLE="The XFce Desktop Environment"
+HREF="help.html"><LINK
+REL="UP"
+TITLE="User Manual"
+HREF="user-manual.html"><LINK
+REL="PREVIOUS"
+TITLE="Window Manager"
+HREF="wm.html"><LINK
+REL="NEXT"
+TITLE="Utilities"
+HREF="utilities.html"></HEAD
+><BODY
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>The XFce Desktop Environment</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="wm.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="utilities.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="FILEMAN"
+>File Manager</A
+></H1
+><P
+>XFTree is a very simple file manager, which provides a graphical user 
+interface to most common file operations. XFTree supports drag and drop 
+to itself, other GTK+ applications and, of course, the XFce panel.</P
+><DIV
+CLASS="FIGURE"
+><P
+><IMG
+SRC="../images/xftree.jpg"></P
+><P
+><B
+>Figure 5-1. XFTree</B
+></P
+></DIV
+><P
+>Starting xftree will use the user's home directory as the default root if 
+no directory is given as argument.</P
+><P
+>For XFTree a number of default shortcuts and mouse bindings are defined. </P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="FM-BINDINGS"
+>Table 5-1. XFTree default mouse bindings</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Mouse button</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Click</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Action</TH
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Right</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>popup a context menu (which depends on selected items)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Single</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Select an item; [SHIFT] allow selection of multiple items and 
+  [CTRL] will add/remove items to the selection</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Middle</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Convenient for drag and drop since the selection will not be
+  changed.</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Double Click</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Start the selected item or if the item is a regular file, start
+  the registered application. If the selected item is a directory, expand
+  or collapse the entry.</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Double Click + Alt key</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>The same as above, but start application in a terminal or if a
+  directory is selected change the root of the tree to that directory.
+  </TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Left or Middle</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Drag and drop</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>By default, drag and drop moves the items. If [Ctrl] is pressed 
+  during drag, items are copied instead. Pressing [CTRL+SHIFT] during drag
+  and drop will link the destination to the source (symbolic link). Drag 
+  and drop of URL is allowed, e.g. from mozilla as long as CURL is 
+  available. The corresponding file will be downloaded</TD
+></TR
+></TABLE
+></DIV
+><P
+></P
+><DIV
+CLASS="TABLE"
+><P
+><B
+><A
+NAME="FM-SHORTCUTS"
+>Table 5-2. XFTree default keyboard shortcuts</A
+></B
+></P
+><TABLE
+BORDER="1"
+BGCOLOR="#E0E0E0"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><TR
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Key</TH
+><TH
+ALIGN="LEFT"
+VALIGN="TOP"
+>Action</TH
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>A</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Select all items of the selected directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>Shift</B
+>-<B
+CLASS="KEYCAP"
+>A</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Unselect all</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Ctrl</B
+>-<B
+CLASS="KEYCAP"
+>A</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open the about dialog</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>D</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Duplicate the marked file</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>Shift</B
+>-<B
+CLASS="KEYCAP"
+>D</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Hide/show hidden files (dotfiles)</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>E</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Empty the trash directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>F</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Find files in the current directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>G</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Go to selected directory or ask if no directory is selected
+  </TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>D</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Go to home directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>I</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Properties of selected item</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>J</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Define a default application for a file name suffix</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>K</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>create a new file</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>N</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>create a new directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>Q</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Quit the program</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>R</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Rename selected file or directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>T</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Open trash directory in new window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>U</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Go up one directory</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>W</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Close current window</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>    <B
+CLASS="KEYCAP"
+>Alt</B
+>-<B
+CLASS="KEYCAP"
+>X</B
+>
+  </TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+>Delete selected items</TD
+></TR
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="wm.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="help.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="utilities.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Window Manager</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="user-manual.html"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Utilities</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

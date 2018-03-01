@@ -1,0 +1,229 @@
+# Fonts (should be overridden by xfce options)
+MenuFont            -*-helvetica-medium-r-normal-*-10-*-*-*-p-*-*-*
+WindowFont          -*-helvetica-medium-r-normal-*-10-*-*-*-p-*-*-*
+IconFont            -*-helvetica-medium-r-normal-*-10-*-*-*-p-*-*-*
+
+# Do you want a small animation ?
+AnimateWin          Off
+
+# Colormap policy :
+ColormapFocus       FollowsFocus
+
+# Focus mode (should be overridden by xfce options)
+FocusMode           ClickToFocus
+AutoRaise           Off
+
+# Set the delay for auto-raise mode :
+AutoRaiseDelay      250
+
+# Enable/disable session management :
+SessionManagement   On
+# Delay session startup (in seconds) to reduce disk/cpu usage
+WaitSession         5
+
+# Enable/disable shaped icons :
+UseShapedIcons      Off
+
+# Icon placing stuff :
+IconGrid            10
+IconSpacing         5
+
+# You can change the number of visible buttons on the title bar here :
+ShowButtons Right   3
+ShowButtons Left    3
+
+# THIS OPTION IS OBSOLETE : REMOVE IT FROM YOUR $HOME/.XFCE/XFWMRC FILE
+# You can toggle bitmap/vector buttons on the title bar here :
+# BitmapButtons       Yes
+
+# In focus follow mouse, may the focus be changed even if mouse 
+# pointer didn't move (You should keep this unchanged unless 
+# you're running Corel Word Perfect 2000) :
+ForceFocus          Yes
+
+# In focus follow mouse, may the focus be changed whenever a new window
+# is mapped :
+MapFocus            Yes
+
+# In focus follow mouse, should the window be raised by a click
+# inside the application window (X standards would say "no" here
+# but some people find this more handy when set to "yes") :
+ClickRaise          Yes
+
+# Margins: That will prevent xfwm from placing windows outide the margins
+# (unless the application spefically asked for a given positionning) and
+# maximized windows will stay within the limits.
+# Do not set margins larger that actual screen size !
+Margin Top     0
+Margin Left    0
+Margin Right   0
+Margin Bottom 50
+
+# Xfwm now honors the WM_HINT "Input" and acts accordingly. If you don't want
+# this feature, use the following parameter to disable it (Some applications
+# wrongly set input hint to false and therefore will never get focus unless 
+# "HonorWMFocusHint" is set to "No") :
+HonorWMFocusHint     Yes
+
+# Style used for some known applications :
+Style "*"			BorderWidth 5
+# Style "xfce"			StayOnTop, AllowFreeMove
+Style "xfce"                    AllowFreeMove
+Style "Alert"			Sticky, StayOnTop
+Style "Question"		Sticky, StayOnTop
+Style "Message"			Sticky, StayOnTop
+Style "xfbd"			Sticky 
+Style "xfpager"			Sticky
+# Style "*lock"			Sticky
+Style "gmc-desktop-icon"	WindowListSkip, CirculateSkip, CirculateSkipIcon
+Style "gkrellm"			CirculateSkip, CirculateSkipIcon
+Style "xeyes"			NoTitle
+
+# Some applications ask for a specific location.
+# This should be honored unless you're using Xinerama
+# and the application that asks for a positionning 
+# is not Xinerama aware and asks for an arbitrary
+# location.
+#
+# Gimp 1.0.x is like that : It keeps asking for its main
+# window to be placed at (0,0) for no reason. This can
+# be annoying when using Xinerama. For this kind of application,
+# you can use the flag "Authorize_Translate" that tells xfwm 
+# to translate the coordonates to the current screen even if the 
+# application asked for a specific location.
+
+Style "The GIMP"      		Authorize_Translate
+Style "Netscape"      		Authorize_Translate
+
+# Default icons for most common apps
+Style "*term*"      icon "XFCE_DIR/icons/CheckMarkMonitor.xpm"
+Style "*TERM*"      icon "XFCE_DIR/icons/CheckMarkMonitor.xpm"
+Style "Term*"       icon "XFCE_DIR/icons/CheckMarkMonitor.xpm"
+Style "rxvt*"       icon "XFCE_DIR/icons/CheckMarkMonitor.xpm"
+Style "xmag"        icon "XFCE_DIR/icons/MagnifyGlas.xpm"
+Style "xosview*"    icon "XFCE_DIR/icons/CPUChip.xpm"
+Style "editres*"    icon "XFCE_DIR/icons/Editres.xpm"
+Style "*calc*"      icon "XFCE_DIR/icons/OldBlueAddingMachine.xpm"
+Style "*GIMP*"      icon "XFCE_DIR/icons/Gimp2.xpm"
+Style "Xpaint*"     icon "XFCE_DIR/icons/3dpaint.xpm"
+Style "*game*"      icon "XFCE_DIR/icons/TrueDie.xpm"
+Style "*.jpg"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.gif"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.png"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.bmp"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.xpm"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.xwd"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.JPG"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.GIF"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.PNG"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.BMP"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.XPM"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "*.XWD"       icon "XFCE_DIR/icons/Monalisa.xpm"
+Style "XMMS*"       icon "XFCE_DIR/icons/CDPlayer.xpm"
+Style "*gnome*"     icon "XFCE_DIR/icons/Gnome-apps.xpm"
+Style "*Gnome*"     icon "XFCE_DIR/icons/Gnome-apps.xpm"
+Style "*GNOME*"     icon "XFCE_DIR/icons/Gnome-apps.xpm"
+Style "xfskin*"     icon "XFCE_DIR/icons/xfskin.xpm"
+Style "sylpheed"    icon "XFCE_DIR/icons/Mail.xpm"
+Style "xclipboard"  icon "XFCE_DIR/icons/ArtFolderFull.xpm"
+
+
+# Common init and restart functions
+#AddToFunc "InitFunction"
+#+ "I" Module xfpager
+#+ "I" Exec xterm
+#AddToFunc "RestartFunction"
+#+ "I" Module xfpager
+#+ "I" Exec xterm
+
+# Adding a user menu to the default root menu :
+# (This is just a sample, modify it to fit your need)
+# Uncomment the following lines to create a user menu
+#
+#AddToMenu "user_menu"
+#+ "&Gnome Terminal" Exec gnome-terminal
+#+ "" Nop
+#+ "&The GIMP" Exec gimp
+
+# Another (new) much smarter way is to append entries to a file
+# called $HOME/.xfwm.user_menu
+# For example, to add an new entry in user menu, this file would contain a 
+# single line like this :
+#
+# AddToMenu "user_menu" "&Gnome Terminal" Exec gnome-terminal
+
+# Uncomment the following if you want tot remove default keyboard shortcuts
+# (Some applications require this, as they use the same shortcuts)
+#Key Tab A M -
+#Key Escape A S -
+#Key Escape A C -
+#Key Left A SC -
+#Key Right A SC -
+#Key Up A SC -
+#Key Down A SC  -
+#Key Left A SM  -
+#Key Right A SM  -
+#Key Up A SM  -
+#Key Down A SM  -
+#Key F1 A M -
+#Key F2 A M -
+#Key F3 A M -
+#Key F4 A M -
+#Key F5 A M -
+#Key F6 A M -
+#Key F7 A M -
+#Key F8 A M -
+#Key F9 A M -
+#Key F10 A M -
+#Key F11 A M -
+#Key F1 A C -
+#Key F2 A C -
+#Key F3 A C -
+#Key F4 A C -
+#Key F5 A C -
+#Key F6 A C -
+#Key F7 A C -
+#Key F8 A C -
+#Key F9 A C -
+#Key F10 A  C -
+#Key L5 IW N -
+#Key L5 IW S -
+#Key L5 IW C -
+#Key L7 IW A -
+#Key Delete A CM -
+#Key Left A CM -
+#Key Right A CM -
+# Remove the "Alt+Click = move" binding
+#Mouse 1 W M -
+# Remove root click (required for GNOME proxy win)
+#Mouse 0 R A -
+#Mouse 1 R A -
+#Mouse 2 R A -
+#Mouse 3 R A -
+
+
+# Uncomment the following if you prefer a single click on an icon 
+# to restore the window.
+# AddToFunc __IconFunc__
+# + "C" Iconify
+
+# Use of Windows keys under Xfce :
+# Edit (or create) $HOME/.Xmodmap and add the following lines :
+#################################################################
+# keycode 115=F13
+# keycode 116=F14
+# keycode 117=F15
+#################################################################
+#
+# Then run xmodmap $HOME/.Xmodmap
+# And your Windows keys will be mapped to the root menu and window menu
+# thanks to the following bindings :
+
+Key F13 A N Popup __builtin_root_menu__
+Key F14 A N Popup __builtin_root_menu__
+Key F15 A N Popup __builtin_window_menu__
+
+# Options for xfpager :
+#
+#*xfpager.geometry -0+0
+#*xfpager.smallfont 5x8

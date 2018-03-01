@@ -1,0 +1,32 @@
+/* XPM */
+static char *dir_ro_open_dot_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        9            1",
+/* colors */
+". c none",
+"# c #ffe79c",
+"a c #c6864a",
+"b c #ffc78c",
+"c c #000000",
+"d c #00ff00",
+"e c #ffffff",
+"f c #009900",
+"g c #bbff00",
+/* pixels */
+"...###a. .......",
+"..#bbbba. ......",
+".#bbbbbb#######.",
+"#bbdaaaaaaaaaaac",
+"#bfdfaaaaaaaaaac",
+"#ddgdd##########",
+"#bfdfccccccbbbba",
+"#badceeeeeccbbbc",
+"#baaceeeececbbbc",
+"#baceeeeceeecbac",
+"#ba#ceeceeecbaac",
+"##bbceceeeecbacc",
+"##bbbceeeecbaccc",
+"#aaaaaccccaaacc.",
+".ccccccccccccc .",
+"               .",
+};
