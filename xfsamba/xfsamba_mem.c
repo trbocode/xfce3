@@ -36,7 +36,7 @@
 
 #include "xfsamba.h"
 
-static nmb_history *headH;
+static nmb_history *headHS;
 
 static smb_cache *headS;
 void
@@ -302,10 +302,10 @@ nmb_history *
 push_nmb_history (nmb_list * record)
 {
   nmb_history *currentH;
-  currentH = headH;
+  currentH = headHS;
   if (!currentH)
   {
-    currentH = headH = (nmb_history *) malloc (sizeof (nmb_history));
+    currentH = headHS = (nmb_history *) malloc (sizeof (nmb_history));
     currentH->previous = NULL;
   }
   else
