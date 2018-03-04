@@ -39,7 +39,7 @@
 
 #include "utils.h"
 #include "module.h"
-#include "xfwm.h"
+#include "../xfwm/xfwm.h"
 #include "xfgnome.h"
 #include "constant.h"
 
