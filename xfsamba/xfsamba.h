@@ -240,7 +240,7 @@ void cb_paste(GtkWidget * widget, GtkCTree * ctree);
 
 EXTERN selected_struc selected;
 EXTERN nmb_list *thisN, *headN;
-EXTERN nmb_history *thisH, *headH;
+EXTERN nmb_history *thisH;
 EXTERN void *fork_obj;
 EXTERN int SMBResult;
 EXTERN int SMBabortdrop;

@@ -39,8 +39,8 @@
 
 #include "utils.h"
 #include "module.h"
-#include "../xfwm/xfwm.h"
 #include "xfgnome.h"
+#include "../xfwm/xfwm.h"
 #include "constant.h"
 
 #ifdef DMALLOC
@@ -233,13 +233,13 @@ gnome_compliance_init ()
   /* supporting WM check */
   _XA_WIN_SUPPORTING_WM_CHECK = XInternAtom (dpy, "_WIN_SUPPORTING_WM_CHECK", False);
   _XA_WIN_PROTOCOLS = XInternAtom (dpy, "_WIN_PROTOCOLS", False);
-  _XAA_WIN_STATE = XInternAtom (dpy, "_WIN_STATE", False);
+  _XA_WIN_STATE = XInternAtom (dpy, "_WIN_STATE", False);
   _XA_WIN_HINTS = XInternAtom (dpy, "_WIN_HINTS", False);
   _XA_WIN_APP_STATE = XInternAtom (dpy, "_WIN_APP_STATE", False);
     /*_XA_WIN_EXPANDED_SIZE = XInternAtom(dpy, "_WIN_EXPANDED_SIZE", False);*/
   _XA_WIN_ICONS = XInternAtom (dpy, "_WIN_ICONS", False);
-  _XAA_WIN_WORKSPACE = XInternAtom (dpy, "_WIN_WORKSPACE", False);
-  _XAA_WIN_WORKSPACE_COUNT = XInternAtom (dpy, "_WIN_WORKSPACE_COUNT", False);
+  _XA_WIN_WORKSPACE = XInternAtom (dpy, "_WIN_WORKSPACE", False);
+  _XA_WIN_WORKSPACE_COUNT = XInternAtom (dpy, "_WIN_WORKSPACE_COUNT", False);
   _XA_WIN_WORKSPACE_NAMES = XInternAtom (dpy, "_WIN_WORKSPACE_NAMES", False);
   _XA_WIN_CLIENT_LIST = XInternAtom (dpy, "_WIN_CLIENT_LIST", False);
   _XA_WIN_DESKTOP_BUTTON_PROXY = XInternAtom (dpy, "_WIN_DESKTOP_BUTTON_PROXY", False);
@@ -254,12 +254,12 @@ gnome_compliance_init ()
   /* supported protocols */
   count = 0;
 
-  supported_list[count++] = _XAA_WIN_STATE;	/* done */
+  supported_list[count++] = _XA_WIN_STATE;	/* done */
   supported_list[count++] = _XA_WIN_HINTS;	/* done */
   supported_list[count++] = _XA_WIN_APP_STATE;	/* ???? */
   supported_list[count++] = _XA_WIN_ICONS;	/* ???? */
-  supported_list[count++] = _XAA_WIN_WORKSPACE;	/* done */
-  supported_list[count++] = _XAA_WIN_WORKSPACE_COUNT;	/* done */
+  supported_list[count++] = _XA_WIN_WORKSPACE;	/* done */
+  supported_list[count++] = _XA_WIN_WORKSPACE_COUNT;	/* done */
   supported_list[count++] = _XA_WIN_WORKSPACE_NAMES;	/* done */
   supported_list[count++] = _XA_WIN_CLIENT_LIST;	/* done */
   XChangeProperty (dpy, root_win, _XA_WIN_PROTOCOLS, XA_ATOM, 32, PropModeReplace, (unsigned char *) supported_list, count);
@@ -271,7 +271,7 @@ static void
 gnome_set_current_workspace (int current_desk)
 {
 
-  XChangeProperty (dpy, root_win, _XAA_WIN_WORKSPACE, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &current_desk, 1);
+  XChangeProperty (dpy, root_win, _XA_WIN_WORKSPACE, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &current_desk, 1);
 }
 
 /* sets the number of workspaces */
@@ -279,7 +279,7 @@ static void
 gnome_set_workspace_count (int workspaces)
 {
 
-  XChangeProperty (dpy, root_win, _XAA_WIN_WORKSPACE_COUNT, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &workspaces, 1);
+  XChangeProperty (dpy, root_win, _XA_WIN_WORKSPACE_COUNT, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &workspaces, 1);
 
 }
 
@@ -354,9 +354,9 @@ gnome_set_win_hints (list_item * xfwm_window)
     flags |= WIN_STATE_HID_WORKSPACE;
   }
 
-  XChangeProperty (dpy, (Window) xfwm_window->id, _XAA_WIN_WORKSPACE, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &xfwm_window->workspace, 1);
+  XChangeProperty (dpy, (Window) xfwm_window->id, _XA_WIN_WORKSPACE, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &xfwm_window->workspace, 1);
 
-  XChangeProperty (dpy, (Window) xfwm_window->id, _XAA_WIN_STATE, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &flags, 1);
+  XChangeProperty (dpy, (Window) xfwm_window->id, _XA_WIN_STATE, XA_CARDINAL, 32, PropModeReplace, (unsigned char *) &flags, 1);
 }
 
 /* state requests, GNOME -> xfwm */
@@ -444,7 +444,7 @@ gnome_get_prop_state (Window id)
   unsigned long nitems, bytes_after;
   long flags, *data = 0;
 
-  if (XGetWindowProperty (dpy, id, _XAA_WIN_STATE, 0, 1, False, XA_CARDINAL, &ret_type, &fmt, &nitems, &bytes_after, (unsigned char **) &data) == Success && data)
+  if (XGetWindowProperty (dpy, id, _XA_WIN_STATE, 0, 1, False, XA_CARDINAL, &ret_type, &fmt, &nitems, &bytes_after, (unsigned char **) &data) == Success && data)
   {
     flags = *data;
     gnome_handle_win_state (NULL, id, flags);
@@ -464,7 +464,7 @@ gnome_get_prop_workspace (Window id)
   long val, *data = 0;
 
 
-  if (XGetWindowProperty (dpy, id, _XAA_WIN_WORKSPACE, 0, 1, False, XA_CARDINAL, &ret_type, &fmt, &nitems, &bytes_after, (unsigned char **) &data) == Success && data)
+  if (XGetWindowProperty (dpy, id, _XA_WIN_WORKSPACE, 0, 1, False, XA_CARDINAL, &ret_type, &fmt, &nitems, &bytes_after, (unsigned char **) &data) == Success && data)
   {
     val = *data;
     XFree (data);
@@ -652,8 +652,8 @@ list_destroy_window (unsigned long *body)
     s_list_remove_by_data (window_list, body[0]);
     gnome_set_client_list (window_list);
     /* Perform some cleanup */
-    XDeleteProperty (dpy, body[0], _XAA_WIN_WORKSPACE);
-    XDeleteProperty (dpy, body[0], _XAA_WIN_STATE);
+    XDeleteProperty (dpy, body[0], _XA_WIN_WORKSPACE);
+    XDeleteProperty (dpy, body[0], _XA_WIN_STATE);
     return 1;
   }
   return 0;
@@ -718,7 +718,7 @@ event_handler ()
       break;
     case ClientMessage:
       /* change workspace request */
-      if (Event.xclient.message_type == _XAA_WIN_WORKSPACE)
+      if (Event.xclient.message_type == _XA_WIN_WORKSPACE)
       {
 	int desk;
 	desk = Event.xclient.data.l[0];
@@ -726,7 +726,7 @@ event_handler ()
 	SendInfo (fd, tmp, None);
       }
       /* state requests */
-      else if (Event.xclient.message_type == _XAA_WIN_STATE)
+      else if (Event.xclient.message_type == _XA_WIN_STATE)
       {
 	gnome_handle_win_state (&Event.xclient, None, 0);
       }
@@ -865,7 +865,7 @@ main (int argc, char **argv)
     else if (desk_count > 32)
       desk_count = 32;
   }
-  else if ((XGetWindowProperty (dpy, root_win, _XAA_WIN_WORKSPACE_COUNT, 0L, 1L, False, XA_CARDINAL, &atype, &aformat, &nitems, &bytes_remain, &prop)) == Success)
+  else if ((XGetWindowProperty (dpy, root_win, _XA_WIN_WORKSPACE_COUNT, 0L, 1L, False, XA_CARDINAL, &atype, &aformat, &nitems, &bytes_remain, &prop)) == Success)
   {
     if (prop != NULL)
     {
